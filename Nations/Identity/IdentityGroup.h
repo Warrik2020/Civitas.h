@@ -11,67 +11,67 @@ namespace CivitasPoly::Nations::Identity
         explicit IdentityGroup(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Identity", "IdentityGroup") {}
     public:
-        void ResetBounds(int x, int y) const { void* args[] = { &x, &y }; Call("ResetBounds", args, 2); }
-        void Grow(int x, int y) const { void* args[] = { &x, &y }; Call("Grow", args, 2); }
+        void ResetBounds(int x, int y) const { void* __callArgs[] = { &x, &y }; Call("ResetBounds", __callArgs, 2); }
+        void Grow(int x, int y) const { void* __callArgs[] = { &x, &y }; Call("Grow", __callArgs, 2); }
         int id() const { return ReadField<int>("id"); }
-        void SetId(int value) const { WriteField<int>("id", value); }
+        void id(int value) const { WriteField<int>("id", value); }
         int axis() const { return ReadField<int>("axis"); }
-        void SetAxis(int value) const { WriteField<int>("axis", value); }
+        void axis(int value) const { WriteField<int>("axis", value); }
         void* name() const { return ReadField<void*>("name"); }
-        void SetName(void* value) const { WriteField<void*>("name", value); }
+        void name(void* value) const { WriteField<void*>("name", value); }
         bool authored() const { return ReadField<bool>("authored"); }
-        void SetAuthored(bool value) const { WriteField<bool>("authored", value); }
+        void authored(bool value) const { WriteField<bool>("authored", value); }
         int foundingNationId() const { return ReadField<int>("foundingNationId"); }
-        void SetFoundingNationId(int value) const { WriteField<int>("foundingNationId", value); }
+        void foundingNationId(int value) const { WriteField<int>("foundingNationId", value); }
         int parentGroupId() const { return ReadField<int>("parentGroupId"); }
-        void SetParentGroupId(int value) const { WriteField<int>("parentGroupId", value); }
+        void parentGroupId(int value) const { WriteField<int>("parentGroupId", value); }
         int familyId() const { return ReadField<int>("familyId"); }
-        void SetFamilyId(int value) const { WriteField<int>("familyId", value); }
+        void familyId(int value) const { WriteField<int>("familyId", value); }
         void* lineage() const { return ReadField<void*>("lineage"); }
-        void SetLineage(void* value) const { WriteField<void*>("lineage", value); }
+        void lineage(void* value) const { WriteField<void*>("lineage", value); }
         void* lineageNames() const { return ReadField<void*>("lineageNames"); }
-        void SetLineageNames(void* value) const { WriteField<void*>("lineageNames", value); }
+        void lineageNames(void* value) const { WriteField<void*>("lineageNames", value); }
         uint8_t origin() const { return ReadField<uint8_t>("origin"); }
-        void SetOrigin(uint8_t value) const { WriteField<uint8_t>("origin", value); }
+        void origin(uint8_t value) const { WriteField<uint8_t>("origin", value); }
         uint8_t OriginAuthored() const { return ReadStaticField<uint8_t>("OriginAuthored"); }
         uint8_t OriginMixed() const { return ReadStaticField<uint8_t>("OriginMixed"); }
         uint8_t OriginForged() const { return ReadStaticField<uint8_t>("OriginForged"); }
         uint8_t OriginBranched() const { return ReadStaticField<uint8_t>("OriginBranched"); }
         uint8_t generation() const { return ReadField<uint8_t>("generation"); }
-        void SetGeneration(uint8_t value) const { WriteField<uint8_t>("generation", value); }
+        void generation(uint8_t value) const { WriteField<uint8_t>("generation", value); }
         int bornWorldTick() const { return ReadField<int>("bornWorldTick"); }
-        void SetBornWorldTick(int value) const { WriteField<int>("bornWorldTick", value); }
+        void bornWorldTick(int value) const { WriteField<int>("bornWorldTick", value); }
         int forgedByNationId() const { return ReadField<int>("forgedByNationId"); }
-        void SetForgedByNationId(int value) const { WriteField<int>("forgedByNationId", value); }
+        void forgedByNationId(int value) const { WriteField<int>("forgedByNationId", value); }
         void* landName() const { return ReadField<void*>("landName"); }
-        void SetLandName(void* value) const { WriteField<void*>("landName", value); }
+        void landName(void* value) const { WriteField<void*>("landName", value); }
         int bornTick() const { return ReadField<int>("bornTick"); }
-        void SetBornTick(int value) const { WriteField<int>("bornTick", value); }
+        void bornTick(int value) const { WriteField<int>("bornTick", value); }
         void* fill() const { return ReadField<void*>("fill"); }
-        void SetFill(void* value) const { WriteField<void*>("fill", value); }
+        void fill(void* value) const { WriteField<void*>("fill", value); }
         int minX() const { return ReadField<int>("minX"); }
-        void SetMinX(int value) const { WriteField<int>("minX", value); }
+        void minX(int value) const { WriteField<int>("minX", value); }
         int minY() const { return ReadField<int>("minY"); }
-        void SetMinY(int value) const { WriteField<int>("minY", value); }
+        void minY(int value) const { WriteField<int>("minY", value); }
         int maxX() const { return ReadField<int>("maxX"); }
-        void SetMaxX(int value) const { WriteField<int>("maxX", value); }
+        void maxX(int value) const { WriteField<int>("maxX", value); }
         int maxY() const { return ReadField<int>("maxY"); }
-        void SetMaxY(int value) const { WriteField<int>("maxY", value); }
+        void maxY(int value) const { WriteField<int>("maxY", value); }
         int tileCount() const { return ReadField<int>("tileCount"); }
-        void SetTileCount(int value) const { WriteField<int>("tileCount", value); }
+        void tileCount(int value) const { WriteField<int>("tileCount", value); }
         int64_t shareMass() const { return ReadField<int64_t>("shareMass"); }
-        void SetShareMass(int64_t value) const { WriteField<int64_t>("shareMass", value); }
+        void shareMass(int64_t value) const { WriteField<int64_t>("shareMass", value); }
         int anchorTileIndex() const { return ReadField<int>("anchorTileIndex"); }
-        void SetAnchorTileIndex(int value) const { WriteField<int>("anchorTileIndex", value); }
+        void anchorTileIndex(int value) const { WriteField<int>("anchorTileIndex", value); }
         int anchorX() const { return ReadField<int>("anchorX"); }
-        void SetAnchorX(int value) const { WriteField<int>("anchorX", value); }
+        void anchorX(int value) const { WriteField<int>("anchorX", value); }
         int anchorY() const { return ReadField<int>("anchorY"); }
-        void SetAnchorY(int value) const { WriteField<int>("anchorY", value); }
+        void anchorY(int value) const { WriteField<int>("anchorY", value); }
         bool retired() const { return ReadField<bool>("retired"); }
-        void SetRetired(bool value) const { WriteField<bool>("retired", value); }
+        void retired(bool value) const { WriteField<bool>("retired", value); }
         int diasporaPasses() const { return ReadField<int>("diasporaPasses"); }
-        void SetDiasporaPasses(int value) const { WriteField<int>("diasporaPasses", value); }
+        void diasporaPasses(int value) const { WriteField<int>("diasporaPasses", value); }
         bool dirty() const { return ReadField<bool>("dirty"); }
-        void SetDirty(bool value) const { WriteField<bool>("dirty", value); }
+        void dirty(bool value) const { WriteField<bool>("dirty", value); }
     };
 }

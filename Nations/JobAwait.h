@@ -13,6 +13,6 @@ namespace CivitasPoly::Nations
     public:
         void Force() const { Call("Force", nullptr, 0); }
         void* Handle() const { return ReadField<void*>("Handle"); }
-        void SetHandle(void* value) const { WriteField<void*>("Handle", value); }
+        void Handle(void* value) const { WriteField<void*>("Handle", value); }
     };
 }

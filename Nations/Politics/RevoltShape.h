@@ -11,6 +11,6 @@ namespace CivitasPoly::Nations::Politics
         explicit RevoltShape(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Politics", "RevoltShape") {}
     public:
-        float Cost(float x, float y, float featureTiles, int octaves, int seed) const { void* args[] = { &x, &y, &featureTiles, &octaves, &seed }; return CallStaticValue<float>("Cost", args, 5); }
+        float Cost(float x, float y, float featureTiles, int octaves, int seed) const { void* __callArgs[] = { &x, &y, &featureTiles, &octaves, &seed }; return CallStaticValue<float>("Cost", __callArgs, 5); }
     };
 }

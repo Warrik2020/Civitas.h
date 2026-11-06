@@ -11,7 +11,7 @@ namespace CivitasPoly::Nations::Research
         explicit ResearchAI(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Research", "ResearchAI") {}
     public:
-        void Evaluate(void* it, void* cfg) const { void* args[] = { it, cfg }; CallStatic("Evaluate", args, 2); }
-        void EvaluateSlot(void* it, void* cfg, int slot) const { void* args[] = { it, cfg, &slot }; CallStatic("EvaluateSlot", args, 3); }
+        void Evaluate(void* it, void* cfg) const { void* __callArgs[] = { it, cfg }; CallStatic("Evaluate", __callArgs, 2); }
+        void EvaluateSlot(void* it, void* cfg, int slot) const { void* __callArgs[] = { it, cfg, &slot }; CallStatic("EvaluateSlot", __callArgs, 3); }
     };
 }

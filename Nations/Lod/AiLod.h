@@ -11,15 +11,15 @@ namespace CivitasPoly::Nations::Lod
         explicit AiLod(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Lod", "AiLod") {}
     public:
-        bool On(void* s) const { void* args[] = { s }; return CallStaticValue<bool>("On", args, 1); }
-        int Mul(void* s, int nationId) const { void* args[] = { s, &nationId }; return CallStaticValue<int>("Mul", args, 2); }
-        int Tier(int nationId) const { void* args[] = { &nationId }; return CallStaticValue<int>("Tier", args, 1); }
-        int RawMul(int nationId) const { void* args[] = { &nationId }; return CallStaticValue<int>("RawMul", args, 1); }
-        bool Due(void* s, int nationId, int tick, int interval, int phase) const { void* args[] = { s, &nationId, &tick, &interval, &phase }; return CallStaticValue<bool>("Due", args, 5); }
-        bool Pick(void* s, int nationId, int cycle) const { void* args[] = { s, &nationId, &cycle }; return CallStaticValue<bool>("Pick", args, 3); }
-        void Configure(void* cfg) const { void* args[] = { cfg }; CallStatic("Configure", args, 1); }
-        void ConfigureRaw(bool enabled, bool allSystems = true) const { void* args[] = { &enabled, &allSystems }; CallStatic("ConfigureRaw", args, 2); }
-        void Publish(void* tiers, void* muls) const { void* args[] = { tiers, muls }; CallStatic("Publish", args, 2); }
+        bool On(void* s) const { void* __callArgs[] = { s }; return CallStaticValue<bool>("On", __callArgs, 1); }
+        int Mul(void* s, int nationId) const { void* __callArgs[] = { s, &nationId }; return CallStaticValue<int>("Mul", __callArgs, 2); }
+        int Tier(int nationId) const { void* __callArgs[] = { &nationId }; return CallStaticValue<int>("Tier", __callArgs, 1); }
+        int RawMul(int nationId) const { void* __callArgs[] = { &nationId }; return CallStaticValue<int>("RawMul", __callArgs, 1); }
+        bool Due(void* s, int nationId, int tick, int interval, int phase) const { void* __callArgs[] = { s, &nationId, &tick, &interval, &phase }; return CallStaticValue<bool>("Due", __callArgs, 5); }
+        bool Pick(void* s, int nationId, int cycle) const { void* __callArgs[] = { s, &nationId, &cycle }; return CallStaticValue<bool>("Pick", __callArgs, 3); }
+        void Configure(void* cfg) const { void* __callArgs[] = { cfg }; CallStatic("Configure", __callArgs, 1); }
+        void ConfigureRaw(bool enabled, bool allSystems = true) const { void* __callArgs[] = { &enabled, &allSystems }; CallStatic("ConfigureRaw", __callArgs, 2); }
+        void Publish(void* tiers, void* muls) const { void* __callArgs[] = { tiers, muls }; CallStatic("Publish", __callArgs, 2); }
         void Reset() const { CallStatic("Reset", nullptr, 0); }
         void* Summary() const { return CallStatic("Summary", nullptr, 0); }
         uint8_t TierPlayer() const { return ReadStaticField<uint8_t>("TierPlayer"); }
@@ -28,8 +28,8 @@ namespace CivitasPoly::Nations::Lod
         uint8_t TierDistant() const { return ReadStaticField<uint8_t>("TierDistant"); }
         void* TierCounts() const { return ReadStaticField<void*>("TierCounts"); }
         int WarPulled() const { return ReadStaticField<int>("WarPulled"); }
-        void SetWarPulled(int value) const { WriteStaticField<int>("WarPulled", value); }
+        void WarPulled(int value) const { WriteStaticField<int>("WarPulled", value); }
         int Recomputes() const { return ReadStaticField<int>("Recomputes"); }
-        void SetRecomputes(int value) const { WriteStaticField<int>("Recomputes", value); }
+        void Recomputes(int value) const { WriteStaticField<int>("Recomputes", value); }
     };
 }

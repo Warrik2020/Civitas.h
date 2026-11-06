@@ -11,8 +11,8 @@ namespace CivitasPoly::UI
         explicit UiCrispIcon(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "UiCrispIcon") {}
     public:
-        void Show(void* glyph) const { void* args[] = { glyph }; Call("Show", args, 1); }
-        void ModifyMesh(void* vh) const { void* args[] = { vh }; Call("ModifyMesh", args, 1); }
-        void ModifyMesh(void* mesh) const { void* args[] = { mesh }; Call("ModifyMesh", args, 1); }
+        void Show(void* glyph) const { void* __callArgs[] = { glyph }; Call("Show", __callArgs, 1); }
+        void ModifyMesh(void* vh) const { void* __callArgs[] = { vh }; Call("ModifyMesh", __callArgs, 1); }
+        void ModifyMeshOverload2(void* mesh) const { void* __callArgs[] = { mesh }; Call("ModifyMesh", __callArgs, 1); }
     };
 }

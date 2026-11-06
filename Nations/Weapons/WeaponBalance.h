@@ -11,9 +11,9 @@ namespace CivitasPoly::Nations::Weapons
         explicit WeaponBalance(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Weapons", "WeaponBalance") {}
     public:
-        float LateralHandling(float offsetMm) const { void* args[] = { &offsetMm }; return CallStaticValue<float>("LateralHandling", args, 1); }
+        float LateralHandling(float offsetMm) const { void* __callArgs[] = { &offsetMm }; return CallStaticValue<float>("LateralHandling", __callArgs, 1); }
         void Check() const { CallStatic("Check", nullptr, 0); }
-        void Len(void* table, void* enumType, const char* name) const { void* managed_2 = Api() && Api()->NewString ? Api()->NewString(name ? name : "") : nullptr; void* args[] = { table, enumType, managed_2 }; CallStatic("Len", args, 3); }
+        void Len(void* table, void* enumType, const char* name) const { void* managed_2 = Api() && Api()->NewString ? Api()->NewString(name ? name : "") : nullptr; void* __callArgs[] = { table, enumType, managed_2 }; CallStatic("Len", __callArgs, 3); }
         void* DensityGPerCm3() const { return ReadStaticField<void*>("DensityGPerCm3"); }
         void* BarrelStrength() const { return ReadStaticField<void*>("BarrelStrength"); }
         void* BarrelReliability() const { return ReadStaticField<void*>("BarrelReliability"); }

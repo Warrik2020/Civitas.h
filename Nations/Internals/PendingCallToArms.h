@@ -12,18 +12,18 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "PendingCallToArms") {}
     public:
         int callerId() const { return ReadField<int>("callerId"); }
-        void SetCallerId(int value) const { WriteField<int>("callerId", value); }
+        void callerId(int value) const { WriteField<int>("callerId", value); }
         int enemyId() const { return ReadField<int>("enemyId"); }
-        void SetEnemyId(int value) const { WriteField<int>("enemyId", value); }
+        void enemyId(int value) const { WriteField<int>("enemyId", value); }
         int targetId() const { return ReadField<int>("targetId"); }
-        void SetTargetId(int value) const { WriteField<int>("targetId", value); }
+        void targetId(int value) const { WriteField<int>("targetId", value); }
         bool viaAlliance() const { return ReadField<bool>("viaAlliance"); }
-        void SetViaAlliance(bool value) const { WriteField<bool>("viaAlliance", value); }
+        void viaAlliance(bool value) const { WriteField<bool>("viaAlliance", value); }
         bool offensive() const { return ReadField<bool>("offensive"); }
-        void SetOffensive(bool value) const { WriteField<bool>("offensive", value); }
+        void offensive(bool value) const { WriteField<bool>("offensive", value); }
         int createdTick() const { return ReadField<int>("createdTick"); }
-        void SetCreatedTick(int value) const { WriteField<int>("createdTick", value); }
+        void createdTick(int value) const { WriteField<int>("createdTick", value); }
         int deadlineTick() const { return ReadField<int>("deadlineTick"); }
-        void SetDeadlineTick(int value) const { WriteField<int>("deadlineTick", value); }
+        void deadlineTick(int value) const { WriteField<int>("deadlineTick", value); }
     };
 }

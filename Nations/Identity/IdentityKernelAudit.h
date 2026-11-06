@@ -11,6 +11,6 @@ namespace CivitasPoly::Nations::Identity
         explicit IdentityKernelAudit(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Identity", "IdentityKernelAudit") {}
     public:
-        int Run(int axis, void* rt, void* grid, void* ctx, void* report) const { void* args[] = { &axis, rt, grid, ctx, report }; return CallStaticValue<int>("Run", args, 5); }
+        int Run(int axis, void* rt, void* grid, void* ctx, void* report) const { void* __callArgs[] = { &axis, rt, grid, ctx, report }; return CallStaticValue<int>("Run", __callArgs, 5); }
     };
 }

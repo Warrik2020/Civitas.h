@@ -11,11 +11,11 @@ namespace CivitasPoly::Nations::Internals
         explicit LocalPoliticsBalance(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "LocalPoliticsBalance") {}
     public:
-        float Diff(float atOne, float atStandard, float atMax) const { void* args[] = { &atOne, &atStandard, &atMax }; return CallStaticValue<float>("Diff", args, 3); }
+        float Diff(float atOne, float atStandard, float atMax) const { void* __callArgs[] = { &atOne, &atStandard, &atMax }; return CallStaticValue<float>("Diff", __callArgs, 3); }
         bool Enabled() const { return ReadStaticField<bool>("Enabled"); }
-        void SetEnabled(bool value) const { WriteStaticField<bool>("Enabled", value); }
+        void Enabled(bool value) const { WriteStaticField<bool>("Enabled", value); }
         bool LogYearly() const { return ReadStaticField<bool>("LogYearly"); }
-        void SetLogYearly(bool value) const { WriteStaticField<bool>("LogYearly", value); }
+        void LogYearly(bool value) const { WriteStaticField<bool>("LogYearly", value); }
         int InboxCapacity() const { return ReadStaticField<int>("InboxCapacity"); }
         int NeighbourRefreshTicks() const { return ReadStaticField<int>("NeighbourRefreshTicks"); }
         float WeightLand() const { return ReadStaticField<float>("WeightLand"); }

@@ -11,7 +11,7 @@ namespace CivitasPoly::Map::Rendering::Surface
         explicit TerrainPalette(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Map.Rendering.Surface", "TerrainPalette") {}
     public:
-        void* Of(uint8_t terrain) const { void* args[] = { &terrain }; return CallStatic("Of", args, 1); }
+        void* Of(uint8_t terrain) const { void* __callArgs[] = { &terrain }; return CallStatic("Of", __callArgs, 1); }
         void* Layer() const { return ReadStaticField<void*>("Layer"); }
         float HillsClimate() const { return ReadStaticField<float>("HillsClimate"); }
         float MountainsClimate() const { return ReadStaticField<float>("MountainsClimate"); }

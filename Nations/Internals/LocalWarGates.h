@@ -11,6 +11,6 @@ namespace CivitasPoly::Nations::Internals
         explicit LocalWarGates(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "LocalWarGates") {}
     public:
-        int Check(void* n, void* it, void* rel, int other, void* ctx, float coPower, float coArmy) const { void* args[] = { n, it, rel, &other, &ctx, &coPower, &coArmy }; return CallStaticValue<int>("Check", args, 7); }
+        int Check(void* n, void* it, void* rel, int other, void* ctx, float coPower, float coArmy) const { void* __callArgs[] = { n, it, rel, &other, &ctx, &coPower, &coArmy }; return CallStaticValue<int>("Check", __callArgs, 7); }
     };
 }

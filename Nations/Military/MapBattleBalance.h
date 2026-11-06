@@ -11,7 +11,7 @@ namespace CivitasPoly::Nations::Military
         explicit MapBattleBalance(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military", "MapBattleBalance") {}
     public:
-        float StopOrgOf(void* d) const { void* args[] = { d }; return CallStaticValue<float>("StopOrgOf", args, 1); }
+        float StopOrgOf(void* d) const { void* __callArgs[] = { d }; return CallStaticValue<float>("StopOrgOf", __callArgs, 1); }
         float BlockedHit() const { return ReadStaticField<float>("BlockedHit"); }
         float UnblockedHit() const { return ReadStaticField<float>("UnblockedHit"); }
         float OrgPerHit() const { return ReadStaticField<float>("OrgPerHit"); }
@@ -35,11 +35,11 @@ namespace CivitasPoly::Nations::Military
         float AiAttackOdds() const { return ReadStaticField<float>("AiAttackOdds"); }
         float AiAttackOddsFloor() const { return ReadStaticField<float>("AiAttackOddsFloor"); }
         float FrontageWidth() const { return ReadStaticField<float>("FrontageWidth"); }
-        void SetFrontageWidth(float value) const { WriteStaticField<float>("FrontageWidth", value); }
+        void FrontageWidth(float value) const { WriteStaticField<float>("FrontageWidth", value); }
         float FrontageRadiusPosts() const { return ReadStaticField<float>("FrontageRadiusPosts"); }
-        void SetFrontageRadiusPosts(float value) const { WriteStaticField<float>("FrontageRadiusPosts", value); }
+        void FrontageRadiusPosts(float value) const { WriteStaticField<float>("FrontageRadiusPosts", value); }
         float DefenderWithdrawOrgFraction() const { return ReadStaticField<float>("DefenderWithdrawOrgFraction"); }
-        void SetDefenderWithdrawOrgFraction(float value) const { WriteStaticField<float>("DefenderWithdrawOrgFraction", value); }
+        void DefenderWithdrawOrgFraction(float value) const { WriteStaticField<float>("DefenderWithdrawOrgFraction", value); }
         int AiStallGraceTicks() const { return ReadStaticField<int>("AiStallGraceTicks"); }
         int AiStallRampTicks() const { return ReadStaticField<int>("AiStallRampTicks"); }
         float AiAssaultOdds() const { return ReadStaticField<float>("AiAssaultOdds"); }

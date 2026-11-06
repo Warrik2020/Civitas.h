@@ -12,16 +12,16 @@ namespace CivitasPoly::Nations::Military
             : ManagedType(api, object, "CivitasPoly.Nations.Military", "LogisticsReach") {}
     public:
         float network() const { return ReadField<float>("network"); }
-        void SetNetwork(float value) const { WriteField<float>("network", value); }
+        void network(float value) const { WriteField<float>("network", value); }
         float forage() const { return ReadField<float>("forage"); }
-        void SetForage(float value) const { WriteField<float>("forage", value); }
+        void forage(float value) const { WriteField<float>("forage", value); }
         float roadGain() const { return ReadField<float>("roadGain"); }
-        void SetRoadGain(float value) const { WriteField<float>("roadGain", value); }
+        void roadGain(float value) const { WriteField<float>("roadGain", value); }
         int sourceIndex() const { return ReadField<int>("sourceIndex"); }
-        void SetSourceIndex(int value) const { WriteField<int>("sourceIndex", value); }
+        void sourceIndex(int value) const { WriteField<int>("sourceIndex", value); }
         uint8_t cellClass() const { return ReadField<uint8_t>("cellClass"); }
-        void SetCellClass(uint8_t value) const { WriteField<uint8_t>("cellClass", value); }
+        void cellClass(uint8_t value) const { WriteField<uint8_t>("cellClass", value); }
         bool reached() const { return ReadField<bool>("reached"); }
-        void SetReached(bool value) const { WriteField<bool>("reached", value); }
+        void reached(bool value) const { WriteField<bool>("reached", value); }
     };
 }

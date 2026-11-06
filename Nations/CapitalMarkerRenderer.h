@@ -12,7 +12,7 @@ namespace CivitasPoly::Nations
             : ManagedType(api, object, "CivitasPoly.Nations", "CapitalMarkerRenderer") {}
     public:
         void MarkDirty() const { Call("MarkDirty", nullptr, 0); }
-        void Sync(void* nations) const { void* args[] = { nations }; Call("Sync", args, 1); }
+        void Sync(void* nations) const { void* __callArgs[] = { nations }; Call("Sync", __callArgs, 1); }
         void Destroy() const { Call("Destroy", nullptr, 0); }
     };
 }

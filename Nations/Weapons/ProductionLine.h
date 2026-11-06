@@ -12,10 +12,10 @@ namespace CivitasPoly::Nations::Weapons
             : ManagedType(api, object, "CivitasPoly.Nations.Weapons", "ProductionLine") {}
     public:
         int designId() const { return ReadField<int>("designId"); }
-        void SetDesignId(int value) const { WriteField<int>("designId", value); }
+        void designId(int value) const { WriteField<int>("designId", value); }
         int factories() const { return ReadField<int>("factories"); }
-        void SetFactories(int value) const { WriteField<int>("factories", value); }
+        void factories(int value) const { WriteField<int>("factories", value); }
         int retoolUntilTick() const { return ReadField<int>("retoolUntilTick"); }
-        void SetRetoolUntilTick(int value) const { WriteField<int>("retoolUntilTick", value); }
+        void retoolUntilTick(int value) const { WriteField<int>("retoolUntilTick", value); }
     };
 }

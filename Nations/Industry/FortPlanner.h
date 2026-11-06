@@ -11,9 +11,9 @@ namespace CivitasPoly::Nations::Industry
         explicit FortPlanner(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Industry", "FortPlanner") {}
     public:
-        void ScoreBorder(void* g, void* mil, bool atWar, void* into) const { void* args[] = { g, mil, &atWar, into }; CallStatic("ScoreBorder", args, 4); }
-        void ScoreMarks(void* g, int self, void* marks, int tick, void* into) const { void* args[] = { g, &self, marks, &tick, into }; CallStatic("ScoreMarks", args, 5); }
-        int Pick(void* scores, void* ok) const { void* args[] = { scores, ok }; return CallStaticValue<int>("Pick", args, 2); }
+        void ScoreBorder(void* g, void* mil, bool atWar, void* into) const { void* __callArgs[] = { g, mil, &atWar, into }; CallStatic("ScoreBorder", __callArgs, 4); }
+        void ScoreMarks(void* g, int self, void* marks, int tick, void* into) const { void* __callArgs[] = { g, &self, marks, &tick, into }; CallStatic("ScoreMarks", __callArgs, 5); }
+        int Pick(void* scores, void* ok) const { void* __callArgs[] = { scores, ok }; return CallStaticValue<int>("Pick", __callArgs, 2); }
         float MarkWeight() const { return ReadStaticField<float>("MarkWeight"); }
         int MarkMaxAgeTicks() const { return ReadStaticField<int>("MarkMaxAgeTicks"); }
     };

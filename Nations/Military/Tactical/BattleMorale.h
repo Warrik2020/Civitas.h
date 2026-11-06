@@ -11,6 +11,6 @@ namespace CivitasPoly::Nations::Military::Tactical
         explicit BattleMorale(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Tactical", "BattleMorale") {}
     public:
-        void Update(void* sim, void* bats, void* extra, int count, float dt) const { void* args[] = { sim, bats, extra, &count, &dt }; CallStatic("Update", args, 5); }
+        void Update(void* sim, void* bats, void* extra, int count, float dt) const { void* __callArgs[] = { sim, bats, extra, &count, &dt }; CallStatic("Update", __callArgs, 5); }
     };
 }

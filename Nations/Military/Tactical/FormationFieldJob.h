@@ -11,12 +11,12 @@ namespace CivitasPoly::Nations::Military::Tactical
         explicit FormationFieldJob(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Tactical", "FormationFieldJob") {}
     public:
-        void Execute(int f) const { void* args[] = { &f }; Call("Execute", args, 1); }
+        void Execute(int f) const { void* __callArgs[] = { &f }; Call("Execute", __callArgs, 1); }
         void* forms() const { return ReadField<void*>("forms"); }
-        void SetForms(void* value) const { WriteField<void*>("forms", value); }
+        void forms(void* value) const { WriteField<void*>("forms", value); }
         void* surround() const { return ReadField<void*>("surround"); }
-        void SetSurround(void* value) const { WriteField<void*>("surround", value); }
+        void surround(void* value) const { WriteField<void*>("surround", value); }
         void* flee() const { return ReadField<void*>("flee"); }
-        void SetFlee(void* value) const { WriteField<void*>("flee", value); }
+        void flee(void* value) const { WriteField<void*>("flee", value); }
     };
 }

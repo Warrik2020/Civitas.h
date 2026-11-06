@@ -11,13 +11,13 @@ namespace CivitasPoly::Nations::Internals
         explicit EquipmentLedger(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "EquipmentLedger") {}
     public:
-        void Add(int pool, int flow, float amount) const { void* args[] = { &pool, &flow, &amount }; Call("Add", args, 3); }
+        void Add(int pool, int flow, float amount) const { void* __callArgs[] = { &pool, &flow, &amount }; Call("Add", __callArgs, 3); }
         void Roll() const { Call("Roll", nullptr, 0); }
-        float PerTick(int pool, int flow) const { void* args[] = { &pool, &flow }; return CallValue<float>("PerTick", args, 2); }
-        float GainPerTick(int pool) const { void* args[] = { &pool }; return CallValue<float>("GainPerTick", args, 1); }
-        float LossPerTick(int pool) const { void* args[] = { &pool }; return CallValue<float>("LossPerTick", args, 1); }
-        float DrawPerTick(int pool) const { void* args[] = { &pool }; return CallValue<float>("DrawPerTick", args, 1); }
-        float NetPerTick(int pool) const { void* args[] = { &pool }; return CallValue<float>("NetPerTick", args, 1); }
+        float PerTick(int pool, int flow) const { void* __callArgs[] = { &pool, &flow }; return CallValue<float>("PerTick", __callArgs, 2); }
+        float GainPerTick(int pool) const { void* __callArgs[] = { &pool }; return CallValue<float>("GainPerTick", __callArgs, 1); }
+        float LossPerTick(int pool) const { void* __callArgs[] = { &pool }; return CallValue<float>("LossPerTick", __callArgs, 1); }
+        float DrawPerTick(int pool) const { void* __callArgs[] = { &pool }; return CallValue<float>("DrawPerTick", __callArgs, 1); }
+        float NetPerTick(int pool) const { void* __callArgs[] = { &pool }; return CallValue<float>("NetPerTick", __callArgs, 1); }
         int Window() const { return ReadStaticField<int>("Window"); }
         int FlowCount() const { return ReadStaticField<int>("FlowCount"); }
     };

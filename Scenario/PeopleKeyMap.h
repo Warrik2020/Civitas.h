@@ -11,8 +11,8 @@ namespace CivitasPoly::Scenario
         explicit PeopleKeyMap(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Scenario", "PeopleKeyMap") {}
     public:
-        int ForSave(int key, void* fileIdOfRuntime) const { void* args[] = { &key, fileIdOfRuntime }; return CallStaticValue<int>("ForSave", args, 2); }
-        int ForLoad(int key, void* runtimeOfFile, void* identity, int fileVersion) const { void* args[] = { &key, runtimeOfFile, identity, &fileVersion }; return CallStaticValue<int>("ForLoad", args, 4); }
+        int ForSave(int key, void* fileIdOfRuntime) const { void* __callArgs[] = { &key, fileIdOfRuntime }; return CallStaticValue<int>("ForSave", __callArgs, 2); }
+        int ForLoad(int key, void* runtimeOfFile, void* identity, int fileVersion) const { void* __callArgs[] = { &key, runtimeOfFile, identity, &fileVersion }; return CallStaticValue<int>("ForLoad", __callArgs, 4); }
         int FileSpaceVersion() const { return ReadStaticField<int>("FileSpaceVersion"); }
     };
 }

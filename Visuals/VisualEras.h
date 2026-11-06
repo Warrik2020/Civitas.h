@@ -11,9 +11,9 @@ namespace CivitasPoly::Visuals
         explicit VisualEras(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Visuals", "VisualEras") {}
     public:
-        void* Name(int era) const { void* args[] = { &era }; return CallStatic("Name", args, 1); }
-        int FirstYear(int era) const { void* args[] = { &era }; return CallStaticValue<int>("FirstYear", args, 1); }
-        int OfYear(int year) const { void* args[] = { &year }; return CallStaticValue<int>("OfYear", args, 1); }
+        void* Name(int era) const { void* __callArgs[] = { &era }; return CallStatic("Name", __callArgs, 1); }
+        int FirstYear(int era) const { void* __callArgs[] = { &era }; return CallStaticValue<int>("FirstYear", __callArgs, 1); }
+        int OfYear(int year) const { void* __callArgs[] = { &year }; return CallStaticValue<int>("OfYear", __callArgs, 1); }
         int Count() const { return ReadStaticField<int>("Count"); }
         void* All() const { return ReadStaticField<void*>("All"); }
     };

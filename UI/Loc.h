@@ -11,16 +11,12 @@ namespace CivitasPoly::UI
         explicit Loc(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "Loc") {}
     public:
-        void* NativeName(int language) const { void* args[] = { &language }; return CallStatic("NativeName", args, 1); }
-        void Set(int language) const { void* args[] = { &language }; CallStatic("Set", args, 1); }
-        void* T(const char* english) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(english ? english : "") : nullptr; void* args[] = { managed_0 }; return CallStatic("T", args, 1); }
-        void* Bind(void* text, const char* english = nullptr) const { void* managed_1 = Api() && Api()->NewString ? Api()->NewString(english ? english : "") : nullptr; void* args[] = { text, managed_1 }; return CallStatic("Bind", args, 2); }
-        void* Bind(void* button, const char* english = nullptr) const { void* managed_1 = Api() && Api()->NewString ? Api()->NewString(english ? english : "") : nullptr; void* args[] = { button, managed_1 }; return CallStatic("Bind", args, 2); }
-        void Unbind(void* text) const { void* args[] = { text }; CallStatic("Unbind", args, 1); }
+        void* NativeName(int language) const { void* __callArgs[] = { &language }; return CallStatic("NativeName", __callArgs, 1); }
+        void Set(int language) const { void* __callArgs[] = { &language }; CallStatic("Set", __callArgs, 1); }
+        void* T(const char* english) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(english ? english : "") : nullptr; void* __callArgs[] = { managed_0 }; return CallStatic("T", __callArgs, 1); }
+        void* Bind(void* text, const char* english = nullptr) const { void* managed_1 = Api() && Api()->NewString ? Api()->NewString(english ? english : "") : nullptr; void* __callArgs[] = { text, managed_1 }; return CallStatic("Bind", __callArgs, 2); }
+        void* BindOverload4(void* button, const char* english = nullptr) const { void* managed_1 = Api() && Api()->NewString ? Api()->NewString(english ? english : "") : nullptr; void* __callArgs[] = { button, managed_1 }; return CallStatic("Bind", __callArgs, 2); }
+        void Unbind(void* text) const { void* __callArgs[] = { text }; CallStatic("Unbind", __callArgs, 1); }
         void* All() const { return ReadStaticField<void*>("All"); }
-        void* text() const { return ReadField<void*>("text"); }
-        void SetText(void* value) const { WriteField<void*>("text", value); }
-        void* english() const { return ReadField<void*>("english"); }
-        void SetEnglish(void* value) const { WriteField<void*>("english", value); }
     };
 }

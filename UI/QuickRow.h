@@ -11,26 +11,26 @@ namespace CivitasPoly::UI
         explicit QuickRow(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "QuickRow") {}
     public:
-        void* Make(void* parent, float height, void* buttonColor, void* textColor, void* dimTextColor, void* onClick) const { void* args[] = { parent, &height, buttonColor, textColor, dimTextColor, onClick }; return CallStatic("Make", args, 6); }
-        void Write(void* action, bool armed, void* textColor, void* dimTextColor, void* buttonColor, void* warColor) const { void* args[] = { &action, &armed, textColor, dimTextColor, buttonColor, warColor }; Call("Write", args, 6); }
-        void SetActive(bool active) const { void* args[] = { &active }; Call("SetActive", args, 1); }
+        void* Make(void* parent, float height, void* buttonColor, void* textColor, void* dimTextColor, void* onClick) const { void* __callArgs[] = { parent, &height, buttonColor, textColor, dimTextColor, onClick }; return CallStatic("Make", __callArgs, 6); }
+        void Write(void* action, bool armed, void* textColor, void* dimTextColor, void* buttonColor, void* warColor) const { void* __callArgs[] = { &action, &armed, textColor, dimTextColor, buttonColor, warColor }; Call("Write", __callArgs, 6); }
+        void SetActive(bool active) const { void* __callArgs[] = { &active }; Call("SetActive", __callArgs, 1); }
         void* go() const { return ReadField<void*>("go"); }
-        void SetGo(void* value) const { WriteField<void*>("go", value); }
+        void go(void* value) const { WriteField<void*>("go", value); }
         void* button() const { return ReadField<void*>("button"); }
-        void SetButton(void* value) const { WriteField<void*>("button", value); }
+        void button(void* value) const { WriteField<void*>("button", value); }
         void* bg() const { return ReadField<void*>("bg"); }
-        void SetBg(void* value) const { WriteField<void*>("bg", value); }
+        void bg(void* value) const { WriteField<void*>("bg", value); }
         void* label() const { return ReadField<void*>("label"); }
-        void SetLabel(void* value) const { WriteField<void*>("label", value); }
+        void label(void* value) const { WriteField<void*>("label", value); }
         void* note() const { return ReadField<void*>("note"); }
-        void SetNote(void* value) const { WriteField<void*>("note", value); }
+        void note(void* value) const { WriteField<void*>("note", value); }
         int kind() const { return ReadField<int>("kind"); }
-        void SetKind(int value) const { WriteField<int>("kind", value); }
+        void kind(int value) const { WriteField<int>("kind", value); }
         int arg() const { return ReadField<int>("arg"); }
-        void SetArg(int value) const { WriteField<int>("arg", value); }
+        void arg(int value) const { WriteField<int>("arg", value); }
         bool confirm() const { return ReadField<bool>("confirm"); }
-        void SetConfirm(bool value) const { WriteField<bool>("confirm", value); }
+        void confirm(bool value) const { WriteField<bool>("confirm", value); }
         int menu() const { return ReadField<int>("menu"); }
-        void SetMenu(int value) const { WriteField<int>("menu", value); }
+        void menu(int value) const { WriteField<int>("menu", value); }
     };
 }

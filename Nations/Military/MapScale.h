@@ -11,9 +11,9 @@ namespace CivitasPoly::Nations::Military
         explicit MapScale(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military", "MapScale") {}
     public:
-        void Force(float metresPerTile) const { void* args[] = { &metresPerTile }; CallStatic("Force", args, 1); }
-        float KmAcross(void* cam, void* space) const { void* args[] = { cam, space }; return CallStaticValue<float>("KmAcross", args, 2); }
-        float KmForPixels(void* cam, void* space, float px) const { void* args[] = { cam, space, &px }; return CallStaticValue<float>("KmForPixels", args, 3); }
+        void Force(float metresPerTile) const { void* __callArgs[] = { &metresPerTile }; CallStatic("Force", __callArgs, 1); }
+        float KmAcross(void* cam, void* space) const { void* __callArgs[] = { cam, space }; return CallStaticValue<float>("KmAcross", __callArgs, 2); }
+        float KmForPixels(void* cam, void* space, float px) const { void* __callArgs[] = { cam, space, &px }; return CallStaticValue<float>("KmForPixels", __callArgs, 3); }
         float SimUnitMetres() const { return ReadStaticField<float>("SimUnitMetres"); }
     };
 }

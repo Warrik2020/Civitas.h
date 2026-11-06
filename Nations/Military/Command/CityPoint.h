@@ -12,8 +12,8 @@ namespace CivitasPoly::Nations::Military::Command
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Command", "CityPoint") {}
     public:
         void* pos() const { return ReadField<void*>("pos"); }
-        void SetPos(void* value) const { WriteField<void*>("pos", value); }
+        void pos(void* value) const { WriteField<void*>("pos", value); }
         float weight() const { return ReadField<float>("weight"); }
-        void SetWeight(float value) const { WriteField<float>("weight", value); }
+        void weight(float value) const { WriteField<float>("weight", value); }
     };
 }

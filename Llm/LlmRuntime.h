@@ -11,7 +11,7 @@ namespace CivitasPoly::Llm
         explicit LlmRuntime(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Llm", "LlmRuntime") {}
     public:
-        int Submit(void* req) const { void* args[] = { req }; return CallValue<int>("Submit", args, 1); }
+        int Submit(void* req) const { void* __callArgs[] = { req }; return CallValue<int>("Submit", __callArgs, 1); }
         void ApplyEnabled() const { Call("ApplyEnabled", nullptr, 0); }
         void ResetForNewWorld() const { Call("ResetForNewWorld", nullptr, 0); }
     };

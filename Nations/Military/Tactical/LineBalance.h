@@ -11,10 +11,10 @@ namespace CivitasPoly::Nations::Military::Tactical
         explicit LineBalance(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Tactical", "LineBalance") {}
     public:
-        float FireNear(int age) const { void* args[] = { &age }; return CallStaticValue<float>("FireNear", args, 1); }
-        float FireWidth(int age) const { void* args[] = { &age }; return CallStaticValue<float>("FireWidth", args, 1); }
-        float BattalionMen(int age) const { void* args[] = { &age }; return CallStaticValue<float>("BattalionMen", args, 1); }
-        float Focus(float ratio) const { void* args[] = { &ratio }; return CallStaticValue<float>("Focus", args, 1); }
+        float FireNear(int age) const { void* __callArgs[] = { &age }; return CallStaticValue<float>("FireNear", __callArgs, 1); }
+        float FireWidth(int age) const { void* __callArgs[] = { &age }; return CallStaticValue<float>("FireWidth", __callArgs, 1); }
+        float BattalionMen(int age) const { void* __callArgs[] = { &age }; return CallStaticValue<float>("BattalionMen", __callArgs, 1); }
+        float Focus(float ratio) const { void* __callArgs[] = { &ratio }; return CallStaticValue<float>("Focus", __callArgs, 1); }
         float Screen() const { return ReadStaticField<float>("Screen"); }
         float SampleMetres() const { return ReadStaticField<float>("SampleMetres"); }
         int MaxSamples() const { return ReadStaticField<int>("MaxSamples"); }

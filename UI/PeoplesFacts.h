@@ -11,6 +11,6 @@ namespace CivitasPoly::UI
         explicit PeoplesFacts(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "PeoplesFacts") {}
     public:
-        void* Of(void* c, int axis, void* p, void* peers) const { void* args[] = { &c, &axis, &p, peers }; return CallStatic("Of", args, 4); }
+        void* Of(void* c, int axis, void* p, void* peers) const { void* __callArgs[] = { &c, &axis, &p, peers }; return CallStatic("Of", __callArgs, 4); }
     };
 }

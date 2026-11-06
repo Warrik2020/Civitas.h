@@ -12,36 +12,36 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "LandClaimConfig") {}
     public:
         float peopleShareMin() const { return ReadField<float>("peopleShareMin"); }
-        void SetPeopleShareMin(float value) const { WriteField<float>("peopleShareMin", value); }
+        void peopleShareMin(float value) const { WriteField<float>("peopleShareMin", value); }
         float majorityShareMin() const { return ReadField<float>("majorityShareMin"); }
-        void SetMajorityShareMin(float value) const { WriteField<float>("majorityShareMin", value); }
+        void majorityShareMin(float value) const { WriteField<float>("majorityShareMin", value); }
         float costDaysReal() const { return ReadField<float>("costDaysReal"); }
-        void SetCostDaysReal(float value) const { WriteField<float>("costDaysReal", value); }
+        void costDaysReal(float value) const { WriteField<float>("costDaysReal", value); }
         float costDaysFrontier() const { return ReadField<float>("costDaysFrontier"); }
-        void SetCostDaysFrontier(float value) const { WriteField<float>("costDaysFrontier", value); }
+        void costDaysFrontier(float value) const { WriteField<float>("costDaysFrontier", value); }
         float costDaysFabricated() const { return ReadField<float>("costDaysFabricated"); }
-        void SetCostDaysFabricated(float value) const { WriteField<float>("costDaysFabricated", value); }
+        void costDaysFabricated(float value) const { WriteField<float>("costDaysFabricated", value); }
         float matureYearsReal() const { return ReadField<float>("matureYearsReal"); }
-        void SetMatureYearsReal(float value) const { WriteField<float>("matureYearsReal", value); }
+        void matureYearsReal(float value) const { WriteField<float>("matureYearsReal", value); }
         float matureYearsFrontier() const { return ReadField<float>("matureYearsFrontier"); }
-        void SetMatureYearsFrontier(float value) const { WriteField<float>("matureYearsFrontier", value); }
+        void matureYearsFrontier(float value) const { WriteField<float>("matureYearsFrontier", value); }
         float matureYearsFabricated() const { return ReadField<float>("matureYearsFabricated"); }
-        void SetMatureYearsFabricated(float value) const { WriteField<float>("matureYearsFabricated", value); }
+        void matureYearsFabricated(float value) const { WriteField<float>("matureYearsFabricated", value); }
         float aggressionReal() const { return ReadField<float>("aggressionReal"); }
-        void SetAggressionReal(float value) const { WriteField<float>("aggressionReal", value); }
+        void aggressionReal(float value) const { WriteField<float>("aggressionReal", value); }
         float aggressionFabricated() const { return ReadField<float>("aggressionFabricated"); }
-        void SetAggressionFabricated(float value) const { WriteField<float>("aggressionFabricated", value); }
+        void aggressionFabricated(float value) const { WriteField<float>("aggressionFabricated", value); }
         float opinionReal() const { return ReadField<float>("opinionReal"); }
-        void SetOpinionReal(float value) const { WriteField<float>("opinionReal", value); }
+        void opinionReal(float value) const { WriteField<float>("opinionReal", value); }
         float opinionFabricated() const { return ReadField<float>("opinionFabricated"); }
-        void SetOpinionFabricated(float value) const { WriteField<float>("opinionFabricated", value); }
+        void opinionFabricated(float value) const { WriteField<float>("opinionFabricated", value); }
         float opinionCap() const { return ReadField<float>("opinionCap"); }
-        void SetOpinionCap(float value) const { WriteField<float>("opinionCap", value); }
+        void opinionCap(float value) const { WriteField<float>("opinionCap", value); }
         int maxClaims() const { return ReadField<int>("maxClaims"); }
-        void SetMaxClaims(int value) const { WriteField<int>("maxClaims", value); }
+        void maxClaims(int value) const { WriteField<int>("maxClaims", value); }
         float peaceValueMul() const { return ReadField<float>("peaceValueMul"); }
-        void SetPeaceValueMul(float value) const { WriteField<float>("peaceValueMul", value); }
+        void peaceValueMul(float value) const { WriteField<float>("peaceValueMul", value); }
         int textMax() const { return ReadField<int>("textMax"); }
-        void SetTextMax(int value) const { WriteField<int>("textMax", value); }
+        void textMax(int value) const { WriteField<int>("textMax", value); }
     };
 }

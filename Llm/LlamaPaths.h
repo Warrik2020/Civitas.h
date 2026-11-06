@@ -12,7 +12,7 @@ namespace CivitasPoly::Llm
             : ManagedType(api, object, "CivitasPoly.Llm", "LlamaPaths") {}
     public:
         void Prime() const { CallStatic("Prime", nullptr, 0); }
-        void* ExeIn(const char* subfolder) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(subfolder ? subfolder : "") : nullptr; void* args[] = { managed_0 }; return CallStatic("ExeIn", args, 1); }
+        void* ExeIn(const char* subfolder) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(subfolder ? subfolder : "") : nullptr; void* __callArgs[] = { managed_0 }; return CallStatic("ExeIn", __callArgs, 1); }
         void* ResolveServerExe() const { return CallStatic("ResolveServerExe", nullptr, 0); }
         void* ResolveModel() const { return CallStatic("ResolveModel", nullptr, 0); }
         void* DescribeMissing() const { return CallStatic("DescribeMissing", nullptr, 0); }

@@ -11,6 +11,6 @@ namespace CivitasPoly::UI::Naval
         explicit NavalPlayerUi(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Naval", "NavalPlayerUi") {}
     public:
-        void* ModeLabel(void* f) const { void* args[] = { f }; return CallStatic("ModeLabel", args, 1); }
+        void* ModeLabel(void* f) const { void* __callArgs[] = { f }; return CallStatic("ModeLabel", __callArgs, 1); }
     };
 }

@@ -11,6 +11,6 @@ namespace CivitasPoly::Map::Pipeline
         explicit FloodFill(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Map.Pipeline", "FloodFill") {}
     public:
-        void* Detect(void* grid, int w, int h, int minIslandArea, int minHoleArea) const { void* args[] = { grid, &w, &h, &minIslandArea, &minHoleArea }; return CallStatic("Detect", args, 5); }
+        void* Detect(void* grid, int w, int h, int minIslandArea, int minHoleArea) const { void* __callArgs[] = { grid, &w, &h, &minIslandArea, &minHoleArea }; return CallStatic("Detect", __callArgs, 5); }
     };
 }

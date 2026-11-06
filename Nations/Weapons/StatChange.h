@@ -12,10 +12,10 @@ namespace CivitasPoly::Nations::Weapons
             : ManagedType(api, object, "CivitasPoly.Nations.Weapons", "StatChange") {}
     public:
         void* label() const { return ReadField<void*>("label"); }
-        void SetLabel(void* value) const { WriteField<void*>("label", value); }
+        void label(void* value) const { WriteField<void*>("label", value); }
         void* text() const { return ReadField<void*>("text"); }
-        void SetText(void* value) const { WriteField<void*>("text", value); }
+        void text(void* value) const { WriteField<void*>("text", value); }
         bool good() const { return ReadField<bool>("good"); }
-        void SetGood(bool value) const { WriteField<bool>("good", value); }
+        void good(bool value) const { WriteField<bool>("good", value); }
     };
 }

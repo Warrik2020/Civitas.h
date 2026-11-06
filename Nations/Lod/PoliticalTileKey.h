@@ -11,6 +11,6 @@ namespace CivitasPoly::Nations::Lod
         explicit PoliticalTileKey(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Lod", "PoliticalTileKey") {}
     public:
-        bool Same(int a, int b) const { void* args[] = { &a, &b }; return CallValue<bool>("Same", args, 2); }
+        bool Same(int a, int b) const { void* __callArgs[] = { &a, &b }; return CallValue<bool>("Same", __callArgs, 2); }
     };
 }

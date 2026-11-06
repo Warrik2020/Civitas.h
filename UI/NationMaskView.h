@@ -11,7 +11,7 @@ namespace CivitasPoly::UI
         explicit NationMaskView(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "NationMaskView") {}
     public:
-        bool AdmitsBrush(int ownerId) const { void* args[] = { &ownerId }; return CallStaticValue<bool>("AdmitsBrush", args, 1); }
+        bool AdmitsBrush(int ownerId) const { void* __callArgs[] = { &ownerId }; return CallStaticValue<bool>("AdmitsBrush", __callArgs, 1); }
         void Clear() const { CallStatic("Clear", nullptr, 0); }
     };
 }

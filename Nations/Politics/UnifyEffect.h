@@ -12,10 +12,10 @@ namespace CivitasPoly::Nations::Politics
             : ManagedType(api, object, "CivitasPoly.Nations.Politics", "UnifyEffect") {}
     public:
         int kind() const { return ReadField<int>("kind"); }
-        void SetKind(int value) const { WriteField<int>("kind", value); }
+        void kind(int value) const { WriteField<int>("kind", value); }
         int scope() const { return ReadField<int>("scope"); }
-        void SetScope(int value) const { WriteField<int>("scope", value); }
+        void scope(int value) const { WriteField<int>("scope", value); }
         float value() const { return ReadField<float>("value"); }
-        void SetValue(float value) const { WriteField<float>("value", value); }
+        void value(float value) const { WriteField<float>("value", value); }
     };
 }

@@ -11,10 +11,10 @@ namespace CivitasPoly::Map::Rendering
         explicit OverlayMaterials(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Map.Rendering", "OverlayMaterials") {}
     public:
-        void* Create(void* tex) const { void* args[] = { tex }; return CallStatic("Create", args, 1); }
-        void* CreateTileSmooth(const char* layerName) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(layerName ? layerName : "") : nullptr; void* args[] = { managed_0 }; return CallStatic("CreateTileSmooth", args, 1); }
-        void SetHatch(void* m, float period, float bar, bool antiDiagonal) const { void* args[] = { m, &period, &bar, &antiDiagonal }; CallStatic("SetHatch", args, 4); }
-        void* CreateEdgeAA(const char* layerName) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(layerName ? layerName : "") : nullptr; void* args[] = { managed_0 }; return CallStatic("CreateEdgeAA", args, 1); }
-        void SetWidthCap(void* m, float refWidth, float maxScreenPx) const { void* args[] = { m, &refWidth, &maxScreenPx }; CallStatic("SetWidthCap", args, 3); }
+        void* Create(void* tex) const { void* __callArgs[] = { tex }; return CallStatic("Create", __callArgs, 1); }
+        void* CreateTileSmooth(const char* layerName) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(layerName ? layerName : "") : nullptr; void* __callArgs[] = { managed_0 }; return CallStatic("CreateTileSmooth", __callArgs, 1); }
+        void SetHatch(void* m, float period, float bar, bool antiDiagonal) const { void* __callArgs[] = { m, &period, &bar, &antiDiagonal }; CallStatic("SetHatch", __callArgs, 4); }
+        void* CreateEdgeAA(const char* layerName) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(layerName ? layerName : "") : nullptr; void* __callArgs[] = { managed_0 }; return CallStatic("CreateEdgeAA", __callArgs, 1); }
+        void SetWidthCap(void* m, float refWidth, float maxScreenPx) const { void* __callArgs[] = { m, &refWidth, &maxScreenPx }; CallStatic("SetWidthCap", __callArgs, 3); }
     };
 }

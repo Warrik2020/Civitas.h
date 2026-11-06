@@ -12,12 +12,12 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "AffairsLineDef") {}
     public:
         void* name() const { return ReadField<void*>("name"); }
-        void SetName(void* value) const { WriteField<void*>("name", value); }
+        void name(void* value) const { WriteField<void*>("name", value); }
         void* args() const { return ReadField<void*>("args"); }
-        void SetArgs(void* value) const { WriteField<void*>("args", value); }
+        void args(void* value) const { WriteField<void*>("args", value); }
         void* spec() const { return ReadField<void*>("spec"); }
-        void SetSpec(void* value) const { WriteField<void*>("spec", value); }
+        void spec(void* value) const { WriteField<void*>("spec", value); }
         int line() const { return ReadField<int>("line"); }
-        void SetLine(int value) const { WriteField<int>("line", value); }
+        void line(int value) const { WriteField<int>("line", value); }
     };
 }

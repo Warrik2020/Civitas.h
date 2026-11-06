@@ -12,9 +12,9 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "PeaceGrant") {}
     public:
         int nationId() const { return ReadField<int>("nationId"); }
-        void SetNationId(int value) const { WriteField<int>("nationId", value); }
+        void nationId(int value) const { WriteField<int>("nationId", value); }
         bool kin() const { return ReadField<bool>("kin"); }
-        void SetKin(bool value) const { WriteField<bool>("kin", value); }
+        void kin(bool value) const { WriteField<bool>("kin", value); }
         void* tiles() const { return ReadField<void*>("tiles"); }
     };
 }

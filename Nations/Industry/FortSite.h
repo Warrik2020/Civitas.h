@@ -12,12 +12,12 @@ namespace CivitasPoly::Nations::Industry
             : ManagedType(api, object, "CivitasPoly.Nations.Industry", "FortSite") {}
     public:
         int tileIndex() const { return ReadField<int>("tileIndex"); }
-        void SetTileIndex(int value) const { WriteField<int>("tileIndex", value); }
+        void tileIndex(int value) const { WriteField<int>("tileIndex", value); }
         int type() const { return ReadField<int>("type"); }
-        void SetType(int value) const { WriteField<int>("type", value); }
+        void type(int value) const { WriteField<int>("type", value); }
         int builderNationId() const { return ReadField<int>("builderNationId"); }
-        void SetBuilderNationId(int value) const { WriteField<int>("builderNationId", value); }
+        void builderNationId(int value) const { WriteField<int>("builderNationId", value); }
         float progress() const { return ReadField<float>("progress"); }
-        void SetProgress(float value) const { WriteField<float>("progress", value); }
+        void progress(float value) const { WriteField<float>("progress", value); }
     };
 }

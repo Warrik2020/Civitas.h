@@ -11,6 +11,6 @@ namespace CivitasPoly::Map::Rendering::Styles
         explicit MapStyleRuntime(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Map.Rendering.Styles", "MapStyleRuntime") {}
     public:
-        void Set(void* style) const { void* args[] = { style }; CallStatic("Set", args, 1); }
+        void Set(void* style) const { void* __callArgs[] = { style }; CallStatic("Set", __callArgs, 1); }
     };
 }

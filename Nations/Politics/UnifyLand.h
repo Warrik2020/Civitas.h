@@ -12,14 +12,14 @@ namespace CivitasPoly::Nations::Politics
             : ManagedType(api, object, "CivitasPoly.Nations.Politics", "UnifyLand") {}
     public:
         int state() const { return ReadField<int>("state"); }
-        void SetState(int value) const { WriteField<int>("state", value); }
+        void state(int value) const { WriteField<int>("state", value); }
         int holder() const { return ReadField<int>("holder"); }
-        void SetHolder(int value) const { WriteField<int>("holder", value); }
+        void holder(int value) const { WriteField<int>("holder", value); }
         bool realm() const { return ReadField<bool>("realm"); }
-        void SetRealm(bool value) const { WriteField<bool>("realm", value); }
+        void realm(bool value) const { WriteField<bool>("realm", value); }
         bool people() const { return ReadField<bool>("people"); }
-        void SetPeople(bool value) const { WriteField<bool>("people", value); }
+        void people(bool value) const { WriteField<bool>("people", value); }
         bool claim() const { return ReadField<bool>("claim"); }
-        void SetClaim(bool value) const { WriteField<bool>("claim", value); }
+        void claim(bool value) const { WriteField<bool>("claim", value); }
     };
 }

@@ -12,12 +12,12 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "PeaceLandWorld") {}
     public:
         void* grid() const { return ReadField<void*>("grid"); }
-        void SetGrid(void* value) const { WriteField<void*>("grid", value); }
+        void grid(void* value) const { WriteField<void*>("grid", value); }
         void* pinned() const { return ReadField<void*>("pinned"); }
-        void SetPinned(void* value) const { WriteField<void*>("pinned", value); }
+        void pinned(void* value) const { WriteField<void*>("pinned", value); }
         int typicalStateTiles() const { return ReadField<int>("typicalStateTiles"); }
-        void SetTypicalStateTiles(int value) const { WriteField<int>("typicalStateTiles", value); }
+        void typicalStateTiles(int value) const { WriteField<int>("typicalStateTiles", value); }
         int minStateTiles() const { return ReadField<int>("minStateTiles"); }
-        void SetMinStateTiles(int value) const { WriteField<int>("minStateTiles", value); }
+        void minStateTiles(int value) const { WriteField<int>("minStateTiles", value); }
     };
 }

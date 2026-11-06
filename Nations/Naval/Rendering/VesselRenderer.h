@@ -12,8 +12,8 @@ namespace CivitasPoly::Nations::Naval::Rendering
             : ManagedType(api, object, "CivitasPoly.Nations.Naval.Rendering", "VesselRenderer") {}
     public:
         bool Visible() const { return ReadStaticField<bool>("Visible"); }
-        void SetVisible(bool value) const { WriteStaticField<bool>("Visible", value); }
+        void Visible(bool value) const { WriteStaticField<bool>("Visible", value); }
         bool ShowLanes() const { return ReadStaticField<bool>("ShowLanes"); }
-        void SetShowLanes(bool value) const { WriteStaticField<bool>("ShowLanes", value); }
+        void ShowLanes(bool value) const { WriteStaticField<bool>("ShowLanes", value); }
     };
 }

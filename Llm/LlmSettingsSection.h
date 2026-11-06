@@ -11,6 +11,6 @@ namespace CivitasPoly::Llm
         explicit LlmSettingsSection(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Llm", "LlmSettingsSection") {}
     public:
-        void Build(void* window) const { void* args[] = { window }; CallStatic("Build", args, 1); }
+        void Build(void* window) const { void* __callArgs[] = { window }; CallStatic("Build", __callArgs, 1); }
     };
 }

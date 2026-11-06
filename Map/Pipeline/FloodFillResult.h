@@ -12,12 +12,12 @@ namespace CivitasPoly::Map::Pipeline
             : ManagedType(api, object, "CivitasPoly.Map.Pipeline", "FloodFillResult") {}
     public:
         void* landLabel() const { return ReadField<void*>("landLabel"); }
-        void SetLandLabel(void* value) const { WriteField<void*>("landLabel", value); }
+        void landLabel(void* value) const { WriteField<void*>("landLabel", value); }
         void* oceanLabel() const { return ReadField<void*>("oceanLabel"); }
-        void SetOceanLabel(void* value) const { WriteField<void*>("oceanLabel", value); }
+        void oceanLabel(void* value) const { WriteField<void*>("oceanLabel", value); }
         void* islands() const { return ReadField<void*>("islands"); }
-        void SetIslands(void* value) const { WriteField<void*>("islands", value); }
+        void islands(void* value) const { WriteField<void*>("islands", value); }
         void* lakes() const { return ReadField<void*>("lakes"); }
-        void SetLakes(void* value) const { WriteField<void*>("lakes", value); }
+        void lakes(void* value) const { WriteField<void*>("lakes", value); }
     };
 }

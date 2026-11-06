@@ -15,7 +15,7 @@ namespace CivitasPoly::Nations::Internals
         float KeepOpinion() const { return ReadStaticField<float>("KeepOpinion"); }
         float WartimeSlack() const { return ReadStaticField<float>("WartimeSlack"); }
         bool AiEnabled() const { return ReadStaticField<bool>("AiEnabled"); }
-        void SetAiEnabled(bool value) const { WriteStaticField<bool>("AiEnabled", value); }
+        void AiEnabled(bool value) const { WriteStaticField<bool>("AiEnabled", value); }
         int AiMaxHosts() const { return ReadStaticField<int>("AiMaxHosts"); }
         int AiAskCooldownDays() const { return ReadStaticField<int>("AiAskCooldownDays"); }
         int AiMaxPendingCards() const { return ReadStaticField<int>("AiMaxPendingCards"); }

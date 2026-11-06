@@ -16,16 +16,16 @@ namespace CivitasPoly::Nations::Internals
         void* closed() const { return ReadField<void*>("closed"); }
         void* hard() const { return ReadField<void*>("hard"); }
         int steps() const { return ReadField<int>("steps"); }
-        void SetSteps(int value) const { WriteField<int>("steps", value); }
+        void steps(int value) const { WriteField<int>("steps", value); }
         int choices() const { return ReadField<int>("choices"); }
-        void SetChoices(int value) const { WriteField<int>("choices", value); }
+        void choices(int value) const { WriteField<int>("choices", value); }
         int defaulted() const { return ReadField<int>("defaulted"); }
-        void SetDefaulted(int value) const { WriteField<int>("defaulted", value); }
+        void defaulted(int value) const { WriteField<int>("defaulted", value); }
         int spawned() const { return ReadField<int>("spawned"); }
-        void SetSpawned(int value) const { WriteField<int>("spawned", value); }
+        void spawned(int value) const { WriteField<int>("spawned", value); }
         int handovers() const { return ReadField<int>("handovers"); }
-        void SetHandovers(int value) const { WriteField<int>("handovers", value); }
+        void handovers(int value) const { WriteField<int>("handovers", value); }
         int hardHeld() const { return ReadField<int>("hardHeld"); }
-        void SetHardHeld(int value) const { WriteField<int>("hardHeld", value); }
+        void hardHeld(int value) const { WriteField<int>("hardHeld", value); }
     };
 }

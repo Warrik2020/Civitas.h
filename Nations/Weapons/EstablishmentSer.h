@@ -11,8 +11,8 @@ namespace CivitasPoly::Nations::Weapons
         explicit EstablishmentSer(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Weapons", "EstablishmentSer") {}
     public:
-        void* Write(void* d) const { void* args[] = { d }; return CallStatic("Write", args, 1); }
-        bool Read(void* a, void* d) const { void* args[] = { a, d }; return CallStaticValue<bool>("Read", args, 2); }
+        void* Write(void* d) const { void* __callArgs[] = { d }; return CallStatic("Write", __callArgs, 1); }
+        bool Read(void* a, void* d) const { void* __callArgs[] = { a, d }; return CallStaticValue<bool>("Read", __callArgs, 2); }
         int Length() const { return ReadStaticField<int>("Length"); }
     };
 }

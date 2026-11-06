@@ -11,6 +11,6 @@ namespace CivitasPoly::Nations::Lod
         explicit AiLodOverlay(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Lod", "AiLodOverlay") {}
     public:
-        void Bind(void* grid, void* space, void* cfg) const { void* args[] = { grid, space, cfg }; Call("Bind", args, 3); }
+        void Bind(void* grid, void* space, void* cfg) const { void* __callArgs[] = { grid, space, cfg }; Call("Bind", __callArgs, 3); }
     };
 }

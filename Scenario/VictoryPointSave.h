@@ -12,7 +12,7 @@ namespace CivitasPoly::Scenario
             : ManagedType(api, object, "CivitasPoly.Scenario", "VictoryPointSave") {}
     public:
         void* Capture() const { return CallStatic("Capture", nullptr, 0); }
-        void Apply(void* dto) const { void* args[] = { dto }; CallStatic("Apply", args, 1); }
+        void Apply(void* dto) const { void* __callArgs[] = { dto }; CallStatic("Apply", __callArgs, 1); }
         int Version() const { return ReadStaticField<int>("Version"); }
     };
 }

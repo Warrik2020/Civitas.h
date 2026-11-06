@@ -11,13 +11,13 @@ namespace CivitasPoly::Map::Rendering::Surface
         explicit TerrainVisuals(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Map.Rendering.Surface", "TerrainVisuals") {}
     public:
-        void Set(bool on) const { void* args[] = { &on }; CallStatic("Set", args, 1); }
+        void Set(bool on) const { void* __callArgs[] = { &on }; CallStatic("Set", __callArgs, 1); }
         bool DefaultOn() const { return ReadStaticField<bool>("DefaultOn"); }
         bool TintInShader() const { return ReadStaticField<bool>("TintInShader"); }
-        void SetTintInShader(bool value) const { WriteStaticField<bool>("TintInShader", value); }
+        void TintInShader(bool value) const { WriteStaticField<bool>("TintInShader", value); }
         bool CitiesAsTexture() const { return ReadStaticField<bool>("CitiesAsTexture"); }
-        void SetCitiesAsTexture(bool value) const { WriteStaticField<bool>("CitiesAsTexture", value); }
+        void CitiesAsTexture(bool value) const { WriteStaticField<bool>("CitiesAsTexture", value); }
         bool Villages() const { return ReadStaticField<bool>("Villages"); }
-        void SetVillages(bool value) const { WriteStaticField<bool>("Villages", value); }
+        void Villages(bool value) const { WriteStaticField<bool>("Villages", value); }
     };
 }

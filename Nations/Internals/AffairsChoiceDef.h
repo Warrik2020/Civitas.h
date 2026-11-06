@@ -12,11 +12,11 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "AffairsChoiceDef") {}
     public:
         bool big() const { return ReadField<bool>("big"); }
-        void SetBig(bool value) const { WriteField<bool>("big", value); }
+        void big(bool value) const { WriteField<bool>("big", value); }
         float deadlineDays() const { return ReadField<float>("deadlineDays"); }
-        void SetDeadlineDays(float value) const { WriteField<float>("deadlineDays", value); }
+        void deadlineDays(float value) const { WriteField<float>("deadlineDays", value); }
         void* options() const { return ReadField<void*>("options"); }
         int line() const { return ReadField<int>("line"); }
-        void SetLine(int value) const { WriteField<int>("line", value); }
+        void line(int value) const { WriteField<int>("line", value); }
     };
 }

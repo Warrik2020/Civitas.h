@@ -12,7 +12,7 @@ namespace CivitasPoly::Nations::Military::Rendering
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Rendering", "CombatAudioSystem") {}
     public:
         void Dispose() const { Call("Dispose", nullptr, 0); }
-        void SetClipSet(const char* set) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(set ? set : "") : nullptr; void* args[] = { managed_0 }; Call("SetClipSet", args, 1); }
-        void Sync(void* militaries, void* cam, int tick, bool layerVisible) const { void* args[] = { militaries, cam, &tick, &layerVisible }; Call("Sync", args, 4); }
+        void SetClipSet(const char* set) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(set ? set : "") : nullptr; void* __callArgs[] = { managed_0 }; Call("SetClipSet", __callArgs, 1); }
+        void Sync(void* militaries, void* cam, int tick, bool layerVisible) const { void* __callArgs[] = { militaries, cam, &tick, &layerVisible }; Call("Sync", __callArgs, 4); }
     };
 }

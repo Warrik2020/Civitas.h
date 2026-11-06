@@ -11,36 +11,36 @@ namespace CivitasPoly::Nations::Internals
         explicit LocalLeague(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "LocalLeague") {}
     public:
-        bool IsMember(int id) const { void* args[] = { &id }; return CallValue<bool>("IsMember", args, 1); }
+        bool IsMember(int id) const { void* __callArgs[] = { &id }; return CallValue<bool>("IsMember", __callArgs, 1); }
         void Clear() const { Call("Clear", nullptr, 0); }
         int id() const { return ReadField<int>("id"); }
-        void SetId(int value) const { WriteField<int>("id", value); }
+        void id(int value) const { WriteField<int>("id", value); }
         int arcId() const { return ReadField<int>("arcId"); }
-        void SetArcId(int value) const { WriteField<int>("arcId", value); }
+        void arcId(int value) const { WriteField<int>("arcId", value); }
         int menaceId() const { return ReadField<int>("menaceId"); }
-        void SetMenaceId(int value) const { WriteField<int>("menaceId", value); }
+        void menaceId(int value) const { WriteField<int>("menaceId", value); }
         int founderId() const { return ReadField<int>("founderId"); }
-        void SetFounderId(int value) const { WriteField<int>("founderId", value); }
+        void founderId(int value) const { WriteField<int>("founderId", value); }
         int posture() const { return ReadField<int>("posture"); }
-        void SetPosture(int value) const { WriteField<int>("posture", value); }
+        void posture(int value) const { WriteField<int>("posture", value); }
         int formingSinceTick() const { return ReadField<int>("formingSinceTick"); }
-        void SetFormingSinceTick(int value) const { WriteField<int>("formingSinceTick", value); }
+        void formingSinceTick(int value) const { WriteField<int>("formingSinceTick", value); }
         int formedTick() const { return ReadField<int>("formedTick"); }
-        void SetFormedTick(int value) const { WriteField<int>("formedTick", value); }
+        void formedTick(int value) const { WriteField<int>("formedTick", value); }
         int menaceTilesAtForm() const { return ReadField<int>("menaceTilesAtForm"); }
-        void SetMenaceTilesAtForm(int value) const { WriteField<int>("menaceTilesAtForm", value); }
+        void menaceTilesAtForm(int value) const { WriteField<int>("menaceTilesAtForm", value); }
         int strikeTick() const { return ReadField<int>("strikeTick"); }
-        void SetStrikeTick(int value) const { WriteField<int>("strikeTick", value); }
+        void strikeTick(int value) const { WriteField<int>("strikeTick", value); }
         int strikeMenaceTiles() const { return ReadField<int>("strikeMenaceTiles"); }
-        void SetStrikeMenaceTiles(int value) const { WriteField<int>("strikeMenaceTiles", value); }
+        void strikeMenaceTiles(int value) const { WriteField<int>("strikeMenaceTiles", value); }
         int lowSinceTick() const { return ReadField<int>("lowSinceTick"); }
-        void SetLowSinceTick(int value) const { WriteField<int>("lowSinceTick", value); }
+        void lowSinceTick(int value) const { WriteField<int>("lowSinceTick", value); }
         int satisfiedTick() const { return ReadField<int>("satisfiedTick"); }
-        void SetSatisfiedTick(int value) const { WriteField<int>("satisfiedTick", value); }
+        void satisfiedTick(int value) const { WriteField<int>("satisfiedTick", value); }
         int playerInviteTick() const { return ReadField<int>("playerInviteTick"); }
-        void SetPlayerInviteTick(int value) const { WriteField<int>("playerInviteTick", value); }
+        void playerInviteTick(int value) const { WriteField<int>("playerInviteTick", value); }
         float threat() const { return ReadField<float>("threat"); }
-        void SetThreat(float value) const { WriteField<float>("threat", value); }
+        void threat(float value) const { WriteField<float>("threat", value); }
         void* members() const { return ReadField<void*>("members"); }
         void* joinedTick() const { return ReadField<void*>("joinedTick"); }
         void* coolSince() const { return ReadField<void*>("coolSince"); }

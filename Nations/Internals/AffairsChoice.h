@@ -12,18 +12,18 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "AffairsChoice") {}
     public:
         int id() const { return ReadField<int>("id"); }
-        void SetId(int value) const { WriteField<int>("id", value); }
+        void id(int value) const { WriteField<int>("id", value); }
         int threadId() const { return ReadField<int>("threadId"); }
-        void SetThreadId(int value) const { WriteField<int>("threadId", value); }
+        void threadId(int value) const { WriteField<int>("threadId", value); }
         int nationId() const { return ReadField<int>("nationId"); }
-        void SetNationId(int value) const { WriteField<int>("nationId", value); }
+        void nationId(int value) const { WriteField<int>("nationId", value); }
         void* stepId() const { return ReadField<void*>("stepId"); }
-        void SetStepId(void* value) const { WriteField<void*>("stepId", value); }
+        void stepId(void* value) const { WriteField<void*>("stepId", value); }
         int createdTick() const { return ReadField<int>("createdTick"); }
-        void SetCreatedTick(int value) const { WriteField<int>("createdTick", value); }
+        void createdTick(int value) const { WriteField<int>("createdTick", value); }
         int deadlineTick() const { return ReadField<int>("deadlineTick"); }
-        void SetDeadlineTick(int value) const { WriteField<int>("deadlineTick", value); }
+        void deadlineTick(int value) const { WriteField<int>("deadlineTick", value); }
         bool big() const { return ReadField<bool>("big"); }
-        void SetBig(bool value) const { WriteField<bool>("big", value); }
+        void big(bool value) const { WriteField<bool>("big", value); }
     };
 }

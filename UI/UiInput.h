@@ -16,8 +16,8 @@ namespace CivitasPoly::UI
         bool IsTypingInField() const { return CallStaticValue<bool>("IsTypingInField", nullptr, 0); }
         void EnsureEventSystem() const { CallStatic("EnsureEventSystem", nullptr, 0); }
         bool ModalOpen() const { return ReadStaticField<bool>("ModalOpen"); }
-        void SetModalOpen(bool value) const { WriteStaticField<bool>("ModalOpen", value); }
+        void ModalOpen(bool value) const { WriteStaticField<bool>("ModalOpen", value); }
         int LastEscClaimFrame() const { return ReadStaticField<int>("LastEscClaimFrame"); }
-        void SetLastEscClaimFrame(int value) const { WriteStaticField<int>("LastEscClaimFrame", value); }
+        void LastEscClaimFrame(int value) const { WriteStaticField<int>("LastEscClaimFrame", value); }
     };
 }

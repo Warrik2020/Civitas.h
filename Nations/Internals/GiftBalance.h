@@ -11,7 +11,7 @@ namespace CivitasPoly::Nations::Internals
         explicit GiftBalance(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "GiftBalance") {}
     public:
-        float ReasonMul(int reason) const { void* args[] = { &reason }; return CallStaticValue<float>("ReasonMul", args, 1); }
+        float ReasonMul(int reason) const { void* __callArgs[] = { &reason }; return CallStaticValue<float>("ReasonMul", __callArgs, 1); }
         float NormShare() const { return ReadStaticField<float>("NormShare"); }
         float FriendshipMul() const { return ReadStaticField<float>("FriendshipMul"); }
         float ApologyMul() const { return ReadStaticField<float>("ApologyMul"); }

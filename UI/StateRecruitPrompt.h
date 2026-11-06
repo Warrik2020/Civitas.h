@@ -11,6 +11,6 @@ namespace CivitasPoly::UI
         explicit StateRecruitPrompt(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "StateRecruitPrompt") {}
     public:
-        void OpenFor(int stateId) const { void* args[] = { &stateId }; CallStatic("OpenFor", args, 1); }
+        void OpenFor(int stateId) const { void* __callArgs[] = { &stateId }; CallStatic("OpenFor", __callArgs, 1); }
     };
 }

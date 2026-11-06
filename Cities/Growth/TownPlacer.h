@@ -11,6 +11,6 @@ namespace CivitasPoly::Cities::Growth
         explicit TownPlacer(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Cities.Growth", "TownPlacer") {}
     public:
-        bool TryFindScoredSite(void* n, void* grid, void* cfg, void* cities, void* w, int& tx, int& ty) const { void* args[] = { n, grid, cfg, cities, &w, &tx, &ty }; return CallStaticValue<bool>("TryFindScoredSite", args, 7); }
+        bool TryFindScoredSite(void* n, void* grid, void* cfg, void* cities, void* w, int& tx, int& ty) const { void* __callArgs[] = { n, grid, cfg, cities, &w, &tx, &ty }; return CallStaticValue<bool>("TryFindScoredSite", __callArgs, 7); }
     };
 }

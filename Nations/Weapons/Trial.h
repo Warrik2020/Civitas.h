@@ -12,16 +12,16 @@ namespace CivitasPoly::Nations::Weapons
             : ManagedType(api, object, "CivitasPoly.Nations.Weapons", "Trial") {}
     public:
         bool made() const { return ReadField<bool>("made"); }
-        void SetMade(bool value) const { WriteField<bool>("made", value); }
+        void made(bool value) const { WriteField<bool>("made", value); }
         int blocking() const { return ReadField<int>("blocking"); }
-        void SetBlocking(int value) const { WriteField<int>("blocking", value); }
+        void blocking(int value) const { WriteField<int>("blocking", value); }
         void* newProblem() const { return ReadField<void*>("newProblem"); }
-        void SetNewProblem(void* value) const { WriteField<void*>("newProblem", value); }
+        void newProblem(void* value) const { WriteField<void*>("newProblem", value); }
         void* stats() const { return ReadField<void*>("stats"); }
-        void SetStats(void* value) const { WriteField<void*>("stats", value); }
+        void stats(void* value) const { WriteField<void*>("stats", value); }
         float score() const { return ReadField<float>("score"); }
-        void SetScore(float value) const { WriteField<float>("score", value); }
+        void score(float value) const { WriteField<float>("score", value); }
         float fee() const { return ReadField<float>("fee"); }
-        void SetFee(float value) const { WriteField<float>("fee", value); }
+        void fee(float value) const { WriteField<float>("fee", value); }
     };
 }

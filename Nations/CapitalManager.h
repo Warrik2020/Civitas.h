@@ -11,7 +11,7 @@ namespace CivitasPoly::Nations
         explicit CapitalManager(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations", "CapitalManager") {}
     public:
-        int Validate(void* grid, void* cfg, int x, int y, void* existingCapitals) const { void* args[] = { grid, cfg, &x, &y, existingCapitals }; return CallStaticValue<int>("Validate", args, 5); }
-        void* BuildParams(void* grid, void* cfg, int x, int y, int nationId, void* usedNames) const { void* args[] = { grid, cfg, &x, &y, &nationId, usedNames }; return CallStatic("BuildParams", args, 6); }
+        int Validate(void* grid, void* cfg, int x, int y, void* existingCapitals) const { void* __callArgs[] = { grid, cfg, &x, &y, existingCapitals }; return CallStaticValue<int>("Validate", __callArgs, 5); }
+        void* BuildParams(void* grid, void* cfg, int x, int y, int nationId, void* usedNames) const { void* __callArgs[] = { grid, cfg, &x, &y, &nationId, usedNames }; return CallStatic("BuildParams", __callArgs, 6); }
     };
 }

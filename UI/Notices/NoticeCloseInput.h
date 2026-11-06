@@ -11,8 +11,8 @@ namespace CivitasPoly::UI::Notices
         explicit NoticeCloseInput(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Notices", "NoticeCloseInput") {}
     public:
-        void OnPointerClick(void* e) const { void* args[] = { e }; Call("OnPointerClick", args, 1); }
+        void OnPointerClick(void* e) const { void* __callArgs[] = { e }; Call("OnPointerClick", __callArgs, 1); }
         void* click() const { return ReadField<void*>("click"); }
-        void SetClick(void* value) const { WriteField<void*>("click", value); }
+        void click(void* value) const { WriteField<void*>("click", value); }
     };
 }

@@ -11,7 +11,7 @@ namespace CivitasPoly::Nations::Military::Player
         explicit PlayerRecruitEase(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Player", "PlayerRecruitEase") {}
     public:
-        bool Applies(void* it) const { void* args[] = { it }; return CallStaticValue<bool>("Applies", args, 1); }
+        bool Applies(void* it) const { void* __callArgs[] = { it }; return CallStaticValue<bool>("Applies", __callArgs, 1); }
         float GoldMul() const { return ReadStaticField<float>("GoldMul"); }
         float BuildTimeMul() const { return ReadStaticField<float>("BuildTimeMul"); }
         float ManpowerCapMul() const { return ReadStaticField<float>("ManpowerCapMul"); }

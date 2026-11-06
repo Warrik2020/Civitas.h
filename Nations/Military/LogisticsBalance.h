@@ -11,17 +11,17 @@ namespace CivitasPoly::Nations::Military
         explicit LogisticsBalance(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military", "LogisticsBalance") {}
     public:
-        float RadiusTiles(void* cfg) const { void* args[] = { cfg }; return CallStaticValue<float>("RadiusTiles", args, 1); }
-        float TargetOf(float ratio) const { void* args[] = { &ratio }; return CallStaticValue<float>("TargetOf", args, 1); }
-        float Ease(float level, float target) const { void* args[] = { &level, &target }; return CallStaticValue<float>("Ease", args, 2); }
-        float PowerMulOf(float level) const { void* args[] = { &level }; return CallStaticValue<float>("PowerMulOf", args, 1); }
-        float OrgCapMulOf(float level) const { void* args[] = { &level }; return CallStaticValue<float>("OrgCapMulOf", args, 1); }
-        float ReinforceMulOf(float level) const { void* args[] = { &level }; return CallStaticValue<float>("ReinforceMulOf", args, 1); }
-        float SpeedMulOf(float level) const { void* args[] = { &level }; return CallStaticValue<float>("SpeedMulOf", args, 1); }
-        float OrgRegenMulOf(float level) const { void* args[] = { &level }; return CallStaticValue<float>("OrgRegenMulOf", args, 1); }
-        float AttritionOf(float level, void* d, void* cfg) const { void* args[] = { &level, d, cfg }; return CallStaticValue<float>("AttritionOf", args, 3); }
-        float DemandOf(void* d, void* cfg) const { void* args[] = { d, cfg }; return CallStaticValue<float>("DemandOf", args, 2); }
-        float DemandOf(int type, bool hasEst, void* e, float fill, float fullStrength, void* cfg) const { void* args[] = { &type, &hasEst, &e, &fill, &fullStrength, cfg }; return CallStaticValue<float>("DemandOf", args, 6); }
+        float RadiusTiles(void* cfg) const { void* __callArgs[] = { cfg }; return CallStaticValue<float>("RadiusTiles", __callArgs, 1); }
+        float TargetOf(float ratio) const { void* __callArgs[] = { &ratio }; return CallStaticValue<float>("TargetOf", __callArgs, 1); }
+        float Ease(float level, float target) const { void* __callArgs[] = { &level, &target }; return CallStaticValue<float>("Ease", __callArgs, 2); }
+        float PowerMulOf(float level) const { void* __callArgs[] = { &level }; return CallStaticValue<float>("PowerMulOf", __callArgs, 1); }
+        float OrgCapMulOf(float level) const { void* __callArgs[] = { &level }; return CallStaticValue<float>("OrgCapMulOf", __callArgs, 1); }
+        float ReinforceMulOf(float level) const { void* __callArgs[] = { &level }; return CallStaticValue<float>("ReinforceMulOf", __callArgs, 1); }
+        float SpeedMulOf(float level) const { void* __callArgs[] = { &level }; return CallStaticValue<float>("SpeedMulOf", __callArgs, 1); }
+        float OrgRegenMulOf(float level) const { void* __callArgs[] = { &level }; return CallStaticValue<float>("OrgRegenMulOf", __callArgs, 1); }
+        float AttritionOf(float level, void* d, void* cfg) const { void* __callArgs[] = { &level, d, cfg }; return CallStaticValue<float>("AttritionOf", __callArgs, 3); }
+        float DemandOf(void* d, void* cfg) const { void* __callArgs[] = { d, cfg }; return CallStaticValue<float>("DemandOf", __callArgs, 2); }
+        float DemandOf(int type, bool hasEst, void* e, float fill, float fullStrength, void* cfg) const { void* __callArgs[] = { &type, &hasEst, &e, &fill, &fullStrength, cfg }; return CallStaticValue<float>("DemandOf", __callArgs, 6); }
         int CellShift() const { return ReadStaticField<int>("CellShift"); }
         int CellShiftLarge() const { return ReadStaticField<int>("CellShiftLarge"); }
         int LargeGridTiles() const { return ReadStaticField<int>("LargeGridTiles"); }

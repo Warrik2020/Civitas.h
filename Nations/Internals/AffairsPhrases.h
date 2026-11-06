@@ -11,7 +11,7 @@ namespace CivitasPoly::Nations::Internals
         explicit AffairsPhrases(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "AffairsPhrases") {}
     public:
-        void RenderStep(void* c, void* step, const char*& headline, const char*& text) const { void* args[] = { c, step, &headline, &text }; CallStatic("RenderStep", args, 4); }
-        void* Cause(void* c, void* seed, const char*& fact) const { void* args[] = { c, seed, &fact }; return CallStatic("Cause", args, 3); }
+        void RenderStep(void* c, void* step, const char*& headline, const char*& text) const { void* __callArgs[] = { c, step, &headline, &text }; CallStatic("RenderStep", __callArgs, 4); }
+        void* Cause(void* c, void* seed, const char*& fact) const { void* __callArgs[] = { c, seed, &fact }; return CallStatic("Cause", __callArgs, 3); }
     };
 }

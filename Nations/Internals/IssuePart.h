@@ -12,8 +12,8 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "IssuePart") {}
     public:
         int designId() const { return ReadField<int>("designId"); }
-        void SetDesignId(int value) const { WriteField<int>("designId", value); }
+        void designId(int value) const { WriteField<int>("designId", value); }
         float units() const { return ReadField<float>("units"); }
-        void SetUnits(float value) const { WriteField<float>("units", value); }
+        void units(float value) const { WriteField<float>("units", value); }
     };
 }

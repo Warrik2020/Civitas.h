@@ -12,12 +12,12 @@ namespace CivitasPoly::Nations::Military
             : ManagedType(api, object, "CivitasPoly.Nations.Military", "WorksDisc") {}
     public:
         void* centre() const { return ReadField<void*>("centre"); }
-        void SetCentre(void* value) const { WriteField<void*>("centre", value); }
+        void centre(void* value) const { WriteField<void*>("centre", value); }
         float radiusMetres() const { return ReadField<float>("radiusMetres"); }
-        void SetRadiusMetres(float value) const { WriteField<float>("radiusMetres", value); }
+        void radiusMetres(float value) const { WriteField<float>("radiusMetres", value); }
         int kind() const { return ReadField<int>("kind"); }
-        void SetKind(int value) const { WriteField<int>("kind", value); }
+        void kind(int value) const { WriteField<int>("kind", value); }
         int cluster() const { return ReadField<int>("cluster"); }
-        void SetCluster(int value) const { WriteField<int>("cluster", value); }
+        void cluster(int value) const { WriteField<int>("cluster", value); }
     };
 }

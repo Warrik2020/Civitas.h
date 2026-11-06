@@ -12,7 +12,7 @@ namespace CivitasPoly::UI
             : ManagedType(api, object, "CivitasPoly.UI", "TradeOfferSettingsLive") {}
     public:
         void* muted() const { return ReadField<void*>("muted"); }
-        void SetMuted(void* value) const { WriteField<void*>("muted", value); }
+        void muted(void* value) const { WriteField<void*>("muted", value); }
         void* locks() const { return ReadField<void*>("locks"); }
     };
 }

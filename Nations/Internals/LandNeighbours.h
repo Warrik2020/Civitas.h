@@ -12,10 +12,10 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "LandNeighbours") {}
     public:
         void Reset() const { CallStatic("Reset", nullptr, 0); }
-        int Length(int a, int b) const { void* args[] = { &a, &b }; return CallStaticValue<int>("Length", args, 2); }
-        void Step(void* mgr, void* grid, void* internals) const { void* args[] = { mgr, grid, internals }; CallStatic("Step", args, 3); }
-        void Step(void* mils, void* grid, void* owner, void* alive, void* ensure, void* get) const { void* args[] = { mils, grid, owner, alive, ensure, get }; CallStatic("Step", args, 6); }
+        int Length(int a, int b) const { void* __callArgs[] = { &a, &b }; return CallStaticValue<int>("Length", __callArgs, 2); }
+        void Step(void* mgr, void* grid, void* internals) const { void* __callArgs[] = { mgr, grid, internals }; CallStatic("Step", __callArgs, 3); }
+        void Step(void* mils, void* grid, void* owner, void* alive, void* ensure, void* get) const { void* __callArgs[] = { mils, grid, owner, alive, ensure, get }; CallStatic("Step", __callArgs, 6); }
         bool Enabled() const { return ReadStaticField<bool>("Enabled"); }
-        void SetEnabled(bool value) const { WriteStaticField<bool>("Enabled", value); }
+        void Enabled(bool value) const { WriteStaticField<bool>("Enabled", value); }
     };
 }

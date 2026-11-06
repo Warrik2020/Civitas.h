@@ -12,10 +12,10 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "UnionTerm") {}
     public:
         void* label() const { return ReadField<void*>("label"); }
-        void SetLabel(void* value) const { WriteField<void*>("label", value); }
+        void label(void* value) const { WriteField<void*>("label", value); }
         float value() const { return ReadField<float>("value"); }
-        void SetValue(float value) const { WriteField<float>("value", value); }
+        void value(float value) const { WriteField<float>("value", value); }
         void* tip() const { return ReadField<void*>("tip"); }
-        void SetTip(void* value) const { WriteField<void*>("tip", value); }
+        void tip(void* value) const { WriteField<void*>("tip", value); }
     };
 }

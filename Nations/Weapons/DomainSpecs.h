@@ -11,11 +11,11 @@ namespace CivitasPoly::Nations::Weapons
         explicit DomainSpecs(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Weapons", "DomainSpecs") {}
     public:
-        void* Of(int domain) const { void* args[] = { &domain }; return CallStatic("Of", args, 1); }
-        bool Unlocked(void* it, int domain) const { void* args[] = { it, &domain }; return CallStaticValue<bool>("Unlocked", args, 2); }
-        void* LockReason(void* it, int domain) const { void* args[] = { it, &domain }; return CallStatic("LockReason", args, 2); }
-        void* LockReasonDated(void* it, int domain) const { void* args[] = { it, &domain }; return CallStatic("LockReasonDated", args, 2); }
-        bool AnyUnlocked(void* it) const { void* args[] = { it }; return CallStaticValue<bool>("AnyUnlocked", args, 1); }
+        void* Of(int domain) const { void* __callArgs[] = { &domain }; return CallStatic("Of", __callArgs, 1); }
+        bool Unlocked(void* it, int domain) const { void* __callArgs[] = { it, &domain }; return CallStaticValue<bool>("Unlocked", __callArgs, 2); }
+        void* LockReason(void* it, int domain) const { void* __callArgs[] = { it, &domain }; return CallStatic("LockReason", __callArgs, 2); }
+        void* LockReasonDated(void* it, int domain) const { void* __callArgs[] = { it, &domain }; return CallStatic("LockReasonDated", __callArgs, 2); }
+        bool AnyUnlocked(void* it) const { void* __callArgs[] = { it }; return CallStaticValue<bool>("AnyUnlocked", __callArgs, 1); }
         void* All() const { return ReadStaticField<void*>("All"); }
     };
 }

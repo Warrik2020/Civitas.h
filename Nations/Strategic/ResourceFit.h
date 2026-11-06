@@ -11,8 +11,8 @@ namespace CivitasPoly::Nations::Strategic
         explicit ResourceFit(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Strategic", "ResourceFit") {}
     public:
-        bool Fits(void* it, void* d) const { void* args[] = { it, d }; return CallStaticValue<bool>("Fits", args, 2); }
+        bool Fits(void* it, void* d) const { void* __callArgs[] = { it, d }; return CallStaticValue<bool>("Fits", __callArgs, 2); }
         void* Config() const { return ReadStaticField<void*>("Config"); }
-        void SetConfig(void* value) const { WriteStaticField<void*>("Config", value); }
+        void Config(void* value) const { WriteStaticField<void*>("Config", value); }
     };
 }

@@ -11,15 +11,15 @@ namespace CivitasPoly::Nations::Weapons
         explicit VehicleCatalog(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Weapons", "VehicleCatalog") {}
     public:
-        bool IsArmourBody(int k) const { void* args[] = { &k }; return CallStaticValue<bool>("IsArmourBody", args, 1); }
-        int KindOf(void* d) const { void* args[] = { d }; return CallStaticValue<int>("KindOf", args, 1); }
-        void* Spec(int kind) const { void* args[] = { &kind }; return CallStatic("Spec", args, 1); }
-        void* Spec(void* d) const { void* args[] = { d }; return CallStatic("Spec", args, 1); }
-        void* KindName(int kind) const { void* args[] = { &kind }; return CallStatic("KindName", args, 1); }
-        void* PartsOf(int kind) const { void* args[] = { &kind }; return CallStatic("PartsOf", args, 1); }
-        bool Fits(int kind, int part) const { void* args[] = { &kind, &part }; return CallStaticValue<bool>("Fits", args, 2); }
-        void* KindPhrase(int kind) const { void* args[] = { &kind }; return CallStatic("KindPhrase", args, 1); }
-        bool IsArmed(void* d) const { void* args[] = { d }; return CallStaticValue<bool>("IsArmed", args, 1); }
+        bool IsArmourBody(int k) const { void* __callArgs[] = { &k }; return CallStaticValue<bool>("IsArmourBody", __callArgs, 1); }
+        int KindOf(void* d) const { void* __callArgs[] = { d }; return CallStaticValue<int>("KindOf", __callArgs, 1); }
+        void* Spec(int kind) const { void* __callArgs[] = { &kind }; return CallStatic("Spec", __callArgs, 1); }
+        void* Spec(void* d) const { void* __callArgs[] = { d }; return CallStatic("Spec", __callArgs, 1); }
+        void* KindName(int kind) const { void* __callArgs[] = { &kind }; return CallStatic("KindName", __callArgs, 1); }
+        void* PartsOf(int kind) const { void* __callArgs[] = { &kind }; return CallStatic("PartsOf", __callArgs, 1); }
+        bool Fits(int kind, int part) const { void* __callArgs[] = { &kind, &part }; return CallStaticValue<bool>("Fits", __callArgs, 2); }
+        void* KindPhrase(int kind) const { void* __callArgs[] = { &kind }; return CallStatic("KindPhrase", __callArgs, 1); }
+        bool IsArmed(void* d) const { void* __callArgs[] = { d }; return CallStaticValue<bool>("IsArmed", __callArgs, 1); }
         void* Kinds() const { return ReadStaticField<void*>("Kinds"); }
         void* Engines() const { return ReadStaticField<void*>("Engines"); }
         void* Suspensions() const { return ReadStaticField<void*>("Suspensions"); }

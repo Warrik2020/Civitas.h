@@ -12,48 +12,48 @@ namespace CivitasPoly::Nations::Military::Rendering::Fx
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Rendering.Fx", "WarFxParticle") {}
     public:
         void* pos() const { return ReadField<void*>("pos"); }
-        void SetPos(void* value) const { WriteField<void*>("pos", value); }
+        void pos(void* value) const { WriteField<void*>("pos", value); }
         void* vel() const { return ReadField<void*>("vel"); }
-        void SetVel(void* value) const { WriteField<void*>("vel", value); }
+        void vel(void* value) const { WriteField<void*>("vel", value); }
         float h() const { return ReadField<float>("h"); }
-        void SetH(float value) const { WriteField<float>("h", value); }
+        void h(float value) const { WriteField<float>("h", value); }
         float vh() const { return ReadField<float>("vh"); }
-        void SetVh(float value) const { WriteField<float>("vh", value); }
+        void vh(float value) const { WriteField<float>("vh", value); }
         float age() const { return ReadField<float>("age"); }
-        void SetAge(float value) const { WriteField<float>("age", value); }
+        void age(float value) const { WriteField<float>("age", value); }
         float life() const { return ReadField<float>("life"); }
-        void SetLife(float value) const { WriteField<float>("life", value); }
+        void life(float value) const { WriteField<float>("life", value); }
         float size0() const { return ReadField<float>("size0"); }
-        void SetSize0(float value) const { WriteField<float>("size0", value); }
+        void size0(float value) const { WriteField<float>("size0", value); }
         float size1() const { return ReadField<float>("size1"); }
-        void SetSize1(float value) const { WriteField<float>("size1", value); }
+        void size1(float value) const { WriteField<float>("size1", value); }
         float grow() const { return ReadField<float>("grow"); }
-        void SetGrow(float value) const { WriteField<float>("grow", value); }
+        void grow(float value) const { WriteField<float>("grow", value); }
         float stretch() const { return ReadField<float>("stretch"); }
-        void SetStretch(float value) const { WriteField<float>("stretch", value); }
+        void stretch(float value) const { WriteField<float>("stretch", value); }
         float drag() const { return ReadField<float>("drag"); }
-        void SetDrag(float value) const { WriteField<float>("drag", value); }
+        void drag(float value) const { WriteField<float>("drag", value); }
         float gravity() const { return ReadField<float>("gravity"); }
-        void SetGravity(float value) const { WriteField<float>("gravity", value); }
+        void gravity(float value) const { WriteField<float>("gravity", value); }
         float rot() const { return ReadField<float>("rot"); }
-        void SetRot(float value) const { WriteField<float>("rot", value); }
+        void rot(float value) const { WriteField<float>("rot", value); }
         float spin() const { return ReadField<float>("spin"); }
-        void SetSpin(float value) const { WriteField<float>("spin", value); }
+        void spin(float value) const { WriteField<float>("spin", value); }
         float wind() const { return ReadField<float>("wind"); }
-        void SetWind(float value) const { WriteField<float>("wind", value); }
+        void wind(float value) const { WriteField<float>("wind", value); }
         uint32_t col0() const { return ReadField<uint32_t>("col0"); }
-        void SetCol0(uint32_t value) const { WriteField<uint32_t>("col0", value); }
+        void col0(uint32_t value) const { WriteField<uint32_t>("col0", value); }
         uint32_t col1() const { return ReadField<uint32_t>("col1"); }
-        void SetCol1(uint32_t value) const { WriteField<uint32_t>("col1", value); }
+        void col1(uint32_t value) const { WriteField<uint32_t>("col1", value); }
         float extra() const { return ReadField<float>("extra"); }
-        void SetExtra(float value) const { WriteField<float>("extra", value); }
+        void extra(float value) const { WriteField<float>("extra", value); }
         float hold() const { return ReadField<float>("hold"); }
-        void SetHold(float value) const { WriteField<float>("hold", value); }
+        void hold(float value) const { WriteField<float>("hold", value); }
         uint16_t seed() const { return ReadField<uint16_t>("seed"); }
-        void SetSeed(uint16_t value) const { WriteField<uint16_t>("seed", value); }
+        void seed(uint16_t value) const { WriteField<uint16_t>("seed", value); }
         uint8_t kind() const { return ReadField<uint8_t>("kind"); }
-        void SetKind(uint8_t value) const { WriteField<uint8_t>("kind", value); }
+        void kind(uint8_t value) const { WriteField<uint8_t>("kind", value); }
         uint8_t flags() const { return ReadField<uint8_t>("flags"); }
-        void SetFlags(uint8_t value) const { WriteField<uint8_t>("flags", value); }
+        void flags(uint8_t value) const { WriteField<uint8_t>("flags", value); }
     };
 }

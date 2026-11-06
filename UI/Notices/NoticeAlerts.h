@@ -11,6 +11,6 @@ namespace CivitasPoly::UI::Notices
         explicit NoticeAlerts(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Notices", "NoticeAlerts") {}
     public:
-        void Watch(void* alerts, int player) const { void* args[] = { alerts, &player }; CallStatic("Watch", args, 2); }
+        void Watch(void* alerts, int player) const { void* __callArgs[] = { alerts, &player }; CallStatic("Watch", __callArgs, 2); }
     };
 }

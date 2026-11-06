@@ -11,13 +11,13 @@ namespace CivitasPoly::UI
         explicit UiMetrics(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "UiMetrics") {}
     public:
-        void* RowPadding(int vertical = 4) const { void* args[] = { &vertical }; return CallStatic("RowPadding", args, 1); }
-        void* IndentedRowPadding(int levels = 1, int vertical = 4) const { void* args[] = { &levels, &vertical }; return CallStatic("IndentedRowPadding", args, 2); }
-        void* BodyMargin(float vertical = 0f) const { void* args[] = { &vertical }; return CallStatic("BodyMargin", args, 1); }
-        void* PanelPadding(int bottom = 16) const { void* args[] = { &bottom }; return CallStatic("PanelPadding", args, 1); }
-        void FitScrollViewport(void* viewportLe, void* content, float available, bool followCanvas = true) const { void* args[] = { viewportLe, content, &available, &followCanvas }; CallStatic("FitScrollViewport", args, 4); }
-        float MeasuredHeight(void* rt) const { void* args[] = { rt }; return CallStaticValue<float>("MeasuredHeight", args, 1); }
-        void ApplyRow(void* layout, int vertical = 4, float gap = 8f) const { void* args[] = { layout, &vertical, &gap }; CallStatic("ApplyRow", args, 3); }
+        void* RowPadding(int vertical = 4) const { void* __callArgs[] = { &vertical }; return CallStatic("RowPadding", __callArgs, 1); }
+        void* IndentedRowPadding(int levels = 1, int vertical = 4) const { void* __callArgs[] = { &levels, &vertical }; return CallStatic("IndentedRowPadding", __callArgs, 2); }
+        void* BodyMargin(float vertical = 0.0f) const { void* __callArgs[] = { &vertical }; return CallStatic("BodyMargin", __callArgs, 1); }
+        void* PanelPadding(int bottom = 16) const { void* __callArgs[] = { &bottom }; return CallStatic("PanelPadding", __callArgs, 1); }
+        void FitScrollViewport(void* viewportLe, void* content, float available, bool followCanvas = true) const { void* __callArgs[] = { viewportLe, content, &available, &followCanvas }; CallStatic("FitScrollViewport", __callArgs, 4); }
+        float MeasuredHeight(void* rt) const { void* __callArgs[] = { rt }; return CallStaticValue<float>("MeasuredHeight", __callArgs, 1); }
+        void ApplyRow(void* layout, int vertical = 4, float gap = 8.0f) const { void* __callArgs[] = { layout, &vertical, &gap }; CallStatic("ApplyRow", __callArgs, 3); }
         int Gutter() const { return ReadStaticField<int>("Gutter"); }
         int Indent() const { return ReadStaticField<int>("Indent"); }
         float GapTight() const { return ReadStaticField<float>("GapTight"); }
@@ -66,11 +66,11 @@ namespace CivitasPoly::UI
         float ShadowSpread() const { return ReadStaticField<float>("ShadowSpread"); }
         float ScrollRail() const { return ReadStaticField<float>("ScrollRail"); }
         bool SettleZoomFits() const { return ReadStaticField<bool>("SettleZoomFits"); }
-        void SetSettleZoomFits(bool value) const { WriteStaticField<bool>("SettleZoomFits", value); }
+        void SettleZoomFits(bool value) const { WriteStaticField<bool>("SettleZoomFits", value); }
         bool SkipUnchangedFits() const { return ReadStaticField<bool>("SkipUnchangedFits"); }
-        void SetSkipUnchangedFits(bool value) const { WriteStaticField<bool>("SkipUnchangedFits", value); }
+        void SkipUnchangedFits(bool value) const { WriteStaticField<bool>("SkipUnchangedFits", value); }
         bool NoScroll() const { return ReadStaticField<bool>("NoScroll"); }
-        void SetNoScroll(bool value) const { WriteStaticField<bool>("NoScroll", value); }
+        void NoScroll(bool value) const { WriteStaticField<bool>("NoScroll", value); }
         float MinZoom() const { return ReadStaticField<float>("MinZoom"); }
     };
 }

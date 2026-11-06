@@ -14,11 +14,11 @@ namespace CivitasPoly::Nations::Progression
         void AcknowledgeEnd() const { CallStatic("AcknowledgeEnd", nullptr, 0); }
         void AcknowledgeCard() const { CallStatic("AcknowledgeCard", nullptr, 0); }
         void Clear() const { CallStatic("Clear", nullptr, 0); }
-        void Refold(void* nations) const { void* args[] = { nations }; CallStatic("Refold", args, 1); }
-        void Options(int nation, void* dst) const { void* args[] = { &nation, dst }; CallStatic("Options", args, 2); }
-        bool Choose(int nation, void* o) const { void* args[] = { &nation, &o }; return CallStaticValue<bool>("Choose", args, 2); }
-        void Abandon(int nation) const { void* args[] = { &nation }; CallStatic("Abandon", args, 1); }
-        void Refresh(int nation) const { void* args[] = { &nation }; CallStatic("Refresh", args, 1); }
-        void AimWarGoal(void* self, void* it, int enemy) const { void* args[] = { self, it, &enemy }; CallStatic("AimWarGoal", args, 3); }
+        void Refold(void* nations) const { void* __callArgs[] = { nations }; CallStatic("Refold", __callArgs, 1); }
+        void Options(int nation, void* dst) const { void* __callArgs[] = { &nation, dst }; CallStatic("Options", __callArgs, 2); }
+        bool Choose(int nation, void* o) const { void* __callArgs[] = { &nation, &o }; return CallStaticValue<bool>("Choose", __callArgs, 2); }
+        void Abandon(int nation) const { void* __callArgs[] = { &nation }; CallStatic("Abandon", __callArgs, 1); }
+        void Refresh(int nation) const { void* __callArgs[] = { &nation }; CallStatic("Refresh", __callArgs, 1); }
+        void AimWarGoal(void* self, void* it, int enemy) const { void* __callArgs[] = { self, it, &enemy }; CallStatic("AimWarGoal", __callArgs, 3); }
     };
 }

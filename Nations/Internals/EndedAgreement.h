@@ -12,10 +12,10 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "EndedAgreement") {}
     public:
         void* agreement() const { return ReadField<void*>("agreement"); }
-        void SetAgreement(void* value) const { WriteField<void*>("agreement", value); }
+        void agreement(void* value) const { WriteField<void*>("agreement", value); }
         int why() const { return ReadField<int>("why"); }
-        void SetWhy(int value) const { WriteField<int>("why", value); }
+        void why(int value) const { WriteField<int>("why", value); }
         int tick() const { return ReadField<int>("tick"); }
-        void SetTick(int value) const { WriteField<int>("tick", value); }
+        void tick(int value) const { WriteField<int>("tick", value); }
     };
 }

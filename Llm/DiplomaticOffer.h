@@ -11,22 +11,22 @@ namespace CivitasPoly::Llm
         explicit DiplomaticOffer(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Llm", "DiplomaticOffer") {}
     public:
-        bool NeedsParams(int v) const { void* args[] = { &v }; return CallStaticValue<bool>("NeedsParams", args, 1); }
+        bool NeedsParams(int v) const { void* __callArgs[] = { &v }; return CallStaticValue<bool>("NeedsParams", __callArgs, 1); }
         int verb() const { return ReadField<int>("verb"); }
-        void SetVerb(int value) const { WriteField<int>("verb", value); }
+        void verb(int value) const { WriteField<int>("verb", value); }
         int themId() const { return ReadField<int>("themId"); }
-        void SetThemId(int value) const { WriteField<int>("themId", value); }
+        void themId(int value) const { WriteField<int>("themId", value); }
         int playerId() const { return ReadField<int>("playerId"); }
-        void SetPlayerId(int value) const { WriteField<int>("playerId", value); }
+        void playerId(int value) const { WriteField<int>("playerId", value); }
         float gold() const { return ReadField<float>("gold"); }
-        void SetGold(float value) const { WriteField<float>("gold", value); }
+        void gold(float value) const { WriteField<float>("gold", value); }
         int unionKind() const { return ReadField<int>("unionKind"); }
-        void SetUnionKind(int value) const { WriteField<int>("unionKind", value); }
+        void unionKind(int value) const { WriteField<int>("unionKind", value); }
         void* text() const { return ReadField<void*>("text"); }
-        void SetText(void* value) const { WriteField<void*>("text", value); }
+        void text(void* value) const { WriteField<void*>("text", value); }
         float rate() const { return ReadField<float>("rate"); }
-        void SetRate(float value) const { WriteField<float>("rate", value); }
+        void rate(float value) const { WriteField<float>("rate", value); }
         int years() const { return ReadField<int>("years"); }
-        void SetYears(int value) const { WriteField<int>("years", value); }
+        void years(int value) const { WriteField<int>("years", value); }
     };
 }

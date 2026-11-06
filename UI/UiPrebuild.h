@@ -12,6 +12,6 @@ namespace CivitasPoly::UI
             : ManagedType(api, object, "CivitasPoly.UI", "UiPrebuild") {}
     public:
         bool Enabled() const { return ReadStaticField<bool>("Enabled"); }
-        void SetEnabled(bool value) const { WriteStaticField<bool>("Enabled", value); }
+        void Enabled(bool value) const { WriteStaticField<bool>("Enabled", value); }
     };
 }

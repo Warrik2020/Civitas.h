@@ -12,22 +12,22 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "LocalOffer") {}
     public:
         int id() const { return ReadField<int>("id"); }
-        void SetId(int value) const { WriteField<int>("id", value); }
+        void id(int value) const { WriteField<int>("id", value); }
         int kind() const { return ReadField<int>("kind"); }
-        void SetKind(int value) const { WriteField<int>("kind", value); }
+        void kind(int value) const { WriteField<int>("kind", value); }
         int arcId() const { return ReadField<int>("arcId"); }
-        void SetArcId(int value) const { WriteField<int>("arcId", value); }
+        void arcId(int value) const { WriteField<int>("arcId", value); }
         int recordId() const { return ReadField<int>("recordId"); }
-        void SetRecordId(int value) const { WriteField<int>("recordId", value); }
+        void recordId(int value) const { WriteField<int>("recordId", value); }
         int fromId() const { return ReadField<int>("fromId"); }
-        void SetFromId(int value) const { WriteField<int>("fromId", value); }
+        void fromId(int value) const { WriteField<int>("fromId", value); }
         int againstId() const { return ReadField<int>("againstId"); }
-        void SetAgainstId(int value) const { WriteField<int>("againstId", value); }
+        void againstId(int value) const { WriteField<int>("againstId", value); }
         int createdTick() const { return ReadField<int>("createdTick"); }
-        void SetCreatedTick(int value) const { WriteField<int>("createdTick", value); }
+        void createdTick(int value) const { WriteField<int>("createdTick", value); }
         int deadlineTick() const { return ReadField<int>("deadlineTick"); }
-        void SetDeadlineTick(int value) const { WriteField<int>("deadlineTick", value); }
+        void deadlineTick(int value) const { WriteField<int>("deadlineTick", value); }
         float gold() const { return ReadField<float>("gold"); }
-        void SetGold(float value) const { WriteField<float>("gold", value); }
+        void gold(float value) const { WriteField<float>("gold", value); }
     };
 }

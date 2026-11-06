@@ -12,8 +12,8 @@ namespace CivitasPoly::Scenario
             : ManagedType(api, object, "CivitasPoly.Scenario", "SerGoalEarned") {}
     public:
         int nation() const { return ReadField<int>("nation"); }
-        void SetNation(int value) const { WriteField<int>("nation", value); }
+        void nation(int value) const { WriteField<int>("nation", value); }
         void* counts() const { return ReadField<void*>("counts"); }
-        void SetCounts(void* value) const { WriteField<void*>("counts", value); }
+        void counts(void* value) const { WriteField<void*>("counts", value); }
     };
 }

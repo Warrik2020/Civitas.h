@@ -13,15 +13,15 @@ namespace CivitasPoly::Nations::Military::Command
     public:
         void* Clone() const { return Call("Clone", nullptr, 0); }
         int id() const { return ReadField<int>("id"); }
-        void SetId(int value) const { WriteField<int>("id", value); }
+        void id(int value) const { WriteField<int>("id", value); }
         int opId() const { return ReadField<int>("opId"); }
-        void SetOpId(int value) const { WriteField<int>("opId", value); }
+        void opId(int value) const { WriteField<int>("opId", value); }
         void* controls() const { return ReadField<void*>("controls"); }
         void* path() const { return ReadField<void*>("path"); }
         void* divisionIds() const { return ReadField<void*>("divisionIds"); }
         bool autoPick() const { return ReadField<bool>("autoPick"); }
-        void SetAutoPick(bool value) const { WriteField<bool>("autoPick", value); }
+        void autoPick(bool value) const { WriteField<bool>("autoPick", value); }
         float progress() const { return ReadField<float>("progress"); }
-        void SetProgress(float value) const { WriteField<float>("progress", value); }
+        void progress(float value) const { WriteField<float>("progress", value); }
     };
 }

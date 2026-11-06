@@ -11,8 +11,8 @@ namespace CivitasPoly::Nations::Strategic
         explicit ResourceNeeds(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Strategic", "ResourceNeeds") {}
     public:
-        int Compute(void* d) const { void* args[] = { d }; return CallStaticValue<int>("Compute", args, 1); }
-        int Of(void* d) const { void* args[] = { d }; return CallStaticValue<int>("Of", args, 1); }
+        int Compute(void* d) const { void* __callArgs[] = { d }; return CallStaticValue<int>("Compute", __callArgs, 1); }
+        int Of(void* d) const { void* __callArgs[] = { d }; return CallStaticValue<int>("Of", __callArgs, 1); }
         void* Material() const { return ReadStaticField<void*>("Material"); }
         void* Propellant() const { return ReadStaticField<void*>("Propellant"); }
         void* Missile() const { return ReadStaticField<void*>("Missile"); }

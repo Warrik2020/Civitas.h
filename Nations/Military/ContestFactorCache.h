@@ -11,14 +11,8 @@ namespace CivitasPoly::Nations::Military
         explicit ContestFactorCache(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military", "ContestFactorCache") {}
     public:
-        bool TryGet(int tile, int tick, int pair, float& value) const { void* args[] = { &tile, &tick, &pair, &value }; return CallValue<bool>("TryGet", args, 4); }
-        void Store(int tile, int pair, float value, int expiry) const { void* args[] = { &tile, &pair, &value, &expiry }; Call("Store", args, 4); }
-        void Sweep(int tick) const { void* args[] = { &tick }; Call("Sweep", args, 1); }
-        float value() const { return ReadField<float>("value"); }
-        void SetValue(float value) const { WriteField<float>("value", value); }
-        int expiry() const { return ReadField<int>("expiry"); }
-        void SetExpiry(int value) const { WriteField<int>("expiry", value); }
-        int pair() const { return ReadField<int>("pair"); }
-        void SetPair(int value) const { WriteField<int>("pair", value); }
+        bool TryGet(int tile, int tick, int pair, float& value) const { void* __callArgs[] = { &tile, &tick, &pair, &value }; return CallValue<bool>("TryGet", __callArgs, 4); }
+        void Store(int tile, int pair, float value, int expiry) const { void* __callArgs[] = { &tile, &pair, &value, &expiry }; Call("Store", __callArgs, 4); }
+        void Sweep(int tick) const { void* __callArgs[] = { &tick }; Call("Sweep", __callArgs, 1); }
     };
 }

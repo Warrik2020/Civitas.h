@@ -11,9 +11,9 @@ namespace CivitasPoly::Nations::Military::Tactical
         explicit BattleCores(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Tactical", "BattleCores") {}
     public:
-        int Resolve(void* setup) const { void* args[] = { setup }; return CallStaticValue<int>("Resolve", args, 1); }
+        int Resolve(void* setup) const { void* __callArgs[] = { setup }; return CallStaticValue<int>("Resolve", __callArgs, 1); }
         int Default_() const { return ReadStaticField<int>("Default"); }
         void* Override() const { return ReadStaticField<void*>("Override"); }
-        void SetOverride(void* value) const { WriteStaticField<void*>("Override", value); }
+        void Override(void* value) const { WriteStaticField<void*>("Override", value); }
     };
 }

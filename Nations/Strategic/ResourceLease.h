@@ -12,14 +12,14 @@ namespace CivitasPoly::Nations::Strategic
             : ManagedType(api, object, "CivitasPoly.Nations.Strategic", "ResourceLease") {}
     public:
         int from() const { return ReadField<int>("from"); }
-        void SetFrom(int value) const { WriteField<int>("from", value); }
+        void from(int value) const { WriteField<int>("from", value); }
         int to() const { return ReadField<int>("to"); }
-        void SetTo(int value) const { WriteField<int>("to", value); }
+        void to(int value) const { WriteField<int>("to", value); }
         int kind() const { return ReadField<int>("kind"); }
-        void SetKind(int value) const { WriteField<int>("kind", value); }
+        void kind(int value) const { WriteField<int>("kind", value); }
         int units() const { return ReadField<int>("units"); }
-        void SetUnits(int value) const { WriteField<int>("units", value); }
+        void units(int value) const { WriteField<int>("units", value); }
         int endTick() const { return ReadField<int>("endTick"); }
-        void SetEndTick(int value) const { WriteField<int>("endTick", value); }
+        void endTick(int value) const { WriteField<int>("endTick", value); }
     };
 }

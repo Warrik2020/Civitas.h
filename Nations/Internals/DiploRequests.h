@@ -11,10 +11,10 @@ namespace CivitasPoly::Nations::Internals
         explicit DiploRequests(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "DiploRequests") {}
     public:
-        bool IsPeoples(int kind) const { void* args[] = { &kind }; return CallStaticValue<bool>("IsPeoples", args, 1); }
-        bool MovesLand(int kind) const { void* args[] = { &kind }; return CallStaticValue<bool>("MovesLand", args, 1); }
-        float Severity(int kind, void* f) const { void* args[] = { &kind, &f }; return CallStaticValue<float>("Severity", args, 2); }
-        float Chance(int tone, float powerRatio, float opinionOfSender, float aggression, float bond, float leverage, float severity, void* cfg) const { void* args[] = { &tone, &powerRatio, &opinionOfSender, &aggression, &bond, &leverage, &severity, cfg }; return CallStaticValue<float>("Chance", args, 8); }
+        bool IsPeoples(int kind) const { void* __callArgs[] = { &kind }; return CallStaticValue<bool>("IsPeoples", __callArgs, 1); }
+        bool MovesLand(int kind) const { void* __callArgs[] = { &kind }; return CallStaticValue<bool>("MovesLand", __callArgs, 1); }
+        float Severity(int kind, void* f) const { void* __callArgs[] = { &kind, &f }; return CallStaticValue<float>("Severity", __callArgs, 2); }
+        float Chance(int tone, float powerRatio, float opinionOfSender, float aggression, float bond, float leverage, float severity, void* cfg) const { void* __callArgs[] = { &tone, &powerRatio, &opinionOfSender, &aggression, &bond, &leverage, &severity, cfg }; return CallStaticValue<float>("Chance", __callArgs, 8); }
         void* Kinds() const { return ReadStaticField<void*>("Kinds"); }
         float AskBase() const { return ReadStaticField<float>("AskBase"); }
         float AskOpinionWeight() const { return ReadStaticField<float>("AskOpinionWeight"); }

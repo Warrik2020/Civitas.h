@@ -12,14 +12,14 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "PeoplesFacts") {}
     public:
         float landShare() const { return ReadField<float>("landShare"); }
-        void SetLandShare(float value) const { WriteField<float>("landShare", value); }
+        void landShare(float value) const { WriteField<float>("landShare", value); }
         float warScore() const { return ReadField<float>("warScore"); }
-        void SetWarScore(float value) const { WriteField<float>("warScore", value); }
+        void warScore(float value) const { WriteField<float>("warScore", value); }
         float peopleShare() const { return ReadField<float>("peopleShare"); }
-        void SetPeopleShare(float value) const { WriteField<float>("peopleShare", value); }
+        void peopleShare(float value) const { WriteField<float>("peopleShare", value); }
         bool doctrine() const { return ReadField<bool>("doctrine"); }
-        void SetDoctrine(bool value) const { WriteField<bool>("doctrine", value); }
+        void doctrine(bool value) const { WriteField<bool>("doctrine", value); }
         bool kinRecipient() const { return ReadField<bool>("kinRecipient"); }
-        void SetKinRecipient(bool value) const { WriteField<bool>("kinRecipient", value); }
+        void kinRecipient(bool value) const { WriteField<bool>("kinRecipient", value); }
     };
 }

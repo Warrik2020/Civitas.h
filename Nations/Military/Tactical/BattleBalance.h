@@ -11,8 +11,8 @@ namespace CivitasPoly::Nations::Military::Tactical
         explicit BattleBalance(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Tactical", "BattleBalance") {}
     public:
-        float WorldTickScaleFor(void* cfg) const { void* args[] = { cfg }; return CallStaticValue<float>("WorldTickScaleFor", args, 1); }
-        float HitFromRate(float killsPerManPerSecond, float reloadSeconds) const { void* args[] = { &killsPerManPerSecond, &reloadSeconds }; return CallStaticValue<float>("HitFromRate", args, 2); }
+        float WorldTickScaleFor(void* cfg) const { void* __callArgs[] = { cfg }; return CallStaticValue<float>("WorldTickScaleFor", __callArgs, 1); }
+        float HitFromRate(float killsPerManPerSecond, float reloadSeconds) const { void* __callArgs[] = { &killsPerManPerSecond, &reloadSeconds }; return CallStaticValue<float>("HitFromRate", __callArgs, 2); }
         float StepSeconds() const { return ReadStaticField<float>("StepSeconds"); }
         int MaxStepsPerFrame() const { return ReadStaticField<int>("MaxStepsPerFrame"); }
         float BattleMinutesPerRealMinute() const { return ReadStaticField<float>("BattleMinutesPerRealMinute"); }

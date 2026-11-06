@@ -11,20 +11,20 @@ namespace CivitasPoly::UI::Military
         explicit MilitaryFormat(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Military", "MilitaryFormat") {}
     public:
-        void* PushWord(void* push) const { void* args[] = { push }; return CallStatic("PushWord", args, 1); }
-        void* PushName(void* push) const { void* args[] = { push }; return CallStatic("PushName", args, 1); }
-        void* PushEffect(void* push) const { void* args[] = { push }; return CallStatic("PushEffect", args, 1); }
-        void* Posture(void* front) const { void* args[] = { front }; return CallStatic("Posture", args, 1); }
-        void* Advantage(void* front) const { void* args[] = { front }; return CallStatic("Advantage", args, 1); }
-        float AdvantageFill(void* front) const { void* args[] = { front }; return CallStaticValue<float>("AdvantageFill", args, 1); }
-        float SupplyLinesMul(void* mil, void* ids) const { void* args[] = { mil, ids }; return CallStaticValue<float>("SupplyLinesMul", args, 2); }
-        void* SupplyLinesTag(float mul) const { void* args[] = { &mul }; return CallStatic("SupplyLinesTag", args, 1); }
-        void* SupplyLinesNote(float mul) const { void* args[] = { &mul }; return CallStatic("SupplyLinesNote", args, 1); }
-        void* Divisions(int n) const { void* args[] = { &n }; return CallStatic("Divisions", args, 1); }
-        void* Gold(int gold) const { void* args[] = { &gold }; return CallStatic("Gold", args, 1); }
-        void* DivisionName(void* d) const { void* args[] = { d }; return CallStatic("DivisionName", args, 1); }
-        void* Ordinal(int n) const { void* args[] = { &n }; return CallStatic("Ordinal", args, 1); }
-        void* LevyClock(void* d, float ticksLeft, float ticksPerYear) const { void* args[] = { d, &ticksLeft, &ticksPerYear }; return CallStatic("LevyClock", args, 3); }
-        void* Activity(void* d) const { void* args[] = { d }; return CallStatic("Activity", args, 1); }
+        void* PushWord(void* push) const { void* __callArgs[] = { push }; return CallStatic("PushWord", __callArgs, 1); }
+        void* PushName(void* push) const { void* __callArgs[] = { push }; return CallStatic("PushName", __callArgs, 1); }
+        void* PushEffect(void* push) const { void* __callArgs[] = { push }; return CallStatic("PushEffect", __callArgs, 1); }
+        void* Posture(void* front) const { void* __callArgs[] = { front }; return CallStatic("Posture", __callArgs, 1); }
+        void* Advantage(void* front) const { void* __callArgs[] = { front }; return CallStatic("Advantage", __callArgs, 1); }
+        float AdvantageFill(void* front) const { void* __callArgs[] = { front }; return CallStaticValue<float>("AdvantageFill", __callArgs, 1); }
+        float SupplyLinesMul(void* mil, void* ids) const { void* __callArgs[] = { mil, ids }; return CallStaticValue<float>("SupplyLinesMul", __callArgs, 2); }
+        void* SupplyLinesTag(float mul) const { void* __callArgs[] = { &mul }; return CallStatic("SupplyLinesTag", __callArgs, 1); }
+        void* SupplyLinesNote(float mul) const { void* __callArgs[] = { &mul }; return CallStatic("SupplyLinesNote", __callArgs, 1); }
+        void* Divisions(int n) const { void* __callArgs[] = { &n }; return CallStatic("Divisions", __callArgs, 1); }
+        void* Gold(int gold) const { void* __callArgs[] = { &gold }; return CallStatic("Gold", __callArgs, 1); }
+        void* DivisionName(void* d) const { void* __callArgs[] = { d }; return CallStatic("DivisionName", __callArgs, 1); }
+        void* Ordinal(int n) const { void* __callArgs[] = { &n }; return CallStatic("Ordinal", __callArgs, 1); }
+        void* LevyClock(void* d, float ticksLeft, float ticksPerYear) const { void* __callArgs[] = { d, &ticksLeft, &ticksPerYear }; return CallStatic("LevyClock", __callArgs, 3); }
+        void* Activity(void* d) const { void* __callArgs[] = { d }; return CallStatic("Activity", __callArgs, 1); }
     };
 }

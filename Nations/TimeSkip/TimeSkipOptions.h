@@ -11,19 +11,19 @@ namespace CivitasPoly::Nations::TimeSkip
         explicit TimeSkipOptions(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.TimeSkip", "TimeSkipOptions") {}
     public:
-        bool Has(int g) const { void* args[] = { &g }; return CallValue<bool>("Has", args, 1); }
-        int ToFlag(int g) const { void* args[] = { &g }; return CallStaticValue<int>("ToFlag", args, 1); }
+        bool Has(int g) const { void* __callArgs[] = { &g }; return CallValue<bool>("Has", __callArgs, 1); }
+        int ToFlag(int g) const { void* __callArgs[] = { &g }; return CallStaticValue<int>("ToFlag", __callArgs, 1); }
         int months() const { return ReadField<int>("months"); }
-        void SetMonths(int value) const { WriteField<int>("months", value); }
+        void months(int value) const { WriteField<int>("months", value); }
         int groups() const { return ReadField<int>("groups"); }
-        void SetGroups(int value) const { WriteField<int>("groups", value); }
+        void groups(int value) const { WriteField<int>("groups", value); }
         bool armiesArrive() const { return ReadField<bool>("armiesArrive"); }
-        void SetArmiesArrive(bool value) const { WriteField<bool>("armiesArrive", value); }
+        void armiesArrive(bool value) const { WriteField<bool>("armiesArrive", value); }
         bool milestones() const { return ReadField<bool>("milestones"); }
-        void SetMilestones(bool value) const { WriteField<bool>("milestones", value); }
+        void milestones(bool value) const { WriteField<bool>("milestones", value); }
         float treasuryTarget() const { return ReadField<float>("treasuryTarget"); }
-        void SetTreasuryTarget(float value) const { WriteField<float>("treasuryTarget", value); }
+        void treasuryTarget(float value) const { WriteField<float>("treasuryTarget", value); }
         float incomeTarget() const { return ReadField<float>("incomeTarget"); }
-        void SetIncomeTarget(float value) const { WriteField<float>("incomeTarget", value); }
+        void incomeTarget(float value) const { WriteField<float>("incomeTarget", value); }
     };
 }

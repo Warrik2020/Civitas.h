@@ -11,8 +11,8 @@ namespace CivitasPoly::UI
         explicit PeoplesLadder(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "PeoplesLadder") {}
     public:
-        void Write(void* views, int armedRung) const { void* args[] = { views, &armedRung }; Call("Write", args, 2); }
-        void SetShown(bool on) const { void* args[] = { &on }; Call("SetShown", args, 1); }
+        void Write(void* views, int armedRung) const { void* __callArgs[] = { views, &armedRung }; Call("Write", __callArgs, 2); }
+        void SetShown(bool on) const { void* __callArgs[] = { &on }; Call("SetShown", __callArgs, 1); }
         int Slots() const { return ReadStaticField<int>("Slots"); }
         void* SlotRung() const { return ReadStaticField<void*>("SlotRung"); }
         void* Root() const { return ReadField<void*>("Root"); }

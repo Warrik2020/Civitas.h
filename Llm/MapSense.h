@@ -11,7 +11,7 @@ namespace CivitasPoly::Llm
         explicit MapSense(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Llm", "MapSense") {}
     public:
-        void* Identify(void* map) const { void* args[] = { map }; return CallStatic("Identify", args, 1); }
-        void Append(void* sb, int selfId, int otherId, void* nations, void* internals, void* map) const { void* args[] = { sb, &selfId, &otherId, nations, internals, map }; CallStatic("Append", args, 6); }
+        void* Identify(void* map) const { void* __callArgs[] = { map }; return CallStatic("Identify", __callArgs, 1); }
+        void Append(void* sb, int selfId, int otherId, void* nations, void* internals, void* map) const { void* __callArgs[] = { sb, &selfId, &otherId, nations, internals, map }; CallStatic("Append", __callArgs, 6); }
     };
 }

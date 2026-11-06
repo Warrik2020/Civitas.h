@@ -11,12 +11,12 @@ namespace CivitasPoly::UI
         explicit UiPager(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "UiPager") {}
     public:
-        void Window(int count, int& from, int& to) const { void* args[] = { &count, &from, &to }; Call("Window", args, 3); }
-        void ShowItem(int index) const { void* args[] = { &index }; Call("ShowItem", args, 1); }
+        void Window(int count, int& from, int& to) const { void* __callArgs[] = { &count, &from, &to }; Call("Window", __callArgs, 3); }
+        void ShowItem(int index) const { void* __callArgs[] = { &index }; Call("ShowItem", __callArgs, 1); }
         void Reset() const { Call("Reset", nullptr, 0); }
-        void SetPerPage(int perPage) const { void* args[] = { &perPage }; Call("SetPerPage", args, 1); }
+        void SetPerPage(int perPage) const { void* __callArgs[] = { &perPage }; Call("SetPerPage", __callArgs, 1); }
         void* Root() const { return ReadField<void*>("Root"); }
         bool KeepHeight() const { return ReadField<bool>("KeepHeight"); }
-        void SetKeepHeight(bool value) const { WriteField<bool>("KeepHeight", value); }
+        void KeepHeight(bool value) const { WriteField<bool>("KeepHeight", value); }
     };
 }

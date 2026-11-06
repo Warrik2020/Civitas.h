@@ -12,10 +12,10 @@ namespace CivitasPoly::Scenario
             : ManagedType(api, object, "CivitasPoly.Scenario", "SerPanNational") {}
     public:
         int format() const { return ReadField<int>("format"); }
-        void SetFormat(int value) const { WriteField<int>("format", value); }
+        void format(int value) const { WriteField<int>("format", value); }
         void* glories() const { return ReadField<void*>("glories"); }
-        void SetGlories(void* value) const { WriteField<void*>("glories", value); }
+        void glories(void* value) const { WriteField<void*>("glories", value); }
         void* peaks() const { return ReadField<void*>("peaks"); }
-        void SetPeaks(void* value) const { WriteField<void*>("peaks", value); }
+        void peaks(void* value) const { WriteField<void*>("peaks", value); }
     };
 }

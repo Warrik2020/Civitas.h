@@ -12,18 +12,18 @@ namespace CivitasPoly::Map::Rendering::Styles
             : ManagedType(api, object, "CivitasPoly.Map.Rendering.Styles", "LensBlock") {}
     public:
         float vignette() const { return ReadField<float>("vignette"); }
-        void SetVignette(float value) const { WriteField<float>("vignette", value); }
+        void vignette(float value) const { WriteField<float>("vignette", value); }
         float vignetteInner() const { return ReadField<float>("vignetteInner"); }
-        void SetVignetteInner(float value) const { WriteField<float>("vignetteInner", value); }
+        void vignetteInner(float value) const { WriteField<float>("vignetteInner", value); }
         float farBlur() const { return ReadField<float>("farBlur"); }
-        void SetFarBlur(float value) const { WriteField<float>("farBlur", value); }
+        void farBlur(float value) const { WriteField<float>("farBlur", value); }
         float farBlurStart() const { return ReadField<float>("farBlurStart"); }
-        void SetFarBlurStart(float value) const { WriteField<float>("farBlurStart", value); }
+        void farBlurStart(float value) const { WriteField<float>("farBlurStart", value); }
         float nearBlur() const { return ReadField<float>("nearBlur"); }
-        void SetNearBlur(float value) const { WriteField<float>("nearBlur", value); }
+        void nearBlur(float value) const { WriteField<float>("nearBlur", value); }
         float nearBlurEnd() const { return ReadField<float>("nearBlurEnd"); }
-        void SetNearBlurEnd(float value) const { WriteField<float>("nearBlurEnd", value); }
+        void nearBlurEnd(float value) const { WriteField<float>("nearBlurEnd", value); }
         void* nearBlurTilePx() const { return ReadField<void*>("nearBlurTilePx"); }
-        void SetNearBlurTilePx(void* value) const { WriteField<void*>("nearBlurTilePx", value); }
+        void nearBlurTilePx(void* value) const { WriteField<void*>("nearBlurTilePx", value); }
     };
 }

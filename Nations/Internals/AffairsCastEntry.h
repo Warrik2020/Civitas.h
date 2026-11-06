@@ -12,16 +12,16 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "AffairsCastEntry") {}
     public:
         void* role() const { return ReadField<void*>("role"); }
-        void SetRole(void* value) const { WriteField<void*>("role", value); }
+        void role(void* value) const { WriteField<void*>("role", value); }
         int kind() const { return ReadField<int>("kind"); }
-        void SetKind(int value) const { WriteField<int>("kind", value); }
+        void kind(int value) const { WriteField<int>("kind", value); }
         int id() const { return ReadField<int>("id"); }
-        void SetId(int value) const { WriteField<int>("id", value); }
+        void id(int value) const { WriteField<int>("id", value); }
         void* name() const { return ReadField<void*>("name"); }
-        void SetName(void* value) const { WriteField<void*>("name", value); }
+        void name(void* value) const { WriteField<void*>("name", value); }
         int bornTick() const { return ReadField<int>("bornTick"); }
-        void SetBornTick(int value) const { WriteField<int>("bornTick", value); }
+        void bornTick(int value) const { WriteField<int>("bornTick", value); }
         void* color() const { return ReadField<void*>("color"); }
-        void SetColor(void* value) const { WriteField<void*>("color", value); }
+        void color(void* value) const { WriteField<void*>("color", value); }
     };
 }

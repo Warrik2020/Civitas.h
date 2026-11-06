@@ -12,6 +12,6 @@ namespace CivitasPoly::Map::Rendering::Lens
             : ManagedType(api, object, "CivitasPoly.Map.Rendering.Lens", "MapLens") {}
     public:
         bool FlipMask() const { return ReadStaticField<bool>("FlipMask"); }
-        void SetFlipMask(bool value) const { WriteStaticField<bool>("FlipMask", value); }
+        void FlipMask(bool value) const { WriteStaticField<bool>("FlipMask", value); }
     };
 }

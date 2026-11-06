@@ -11,9 +11,9 @@ namespace CivitasPoly::Nations::Internals
         explicit IrredentismSystem(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "IrredentismSystem") {}
     public:
-        float OpinionMalus(int a, int b, void* cfg) const { void* args[] = { &a, &b, cfg }; return CallStaticValue<float>("OpinionMalus", args, 3); }
-        void Pass(void* mgr, void* ctx, void* politics) const { void* args[] = { mgr, &ctx, politics }; CallStatic("Pass", args, 3); }
-        void OnDemandRefused(void* p, void* mgr, void* ctx) const { void* args[] = { p, mgr, &ctx }; CallStatic("OnDemandRefused", args, 3); }
-        bool CedeClaimedState(void* p, void* mgr, void* ctx, void* politics) const { void* args[] = { p, mgr, &ctx, politics }; return CallStaticValue<bool>("CedeClaimedState", args, 4); }
+        float OpinionMalus(int a, int b, void* cfg) const { void* __callArgs[] = { &a, &b, cfg }; return CallStaticValue<float>("OpinionMalus", __callArgs, 3); }
+        void Pass(void* mgr, void* ctx, void* politics) const { void* __callArgs[] = { mgr, &ctx, politics }; CallStatic("Pass", __callArgs, 3); }
+        void OnDemandRefused(void* p, void* mgr, void* ctx) const { void* __callArgs[] = { p, mgr, &ctx }; CallStatic("OnDemandRefused", __callArgs, 3); }
+        bool CedeClaimedState(void* p, void* mgr, void* ctx, void* politics) const { void* __callArgs[] = { p, mgr, &ctx, politics }; return CallStaticValue<bool>("CedeClaimedState", __callArgs, 4); }
     };
 }

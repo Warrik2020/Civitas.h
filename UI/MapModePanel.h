@@ -12,8 +12,7 @@ namespace CivitasPoly::UI
             : ManagedType(api, object, "CivitasPoly.UI", "MapModePanel") {}
     public:
         void OpenAtRight() const { Call("OpenAtRight", nullptr, 0); }
-        void Open(float anchorX) const { void* args[] = { &anchorX }; Call("Open", args, 1); }
+        void Open(float anchorX) const { void* __callArgs[] = { &anchorX }; Call("Open", __callArgs, 1); }
         void Close() const { Call("Close", nullptr, 0); }
-        void* Next() const { return Call("Next", nullptr, 0); }
     };
 }

@@ -12,30 +12,30 @@ namespace CivitasPoly::Nations::Nobility
             : ManagedType(api, object, "CivitasPoly.Nations.Nobility", "NobleOpinionTerms") {}
     public:
         float land() const { return ReadField<float>("land"); }
-        void SetLand(float value) const { WriteField<float>("land", value); }
+        void land(float value) const { WriteField<float>("land", value); }
         float demesne() const { return ReadField<float>("demesne"); }
-        void SetDemesne(float value) const { WriteField<float>("demesne", value); }
+        void demesne(float value) const { WriteField<float>("demesne", value); }
         float revoked() const { return ReadField<float>("revoked"); }
-        void SetRevoked(float value) const { WriteField<float>("revoked", value); }
+        void revoked(float value) const { WriteField<float>("revoked", value); }
         float alarm() const { return ReadField<float>("alarm"); }
-        void SetAlarm(float value) const { WriteField<float>("alarm", value); }
+        void alarm(float value) const { WriteField<float>("alarm", value); }
         float gifts() const { return ReadField<float>("gifts"); }
-        void SetGifts(float value) const { WriteField<float>("gifts", value); }
+        void gifts(float value) const { WriteField<float>("gifts", value); }
         float honours() const { return ReadField<float>("honours"); }
-        void SetHonours(float value) const { WriteField<float>("honours", value); }
+        void honours(float value) const { WriteField<float>("honours", value); }
         float tax() const { return ReadField<float>("tax"); }
-        void SetTax(float value) const { WriteField<float>("tax", value); }
+        void tax(float value) const { WriteField<float>("tax", value); }
         float levies() const { return ReadField<float>("levies"); }
-        void SetLevies(float value) const { WriteField<float>("levies", value); }
+        void levies(float value) const { WriteField<float>("levies", value); }
         float war() const { return ReadField<float>("war"); }
-        void SetWar(float value) const { WriteField<float>("war", value); }
+        void war(float value) const { WriteField<float>("war", value); }
         float ruler() const { return ReadField<float>("ruler"); }
-        void SetRuler(float value) const { WriteField<float>("ruler", value); }
+        void ruler(float value) const { WriteField<float>("ruler", value); }
         float ambition() const { return ReadField<float>("ambition"); }
-        void SetAmbition(float value) const { WriteField<float>("ambition", value); }
+        void ambition(float value) const { WriteField<float>("ambition", value); }
         float demandsMet() const { return ReadField<float>("demandsMet"); }
-        void SetDemandsMet(float value) const { WriteField<float>("demandsMet", value); }
+        void demandsMet(float value) const { WriteField<float>("demandsMet", value); }
         float demandsRefused() const { return ReadField<float>("demandsRefused"); }
-        void SetDemandsRefused(float value) const { WriteField<float>("demandsRefused", value); }
+        void demandsRefused(float value) const { WriteField<float>("demandsRefused", value); }
     };
 }

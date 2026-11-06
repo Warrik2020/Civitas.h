@@ -11,7 +11,7 @@ namespace CivitasPoly::Nations::Military::Command
         explicit ThreatField(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Command", "ThreatField") {}
     public:
-        float At(void* p, void* mil, void* buckets, void* cfg, int tick) const { void* args[] = { p, mil, buckets, cfg, &tick }; return CallStaticValue<float>("At", args, 5); }
+        float At(void* p, void* mil, void* buckets, void* cfg, int tick) const { void* __callArgs[] = { p, mil, buckets, cfg, &tick }; return CallStaticValue<float>("At", __callArgs, 5); }
         float RadiusTiles() const { return ReadStaticField<float>("RadiusTiles"); }
     };
 }

@@ -12,6 +12,6 @@ namespace CivitasPoly::Scenario
             : ManagedType(api, object, "CivitasPoly.Scenario", "ResourceSave") {}
     public:
         void* Capture() const { return CallStatic("Capture", nullptr, 0); }
-        void Apply(void* s, void* grid) const { void* args[] = { s, grid }; CallStatic("Apply", args, 2); }
+        void Apply(void* s, void* grid) const { void* __callArgs[] = { s, grid }; CallStatic("Apply", __callArgs, 2); }
     };
 }

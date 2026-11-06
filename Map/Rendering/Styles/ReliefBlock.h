@@ -12,6 +12,6 @@ namespace CivitasPoly::Map::Rendering::Styles
             : ManagedType(api, object, "CivitasPoly.Map.Rendering.Styles", "ReliefBlock") {}
     public:
         float gain() const { return ReadField<float>("gain"); }
-        void SetGain(float value) const { WriteField<float>("gain", value); }
+        void gain(float value) const { WriteField<float>("gain", value); }
     };
 }

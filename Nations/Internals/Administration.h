@@ -11,10 +11,10 @@ namespace CivitasPoly::Nations::Internals
         explicit Administration(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "Administration") {}
     public:
-        float SoftCapTiles(void* cfg) const { void* args[] = { cfg }; return CallStaticValue<float>("SoftCapTiles", args, 1); }
-        float SizeMultiplier(int tileCount, void* cfg) const { void* args[] = { &tileCount, cfg }; return CallStaticValue<float>("SizeMultiplier", args, 2); }
-        void SyncHomelands(void* it, void* tallyByOriginPlus2, void* touchedOrigins, int tick) const { void* args[] = { it, tallyByOriginPlus2, touchedOrigins, &tick }; CallStatic("SyncHomelands", args, 4); }
+        float SoftCapTiles(void* cfg) const { void* __callArgs[] = { cfg }; return CallStaticValue<float>("SoftCapTiles", __callArgs, 1); }
+        float SizeMultiplier(int tileCount, void* cfg) const { void* __callArgs[] = { &tileCount, cfg }; return CallStaticValue<float>("SizeMultiplier", __callArgs, 2); }
+        void SyncHomelands(void* it, void* tallyByOriginPlus2, void* touchedOrigins, int tick) const { void* __callArgs[] = { it, tallyByOriginPlus2, touchedOrigins, &tick }; CallStatic("SyncHomelands", __callArgs, 4); }
         int WorldLandTiles() const { return ReadStaticField<int>("WorldLandTiles"); }
-        void SetWorldLandTiles(int value) const { WriteStaticField<int>("WorldLandTiles", value); }
+        void WorldLandTiles(int value) const { WriteStaticField<int>("WorldLandTiles", value); }
     };
 }

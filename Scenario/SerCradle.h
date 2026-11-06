@@ -12,12 +12,12 @@ namespace CivitasPoly::Scenario
             : ManagedType(api, object, "CivitasPoly.Scenario", "SerCradle") {}
     public:
         int axis() const { return ReadField<int>("axis"); }
-        void SetAxis(int value) const { WriteField<int>("axis", value); }
+        void axis(int value) const { WriteField<int>("axis", value); }
         int group() const { return ReadField<int>("group"); }
-        void SetGroup(int value) const { WriteField<int>("group", value); }
+        void group(int value) const { WriteField<int>("group", value); }
         int until() const { return ReadField<int>("until"); }
-        void SetUntil(int value) const { WriteField<int>("until", value); }
+        void until(int value) const { WriteField<int>("until", value); }
         void* tileGaps() const { return ReadField<void*>("tileGaps"); }
-        void SetTileGaps(void* value) const { WriteField<void*>("tileGaps", value); }
+        void tileGaps(void* value) const { WriteField<void*>("tileGaps", value); }
     };
 }

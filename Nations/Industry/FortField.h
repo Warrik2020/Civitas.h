@@ -11,10 +11,10 @@ namespace CivitasPoly::Nations::Industry
         explicit FortField(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Industry", "FortField") {}
     public:
-        uint8_t LevelUnder(void* d) const { void* args[] = { d }; return CallStaticValue<uint8_t>("LevelUnder", args, 1); }
+        uint8_t LevelUnder(void* d) const { void* __callArgs[] = { d }; return CallStaticValue<uint8_t>("LevelUnder", __callArgs, 1); }
         void* Level() const { return ReadStaticField<void*>("Level"); }
-        void SetLevel(void* value) const { WriteStaticField<void*>("Level", value); }
+        void Level(void* value) const { WriteStaticField<void*>("Level", value); }
         void* Grid() const { return ReadStaticField<void*>("Grid"); }
-        void SetGrid(void* value) const { WriteStaticField<void*>("Grid", value); }
+        void Grid(void* value) const { WriteStaticField<void*>("Grid", value); }
     };
 }

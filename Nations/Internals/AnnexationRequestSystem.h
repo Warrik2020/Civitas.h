@@ -11,9 +11,9 @@ namespace CivitasPoly::Nations::Internals
         explicit AnnexationRequestSystem(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "AnnexationRequestSystem") {}
     public:
-        bool Validate(int askerId, int targetId, void* mgr, void* ctx) const { void* args[] = { &askerId, &targetId, mgr, &ctx }; return CallStaticValue<bool>("Validate", args, 4); }
-        float AcceptanceChance(int askerId, int targetId, void* mgr, void* ctx) const { void* args[] = { &askerId, &targetId, mgr, &ctx }; return CallStaticValue<float>("AcceptanceChance", args, 4); }
-        void Execute(int askerId, int targetId, void* mgr, void* ctx) const { void* args[] = { &askerId, &targetId, mgr, &ctx }; CallStatic("Execute", args, 4); }
+        bool Validate(int askerId, int targetId, void* mgr, void* ctx) const { void* __callArgs[] = { &askerId, &targetId, mgr, &ctx }; return CallStaticValue<bool>("Validate", __callArgs, 4); }
+        float AcceptanceChance(int askerId, int targetId, void* mgr, void* ctx) const { void* __callArgs[] = { &askerId, &targetId, mgr, &ctx }; return CallStaticValue<float>("AcceptanceChance", __callArgs, 4); }
+        void Execute(int askerId, int targetId, void* mgr, void* ctx) const { void* __callArgs[] = { &askerId, &targetId, mgr, &ctx }; CallStatic("Execute", __callArgs, 4); }
         float MinAcceptance() const { return ReadStaticField<float>("MinAcceptance"); }
     };
 }

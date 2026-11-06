@@ -12,38 +12,38 @@ namespace CivitasPoly::Nations::Identity
             : ManagedType(api, object, "CivitasPoly.Nations.Identity", "KernelChunkRecord") {}
     public:
         int chunk() const { return ReadField<int>("chunk"); }
-        void SetChunk(int value) const { WriteField<int>("chunk", value); }
+        void chunk(int value) const { WriteField<int>("chunk", value); }
         bool started() const { return ReadField<bool>("started"); }
-        void SetStarted(bool value) const { WriteField<bool>("started", value); }
+        void started(bool value) const { WriteField<bool>("started", value); }
         void* log() const { return ReadField<void*>("log"); }
-        void SetLog(void* value) const { WriteField<void*>("log", value); }
+        void log(void* value) const { WriteField<void*>("log", value); }
         int opStart() const { return ReadField<int>("opStart"); }
-        void SetOpStart(int value) const { WriteField<int>("opStart", value); }
+        void opStart(int value) const { WriteField<int>("opStart", value); }
         int opEnd() const { return ReadField<int>("opEnd"); }
-        void SetOpEnd(int value) const { WriteField<int>("opEnd", value); }
+        void opEnd(int value) const { WriteField<int>("opEnd", value); }
         int flipStart() const { return ReadField<int>("flipStart"); }
-        void SetFlipStart(int value) const { WriteField<int>("flipStart", value); }
+        void flipStart(int value) const { WriteField<int>("flipStart", value); }
         int flipEnd() const { return ReadField<int>("flipEnd"); }
-        void SetFlipEnd(int value) const { WriteField<int>("flipEnd", value); }
+        void flipEnd(int value) const { WriteField<int>("flipEnd", value); }
         int homeStart() const { return ReadField<int>("homeStart"); }
-        void SetHomeStart(int value) const { WriteField<int>("homeStart", value); }
+        void homeStart(int value) const { WriteField<int>("homeStart", value); }
         int homeEnd() const { return ReadField<int>("homeEnd"); }
-        void SetHomeEnd(int value) const { WriteField<int>("homeEnd", value); }
+        void homeEnd(int value) const { WriteField<int>("homeEnd", value); }
         int massStart() const { return ReadField<int>("massStart"); }
-        void SetMassStart(int value) const { WriteField<int>("massStart", value); }
+        void massStart(int value) const { WriteField<int>("massStart", value); }
         int massEnd() const { return ReadField<int>("massEnd"); }
-        void SetMassEnd(int value) const { WriteField<int>("massEnd", value); }
+        void massEnd(int value) const { WriteField<int>("massEnd", value); }
         int dirtyAt() const { return ReadField<int>("dirtyAt"); }
-        void SetDirtyAt(int value) const { WriteField<int>("dirtyAt", value); }
+        void dirtyAt(int value) const { WriteField<int>("dirtyAt", value); }
         int totalContactDelta() const { return ReadField<int>("totalContactDelta"); }
-        void SetTotalContactDelta(int value) const { WriteField<int>("totalContactDelta", value); }
+        void totalContactDelta(int value) const { WriteField<int>("totalContactDelta", value); }
         int events() const { return ReadField<int>("events"); }
-        void SetEvents(int value) const { WriteField<int>("events", value); }
+        void events(int value) const { WriteField<int>("events", value); }
         int flipsCounted() const { return ReadField<int>("flipsCounted"); }
-        void SetFlipsCounted(int value) const { WriteField<int>("flipsCounted", value); }
+        void flipsCounted(int value) const { WriteField<int>("flipsCounted", value); }
         int noops() const { return ReadField<int>("noops"); }
-        void SetNoops(int value) const { WriteField<int>("noops", value); }
+        void noops(int value) const { WriteField<int>("noops", value); }
         int pushEvents() const { return ReadField<int>("pushEvents"); }
-        void SetPushEvents(int value) const { WriteField<int>("pushEvents", value); }
+        void pushEvents(int value) const { WriteField<int>("pushEvents", value); }
     };
 }

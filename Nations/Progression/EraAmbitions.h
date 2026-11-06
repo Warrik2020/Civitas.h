@@ -11,11 +11,11 @@ namespace CivitasPoly::Nations::Progression
         explicit EraAmbitions(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Progression", "EraAmbitions") {}
     public:
-        void OfBand(int band, void* dst) const { void* args[] = { &band, dst }; CallStatic("OfBand", args, 2); }
-        void* Find(const char* id) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(id ? id : "") : nullptr; void* args[] = { managed_0 }; return CallStatic("Find", args, 1); }
-        void* RewardText(int r, void* it, void* cfg, float ticksPerMonth) const { void* args[] = { &r, it, cfg, &ticksPerMonth }; return CallStatic("RewardText", args, 4); }
-        float GoldReward(void* it, void* cfg, float ticksPerMonth) const { void* args[] = { it, cfg, &ticksPerMonth }; return CallStaticValue<float>("GoldReward", args, 3); }
-        void Pay(int r, void* it, void* cfg, float ticksPerMonth) const { void* args[] = { &r, it, cfg, &ticksPerMonth }; CallStatic("Pay", args, 4); }
+        void OfBand(int band, void* dst) const { void* __callArgs[] = { &band, dst }; CallStatic("OfBand", __callArgs, 2); }
+        void* Find(const char* id) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(id ? id : "") : nullptr; void* __callArgs[] = { managed_0 }; return CallStatic("Find", __callArgs, 1); }
+        void* RewardText(int r, void* it, void* cfg, float ticksPerMonth) const { void* __callArgs[] = { &r, it, cfg, &ticksPerMonth }; return CallStatic("RewardText", __callArgs, 4); }
+        float GoldReward(void* it, void* cfg, float ticksPerMonth) const { void* __callArgs[] = { it, cfg, &ticksPerMonth }; return CallStaticValue<float>("GoldReward", __callArgs, 3); }
+        void Pay(int r, void* it, void* cfg, float ticksPerMonth) const { void* __callArgs[] = { &r, it, cfg, &ticksPerMonth }; CallStatic("Pay", __callArgs, 4); }
         void* All() const { return ReadStaticField<void*>("All"); }
         int BStates() const { return ReadStaticField<int>("BStates"); }
         int BDivisions() const { return ReadStaticField<int>("BDivisions"); }

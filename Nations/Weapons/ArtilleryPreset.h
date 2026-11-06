@@ -12,18 +12,18 @@ namespace CivitasPoly::Nations::Weapons
             : ManagedType(api, object, "CivitasPoly.Nations.Weapons", "ArtilleryPreset") {}
     public:
         void* key() const { return ReadField<void*>("key"); }
-        void SetKey(void* value) const { WriteField<void*>("key", value); }
+        void key(void* value) const { WriteField<void*>("key", value); }
         void* name() const { return ReadField<void*>("name"); }
-        void SetName(void* value) const { WriteField<void*>("name", value); }
+        void name(void* value) const { WriteField<void*>("name", value); }
         int kind() const { return ReadField<int>("kind"); }
-        void SetKind(int value) const { WriteField<int>("kind", value); }
+        void kind(int value) const { WriteField<int>("kind", value); }
         void* template_() const { return ReadField<void*>("template"); }
-        void SetTemplate(void* value) const { WriteField<void*>("template", value); }
+        void template_(void* value) const { WriteField<void*>("template", value); }
         float dueYear() const { return ReadField<float>("dueYear"); }
-        void SetDueYear(float value) const { WriteField<float>("dueYear", value); }
+        void dueYear(float value) const { WriteField<float>("dueYear", value); }
         float score() const { return ReadField<float>("score"); }
-        void SetScore(float value) const { WriteField<float>("score", value); }
+        void score(float value) const { WriteField<float>("score", value); }
         float complexity() const { return ReadField<float>("complexity"); }
-        void SetComplexity(float value) const { WriteField<float>("complexity", value); }
+        void complexity(float value) const { WriteField<float>("complexity", value); }
     };
 }

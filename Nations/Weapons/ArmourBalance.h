@@ -11,14 +11,14 @@ namespace CivitasPoly::Nations::Weapons
         explicit ArmourBalance(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Weapons", "ArmourBalance") {}
     public:
-        bool CoversFront(int k) const { void* args[] = { &k }; return CallStaticValue<bool>("CoversFront", args, 1); }
-        bool CoversRear(int k, int c) const { void* args[] = { &k, &c }; return CallStaticValue<bool>("CoversRear", args, 2); }
-        float SeeThrough(int m) const { void* args[] = { &m }; return CallStaticValue<float>("SeeThrough", args, 1); }
-        bool IsLoad(int k) const { void* args[] = { &k }; return CallStaticValue<bool>("IsLoad", args, 1); }
-        float Articulation(int k) const { void* args[] = { &k }; return CallStaticValue<float>("Articulation", args, 1); }
-        float MaterialStiffness(int m) const { void* args[] = { &m }; return CallStaticValue<float>("MaterialStiffness", args, 1); }
-        float WrapFactor(int k) const { void* args[] = { &k }; return CallStaticValue<float>("WrapFactor", args, 1); }
-        void ThreatMix(float year, void* into) const { void* args[] = { &year, into }; CallStatic("ThreatMix", args, 2); }
+        bool CoversFront(int k) const { void* __callArgs[] = { &k }; return CallStaticValue<bool>("CoversFront", __callArgs, 1); }
+        bool CoversRear(int k, int c) const { void* __callArgs[] = { &k, &c }; return CallStaticValue<bool>("CoversRear", __callArgs, 2); }
+        float SeeThrough(int m) const { void* __callArgs[] = { &m }; return CallStaticValue<float>("SeeThrough", __callArgs, 1); }
+        bool IsLoad(int k) const { void* __callArgs[] = { &k }; return CallStaticValue<bool>("IsLoad", __callArgs, 1); }
+        float Articulation(int k) const { void* __callArgs[] = { &k }; return CallStaticValue<float>("Articulation", __callArgs, 1); }
+        float MaterialStiffness(int m) const { void* __callArgs[] = { &m }; return CallStaticValue<float>("MaterialStiffness", __callArgs, 1); }
+        float WrapFactor(int k) const { void* __callArgs[] = { &k }; return CallStaticValue<float>("WrapFactor", __callArgs, 1); }
+        void ThreatMix(float year, void* into) const { void* __callArgs[] = { &year, into }; CallStatic("ThreatMix", __callArgs, 2); }
         void Check() const { CallStatic("Check", nullptr, 0); }
         int ThreatCount() const { return ReadStaticField<int>("ThreatCount"); }
         float MannequinHeight() const { return ReadStaticField<float>("MannequinHeight"); }

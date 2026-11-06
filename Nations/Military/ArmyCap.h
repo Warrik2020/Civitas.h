@@ -11,7 +11,7 @@ namespace CivitasPoly::Nations::Military
         explicit ArmyCap(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military", "ArmyCap") {}
     public:
-        void Refresh(void* mil, void* it, void* cfg, void* diff) const { void* args[] = { mil, it, cfg, diff }; CallStatic("Refresh", args, 4); }
-        float BorderDemand(float slots, void* cfg) const { void* args[] = { &slots, cfg }; return CallStaticValue<float>("BorderDemand", args, 2); }
+        void Refresh(void* mil, void* it, void* cfg, void* diff) const { void* __callArgs[] = { mil, it, cfg, diff }; CallStatic("Refresh", __callArgs, 4); }
+        float BorderDemand(float slots, void* cfg) const { void* __callArgs[] = { &slots, cfg }; return CallStaticValue<float>("BorderDemand", __callArgs, 2); }
     };
 }

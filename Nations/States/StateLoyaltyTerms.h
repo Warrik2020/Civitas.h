@@ -12,36 +12,36 @@ namespace CivitasPoly::Nations::States
             : ManagedType(api, object, "CivitasPoly.Nations.States", "StateLoyaltyTerms") {}
     public:
         float foreignPeople() const { return ReadField<float>("foreignPeople"); }
-        void SetForeignPeople(float value) const { WriteField<float>("foreignPeople", value); }
+        void foreignPeople(float value) const { WriteField<float>("foreignPeople", value); }
         float standing() const { return ReadField<float>("standing"); }
-        void SetStanding(float value) const { WriteField<float>("standing", value); }
+        void standing(float value) const { WriteField<float>("standing", value); }
         float unsettled() const { return ReadField<float>("unsettled"); }
-        void SetUnsettled(float value) const { WriteField<float>("unsettled", value); }
+        void unsettled(float value) const { WriteField<float>("unsettled", value); }
         float taxPressure() const { return ReadField<float>("taxPressure"); }
-        void SetTaxPressure(float value) const { WriteField<float>("taxPressure", value); }
+        void taxPressure(float value) const { WriteField<float>("taxPressure", value); }
         float lordAmbition() const { return ReadField<float>("lordAmbition"); }
-        void SetLordAmbition(float value) const { WriteField<float>("lordAmbition", value); }
+        void lordAmbition(float value) const { WriteField<float>("lordAmbition", value); }
         float tightening() const { return ReadField<float>("tightening"); }
-        void SetTightening(float value) const { WriteField<float>("tightening", value); }
+        void tightening(float value) const { WriteField<float>("tightening", value); }
         float borderWar() const { return ReadField<float>("borderWar"); }
-        void SetBorderWar(float value) const { WriteField<float>("borderWar", value); }
+        void borderWar(float value) const { WriteField<float>("borderWar", value); }
         float unhappiness() const { return ReadField<float>("unhappiness"); }
-        void SetUnhappiness(float value) const { WriteField<float>("unhappiness", value); }
+        void unhappiness(float value) const { WriteField<float>("unhappiness", value); }
         float treasury() const { return ReadField<float>("treasury"); }
-        void SetTreasury(float value) const { WriteField<float>("treasury", value); }
+        void treasury(float value) const { WriteField<float>("treasury", value); }
         float welfare() const { return ReadField<float>("welfare"); }
-        void SetWelfare(float value) const { WriteField<float>("welfare", value); }
+        void welfare(float value) const { WriteField<float>("welfare", value); }
         float faith() const { return ReadField<float>("faith"); }
-        void SetFaith(float value) const { WriteField<float>("faith", value); }
+        void faith(float value) const { WriteField<float>("faith", value); }
         float levies() const { return ReadField<float>("levies"); }
-        void SetLevies(float value) const { WriteField<float>("levies", value); }
+        void levies(float value) const { WriteField<float>("levies", value); }
         float polity() const { return ReadField<float>("polity"); }
-        void SetPolity(float value) const { WriteField<float>("polity", value); }
+        void polity(float value) const { WriteField<float>("polity", value); }
         float warWeariness() const { return ReadField<float>("warWeariness"); }
-        void SetWarWeariness(float value) const { WriteField<float>("warWeariness", value); }
+        void warWeariness(float value) const { WriteField<float>("warWeariness", value); }
         float nobles() const { return ReadField<float>("nobles"); }
-        void SetNobles(float value) const { WriteField<float>("nobles", value); }
+        void nobles(float value) const { WriteField<float>("nobles", value); }
         float occupation() const { return ReadField<float>("occupation"); }
-        void SetOccupation(float value) const { WriteField<float>("occupation", value); }
+        void occupation(float value) const { WriteField<float>("occupation", value); }
     };
 }

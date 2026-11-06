@@ -11,9 +11,9 @@ namespace CivitasPoly::Nations::MapModes
         explicit IdentityFillPainter(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.MapModes", "IdentityFillPainter") {}
     public:
-        void Repaint(int axis) const { void* args[] = { &axis }; Call("Repaint", args, 1); }
-        void DiscardDirty(int axis) const { void* args[] = { &axis }; Call("DiscardDirty", args, 1); }
+        void Repaint(int axis) const { void* __callArgs[] = { &axis }; Call("Repaint", __callArgs, 1); }
+        void DiscardDirty(int axis) const { void* __callArgs[] = { &axis }; Call("DiscardDirty", __callArgs, 1); }
         bool LogDrip() const { return ReadStaticField<bool>("LogDrip"); }
-        void SetLogDrip(bool value) const { WriteStaticField<bool>("LogDrip", value); }
+        void LogDrip(bool value) const { WriteStaticField<bool>("LogDrip", value); }
     };
 }

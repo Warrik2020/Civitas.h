@@ -12,66 +12,66 @@ namespace CivitasPoly::Nations::Labels
             : ManagedType(api, object, "CivitasPoly.Nations.Labels", "NationLabelConfig") {}
     public:
         float spineFillFraction() const { return ReadField<float>("spineFillFraction"); }
-        void SetSpineFillFraction(float value) const { WriteField<float>("spineFillFraction", value); }
+        void spineFillFraction(float value) const { WriteField<float>("spineFillFraction", value); }
         float heightMargin() const { return ReadField<float>("heightMargin"); }
-        void SetHeightMargin(float value) const { WriteField<float>("heightMargin", value); }
+        void heightMargin(float value) const { WriteField<float>("heightMargin", value); }
         float spillMultiple() const { return ReadField<float>("spillMultiple"); }
-        void SetSpillMultiple(float value) const { WriteField<float>("spillMultiple", value); }
+        void spillMultiple(float value) const { WriteField<float>("spillMultiple", value); }
         int maxSpineSlices() const { return ReadField<int>("maxSpineSlices"); }
-        void SetMaxSpineSlices(int value) const { WriteField<int>("maxSpineSlices", value); }
+        void maxSpineSlices(int value) const { WriteField<int>("maxSpineSlices", value); }
         float labelBridgeGapPx() const { return ReadField<float>("labelBridgeGapPx"); }
-        void SetLabelBridgeGapPx(float value) const { WriteField<float>("labelBridgeGapPx", value); }
+        void labelBridgeGapPx(float value) const { WriteField<float>("labelBridgeGapPx", value); }
         int maxNamesPerNation() const { return ReadField<int>("maxNamesPerNation"); }
-        void SetMaxNamesPerNation(int value) const { WriteField<int>("maxNamesPerNation", value); }
+        void maxNamesPerNation(int value) const { WriteField<int>("maxNamesPerNation", value); }
         float minLabelAreaFraction() const { return ReadField<float>("minLabelAreaFraction"); }
-        void SetMinLabelAreaFraction(float value) const { WriteField<float>("minLabelAreaFraction", value); }
+        void minLabelAreaFraction(float value) const { WriteField<float>("minLabelAreaFraction", value); }
         float minNamedMapShare() const { return ReadField<float>("minNamedMapShare"); }
-        void SetMinNamedMapShare(float value) const { WriteField<float>("minNamedMapShare", value); }
+        void minNamedMapShare(float value) const { WriteField<float>("minNamedMapShare", value); }
         float curveStrength() const { return ReadField<float>("curveStrength"); }
-        void SetCurveStrength(float value) const { WriteField<float>("curveStrength", value); }
+        void curveStrength(float value) const { WriteField<float>("curveStrength", value); }
         float minTextHeightWorld() const { return ReadField<float>("minTextHeightWorld"); }
-        void SetMinTextHeightWorld(float value) const { WriteField<float>("minTextHeightWorld", value); }
+        void minTextHeightWorld(float value) const { WriteField<float>("minTextHeightWorld", value); }
         float refitGrowthFraction() const { return ReadField<float>("refitGrowthFraction"); }
-        void SetRefitGrowthFraction(float value) const { WriteField<float>("refitGrowthFraction", value); }
+        void refitGrowthFraction(float value) const { WriteField<float>("refitGrowthFraction", value); }
         int refitMinClaims() const { return ReadField<int>("refitMinClaims"); }
-        void SetRefitMinClaims(int value) const { WriteField<int>("refitMinClaims", value); }
+        void refitMinClaims(int value) const { WriteField<int>("refitMinClaims", value); }
         float refitInterval() const { return ReadField<float>("refitInterval"); }
-        void SetRefitInterval(float value) const { WriteField<float>("refitInterval", value); }
+        void refitInterval(float value) const { WriteField<float>("refitInterval", value); }
         float refitRetryInterval() const { return ReadField<float>("refitRetryInterval"); }
-        void SetRefitRetryInterval(float value) const { WriteField<float>("refitRetryInterval", value); }
+        void refitRetryInterval(float value) const { WriteField<float>("refitRetryInterval", value); }
         int refitsPerFrame() const { return ReadField<int>("refitsPerFrame"); }
-        void SetRefitsPerFrame(int value) const { WriteField<int>("refitsPerFrame", value); }
+        void refitsPerFrame(int value) const { WriteField<int>("refitsPerFrame", value); }
         float labelZ() const { return ReadField<float>("labelZ"); }
-        void SetLabelZ(float value) const { WriteField<float>("labelZ", value); }
+        void labelZ(float value) const { WriteField<float>("labelZ", value); }
         bool uppercase() const { return ReadField<bool>("uppercase"); }
-        void SetUppercase(bool value) const { WriteField<bool>("uppercase", value); }
+        void uppercase(bool value) const { WriteField<bool>("uppercase", value); }
         bool tintTextWithNationColor() const { return ReadField<bool>("tintTextWithNationColor"); }
-        void SetTintTextWithNationColor(bool value) const { WriteField<bool>("tintTextWithNationColor", value); }
+        void tintTextWithNationColor(bool value) const { WriteField<bool>("tintTextWithNationColor", value); }
         float tintMinBrightness() const { return ReadField<float>("tintMinBrightness"); }
-        void SetTintMinBrightness(float value) const { WriteField<float>("tintMinBrightness", value); }
+        void tintMinBrightness(float value) const { WriteField<float>("tintMinBrightness", value); }
         float tintMinContrast() const { return ReadField<float>("tintMinContrast"); }
-        void SetTintMinContrast(float value) const { WriteField<float>("tintMinContrast", value); }
+        void tintMinContrast(float value) const { WriteField<float>("tintMinContrast", value); }
         void* textColor() const { return ReadField<void*>("textColor"); }
-        void SetTextColor(void* value) const { WriteField<void*>("textColor", value); }
+        void textColor(void* value) const { WriteField<void*>("textColor", value); }
         float outlineWidth() const { return ReadField<float>("outlineWidth"); }
-        void SetOutlineWidth(float value) const { WriteField<float>("outlineWidth", value); }
+        void outlineWidth(float value) const { WriteField<float>("outlineWidth", value); }
         bool outlineUsesNationColor() const { return ReadField<bool>("outlineUsesNationColor"); }
-        void SetOutlineUsesNationColor(bool value) const { WriteField<bool>("outlineUsesNationColor", value); }
+        void outlineUsesNationColor(bool value) const { WriteField<bool>("outlineUsesNationColor", value); }
         void* outlineColor() const { return ReadField<void*>("outlineColor"); }
-        void SetOutlineColor(void* value) const { WriteField<void*>("outlineColor", value); }
+        void outlineColor(void* value) const { WriteField<void*>("outlineColor", value); }
         float dropShadowStrength() const { return ReadField<float>("dropShadowStrength"); }
-        void SetDropShadowStrength(float value) const { WriteField<float>("dropShadowStrength", value); }
+        void dropShadowStrength(float value) const { WriteField<float>("dropShadowStrength", value); }
         void* shadowColor() const { return ReadField<void*>("shadowColor"); }
-        void SetShadowColor(void* value) const { WriteField<void*>("shadowColor", value); }
+        void shadowColor(void* value) const { WriteField<void*>("shadowColor", value); }
         void* dropShadowOffset() const { return ReadField<void*>("dropShadowOffset"); }
-        void SetDropShadowOffset(void* value) const { WriteField<void*>("dropShadowOffset", value); }
+        void dropShadowOffset(void* value) const { WriteField<void*>("dropShadowOffset", value); }
         float dropShadowSoftness() const { return ReadField<float>("dropShadowSoftness"); }
-        void SetDropShadowSoftness(float value) const { WriteField<float>("dropShadowSoftness", value); }
+        void dropShadowSoftness(float value) const { WriteField<float>("dropShadowSoftness", value); }
         float fadeBelowScreenHeight() const { return ReadField<float>("fadeBelowScreenHeight"); }
-        void SetFadeBelowScreenHeight(float value) const { WriteField<float>("fadeBelowScreenHeight", value); }
+        void fadeBelowScreenHeight(float value) const { WriteField<float>("fadeBelowScreenHeight", value); }
         float fadeOutAboveTilePx() const { return ReadField<float>("fadeOutAboveTilePx"); }
-        void SetFadeOutAboveTilePx(float value) const { WriteField<float>("fadeOutAboveTilePx", value); }
+        void fadeOutAboveTilePx(float value) const { WriteField<float>("fadeOutAboveTilePx", value); }
         float hideAboveTilePx() const { return ReadField<float>("hideAboveTilePx"); }
-        void SetHideAboveTilePx(float value) const { WriteField<float>("hideAboveTilePx", value); }
+        void hideAboveTilePx(float value) const { WriteField<float>("hideAboveTilePx", value); }
     };
 }

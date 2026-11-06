@@ -11,6 +11,6 @@ namespace CivitasPoly::Scenario
         explicit ScenarioLoader(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Scenario", "ScenarioLoader") {}
     public:
-        void* ApplyAfterFounding(void* dto, void* nations, void* internals, void* cities, void* industry, void* forts, void* military, bool statesRerolled = false) const { void* args[] = { dto, nations, internals, cities, industry, forts, military, &statesRerolled }; return CallStatic("ApplyAfterFounding", args, 8); }
+        void* ApplyAfterFounding(void* dto, void* nations, void* internals, void* cities, void* industry, void* forts, void* military, bool statesRerolled = false) const { void* __callArgs[] = { dto, nations, internals, cities, industry, forts, military, &statesRerolled }; return CallStatic("ApplyAfterFounding", __callArgs, 8); }
     };
 }

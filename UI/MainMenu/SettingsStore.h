@@ -13,7 +13,7 @@ namespace CivitasPoly::UI::MainMenu
     public:
         void ResetToDefaults() const { CallStatic("ResetToDefaults", nullptr, 0); }
         void ApplyToWorld() const { CallStatic("ApplyToWorld", nullptr, 0); }
-        void ApplyBattleSounds(void* cfg) const { void* args[] = { cfg }; CallStatic("ApplyBattleSounds", args, 1); }
+        void ApplyBattleSounds(void* cfg) const { void* __callArgs[] = { cfg }; CallStatic("ApplyBattleSounds", __callArgs, 1); }
         float DefaultMusicVolume() const { return ReadStaticField<float>("DefaultMusicVolume"); }
         float DefaultUiAudioVolume() const { return ReadStaticField<float>("DefaultUiAudioVolume"); }
         float DefaultWarAudioVolume() const { return ReadStaticField<float>("DefaultWarAudioVolume"); }

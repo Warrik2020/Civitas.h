@@ -11,11 +11,7 @@ namespace CivitasPoly::Platform
         explicit WorkshopLinks(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Platform", "WorkshopLinks") {}
     public:
-        uint64_t Get(const char* slug) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(slug ? slug : "") : nullptr; void* args[] = { managed_0 }; return CallStaticValue<uint64_t>("Get", args, 1); }
-        void Set(const char* slug, uint64_t fileId) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(slug ? slug : "") : nullptr; void* args[] = { managed_0, &fileId }; CallStatic("Set", args, 2); }
-        void* slugs() const { return ReadField<void*>("slugs"); }
-        void SetSlugs(void* value) const { WriteField<void*>("slugs", value); }
-        void* ids() const { return ReadField<void*>("ids"); }
-        void SetIds(void* value) const { WriteField<void*>("ids", value); }
+        uint64_t Get(const char* slug) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(slug ? slug : "") : nullptr; void* __callArgs[] = { managed_0 }; return CallStaticValue<uint64_t>("Get", __callArgs, 1); }
+        void Set(const char* slug, uint64_t fileId) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(slug ? slug : "") : nullptr; void* __callArgs[] = { managed_0, &fileId }; CallStatic("Set", __callArgs, 2); }
     };
 }

@@ -11,6 +11,6 @@ namespace CivitasPoly::Nations::Military::Rendering
         explicit DivisionRenderMotion(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Rendering", "DivisionRenderMotion") {}
     public:
-        bool Advance(void* militaries, void* cfg, float dt, bool resumed) const { void* args[] = { militaries, cfg, &dt, &resumed }; return CallStaticValue<bool>("Advance", args, 4); }
+        bool Advance(void* militaries, void* cfg, float dt, bool resumed) const { void* __callArgs[] = { militaries, cfg, &dt, &resumed }; return CallStaticValue<bool>("Advance", __callArgs, 4); }
     };
 }

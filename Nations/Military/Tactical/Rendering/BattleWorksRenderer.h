@@ -13,6 +13,6 @@ namespace CivitasPoly::Nations::Military::Tactical::Rendering
     public:
         void Dispose() const { Call("Dispose", nullptr, 0); }
         void Hide() const { Call("Hide", nullptr, 0); }
-        void Draw(void* arenaToWorld, float pxPerTile, float z) const { void* args[] = { arenaToWorld, &pxPerTile, &z }; Call("Draw", args, 3); }
+        void Draw(void* arenaToWorld, float pxPerTile, float z) const { void* __callArgs[] = { arenaToWorld, &pxPerTile, &z }; Call("Draw", __callArgs, 3); }
     };
 }

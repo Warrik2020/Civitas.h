@@ -11,7 +11,7 @@ namespace CivitasPoly::UI::TimeSkip
         explicit LineChartMath(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.TimeSkip", "LineChartMath") {}
     public:
-        void Range(void* values, float baseline, float& min, float& max) const { void* args[] = { values, &baseline, &min, &max }; CallStatic("Range", args, 4); }
-        float Map(float v, float min, float max) const { void* args[] = { &v, &min, &max }; return CallStaticValue<float>("Map", args, 3); }
+        void Range(void* values, float baseline, float& min_, float& max_) const { void* __callArgs[] = { values, &baseline, &min_, &max_ }; CallStatic("Range", __callArgs, 4); }
+        float Map(float v, float min_, float max_) const { void* __callArgs[] = { &v, &min_, &max_ }; return CallStaticValue<float>("Map", __callArgs, 3); }
     };
 }

@@ -11,6 +11,6 @@ namespace CivitasPoly::Nations::Weapons
         explicit ArmourLegacyRemap(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Weapons", "ArmourLegacyRemap") {}
     public:
-        void Remap(void* d) const { void* args[] = { d }; CallStatic("Remap", args, 1); }
+        void Remap(void* d) const { void* __callArgs[] = { d }; CallStatic("Remap", __callArgs, 1); }
     };
 }

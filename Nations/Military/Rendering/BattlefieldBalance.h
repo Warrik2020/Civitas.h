@@ -11,11 +11,11 @@ namespace CivitasPoly::Nations::Military::Rendering
         explicit BattlefieldBalance(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Rendering", "BattlefieldBalance") {}
     public:
-        float KmAcross(float tilePx) const { void* args[] = { &tilePx }; return CallStaticValue<float>("KmAcross", args, 1); }
-        float DivisionGraphicsAlpha(float tilePx) const { void* args[] = { &tilePx }; return CallStaticValue<float>("DivisionGraphicsAlpha", args, 1); }
-        float BorderYield(float tilePx) const { void* args[] = { &tilePx }; return CallStaticValue<float>("BorderYield", args, 1); }
-        float CityYield(float tilePx) const { void* args[] = { &tilePx }; return CallStaticValue<float>("CityYield", args, 1); }
-        float FxFineness(float tilePx) const { void* args[] = { &tilePx }; return CallStaticValue<float>("FxFineness", args, 1); }
+        float KmAcross(float tilePx) const { void* __callArgs[] = { &tilePx }; return CallStaticValue<float>("KmAcross", __callArgs, 1); }
+        float DivisionGraphicsAlpha(float tilePx) const { void* __callArgs[] = { &tilePx }; return CallStaticValue<float>("DivisionGraphicsAlpha", __callArgs, 1); }
+        float BorderYield(float tilePx) const { void* __callArgs[] = { &tilePx }; return CallStaticValue<float>("BorderYield", __callArgs, 1); }
+        float CityYield(float tilePx) const { void* __callArgs[] = { &tilePx }; return CallStaticValue<float>("CityYield", __callArgs, 1); }
+        float FxFineness(float tilePx) const { void* __callArgs[] = { &tilePx }; return CallStaticValue<float>("FxFineness", __callArgs, 1); }
         float ContactHidePx() const { return ReadStaticField<float>("ContactHidePx"); }
         float ContactFadePx() const { return ReadStaticField<float>("ContactFadePx"); }
         float ContactHysteresis() const { return ReadStaticField<float>("ContactHysteresis"); }

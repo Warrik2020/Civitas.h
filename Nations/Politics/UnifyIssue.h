@@ -13,12 +13,12 @@ namespace CivitasPoly::Nations::Politics
     public:
         void* ToString() const { return Call("ToString", nullptr, 0); }
         void* file() const { return ReadField<void*>("file"); }
-        void SetFile(void* value) const { WriteField<void*>("file", value); }
+        void file(void* value) const { WriteField<void*>("file", value); }
         int line() const { return ReadField<int>("line"); }
-        void SetLine(int value) const { WriteField<int>("line", value); }
+        void line(int value) const { WriteField<int>("line", value); }
         void* message() const { return ReadField<void*>("message"); }
-        void SetMessage(void* value) const { WriteField<void*>("message", value); }
+        void message(void* value) const { WriteField<void*>("message", value); }
         bool error() const { return ReadField<bool>("error"); }
-        void SetError(bool value) const { WriteField<bool>("error", value); }
+        void error(bool value) const { WriteField<bool>("error", value); }
     };
 }

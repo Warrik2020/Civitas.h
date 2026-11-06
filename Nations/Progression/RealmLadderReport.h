@@ -13,12 +13,12 @@ namespace CivitasPoly::Nations::Progression
     public:
         void* rows() const { return ReadField<void*>("rows"); }
         int divisions() const { return ReadField<int>("divisions"); }
-        void SetDivisions(int value) const { WriteField<int>("divisions", value); }
+        void divisions(int value) const { WriteField<int>("divisions", value); }
         int ceiling() const { return ReadField<int>("ceiling"); }
-        void SetCeiling(int value) const { WriteField<int>("ceiling", value); }
+        void ceiling(int value) const { WriteField<int>("ceiling", value); }
         int limitedBy() const { return ReadField<int>("limitedBy"); }
-        void SetLimitedBy(int value) const { WriteField<int>("limitedBy", value); }
+        void limitedBy(int value) const { WriteField<int>("limitedBy", value); }
         int firstBinding() const { return ReadField<int>("firstBinding"); }
-        void SetFirstBinding(int value) const { WriteField<int>("firstBinding", value); }
+        void firstBinding(int value) const { WriteField<int>("firstBinding", value); }
     };
 }

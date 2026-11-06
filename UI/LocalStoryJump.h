@@ -11,8 +11,8 @@ namespace CivitasPoly::UI
         explicit LocalStoryJump(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "LocalStoryJump") {}
     public:
-        void ToArc(void* a) const { void* args[] = { a }; CallStatic("ToArc", args, 1); }
-        void ToNation(int id) const { void* args[] = { &id }; CallStatic("ToNation", args, 1); }
-        void ToTile(int tile) const { void* args[] = { &tile }; CallStatic("ToTile", args, 1); }
+        void ToArc(void* a) const { void* __callArgs[] = { a }; CallStatic("ToArc", __callArgs, 1); }
+        void ToNation(int id) const { void* __callArgs[] = { &id }; CallStatic("ToNation", __callArgs, 1); }
+        void ToTile(int tile) const { void* __callArgs[] = { &tile }; CallStatic("ToTile", __callArgs, 1); }
     };
 }

@@ -12,12 +12,12 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "LocalCast") {}
     public:
         int nationId() const { return ReadField<int>("nationId"); }
-        void SetNationId(int value) const { WriteField<int>("nationId", value); }
+        void nationId(int value) const { WriteField<int>("nationId", value); }
         void* name() const { return ReadField<void*>("name"); }
-        void SetName(void* value) const { WriteField<void*>("name", value); }
+        void name(void* value) const { WriteField<void*>("name", value); }
         void* color() const { return ReadField<void*>("color"); }
-        void SetColor(void* value) const { WriteField<void*>("color", value); }
+        void color(void* value) const { WriteField<void*>("color", value); }
         int bornTick() const { return ReadField<int>("bornTick"); }
-        void SetBornTick(int value) const { WriteField<int>("bornTick", value); }
+        void bornTick(int value) const { WriteField<int>("bornTick", value); }
     };
 }

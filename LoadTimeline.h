@@ -12,7 +12,7 @@ namespace CivitasPoly
             : ManagedType(api, object, "CivitasPoly", "LoadTimeline") {}
     public:
         void Begin() const { CallStatic("Begin", nullptr, 0); }
-        void Mark(const char* step) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(step ? step : "") : nullptr; void* args[] = { managed_0 }; CallStatic("Mark", args, 1); }
-        void End(const char* step, const char* what) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(step ? step : "") : nullptr; void* managed_1 = Api() && Api()->NewString ? Api()->NewString(what ? what : "") : nullptr; void* args[] = { managed_0, managed_1 }; CallStatic("End", args, 2); }
+        void Mark(const char* step) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(step ? step : "") : nullptr; void* __callArgs[] = { managed_0 }; CallStatic("Mark", __callArgs, 1); }
+        void End(const char* step, const char* what) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(step ? step : "") : nullptr; void* managed_1 = Api() && Api()->NewString ? Api()->NewString(what ? what : "") : nullptr; void* __callArgs[] = { managed_0, managed_1 }; CallStatic("End", __callArgs, 2); }
     };
 }

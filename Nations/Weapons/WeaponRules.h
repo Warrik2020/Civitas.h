@@ -11,23 +11,23 @@ namespace CivitasPoly::Nations::Weapons
         explicit WeaponRules(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Weapons", "WeaponRules") {}
     public:
-        bool SelfLoading(int a) const { void* args[] = { &a }; return CallStaticValue<bool>("SelfLoading", args, 1); }
-        bool Repeating(int a) const { void* args[] = { &a }; return CallStaticValue<bool>("Repeating", args, 1); }
-        bool Automatic(void* d) const { void* args[] = { d }; return CallStaticValue<bool>("Automatic", args, 1); }
-        bool NeedsLockPart(int i) const { void* args[] = { &i }; return CallStaticValue<bool>("NeedsLockPart", args, 1); }
-        bool BlackPowder(int p) const { void* args[] = { &p }; return CallStaticValue<bool>("BlackPowder", args, 1); }
-        bool LooseOrPaper(int a) const { void* args[] = { &a }; return CallStaticValue<bool>("LooseOrPaper", args, 1); }
-        bool Cartridge(int a) const { void* args[] = { &a }; return CallStaticValue<bool>("Cartridge", args, 1); }
-        bool SmokelessOnly(int a) const { void* args[] = { &a }; return CallStaticValue<bool>("SmokelessOnly", args, 1); }
-        bool MachineFeed(int f) const { void* args[] = { &f }; return CallStaticValue<bool>("MachineFeed", args, 1); }
-        bool MagazineFeed(int f) const { void* args[] = { &f }; return CallStaticValue<bool>("MagazineFeed", args, 1); }
-        bool SingleFeed(int f) const { void* args[] = { &f }; return CallStaticValue<bool>("SingleFeed", args, 1); }
-        bool NeedsBolt(int a) const { void* args[] = { &a }; return CallStaticValue<bool>("NeedsBolt", args, 1); }
-        bool NeedsGas(int a) const { void* args[] = { &a }; return CallStaticValue<bool>("NeedsGas", args, 1); }
-        bool NeedsHammer(int i) const { void* args[] = { &i }; return CallStaticValue<bool>("NeedsHammer", args, 1); }
-        bool NeedsLever(int a) const { void* args[] = { &a }; return CallStaticValue<bool>("NeedsLever", args, 1); }
-        bool IsMechanism(int k) const { void* args[] = { &k }; return CallStaticValue<bool>("IsMechanism", args, 1); }
-        void MissingMechanism(void* d, void* into) const { void* args[] = { d, into }; CallStatic("MissingMechanism", args, 2); }
+        bool SelfLoading(int a) const { void* __callArgs[] = { &a }; return CallStaticValue<bool>("SelfLoading", __callArgs, 1); }
+        bool Repeating(int a) const { void* __callArgs[] = { &a }; return CallStaticValue<bool>("Repeating", __callArgs, 1); }
+        bool Automatic(void* d) const { void* __callArgs[] = { d }; return CallStaticValue<bool>("Automatic", __callArgs, 1); }
+        bool NeedsLockPart(int i) const { void* __callArgs[] = { &i }; return CallStaticValue<bool>("NeedsLockPart", __callArgs, 1); }
+        bool BlackPowder(int p) const { void* __callArgs[] = { &p }; return CallStaticValue<bool>("BlackPowder", __callArgs, 1); }
+        bool LooseOrPaper(int a) const { void* __callArgs[] = { &a }; return CallStaticValue<bool>("LooseOrPaper", __callArgs, 1); }
+        bool Cartridge(int a) const { void* __callArgs[] = { &a }; return CallStaticValue<bool>("Cartridge", __callArgs, 1); }
+        bool SmokelessOnly(int a) const { void* __callArgs[] = { &a }; return CallStaticValue<bool>("SmokelessOnly", __callArgs, 1); }
+        bool MachineFeed(int f) const { void* __callArgs[] = { &f }; return CallStaticValue<bool>("MachineFeed", __callArgs, 1); }
+        bool MagazineFeed(int f) const { void* __callArgs[] = { &f }; return CallStaticValue<bool>("MagazineFeed", __callArgs, 1); }
+        bool SingleFeed(int f) const { void* __callArgs[] = { &f }; return CallStaticValue<bool>("SingleFeed", __callArgs, 1); }
+        bool NeedsBolt(int a) const { void* __callArgs[] = { &a }; return CallStaticValue<bool>("NeedsBolt", __callArgs, 1); }
+        bool NeedsGas(int a) const { void* __callArgs[] = { &a }; return CallStaticValue<bool>("NeedsGas", __callArgs, 1); }
+        bool NeedsHammer(int i) const { void* __callArgs[] = { &i }; return CallStaticValue<bool>("NeedsHammer", __callArgs, 1); }
+        bool NeedsLever(int a) const { void* __callArgs[] = { &a }; return CallStaticValue<bool>("NeedsLever", __callArgs, 1); }
+        bool IsMechanism(int k) const { void* __callArgs[] = { &k }; return CallStaticValue<bool>("IsMechanism", __callArgs, 1); }
+        void MissingMechanism(void* d, void* into) const { void* __callArgs[] = { d, into }; CallStatic("MissingMechanism", __callArgs, 2); }
         void* AddMissingMechanism(void** args = nullptr, int count = 0) const { return CallStatic("AddMissingMechanism", args, count); }
     };
 }

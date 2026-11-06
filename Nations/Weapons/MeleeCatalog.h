@@ -11,10 +11,10 @@ namespace CivitasPoly::Nations::Weapons
         explicit MeleeCatalog(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Weapons", "MeleeCatalog") {}
     public:
-        void* Spec(int kind) const { void* args[] = { &kind }; return CallStatic("Spec", args, 1); }
-        void* KindName(int kind) const { void* args[] = { &kind }; return CallStatic("KindName", args, 1); }
-        bool IsStriking(int k) const { void* args[] = { &k }; return CallStaticValue<bool>("IsStriking", args, 1); }
-        bool IsBladed(int k) const { void* args[] = { &k }; return CallStaticValue<bool>("IsBladed", args, 1); }
+        void* Spec(int kind) const { void* __callArgs[] = { &kind }; return CallStatic("Spec", __callArgs, 1); }
+        void* KindName(int kind) const { void* __callArgs[] = { &kind }; return CallStatic("KindName", __callArgs, 1); }
+        bool IsStriking(int k) const { void* __callArgs[] = { &k }; return CallStaticValue<bool>("IsStriking", __callArgs, 1); }
+        bool IsBladed(int k) const { void* __callArgs[] = { &k }; return CallStaticValue<bool>("IsBladed", __callArgs, 1); }
         void* Kinds() const { return ReadStaticField<void*>("Kinds"); }
         void* Constructions() const { return ReadStaticField<void*>("Constructions"); }
         void* Hardenings() const { return ReadStaticField<void*>("Hardenings"); }

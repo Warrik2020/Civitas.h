@@ -12,14 +12,14 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "LocalIncident") {}
     public:
         int kind() const { return ReadField<int>("kind"); }
-        void SetKind(int value) const { WriteField<int>("kind", value); }
+        void kind(int value) const { WriteField<int>("kind", value); }
         int flags() const { return ReadField<int>("flags"); }
-        void SetFlags(int value) const { WriteField<int>("flags", value); }
+        void flags(int value) const { WriteField<int>("flags", value); }
         int actor() const { return ReadField<int>("actor"); }
-        void SetActor(int value) const { WriteField<int>("actor", value); }
+        void actor(int value) const { WriteField<int>("actor", value); }
         int target() const { return ReadField<int>("target"); }
-        void SetTarget(int value) const { WriteField<int>("target", value); }
+        void target(int value) const { WriteField<int>("target", value); }
         int worldTick() const { return ReadField<int>("worldTick"); }
-        void SetWorldTick(int value) const { WriteField<int>("worldTick", value); }
+        void worldTick(int value) const { WriteField<int>("worldTick", value); }
     };
 }

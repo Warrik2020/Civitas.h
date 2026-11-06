@@ -11,6 +11,6 @@ namespace CivitasPoly::UI::Military
         explicit SkillStars(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Military", "SkillStars") {}
     public:
-        void Set(int lit, int max, void* litColor, void* dimColor) const { void* args[] = { &lit, &max, litColor, dimColor }; Call("Set", args, 4); }
+        void Set(int lit, int max_, void* litColor, void* dimColor) const { void* __callArgs[] = { &lit, &max_, litColor, dimColor }; Call("Set", __callArgs, 4); }
     };
 }

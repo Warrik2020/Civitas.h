@@ -11,6 +11,6 @@ namespace CivitasPoly::Nations::Military::Rendering::Fx
         explicit MapWind(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Rendering.Fx", "MapWind") {}
     public:
-        void* Tiles(float time) const { void* args[] = { &time }; return CallStatic("Tiles", args, 1); }
+        void* Tiles(float time) const { void* __callArgs[] = { &time }; return CallStatic("Tiles", __callArgs, 1); }
     };
 }

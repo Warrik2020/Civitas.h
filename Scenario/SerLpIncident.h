@@ -12,14 +12,14 @@ namespace CivitasPoly::Scenario
             : ManagedType(api, object, "CivitasPoly.Scenario", "SerLpIncident") {}
     public:
         int kind() const { return ReadField<int>("kind"); }
-        void SetKind(int value) const { WriteField<int>("kind", value); }
+        void kind(int value) const { WriteField<int>("kind", value); }
         int flags() const { return ReadField<int>("flags"); }
-        void SetFlags(int value) const { WriteField<int>("flags", value); }
+        void flags(int value) const { WriteField<int>("flags", value); }
         int actor() const { return ReadField<int>("actor"); }
-        void SetActor(int value) const { WriteField<int>("actor", value); }
+        void actor(int value) const { WriteField<int>("actor", value); }
         int target() const { return ReadField<int>("target"); }
-        void SetTarget(int value) const { WriteField<int>("target", value); }
+        void target(int value) const { WriteField<int>("target", value); }
         int tick() const { return ReadField<int>("tick"); }
-        void SetTick(int value) const { WriteField<int>("tick", value); }
+        void tick(int value) const { WriteField<int>("tick", value); }
     };
 }

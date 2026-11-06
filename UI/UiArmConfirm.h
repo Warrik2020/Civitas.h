@@ -11,11 +11,11 @@ namespace CivitasPoly::UI
         explicit UiArmConfirm(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "UiArmConfirm") {}
     public:
-        bool IsArmed(int key = 0) const { void* args[] = { &key }; return CallValue<bool>("IsArmed", args, 1); }
-        bool Press(int key = 0) const { void* args[] = { &key }; return CallValue<bool>("Press", args, 1); }
+        bool IsArmed(int key = 0) const { void* __callArgs[] = { &key }; return CallValue<bool>("IsArmed", __callArgs, 1); }
+        bool Press(int key = 0) const { void* __callArgs[] = { &key }; return CallValue<bool>("Press", __callArgs, 1); }
         void Disarm() const { Call("Disarm", nullptr, 0); }
         bool CancelOnEsc() const { return CallValue<bool>("CancelOnEsc", nullptr, 0); }
         float Seconds() const { return ReadField<float>("Seconds"); }
-        void SetSeconds(float value) const { WriteField<float>("Seconds", value); }
+        void Seconds(float value) const { WriteField<float>("Seconds", value); }
     };
 }

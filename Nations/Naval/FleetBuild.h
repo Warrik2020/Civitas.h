@@ -12,16 +12,16 @@ namespace CivitasPoly::Nations::Naval
             : ManagedType(api, object, "CivitasPoly.Nations.Naval", "FleetBuild") {}
     public:
         int id() const { return ReadField<int>("id"); }
-        void SetId(int value) const { WriteField<int>("id", value); }
+        void id(int value) const { WriteField<int>("id", value); }
         int nationId() const { return ReadField<int>("nationId"); }
-        void SetNationId(int value) const { WriteField<int>("nationId", value); }
+        void nationId(int value) const { WriteField<int>("nationId", value); }
         int cityTile() const { return ReadField<int>("cityTile"); }
-        void SetCityTile(int value) const { WriteField<int>("cityTile", value); }
+        void cityTile(int value) const { WriteField<int>("cityTile", value); }
         float progress() const { return ReadField<float>("progress"); }
-        void SetProgress(float value) const { WriteField<float>("progress", value); }
+        void progress(float value) const { WriteField<float>("progress", value); }
         float buildTicks() const { return ReadField<float>("buildTicks"); }
-        void SetBuildTicks(float value) const { WriteField<float>("buildTicks", value); }
+        void buildTicks(float value) const { WriteField<float>("buildTicks", value); }
         void* stalled() const { return ReadField<void*>("stalled"); }
-        void SetStalled(void* value) const { WriteField<void*>("stalled", value); }
+        void stalled(void* value) const { WriteField<void*>("stalled", value); }
     };
 }

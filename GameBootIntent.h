@@ -12,8 +12,8 @@ namespace CivitasPoly
             : ManagedType(api, object, "CivitasPoly", "GameBootIntent") {}
     public:
         int Mode() const { return ReadStaticField<int>("Mode"); }
-        void SetMode(int value) const { WriteStaticField<int>("Mode", value); }
+        void Mode(int value) const { WriteStaticField<int>("Mode", value); }
         bool EditorRequested() const { return ReadStaticField<bool>("EditorRequested"); }
-        void SetEditorRequested(bool value) const { WriteStaticField<bool>("EditorRequested", value); }
+        void EditorRequested(bool value) const { WriteStaticField<bool>("EditorRequested", value); }
     };
 }

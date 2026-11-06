@@ -12,7 +12,7 @@ namespace CivitasPoly::UI::MainMenu
             : ManagedType(api, object, "CivitasPoly.UI.MainMenu", "LoadingScreen") {}
     public:
         void* Raise() const { return CallStatic("Raise", nullptr, 0); }
-        void Drop(float seconds) const { void* args[] = { &seconds }; Call("Drop", args, 1); }
-        void DropCurrent(float seconds) const { void* args[] = { &seconds }; CallStatic("DropCurrent", args, 1); }
+        void Drop(float seconds = 0.7f) const { void* __callArgs[] = { &seconds }; Call("Drop", __callArgs, 1); }
+        void DropCurrent(float seconds = 0.7f) const { void* __callArgs[] = { &seconds }; CallStatic("DropCurrent", __callArgs, 1); }
     };
 }

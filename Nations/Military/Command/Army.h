@@ -12,35 +12,35 @@ namespace CivitasPoly::Nations::Military::Command
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Command", "Army") {}
     public:
         int id() const { return ReadField<int>("id"); }
-        void SetId(int value) const { WriteField<int>("id", value); }
+        void id(int value) const { WriteField<int>("id", value); }
         int nationId() const { return ReadField<int>("nationId"); }
-        void SetNationId(int value) const { WriteField<int>("nationId", value); }
+        void nationId(int value) const { WriteField<int>("nationId", value); }
         int ordinal() const { return ReadField<int>("ordinal"); }
-        void SetOrdinal(int value) const { WriteField<int>("ordinal", value); }
+        void ordinal(int value) const { WriteField<int>("ordinal", value); }
         void* name() const { return ReadField<void*>("name"); }
-        void SetName(void* value) const { WriteField<void*>("name", value); }
+        void name(void* value) const { WriteField<void*>("name", value); }
         int colorSlot() const { return ReadField<int>("colorSlot"); }
-        void SetColorSlot(int value) const { WriteField<int>("colorSlot", value); }
+        void colorSlot(int value) const { WriteField<int>("colorSlot", value); }
         void* color() const { return ReadField<void*>("color"); }
-        void SetColor(void* value) const { WriteField<void*>("color", value); }
+        void color(void* value) const { WriteField<void*>("color", value); }
         int generalId() const { return ReadField<int>("generalId"); }
-        void SetGeneralId(int value) const { WriteField<int>("generalId", value); }
+        void generalId(int value) const { WriteField<int>("generalId", value); }
         int groupId() const { return ReadField<int>("groupId"); }
-        void SetGroupId(int value) const { WriteField<int>("groupId", value); }
+        void groupId(int value) const { WriteField<int>("groupId", value); }
         void* divisionIds() const { return ReadField<void*>("divisionIds"); }
         void* plan() const { return ReadField<void*>("plan"); }
-        void SetPlan(void* value) const { WriteField<void*>("plan", value); }
+        void plan(void* value) const { WriteField<void*>("plan", value); }
         int aggression() const { return ReadField<int>("aggression"); }
-        void SetAggression(int value) const { WriteField<int>("aggression", value); }
+        void aggression(int value) const { WriteField<int>("aggression", value); }
         int state() const { return ReadField<int>("state"); }
-        void SetState(int value) const { WriteField<int>("state", value); }
+        void state(int value) const { WriteField<int>("state", value); }
         float planning() const { return ReadField<float>("planning"); }
-        void SetPlanning(float value) const { WriteField<float>("planning", value); }
+        void planning(float value) const { WriteField<float>("planning", value); }
         bool manual() const { return ReadField<bool>("manual"); }
-        void SetManual(bool value) const { WriteField<bool>("manual", value); }
+        void manual(bool value) const { WriteField<bool>("manual", value); }
         int aiTag() const { return ReadField<int>("aiTag"); }
-        void SetAiTag(int value) const { WriteField<int>("aiTag", value); }
+        void aiTag(int value) const { WriteField<int>("aiTag", value); }
         int rosterVersion() const { return ReadField<int>("rosterVersion"); }
-        void SetRosterVersion(int value) const { WriteField<int>("rosterVersion", value); }
+        void rosterVersion(int value) const { WriteField<int>("rosterVersion", value); }
     };
 }

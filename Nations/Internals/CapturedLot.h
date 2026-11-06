@@ -12,16 +12,16 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "CapturedLot") {}
     public:
         int fromNationId() const { return ReadField<int>("fromNationId"); }
-        void SetFromNationId(int value) const { WriteField<int>("fromNationId", value); }
+        void fromNationId(int value) const { WriteField<int>("fromNationId", value); }
         int designId() const { return ReadField<int>("designId"); }
-        void SetDesignId(int value) const { WriteField<int>("designId", value); }
+        void designId(int value) const { WriteField<int>("designId", value); }
         int pool() const { return ReadField<int>("pool"); }
-        void SetPool(int value) const { WriteField<int>("pool", value); }
+        void pool(int value) const { WriteField<int>("pool", value); }
         float units() const { return ReadField<float>("units"); }
-        void SetUnits(float value) const { WriteField<float>("units", value); }
+        void units(float value) const { WriteField<float>("units", value); }
         int tick() const { return ReadField<int>("tick"); }
-        void SetTick(int value) const { WriteField<int>("tick", value); }
+        void tick(int value) const { WriteField<int>("tick", value); }
         int kind() const { return ReadField<int>("kind"); }
-        void SetKind(int value) const { WriteField<int>("kind", value); }
+        void kind(int value) const { WriteField<int>("kind", value); }
     };
 }

@@ -11,15 +11,15 @@ namespace CivitasPoly::Nations::Military
         explicit NationScale(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military", "NationScale") {}
     public:
-        float ScaleOf(void* it, void* cfg) const { void* args[] = { it, cfg }; return CallStaticValue<float>("ScaleOf", args, 2); }
-        float AttackMulOf(int nationId) const { void* args[] = { &nationId }; return CallStaticValue<float>("AttackMulOf", args, 1); }
-        float DamageTakenMulOf(int nationId) const { void* args[] = { &nationId }; return CallStaticValue<float>("DamageTakenMulOf", args, 1); }
-        void Publish(int nationId, void* it, void* cfg) const { void* args[] = { &nationId, it, cfg }; CallStatic("Publish", args, 3); }
-        void EnsureCapacity(int nationId) const { void* args[] = { &nationId }; CallStatic("EnsureCapacity", args, 1); }
+        float ScaleOf(void* it, void* cfg) const { void* __callArgs[] = { it, cfg }; return CallStaticValue<float>("ScaleOf", __callArgs, 2); }
+        float AttackMulOf(int nationId) const { void* __callArgs[] = { &nationId }; return CallStaticValue<float>("AttackMulOf", __callArgs, 1); }
+        float DamageTakenMulOf(int nationId) const { void* __callArgs[] = { &nationId }; return CallStaticValue<float>("DamageTakenMulOf", __callArgs, 1); }
+        void Publish(int nationId, void* it, void* cfg) const { void* __callArgs[] = { &nationId, it, cfg }; CallStatic("Publish", __callArgs, 3); }
+        void EnsureCapacity(int nationId) const { void* __callArgs[] = { &nationId }; CallStatic("EnsureCapacity", __callArgs, 1); }
         void Clear() const { CallStatic("Clear", nullptr, 0); }
         void* attack() const { return ReadStaticField<void*>("attack"); }
-        void SetAttack(void* value) const { WriteStaticField<void*>("attack", value); }
+        void attack(void* value) const { WriteStaticField<void*>("attack", value); }
         void* damageTaken() const { return ReadStaticField<void*>("damageTaken"); }
-        void SetDamageTaken(void* value) const { WriteStaticField<void*>("damageTaken", value); }
+        void damageTaken(void* value) const { WriteStaticField<void*>("damageTaken", value); }
     };
 }

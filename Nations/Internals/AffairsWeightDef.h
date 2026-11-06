@@ -12,10 +12,10 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "AffairsWeightDef") {}
     public:
         float weight() const { return ReadField<float>("weight"); }
-        void SetWeight(float value) const { WriteField<float>("weight", value); }
+        void weight(float value) const { WriteField<float>("weight", value); }
         void* cond() const { return ReadField<void*>("cond"); }
-        void SetCond(void* value) const { WriteField<void*>("cond", value); }
+        void cond(void* value) const { WriteField<void*>("cond", value); }
         int line() const { return ReadField<int>("line"); }
-        void SetLine(int value) const { WriteField<int>("line", value); }
+        void line(int value) const { WriteField<int>("line", value); }
     };
 }

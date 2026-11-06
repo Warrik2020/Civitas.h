@@ -11,15 +11,15 @@ namespace CivitasPoly::UI
         explicit DealText(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "DealText") {}
     public:
-        void* KindName(int kind) const { void* args[] = { &kind }; return CallStatic("KindName", args, 1); }
-        void* KindHint(int kind, bool inGive) const { void* args[] = { &kind, &inGive }; return CallStatic("KindHint", args, 2); }
-        void* PoolName(int pool) const { void* args[] = { &pool }; return CallStatic("PoolName", args, 1); }
-        void* Term(int ticks, void* cal) const { void* args[] = { &ticks, cal }; return CallStatic("Term", args, 2); }
-        void* Grouped(float v) const { void* args[] = { &v }; return CallStatic("Grouped", args, 1); }
-        void* Price(float p) const { void* args[] = { &p }; return CallStatic("Price", args, 1); }
-        void* Summary(void* item, int performerId, void* nations, void* internals) const { void* args[] = { item, &performerId, nations, internals }; return CallStatic("Summary", args, 4); }
-        void AppendSide(void* sb, void* side, int performerId, void* nations, void* internals) const { void* args[] = { sb, side, &performerId, nations, internals }; CallStatic("AppendSide", args, 5); }
-        void* PatternName(void* item, int performerId, void* internals) const { void* args[] = { item, &performerId, internals }; return CallStatic("PatternName", args, 3); }
-        float AheadOf(void* side, int pool, void* stopAt, void* reserved) const { void* args[] = { side, &pool, stopAt, reserved }; return CallStaticValue<float>("AheadOf", args, 4); }
+        void* KindName(int kind) const { void* __callArgs[] = { &kind }; return CallStatic("KindName", __callArgs, 1); }
+        void* KindHint(int kind, bool inGive) const { void* __callArgs[] = { &kind, &inGive }; return CallStatic("KindHint", __callArgs, 2); }
+        void* PoolName(int pool) const { void* __callArgs[] = { &pool }; return CallStatic("PoolName", __callArgs, 1); }
+        void* Term(int ticks, void* cal) const { void* __callArgs[] = { &ticks, cal }; return CallStatic("Term", __callArgs, 2); }
+        void* Grouped(float v) const { void* __callArgs[] = { &v }; return CallStatic("Grouped", __callArgs, 1); }
+        void* Price(float p) const { void* __callArgs[] = { &p }; return CallStatic("Price", __callArgs, 1); }
+        void* Summary(void* item, int performerId, void* nations, void* internals) const { void* __callArgs[] = { item, &performerId, nations, internals }; return CallStatic("Summary", __callArgs, 4); }
+        void AppendSide(void* sb, void* side, int performerId, void* nations, void* internals) const { void* __callArgs[] = { sb, side, &performerId, nations, internals }; CallStatic("AppendSide", __callArgs, 5); }
+        void* PatternName(void* item, int performerId, void* internals) const { void* __callArgs[] = { item, &performerId, internals }; return CallStatic("PatternName", __callArgs, 3); }
+        float AheadOf(void* side, int pool, void* stopAt, void* reserved) const { void* __callArgs[] = { side, &pool, stopAt, reserved }; return CallStaticValue<float>("AheadOf", __callArgs, 4); }
     };
 }

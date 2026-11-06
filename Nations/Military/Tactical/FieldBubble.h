@@ -11,14 +11,10 @@ namespace CivitasPoly::Nations::Military::Tactical
         explicit FieldBubble(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Tactical", "FieldBubble") {}
     public:
-        bool Contains(int id) const { void* args[] = { &id }; return CallValue<bool>("Contains", args, 1); }
+        bool Contains(int id) const { void* __callArgs[] = { &id }; return CallValue<bool>("Contains", __callArgs, 1); }
         void Clear() const { Call("Clear", nullptr, 0); }
-        void Drop(int id, float now) const { void* args[] = { &id, &now }; Call("Drop", args, 2); }
-        void Decide(void* cands, float now, int menIn, int budgetMen, void* joins, void* leaves) const { void* args[] = { cands, &now, &menIn, &budgetMen, joins, leaves }; Call("Decide", args, 6); }
+        void Drop(int id, float now) const { void* __callArgs[] = { &id, &now }; Call("Drop", __callArgs, 2); }
+        void Decide(void* cands, float now, int menIn, int budgetMen, void* joins, void* leaves) const { void* __callArgs[] = { cands, &now, &menIn, &budgetMen, joins, leaves }; Call("Decide", __callArgs, 6); }
         void* Partners() const { return ReadField<void*>("Partners"); }
-        float joinedAt() const { return ReadField<float>("joinedAt"); }
-        void SetJoinedAt(float value) const { WriteField<float>("joinedAt", value); }
-        float outsideSince() const { return ReadField<float>("outsideSince"); }
-        void SetOutsideSince(float value) const { WriteField<float>("outsideSince", value); }
     };
 }

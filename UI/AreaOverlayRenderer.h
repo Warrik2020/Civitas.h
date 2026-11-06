@@ -11,10 +11,10 @@ namespace CivitasPoly::UI
         explicit AreaOverlayRenderer(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "AreaOverlayRenderer") {}
     public:
-        void Show(int owner, int axis) const { void* args[] = { &owner, &axis }; Call("Show", args, 2); }
+        void Show(int owner, int axis) const { void* __callArgs[] = { &owner, &axis }; Call("Show", __callArgs, 2); }
         void Hide() const { Call("Hide", nullptr, 0); }
-        void MarkBatch(void* tiles) const { void* args[] = { tiles }; Call("MarkBatch", args, 1); }
-        void Tick(float budgetMs) const { void* args[] = { &budgetMs }; Call("Tick", args, 1); }
+        void MarkBatch(void* tiles) const { void* __callArgs[] = { tiles }; Call("MarkBatch", __callArgs, 1); }
+        void Tick(float budgetMs) const { void* __callArgs[] = { &budgetMs }; Call("Tick", __callArgs, 1); }
         void Dispose() const { Call("Dispose", nullptr, 0); }
     };
 }

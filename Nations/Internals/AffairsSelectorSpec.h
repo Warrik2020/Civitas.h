@@ -12,16 +12,16 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "AffairsSelectorSpec") {}
     public:
         void* name() const { return ReadField<void*>("name"); }
-        void SetName(void* value) const { WriteField<void*>("name", value); }
+        void name(void* value) const { WriteField<void*>("name", value); }
         int kind() const { return ReadField<int>("kind"); }
-        void SetKind(int value) const { WriteField<int>("kind", value); }
+        void kind(int value) const { WriteField<int>("kind", value); }
         void* args() const { return ReadField<void*>("args"); }
-        void SetArgs(void* value) const { WriteField<void*>("args", value); }
+        void args(void* value) const { WriteField<void*>("args", value); }
         int required() const { return ReadField<int>("required"); }
-        void SetRequired(int value) const { WriteField<int>("required", value); }
+        void required(int value) const { WriteField<int>("required", value); }
         bool variadic() const { return ReadField<bool>("variadic"); }
-        void SetVariadic(bool value) const { WriteField<bool>("variadic", value); }
+        void variadic(bool value) const { WriteField<bool>("variadic", value); }
         void* fn() const { return ReadField<void*>("fn"); }
-        void SetFn(void* value) const { WriteField<void*>("fn", value); }
+        void fn(void* value) const { WriteField<void*>("fn", value); }
     };
 }

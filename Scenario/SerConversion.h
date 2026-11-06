@@ -12,24 +12,24 @@ namespace CivitasPoly::Scenario
             : ManagedType(api, object, "CivitasPoly.Scenario", "SerConversion") {}
     public:
         int nationId() const { return ReadField<int>("nationId"); }
-        void SetNationId(int value) const { WriteField<int>("nationId", value); }
+        void nationId(int value) const { WriteField<int>("nationId", value); }
         int axis() const { return ReadField<int>("axis"); }
-        void SetAxis(int value) const { WriteField<int>("axis", value); }
+        void axis(int value) const { WriteField<int>("axis", value); }
         int from() const { return ReadField<int>("from"); }
-        void SetFrom(int value) const { WriteField<int>("from", value); }
+        void from(int value) const { WriteField<int>("from", value); }
         int to() const { return ReadField<int>("to"); }
-        void SetTo(int value) const { WriteField<int>("to", value); }
+        void to(int value) const { WriteField<int>("to", value); }
         void* states() const { return ReadField<void*>("states"); }
-        void SetStates(void* value) const { WriteField<void*>("states", value); }
+        void states(void* value) const { WriteField<void*>("states", value); }
         int next() const { return ReadField<int>("next"); }
-        void SetNext(int value) const { WriteField<int>("next", value); }
+        void next(int value) const { WriteField<int>("next", value); }
         int started() const { return ReadField<int>("started"); }
-        void SetStarted(int value) const { WriteField<int>("started", value); }
+        void started(int value) const { WriteField<int>("started", value); }
         int nextTick() const { return ReadField<int>("nextTick"); }
-        void SetNextTick(int value) const { WriteField<int>("nextTick", value); }
+        void nextTick(int value) const { WriteField<int>("nextTick", value); }
         int converted() const { return ReadField<int>("converted"); }
-        void SetConverted(int value) const { WriteField<int>("converted", value); }
+        void converted(int value) const { WriteField<int>("converted", value); }
         int refused() const { return ReadField<int>("refused"); }
-        void SetRefused(int value) const { WriteField<int>("refused", value); }
+        void refused(int value) const { WriteField<int>("refused", value); }
     };
 }

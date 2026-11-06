@@ -12,18 +12,18 @@ namespace CivitasPoly::Nations::Politics
             : ManagedType(api, object, "CivitasPoly.Nations.Politics", "UnifySubject") {}
     public:
         int people() const { return ReadField<int>("people"); }
-        void SetPeople(int value) const { WriteField<int>("people", value); }
+        void people(int value) const { WriteField<int>("people", value); }
         int states() const { return ReadField<int>("states"); }
-        void SetStates(int value) const { WriteField<int>("states", value); }
+        void states(int value) const { WriteField<int>("states", value); }
         int tiles() const { return ReadField<int>("tiles"); }
-        void SetTiles(int value) const { WriteField<int>("tiles", value); }
+        void tiles(int value) const { WriteField<int>("tiles", value); }
         float share() const { return ReadField<float>("share"); }
-        void SetShare(float value) const { WriteField<float>("share", value); }
+        void share(float value) const { WriteField<float>("share", value); }
         float grievance() const { return ReadField<float>("grievance"); }
-        void SetGrievance(float value) const { WriteField<float>("grievance", value); }
+        void grievance(float value) const { WriteField<float>("grievance", value); }
         int homeland() const { return ReadField<int>("homeland"); }
-        void SetHomeland(int value) const { WriteField<int>("homeland", value); }
+        void homeland(int value) const { WriteField<int>("homeland", value); }
         int mainState() const { return ReadField<int>("mainState"); }
-        void SetMainState(int value) const { WriteField<int>("mainState", value); }
+        void mainState(int value) const { WriteField<int>("mainState", value); }
     };
 }

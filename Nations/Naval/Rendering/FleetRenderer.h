@@ -11,11 +11,11 @@ namespace CivitasPoly::Nations::Naval::Rendering
         explicit FleetRenderer(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Naval.Rendering", "FleetRenderer") {}
     public:
-        void* HitTest(void* screen, float maxPx, int onlyNation) const { void* args[] = { screen, &maxPx, &onlyNation }; return CallStatic("HitTest", args, 3); }
-        void InScreenRect(void* rect, int nationId, void* into) const { void* args[] = { rect, &nationId, into }; CallStatic("InScreenRect", args, 3); }
+        void* HitTest(void* screen, float maxPx, int onlyNation) const { void* __callArgs[] = { screen, &maxPx, &onlyNation }; return CallStatic("HitTest", __callArgs, 3); }
+        void InScreenRect(void* rect, int nationId, void* into) const { void* __callArgs[] = { rect, &nationId, into }; CallStatic("InScreenRect", __callArgs, 3); }
         bool ShowRings() const { return ReadStaticField<bool>("ShowRings"); }
-        void SetShowRings(bool value) const { WriteStaticField<bool>("ShowRings", value); }
+        void ShowRings(bool value) const { WriteStaticField<bool>("ShowRings", value); }
         bool Visible() const { return ReadStaticField<bool>("Visible"); }
-        void SetVisible(bool value) const { WriteStaticField<bool>("Visible", value); }
+        void Visible(bool value) const { WriteStaticField<bool>("Visible", value); }
     };
 }

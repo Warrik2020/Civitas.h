@@ -11,8 +11,8 @@ namespace CivitasPoly::Map::Pipeline
         explicit MarchingSquares(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Map.Pipeline", "MarchingSquares") {}
     public:
-        void* TraceOuter(void* label, int target, int w, int h) const { void* args[] = { label, &target, &w, &h }; return CallStatic("TraceOuter", args, 4); }
-        void* TraceLoops(void* label, int target, int w, int h) const { void* args[] = { label, &target, &w, &h }; return CallStatic("TraceLoops", args, 4); }
-        float SignedArea(void* pts) const { void* args[] = { pts }; return CallStaticValue<float>("SignedArea", args, 1); }
+        void* TraceOuter(void* label, int target, int w, int h) const { void* __callArgs[] = { label, &target, &w, &h }; return CallStatic("TraceOuter", __callArgs, 4); }
+        void* TraceLoops(void* label, int target, int w, int h) const { void* __callArgs[] = { label, &target, &w, &h }; return CallStatic("TraceLoops", __callArgs, 4); }
+        float SignedArea(void* pts) const { void* __callArgs[] = { pts }; return CallStaticValue<float>("SignedArea", __callArgs, 1); }
     };
 }

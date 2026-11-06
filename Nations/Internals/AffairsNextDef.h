@@ -12,14 +12,14 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "AffairsNextDef") {}
     public:
         void* step() const { return ReadField<void*>("step"); }
-        void SetStep(void* value) const { WriteField<void*>("step", value); }
+        void step(void* value) const { WriteField<void*>("step", value); }
         void* story() const { return ReadField<void*>("story"); }
-        void SetStory(void* value) const { WriteField<void*>("story", value); }
+        void story(void* value) const { WriteField<void*>("story", value); }
         float weight() const { return ReadField<float>("weight"); }
-        void SetWeight(float value) const { WriteField<float>("weight", value); }
+        void weight(float value) const { WriteField<float>("weight", value); }
         void* cond() const { return ReadField<void*>("cond"); }
-        void SetCond(void* value) const { WriteField<void*>("cond", value); }
+        void cond(void* value) const { WriteField<void*>("cond", value); }
         int line() const { return ReadField<int>("line"); }
-        void SetLine(int value) const { WriteField<int>("line", value); }
+        void line(int value) const { WriteField<int>("line", value); }
     };
 }

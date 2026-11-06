@@ -11,6 +11,6 @@ namespace CivitasPoly::UI::Alerts
         explicit AlertCatalog(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Alerts", "AlertCatalog") {}
     public:
-        void Collect(void* into, void* it, void* internals, void* mcfg, void* expansion) const { void* args[] = { into, it, internals, mcfg, expansion }; CallStatic("Collect", args, 5); }
+        void Collect(void* into, void* it, void* internals, void* mcfg, void* expansion) const { void* __callArgs[] = { into, it, internals, mcfg, expansion }; CallStatic("Collect", __callArgs, 5); }
     };
 }

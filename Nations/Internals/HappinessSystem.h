@@ -11,7 +11,7 @@ namespace CivitasPoly::Nations::Internals
         explicit HappinessSystem(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "HappinessSystem") {}
     public:
-        void Tick(void* it, void* cfg, void* pcfg) const { void* args[] = { it, cfg, pcfg }; CallStatic("Tick", args, 3); }
-        float DaysOfBuffer(void* it, void* cfg) const { void* args[] = { it, cfg }; return CallStaticValue<float>("DaysOfBuffer", args, 2); }
+        void Tick(void* it, void* cfg, void* pcfg) const { void* __callArgs[] = { it, cfg, pcfg }; CallStatic("Tick", __callArgs, 3); }
+        float DaysOfBuffer(void* it, void* cfg) const { void* __callArgs[] = { it, cfg }; return CallStaticValue<float>("DaysOfBuffer", __callArgs, 2); }
     };
 }

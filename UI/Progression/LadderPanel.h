@@ -14,6 +14,6 @@ namespace CivitasPoly::UI::Progression
         void ToggleFromHud() const { CallStatic("ToggleFromHud", nullptr, 0); }
         void Open() const { CallStatic("Open", nullptr, 0); }
         void CloseDocked() const { CallStatic("CloseDocked", nullptr, 0); }
-        void SetVisible(bool visible) const { void* args[] = { &visible }; Call("SetVisible", args, 1); }
+        void SetVisible(bool visible) const { void* __callArgs[] = { &visible }; Call("SetVisible", __callArgs, 1); }
     };
 }

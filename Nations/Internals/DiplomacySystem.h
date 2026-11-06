@@ -11,9 +11,9 @@ namespace CivitasPoly::Nations::Internals
         explicit DiplomacySystem(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "DiplomacySystem") {}
     public:
-        void TickCheap(void* relations, void* internals, void* cfg) const { void* args[] = { relations, internals, cfg }; CallStatic("TickCheap", args, 3); }
-        void TickCheap(void* relations, void* internals, void* cfg, int tick, float ticksPerYear) const { void* args[] = { relations, internals, cfg, &tick, &ticksPerYear }; CallStatic("TickCheap", args, 5); }
-        void Pass(void* relations, void* internals, void* power, void* cfg, float grudgeDecay, float infraDecay, void* homelandOpinion = nullptr, void* kinship = nullptr, void* incursionMalus = nullptr, void* panNational = nullptr, void* localPolitics = nullptr) const { void* args[] = { relations, internals, power, cfg, &grudgeDecay, &infraDecay, homelandOpinion, kinship, incursionMalus, panNational, localPolitics }; CallStatic("Pass", args, 11); }
-        float Power(void* n, void* it, void* cfg) const { void* args[] = { n, it, cfg }; return CallStaticValue<float>("Power", args, 3); }
+        void TickCheap(void* relations, void* internals, void* cfg) const { void* __callArgs[] = { relations, internals, cfg }; CallStatic("TickCheap", __callArgs, 3); }
+        void TickCheap(void* relations, void* internals, void* cfg, int tick, float ticksPerYear) const { void* __callArgs[] = { relations, internals, cfg, &tick, &ticksPerYear }; CallStatic("TickCheap", __callArgs, 5); }
+        void Pass(void* relations, void* internals, void* power, void* cfg, float grudgeDecay, float infraDecay, void* homelandOpinion = nullptr, void* kinship = nullptr, void* incursionMalus = nullptr, void* panNational = nullptr, void* localPolitics = nullptr) const { void* __callArgs[] = { relations, internals, power, cfg, &grudgeDecay, &infraDecay, homelandOpinion, kinship, incursionMalus, panNational, localPolitics }; CallStatic("Pass", __callArgs, 11); }
+        float Power(void* n, void* it, void* cfg) const { void* __callArgs[] = { n, it, cfg }; return CallStaticValue<float>("Power", __callArgs, 3); }
     };
 }

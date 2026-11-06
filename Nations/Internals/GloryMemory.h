@@ -12,31 +12,31 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "GloryMemory") {}
     public:
         int peopleKey() const { return ReadField<int>("peopleKey"); }
-        void SetPeopleKey(int value) const { WriteField<int>("peopleKey", value); }
+        void peopleKey(int value) const { WriteField<int>("peopleKey", value); }
         int formerNationId() const { return ReadField<int>("formerNationId"); }
-        void SetFormerNationId(int value) const { WriteField<int>("formerNationId", value); }
+        void formerNationId(int value) const { WriteField<int>("formerNationId", value); }
         void* formerName() const { return ReadField<void*>("formerName"); }
-        void SetFormerName(void* value) const { WriteField<void*>("formerName", value); }
+        void formerName(void* value) const { WriteField<void*>("formerName", value); }
         void* formerColor() const { return ReadField<void*>("formerColor"); }
-        void SetFormerColor(void* value) const { WriteField<void*>("formerColor", value); }
+        void formerColor(void* value) const { WriteField<void*>("formerColor", value); }
         int peakTiles() const { return ReadField<int>("peakTiles"); }
-        void SetPeakTiles(int value) const { WriteField<int>("peakTiles", value); }
+        void peakTiles(int value) const { WriteField<int>("peakTiles", value); }
         void* anchors() const { return ReadField<void*>("anchors"); }
         void* weights() const { return ReadField<void*>("weights"); }
         int fallWorldTick() const { return ReadField<int>("fallWorldTick"); }
-        void SetFallWorldTick(int value) const { WriteField<int>("fallWorldTick", value); }
+        void fallWorldTick(int value) const { WriteField<int>("fallWorldTick", value); }
         float wound() const { return ReadField<float>("wound"); }
-        void SetWound(float value) const { WriteField<float>("wound", value); }
+        void wound(float value) const { WriteField<float>("wound", value); }
         int victorId() const { return ReadField<int>("victorId"); }
-        void SetVictorId(int value) const { WriteField<int>("victorId", value); }
+        void victorId(int value) const { WriteField<int>("victorId", value); }
         int cause() const { return ReadField<int>("cause"); }
-        void SetCause(int value) const { WriteField<int>("cause", value); }
+        void cause(int value) const { WriteField<int>("cause", value); }
         float fallShare() const { return ReadField<float>("fallShare"); }
-        void SetFallShare(float value) const { WriteField<float>("fallShare", value); }
+        void fallShare(float value) const { WriteField<float>("fallShare", value); }
         int heirId() const { return ReadField<int>("heirId"); }
-        void SetHeirId(int value) const { WriteField<int>("heirId", value); }
+        void heirId(int value) const { WriteField<int>("heirId", value); }
         float heirShare() const { return ReadField<float>("heirShare"); }
-        void SetHeirShare(float value) const { WriteField<float>("heirShare", value); }
+        void heirShare(float value) const { WriteField<float>("heirShare", value); }
         void* holders() const { return ReadField<void*>("holders"); }
     };
 }

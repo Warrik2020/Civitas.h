@@ -12,18 +12,18 @@ namespace CivitasPoly::Scenario
             : ManagedType(api, object, "CivitasPoly.Scenario", "SerUnifyReaction") {}
     public:
         void* key() const { return ReadField<void*>("key"); }
-        void SetKey(void* value) const { WriteField<void*>("key", value); }
+        void key(void* value) const { WriteField<void*>("key", value); }
         void* name() const { return ReadField<void*>("name"); }
-        void SetName(void* value) const { WriteField<void*>("name", value); }
+        void name(void* value) const { WriteField<void*>("name", value); }
         int untilTick() const { return ReadField<int>("untilTick"); }
-        void SetUntilTick(int value) const { WriteField<int>("untilTick", value); }
+        void untilTick(int value) const { WriteField<int>("untilTick", value); }
         bool demand() const { return ReadField<bool>("demand"); }
-        void SetDemand(bool value) const { WriteField<bool>("demand", value); }
+        void demand(bool value) const { WriteField<bool>("demand", value); }
         void* effectKeys() const { return ReadField<void*>("effectKeys"); }
-        void SetEffectKeys(void* value) const { WriteField<void*>("effectKeys", value); }
+        void effectKeys(void* value) const { WriteField<void*>("effectKeys", value); }
         void* effectScopes() const { return ReadField<void*>("effectScopes"); }
-        void SetEffectScopes(void* value) const { WriteField<void*>("effectScopes", value); }
+        void effectScopes(void* value) const { WriteField<void*>("effectScopes", value); }
         void* effectValues() const { return ReadField<void*>("effectValues"); }
-        void SetEffectValues(void* value) const { WriteField<void*>("effectValues", value); }
+        void effectValues(void* value) const { WriteField<void*>("effectValues", value); }
     };
 }

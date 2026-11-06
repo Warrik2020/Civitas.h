@@ -11,7 +11,7 @@ namespace CivitasPoly::Nations::Military::Tactical
         explicit BattleTerrain(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Tactical", "BattleTerrain") {}
     public:
-        void Bake(void* setup, void* arenaTiles, void* grid, void* cities) const { void* args[] = { setup, arenaTiles, grid, cities }; CallStatic("Bake", args, 4); }
-        void Bake(void* setup, void* frame, void* sizeTiles, void* grid, void* cities) const { void* args[] = { setup, frame, sizeTiles, grid, cities }; CallStatic("Bake", args, 5); }
+        void Bake(void* setup, void* arenaTiles, void* grid, void* cities) const { void* __callArgs[] = { setup, arenaTiles, grid, cities }; CallStatic("Bake", __callArgs, 4); }
+        void Bake(void* setup, void* frame, void* sizeTiles, void* grid, void* cities) const { void* __callArgs[] = { setup, frame, sizeTiles, grid, cities }; CallStatic("Bake", __callArgs, 5); }
     };
 }

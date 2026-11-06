@@ -11,13 +11,13 @@ namespace CivitasPoly::Nations::Internals
         explicit SurrenderSystem(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "SurrenderSystem") {}
     public:
-        void* Evaluate(int vpTotal, int vpLost, int tiles, int snapshot, bool collapsed, float aggression, bool alliesFighting, float limitAdd = 0f) const { void* args[] = { &vpTotal, &vpLost, &tiles, &snapshot, &collapsed, &aggression, &alliesFighting, &limitAdd }; return CallStatic("Evaluate", args, 8); }
-        float LimitOf(float aggression, bool alliesFighting, float limitAdd = 0f) const { void* args[] = { &aggression, &alliesFighting, &limitAdd }; return CallStaticValue<float>("LimitOf", args, 3); }
-        void* Of(int nationId, void* rels, void* n, void* it, void* cfg, void* atWarWith) const { void* args[] = { &nationId, rels, n, it, cfg, atWarWith }; return CallStatic("Of", args, 6); }
-        float SueShareOf(int nationId) const { void* args[] = { &nationId }; return CallStaticValue<float>("SueShareOf", args, 1); }
-        void Track(int nationId, void* s, int tick) const { void* args[] = { &nationId, &s, &tick }; CallStatic("Track", args, 3); }
-        bool SuesForPeace(int nationId) const { void* args[] = { &nationId }; return CallStaticValue<bool>("SuesForPeace", args, 1); }
-        void Forget(int nationId) const { void* args[] = { &nationId }; CallStatic("Forget", args, 1); }
+        void* Evaluate(int vpTotal, int vpLost, int tiles, int snapshot, bool collapsed, float aggression, bool alliesFighting, float limitAdd = 0.0f) const { void* __callArgs[] = { &vpTotal, &vpLost, &tiles, &snapshot, &collapsed, &aggression, &alliesFighting, &limitAdd }; return CallStatic("Evaluate", __callArgs, 8); }
+        float LimitOf(float aggression, bool alliesFighting, float limitAdd = 0.0f) const { void* __callArgs[] = { &aggression, &alliesFighting, &limitAdd }; return CallStaticValue<float>("LimitOf", __callArgs, 3); }
+        void* Of(int nationId, void* rels, void* n, void* it, void* cfg, void* atWarWith) const { void* __callArgs[] = { &nationId, rels, n, it, cfg, atWarWith }; return CallStatic("Of", __callArgs, 6); }
+        float SueShareOf(int nationId) const { void* __callArgs[] = { &nationId }; return CallStaticValue<float>("SueShareOf", __callArgs, 1); }
+        void Track(int nationId, void* s, int tick) const { void* __callArgs[] = { &nationId, &s, &tick }; CallStatic("Track", __callArgs, 3); }
+        bool SuesForPeace(int nationId) const { void* __callArgs[] = { &nationId }; return CallStaticValue<bool>("SuesForPeace", __callArgs, 1); }
+        void Forget(int nationId) const { void* __callArgs[] = { &nationId }; CallStatic("Forget", __callArgs, 1); }
         void Clear() const { CallStatic("Clear", nullptr, 0); }
         float BaseLimit() const { return ReadStaticField<float>("BaseLimit"); }
         float LeaderSpan() const { return ReadStaticField<float>("LeaderSpan"); }

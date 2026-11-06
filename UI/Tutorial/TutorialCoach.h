@@ -11,7 +11,7 @@ namespace CivitasPoly::UI::Tutorial
         explicit TutorialCoach(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Tutorial", "TutorialCoach") {}
     public:
-        void ResetTopics(void* keys) const { void* args[] = { keys }; CallStatic("ResetTopics", args, 1); }
+        void ResetTopics(void* keys) const { void* __callArgs[] = { keys }; CallStatic("ResetTopics", __callArgs, 1); }
         void Restart() const { Call("Restart", nullptr, 0); }
     };
 }

@@ -12,8 +12,8 @@ namespace CivitasPoly::Nations::Politics
             : ManagedType(api, object, "CivitasPoly.Nations.Politics", "UnifyTerm") {}
     public:
         void* label() const { return ReadField<void*>("label"); }
-        void SetLabel(void* value) const { WriteField<void*>("label", value); }
+        void label(void* value) const { WriteField<void*>("label", value); }
         float value() const { return ReadField<float>("value"); }
-        void SetValue(float value) const { WriteField<float>("value", value); }
+        void value(float value) const { WriteField<float>("value", value); }
     };
 }

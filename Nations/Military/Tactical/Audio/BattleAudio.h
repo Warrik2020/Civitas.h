@@ -12,8 +12,8 @@ namespace CivitasPoly::Nations::Military::Tactical::Audio
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Tactical.Audio", "BattleAudio") {}
     public:
         void Dispose() const { Call("Dispose", nullptr, 0); }
-        void Update(void* battle, float dt) const { void* args[] = { battle, &dt }; Call("Update", args, 2); }
+        void Update(void* battle, float dt) const { void* __callArgs[] = { battle, &dt }; Call("Update", __callArgs, 2); }
         float MasterVolume() const { return ReadStaticField<float>("MasterVolume"); }
-        void SetMasterVolume(float value) const { WriteStaticField<float>("MasterVolume", value); }
+        void MasterVolume(float value) const { WriteStaticField<float>("MasterVolume", value); }
     };
 }

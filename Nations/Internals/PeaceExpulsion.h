@@ -12,9 +12,9 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "PeaceExpulsion") {}
     public:
         int groupId() const { return ReadField<int>("groupId"); }
-        void SetGroupId(int value) const { WriteField<int>("groupId", value); }
+        void groupId(int value) const { WriteField<int>("groupId", value); }
         int axis() const { return ReadField<int>("axis"); }
-        void SetAxis(int value) const { WriteField<int>("axis", value); }
+        void axis(int value) const { WriteField<int>("axis", value); }
         void* tiles() const { return ReadField<void*>("tiles"); }
     };
 }

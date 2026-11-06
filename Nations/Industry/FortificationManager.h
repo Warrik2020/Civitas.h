@@ -11,9 +11,9 @@ namespace CivitasPoly::Nations::Industry
         explicit FortificationManager(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Industry", "FortificationManager") {}
     public:
-        void SetFortsVisible(bool visible) const { void* args[] = { &visible }; Call("SetFortsVisible", args, 1); }
-        void* SiteAt(int tileIndex) const { void* args[] = { &tileIndex }; return Call("SiteAt", args, 1); }
-        bool PlaceScenarioFort(int tileIndex, int type, int builderNationId, float progress) const { void* args[] = { &tileIndex, &type, &builderNationId, &progress }; return CallValue<bool>("PlaceScenarioFort", args, 4); }
-        bool RemoveFortAt(int tileIndex) const { void* args[] = { &tileIndex }; return CallValue<bool>("RemoveFortAt", args, 1); }
+        void SetFortsVisible(bool visible) const { void* __callArgs[] = { &visible }; Call("SetFortsVisible", __callArgs, 1); }
+        void* SiteAt(int tileIndex) const { void* __callArgs[] = { &tileIndex }; return Call("SiteAt", __callArgs, 1); }
+        bool PlaceScenarioFort(int tileIndex, int type, int builderNationId, float progress) const { void* __callArgs[] = { &tileIndex, &type, &builderNationId, &progress }; return CallValue<bool>("PlaceScenarioFort", __callArgs, 4); }
+        bool RemoveFortAt(int tileIndex) const { void* __callArgs[] = { &tileIndex }; return CallValue<bool>("RemoveFortAt", __callArgs, 1); }
     };
 }

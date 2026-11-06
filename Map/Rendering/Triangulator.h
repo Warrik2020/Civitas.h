@@ -11,6 +11,6 @@ namespace CivitasPoly::Map::Rendering
         explicit Triangulator(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Map.Rendering", "Triangulator") {}
     public:
-        void Triangulate(void* outerIn, void* holesIn, void* vertices, void* triangles) const { void* args[] = { outerIn, holesIn, &vertices, &triangles }; CallStatic("Triangulate", args, 4); }
+        void Triangulate(void* outerIn, void* holesIn, void* vertices, void* triangles) const { void* __callArgs[] = { outerIn, holesIn, &vertices, &triangles }; CallStatic("Triangulate", __callArgs, 4); }
     };
 }

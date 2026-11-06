@@ -11,7 +11,7 @@ namespace CivitasPoly::Map::Rendering::Lens
         explicit MapLensSettings(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Map.Rendering.Lens", "MapLensSettings") {}
     public:
-        void SetBlur(bool on) const { void* args[] = { &on }; CallStatic("SetBlur", args, 1); }
-        void SetVignette(bool on) const { void* args[] = { &on }; CallStatic("SetVignette", args, 1); }
+        void SetBlur(bool on) const { void* __callArgs[] = { &on }; CallStatic("SetBlur", __callArgs, 1); }
+        void SetVignette(bool on) const { void* __callArgs[] = { &on }; CallStatic("SetVignette", __callArgs, 1); }
     };
 }

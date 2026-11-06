@@ -11,9 +11,9 @@ namespace CivitasPoly::Map::Rendering::Surface
         explicit TerrainSurfaceTextures(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Map.Rendering.Surface", "TerrainSurfaceTextures") {}
     public:
-        void* Build(void* d) const { void* args[] = { d }; return CallStatic("Build", args, 1); }
-        void Bind(void* space, int width, int height) const { void* args[] = { space, &width, &height }; Call("Bind", args, 3); }
-        void BindMapXform(void* space) const { void* args[] = { space }; CallStatic("BindMapXform", args, 1); }
+        void* Build(void* d) const { void* __callArgs[] = { d }; return CallStatic("Build", __callArgs, 1); }
+        void Bind(void* space, int width, int height) const { void* __callArgs[] = { space, &width, &height }; Call("Bind", __callArgs, 3); }
+        void BindMapXform(void* space) const { void* __callArgs[] = { space }; CallStatic("BindMapXform", __callArgs, 1); }
         void Dispose() const { Call("Dispose", nullptr, 0); }
         int TerrainTexId() const { return ReadStaticField<int>("TerrainTexId"); }
         int MacroColorId() const { return ReadStaticField<int>("MacroColorId"); }

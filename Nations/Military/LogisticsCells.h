@@ -11,15 +11,15 @@ namespace CivitasPoly::Nations::Military
         explicit LogisticsCells(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military", "LogisticsCells") {}
     public:
-        int CellOf(int x, int y) const { void* args[] = { &x, &y }; return CallValue<int>("CellOf", args, 2); }
-        int CellX(int cell) const { void* args[] = { &cell }; return CallValue<int>("CellX", args, 1); }
-        int CellY(int cell) const { void* args[] = { &cell }; return CallValue<int>("CellY", args, 1); }
+        int CellOf(int x, int y) const { void* __callArgs[] = { &x, &y }; return CallValue<int>("CellOf", __callArgs, 2); }
+        int CellX(int cell) const { void* __callArgs[] = { &cell }; return CallValue<int>("CellX", __callArgs, 1); }
+        int CellY(int cell) const { void* __callArgs[] = { &cell }; return CallValue<int>("CellY", __callArgs, 1); }
         bool RefreshHardIfBuilt() const { return CallValue<bool>("RefreshHardIfBuilt", nullptr, 0); }
-        void SeedRoads(void* tileLevels) const { void* args[] = { tileLevels }; Call("SeedRoads", args, 1); }
-        void NoteRoad(int tile, int level) const { void* args[] = { &tile, &level }; Call("NoteRoad", args, 2); }
-        bool TakeRoadDirty(void* rect) const { void* args[] = { &rect }; return CallValue<bool>("TakeRoadDirty", args, 1); }
-        void Validate(int cx0, int cy0, int cx1, int cy1) const { void* args[] = { &cx0, &cy0, &cx1, &cy1 }; Call("Validate", args, 4); }
-        int ValidateStep(int cx0, int cy0, int cx1, int cy1, int& cursor, int budget, bool& done) const { void* args[] = { &cx0, &cy0, &cx1, &cy1, &cursor, &budget, &done }; return CallValue<int>("ValidateStep", args, 7); }
+        void SeedRoads(void* tileLevels) const { void* __callArgs[] = { tileLevels }; Call("SeedRoads", __callArgs, 1); }
+        void NoteRoad(int tile, int level) const { void* __callArgs[] = { &tile, &level }; Call("NoteRoad", __callArgs, 2); }
+        bool TakeRoadDirty(void* rect) const { void* __callArgs[] = { &rect }; return CallValue<bool>("TakeRoadDirty", __callArgs, 1); }
+        void Validate(int cx0, int cy0, int cx1, int cy1) const { void* __callArgs[] = { &cx0, &cy0, &cx1, &cy1 }; Call("Validate", __callArgs, 4); }
+        int ValidateStep(int cx0, int cy0, int cx1, int cy1, int& cursor, int budget, bool& done) const { void* __callArgs[] = { &cx0, &cy0, &cx1, &cy1, &cursor, &budget, &done }; return CallValue<int>("ValidateStep", __callArgs, 7); }
         void InvalidateAll() const { Call("InvalidateAll", nullptr, 0); }
         void* grid() const { return ReadField<void*>("grid"); }
         int shift() const { return ReadField<int>("shift"); }

@@ -12,10 +12,10 @@ namespace CivitasPoly::Map::Pipeline
             : ManagedType(api, object, "CivitasPoly.Map.Pipeline", "LakeRegion") {}
     public:
         int id() const { return ReadField<int>("id"); }
-        void SetId(int value) const { WriteField<int>("id", value); }
+        void id(int value) const { WriteField<int>("id", value); }
         int ownerIsland() const { return ReadField<int>("ownerIsland"); }
-        void SetOwnerIsland(int value) const { WriteField<int>("ownerIsland", value); }
+        void ownerIsland(int value) const { WriteField<int>("ownerIsland", value); }
         int area() const { return ReadField<int>("area"); }
-        void SetArea(int value) const { WriteField<int>("area", value); }
+        void area(int value) const { WriteField<int>("area", value); }
     };
 }

@@ -11,35 +11,35 @@ namespace CivitasPoly::Nations::Internals
         explicit TradeAgreement(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "TradeAgreement") {}
     public:
-        int TicksLeft(int tick) const { void* args[] = { &tick }; return CallValue<int>("TicksLeft", args, 1); }
-        bool Involves(int nationId) const { void* args[] = { &nationId }; return CallValue<bool>("Involves", args, 1); }
-        bool Between(int x, int y) const { void* args[] = { &x, &y }; return CallValue<bool>("Between", args, 2); }
-        int Other(int self) const { void* args[] = { &self }; return CallValue<int>("Other", args, 1); }
+        int TicksLeft(int tick) const { void* __callArgs[] = { &tick }; return CallValue<int>("TicksLeft", __callArgs, 1); }
+        bool Involves(int nationId) const { void* __callArgs[] = { &nationId }; return CallValue<bool>("Involves", __callArgs, 1); }
+        bool Between(int x, int y) const { void* __callArgs[] = { &x, &y }; return CallValue<bool>("Between", __callArgs, 2); }
+        int Other(int self) const { void* __callArgs[] = { &self }; return CallValue<int>("Other", __callArgs, 1); }
         int id() const { return ReadField<int>("id"); }
-        void SetId(int value) const { WriteField<int>("id", value); }
+        void id(int value) const { WriteField<int>("id", value); }
         int supplierId() const { return ReadField<int>("supplierId"); }
-        void SetSupplierId(int value) const { WriteField<int>("supplierId", value); }
+        void supplierId(int value) const { WriteField<int>("supplierId", value); }
         int receiverId() const { return ReadField<int>("receiverId"); }
-        void SetReceiverId(int value) const { WriteField<int>("receiverId", value); }
+        void receiverId(int value) const { WriteField<int>("receiverId", value); }
         int pool() const { return ReadField<int>("pool"); }
-        void SetPool(int value) const { WriteField<int>("pool", value); }
+        void pool(int value) const { WriteField<int>("pool", value); }
         float perTick() const { return ReadField<float>("perTick"); }
-        void SetPerTick(float value) const { WriteField<float>("perTick", value); }
+        void perTick(float value) const { WriteField<float>("perTick", value); }
         float pricePerUnit() const { return ReadField<float>("pricePerUnit"); }
-        void SetPricePerUnit(float value) const { WriteField<float>("pricePerUnit", value); }
+        void pricePerUnit(float value) const { WriteField<float>("pricePerUnit", value); }
         int startTick() const { return ReadField<int>("startTick"); }
-        void SetStartTick(int value) const { WriteField<int>("startTick", value); }
+        void startTick(int value) const { WriteField<int>("startTick", value); }
         int endTick() const { return ReadField<int>("endTick"); }
-        void SetEndTick(int value) const { WriteField<int>("endTick", value); }
+        void endTick(int value) const { WriteField<int>("endTick", value); }
         float delivered() const { return ReadField<float>("delivered"); }
-        void SetDelivered(float value) const { WriteField<float>("delivered", value); }
+        void delivered(float value) const { WriteField<float>("delivered", value); }
         float paid() const { return ReadField<float>("paid"); }
-        void SetPaid(float value) const { WriteField<float>("paid", value); }
+        void paid(float value) const { WriteField<float>("paid", value); }
         int shortTicks() const { return ReadField<int>("shortTicks"); }
-        void SetShortTicks(int value) const { WriteField<int>("shortTicks", value); }
+        void shortTicks(int value) const { WriteField<int>("shortTicks", value); }
         bool lastShortWasPayment() const { return ReadField<bool>("lastShortWasPayment"); }
-        void SetLastShortWasPayment(bool value) const { WriteField<bool>("lastShortWasPayment", value); }
+        void lastShortWasPayment(bool value) const { WriteField<bool>("lastShortWasPayment", value); }
         float lastDelivered() const { return ReadField<float>("lastDelivered"); }
-        void SetLastDelivered(float value) const { WriteField<float>("lastDelivered", value); }
+        void lastDelivered(float value) const { WriteField<float>("lastDelivered", value); }
     };
 }

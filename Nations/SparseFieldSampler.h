@@ -11,9 +11,9 @@ namespace CivitasPoly::Nations
         explicit SparseFieldSampler(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations", "SparseFieldSampler") {}
     public:
-        float Sample(int x, int y) const { void* args[] = { &x, &y }; return CallValue<float>("Sample", args, 2); }
-        bool ChunkHasData(int cx, int cy) const { void* args[] = { &cx, &cy }; return CallValue<bool>("ChunkHasData", args, 2); }
-        void* Page(int cx, int cy) const { void* args[] = { &cx, &cy }; return Call("Page", args, 2); }
-        bool ChunkFull(int cx, int cy) const { void* args[] = { &cx, &cy }; return CallValue<bool>("ChunkFull", args, 2); }
+        float Sample(int x, int y) const { void* __callArgs[] = { &x, &y }; return CallValue<float>("Sample", __callArgs, 2); }
+        bool ChunkHasData(int cx, int cy) const { void* __callArgs[] = { &cx, &cy }; return CallValue<bool>("ChunkHasData", __callArgs, 2); }
+        void* Page(int cx, int cy) const { void* __callArgs[] = { &cx, &cy }; return Call("Page", __callArgs, 2); }
+        bool ChunkFull(int cx, int cy) const { void* __callArgs[] = { &cx, &cy }; return CallValue<bool>("ChunkFull", __callArgs, 2); }
     };
 }

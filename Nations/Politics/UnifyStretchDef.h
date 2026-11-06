@@ -12,15 +12,15 @@ namespace CivitasPoly::Nations::Politics
             : ManagedType(api, object, "CivitasPoly.Nations.Politics", "UnifyStretchDef") {}
     public:
         void* id() const { return ReadField<void*>("id"); }
-        void SetId(void* value) const { WriteField<void*>("id", value); }
+        void id(void* value) const { WriteField<void*>("id", value); }
         void* file() const { return ReadField<void*>("file"); }
-        void SetFile(void* value) const { WriteField<void*>("file", value); }
+        void file(void* value) const { WriteField<void*>("file", value); }
         int line() const { return ReadField<int>("line"); }
-        void SetLine(int value) const { WriteField<int>("line", value); }
+        void line(int value) const { WriteField<int>("line", value); }
         int part() const { return ReadField<int>("part"); }
-        void SetPart(int value) const { WriteField<int>("part", value); }
+        void part(int value) const { WriteField<int>("part", value); }
         float weight() const { return ReadField<float>("weight"); }
-        void SetWeight(float value) const { WriteField<float>("weight", value); }
+        void weight(float value) const { WriteField<float>("weight", value); }
         void* when() const { return ReadField<void*>("when"); }
         void* positions() const { return ReadField<void*>("positions"); }
     };

@@ -11,8 +11,8 @@ namespace CivitasPoly::Nations::Strategic
         explicit NationResources(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Strategic", "NationResources") {}
     public:
-        float FreeProduction(int k) const { void* args[] = { &k }; return CallValue<float>("FreeProduction", args, 1); }
-        float FreeField(int k) const { void* args[] = { &k }; return CallValue<float>("FreeField", args, 1); }
+        float FreeProduction(int k) const { void* __callArgs[] = { &k }; return CallValue<float>("FreeProduction", __callArgs, 1); }
+        float FreeField(int k) const { void* __callArgs[] = { &k }; return CallValue<float>("FreeField", __callArgs, 1); }
         void* points() const { return ReadField<void*>("points"); }
         void* market() const { return ReadField<void*>("market"); }
         void* marketUnits() const { return ReadField<void*>("marketUnits"); }
@@ -23,11 +23,11 @@ namespace CivitasPoly::Nations::Strategic
         void* productionUsed() const { return ReadField<void*>("productionUsed"); }
         void* fieldUsed() const { return ReadField<void*>("fieldUsed"); }
         int idleUnorganized() const { return ReadField<int>("idleUnorganized"); }
-        void SetIdleUnorganized(int value) const { WriteField<int>("idleUnorganized", value); }
+        void idleUnorganized(int value) const { WriteField<int>("idleUnorganized", value); }
         void* lineScale() const { return ReadField<void*>("lineScale"); }
         float forgeScale() const { return ReadField<float>("forgeScale"); }
-        void SetForgeScale(float value) const { WriteField<float>("forgeScale", value); }
+        void forgeScale(float value) const { WriteField<float>("forgeScale", value); }
         int stamp() const { return ReadField<int>("stamp"); }
-        void SetStamp(int value) const { WriteField<int>("stamp", value); }
+        void stamp(int value) const { WriteField<int>("stamp", value); }
     };
 }

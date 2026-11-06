@@ -12,7 +12,7 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "PanNationalBalance") {}
     public:
         bool Enabled() const { return ReadStaticField<bool>("Enabled"); }
-        void SetEnabled(bool value) const { WriteStaticField<bool>("Enabled", value); }
+        void Enabled(bool value) const { WriteStaticField<bool>("Enabled", value); }
         int KinMeetMax() const { return ReadStaticField<int>("KinMeetMax"); }
         int KinMeetTop() const { return ReadStaticField<int>("KinMeetTop"); }
         float KinOpinion() const { return ReadStaticField<float>("KinOpinion"); }

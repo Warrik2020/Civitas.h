@@ -12,18 +12,18 @@ namespace CivitasPoly::Nations::Lod
             : ManagedType(api, object, "CivitasPoly.Nations.Lod", "AiRelevanceCore") {}
     public:
         void Reset() const { Call("Reset", nullptr, 0); }
-        void Compute(void* w, int now, void* tiers, void* muls) const { void* args[] = { w, &now, &tiers, &muls }; Call("Compute", args, 4); }
+        void Compute(void* w, int now, void* tiers, void* muls) const { void* __callArgs[] = { w, &now, &tiers, &muls }; Call("Compute", __callArgs, 4); }
         int RegionalMul() const { return ReadField<int>("RegionalMul"); }
-        void SetRegionalMul(int value) const { WriteField<int>("RegionalMul", value); }
+        void RegionalMul(int value) const { WriteField<int>("RegionalMul", value); }
         int DistantMul() const { return ReadField<int>("DistantMul"); }
-        void SetDistantMul(int value) const { WriteField<int>("DistantMul", value); }
+        void DistantMul(int value) const { WriteField<int>("DistantMul", value); }
         int WarMulCap() const { return ReadField<int>("WarMulCap"); }
-        void SetWarMulCap(int value) const { WriteField<int>("WarMulCap", value); }
+        void WarMulCap(int value) const { WriteField<int>("WarMulCap", value); }
         int RegionalPadTiles() const { return ReadField<int>("RegionalPadTiles"); }
-        void SetRegionalPadTiles(int value) const { WriteField<int>("RegionalPadTiles", value); }
+        void RegionalPadTiles(int value) const { WriteField<int>("RegionalPadTiles", value); }
         int DemoteAfterTicks() const { return ReadField<int>("DemoteAfterTicks"); }
-        void SetDemoteAfterTicks(int value) const { WriteField<int>("DemoteAfterTicks", value); }
+        void DemoteAfterTicks(int value) const { WriteField<int>("DemoteAfterTicks", value); }
         bool WarMatch() const { return ReadField<bool>("WarMatch"); }
-        void SetWarMatch(bool value) const { WriteField<bool>("WarMatch", value); }
+        void WarMatch(bool value) const { WriteField<bool>("WarMatch", value); }
     };
 }

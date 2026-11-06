@@ -11,6 +11,6 @@ namespace CivitasPoly::Nations::TimeSkip
         explicit WakeKeys(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.TimeSkip", "WakeKeys") {}
     public:
-        void* Of(const char* kind, int a = -1, int b = -1) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(kind ? kind : "") : nullptr; void* args[] = { managed_0, &a, &b }; return CallStatic("Of", args, 3); }
+        void* Of(const char* kind, int a = -1, int b = -1) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(kind ? kind : "") : nullptr; void* __callArgs[] = { managed_0, &a, &b }; return CallStatic("Of", __callArgs, 3); }
     };
 }

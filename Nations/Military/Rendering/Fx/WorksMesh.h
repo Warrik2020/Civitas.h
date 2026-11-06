@@ -14,9 +14,9 @@ namespace CivitasPoly::Nations::Military::Rendering::Fx
         void Dispose() const { Call("Dispose", nullptr, 0); }
         void Begin() const { Call("Begin", nullptr, 0); }
         void End() const { Call("End", nullptr, 0); }
-        void Render(void* localToWorld, float fade) const { void* args[] = { localToWorld, &fade }; Call("Render", args, 2); }
+        void Render(void* localToWorld, float fade) const { void* __callArgs[] = { localToWorld, &fade }; Call("Render", __callArgs, 2); }
         void Hide() const { Call("Hide", nullptr, 0); }
-        void AddWorks(void* g, void* offset, float unitsPerMetre, float pxPerUnit, float fade, float minWidthPx) const { void* args[] = { g, offset, &unitsPerMetre, &pxPerUnit, &fade, &minWidthPx }; Call("AddWorks", args, 6); }
-        void AddCrater(void* at, float radiusUnits, float pxPerUnit, float fade, float seed, float minRadiusPx) const { void* args[] = { at, &radiusUnits, &pxPerUnit, &fade, &seed, &minRadiusPx }; Call("AddCrater", args, 6); }
+        void AddWorks(void* g, void* offset, float unitsPerMetre, float pxPerUnit, float fade, float minWidthPx = 2.2f) const { void* __callArgs[] = { g, offset, &unitsPerMetre, &pxPerUnit, &fade, &minWidthPx }; Call("AddWorks", __callArgs, 6); }
+        void AddCrater(void* at, float radiusUnits, float pxPerUnit, float fade, float seed, float minRadiusPx = 1.5f) const { void* __callArgs[] = { at, &radiusUnits, &pxPerUnit, &fade, &seed, &minRadiusPx }; Call("AddCrater", __callArgs, 6); }
     };
 }

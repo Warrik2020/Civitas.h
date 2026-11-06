@@ -12,14 +12,14 @@ namespace CivitasPoly::Scenario
             : ManagedType(api, object, "CivitasPoly.Scenario", "SerLockdown") {}
     public:
         int occupier() const { return ReadField<int>("occupier"); }
-        void SetOccupier(int value) const { WriteField<int>("occupier", value); }
+        void occupier(int value) const { WriteField<int>("occupier", value); }
         int host() const { return ReadField<int>("host"); }
-        void SetHost(int value) const { WriteField<int>("host", value); }
+        void host(int value) const { WriteField<int>("host", value); }
         int stateId() const { return ReadField<int>("stateId"); }
-        void SetStateId(int value) const { WriteField<int>("stateId", value); }
+        void stateId(int value) const { WriteField<int>("stateId", value); }
         int progressTicks() const { return ReadField<int>("progressTicks"); }
-        void SetProgressTicks(int value) const { WriteField<int>("progressTicks", value); }
+        void progressTicks(int value) const { WriteField<int>("progressTicks", value); }
         bool locked() const { return ReadField<bool>("locked"); }
-        void SetLocked(bool value) const { WriteField<bool>("locked", value); }
+        void locked(bool value) const { WriteField<bool>("locked", value); }
     };
 }

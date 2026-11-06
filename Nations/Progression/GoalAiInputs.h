@@ -12,24 +12,24 @@ namespace CivitasPoly::Nations::Progression
             : ManagedType(api, object, "CivitasPoly.Nations.Progression", "GoalAiInputs") {}
     public:
         float expansionism() const { return ReadField<float>("expansionism"); }
-        void SetExpansionism(float value) const { WriteField<float>("expansionism", value); }
+        void expansionism(float value) const { WriteField<float>("expansionism", value); }
         float aggression() const { return ReadField<float>("aggression"); }
-        void SetAggression(float value) const { WriteField<float>("aggression", value); }
+        void aggression(float value) const { WriteField<float>("aggression", value); }
         float stability() const { return ReadField<float>("stability"); }
-        void SetStability(float value) const { WriteField<float>("stability", value); }
+        void stability(float value) const { WriteField<float>("stability", value); }
         float unsettledShare() const { return ReadField<float>("unsettledShare"); }
-        void SetUnsettledShare(float value) const { WriteField<float>("unsettledShare", value); }
+        void unsettledShare(float value) const { WriteField<float>("unsettledShare", value); }
         float ruledShare() const { return ReadField<float>("ruledShare"); }
-        void SetRuledShare(float value) const { WriteField<float>("ruledShare", value); }
+        void ruledShare(float value) const { WriteField<float>("ruledShare", value); }
         bool ownPeople() const { return ReadField<bool>("ownPeople"); }
-        void SetOwnPeople(bool value) const { WriteField<bool>("ownPeople", value); }
+        void ownPeople(bool value) const { WriteField<bool>("ownPeople", value); }
         float powerRatio() const { return ReadField<float>("powerRatio"); }
-        void SetPowerRatio(float value) const { WriteField<float>("powerRatio", value); }
+        void powerRatio(float value) const { WriteField<float>("powerRatio", value); }
         float opinion() const { return ReadField<float>("opinion"); }
-        void SetOpinion(float value) const { WriteField<float>("opinion", value); }
+        void opinion(float value) const { WriteField<float>("opinion", value); }
         bool atWar() const { return ReadField<bool>("atWar"); }
-        void SetAtWar(bool value) const { WriteField<bool>("atWar", value); }
+        void atWar(bool value) const { WriteField<bool>("atWar", value); }
         bool deficit() const { return ReadField<bool>("deficit"); }
-        void SetDeficit(bool value) const { WriteField<bool>("deficit", value); }
+        void deficit(bool value) const { WriteField<bool>("deficit", value); }
     };
 }

@@ -11,8 +11,8 @@ namespace CivitasPoly::Nations::Military::Command
         explicit CommandBonus(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Command", "CommandBonus") {}
     public:
-        float AttackMul(void* d) const { void* args[] = { d }; return CallStaticValue<float>("AttackMul", args, 1); }
-        float DefenceMul(void* d) const { void* args[] = { d }; return CallStaticValue<float>("DefenceMul", args, 1); }
-        float SpeedMul(void* d) const { void* args[] = { d }; return CallStaticValue<float>("SpeedMul", args, 1); }
+        float AttackMul(void* d) const { void* __callArgs[] = { d }; return CallStaticValue<float>("AttackMul", __callArgs, 1); }
+        float DefenceMul(void* d) const { void* __callArgs[] = { d }; return CallStaticValue<float>("DefenceMul", __callArgs, 1); }
+        float SpeedMul(void* d) const { void* __callArgs[] = { d }; return CallStaticValue<float>("SpeedMul", __callArgs, 1); }
     };
 }

@@ -11,6 +11,6 @@ namespace CivitasPoly::Nations::Weapons
         explicit TemplateRetrofit(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Weapons", "TemplateRetrofit") {}
     public:
-        void Tick(void* mil, void* it, void* cfg, int tick) const { void* args[] = { mil, it, cfg, &tick }; CallStatic("Tick", args, 4); }
+        void Tick(void* mil, void* it, void* cfg, int tick) const { void* __callArgs[] = { mil, it, cfg, &tick }; CallStatic("Tick", __callArgs, 4); }
     };
 }

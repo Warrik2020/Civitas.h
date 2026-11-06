@@ -11,6 +11,6 @@ namespace CivitasPoly::Llm
         explicit TalkButtonLive(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Llm", "TalkButtonLive") {}
     public:
-        void Bind(void* b) const { void* args[] = { b }; Call("Bind", args, 1); }
+        void Bind(void* b) const { void* __callArgs[] = { b }; Call("Bind", __callArgs, 1); }
     };
 }

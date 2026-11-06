@@ -12,20 +12,20 @@ namespace CivitasPoly::Nations::Military::Tactical
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Tactical", "UnitStats") {}
     public:
         float meanFear() const { return ReadField<float>("meanFear"); }
-        void SetMeanFear(float value) const { WriteField<float>("meanFear", value); }
+        void meanFear(float value) const { WriteField<float>("meanFear", value); }
         float meanSupp() const { return ReadField<float>("meanSupp"); }
-        void SetMeanSupp(float value) const { WriteField<float>("meanSupp", value); }
+        void meanSupp(float value) const { WriteField<float>("meanSupp", value); }
         int firing() const { return ReadField<int>("firing"); }
-        void SetFiring(int value) const { WriteField<int>("firing", value); }
+        void firing(int value) const { WriteField<int>("firing", value); }
         int engaged() const { return ReadField<int>("engaged"); }
-        void SetEngaged(int value) const { WriteField<int>("engaged", value); }
+        void engaged(int value) const { WriteField<int>("engaged", value); }
         int pinned() const { return ReadField<int>("pinned"); }
-        void SetPinned(int value) const { WriteField<int>("pinned", value); }
+        void pinned(int value) const { WriteField<int>("pinned", value); }
         int deaths() const { return ReadField<int>("deaths"); }
-        void SetDeaths(int value) const { WriteField<int>("deaths", value); }
+        void deaths(int value) const { WriteField<int>("deaths", value); }
         void* lo() const { return ReadField<void*>("lo"); }
-        void SetLo(void* value) const { WriteField<void*>("lo", value); }
+        void lo(void* value) const { WriteField<void*>("lo", value); }
         void* hi() const { return ReadField<void*>("hi"); }
-        void SetHi(void* value) const { WriteField<void*>("hi", value); }
+        void hi(void* value) const { WriteField<void*>("hi", value); }
     };
 }

@@ -12,16 +12,16 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "PendingIncursionCard") {}
     public:
         int kind() const { return ReadField<int>("kind"); }
-        void SetKind(int value) const { WriteField<int>("kind", value); }
+        void kind(int value) const { WriteField<int>("kind", value); }
         int violatorId() const { return ReadField<int>("violatorId"); }
-        void SetViolatorId(int value) const { WriteField<int>("violatorId", value); }
+        void violatorId(int value) const { WriteField<int>("violatorId", value); }
         int hostId() const { return ReadField<int>("hostId"); }
-        void SetHostId(int value) const { WriteField<int>("hostId", value); }
+        void hostId(int value) const { WriteField<int>("hostId", value); }
         int stateId() const { return ReadField<int>("stateId"); }
-        void SetStateId(int value) const { WriteField<int>("stateId", value); }
+        void stateId(int value) const { WriteField<int>("stateId", value); }
         int createdTick() const { return ReadField<int>("createdTick"); }
-        void SetCreatedTick(int value) const { WriteField<int>("createdTick", value); }
+        void createdTick(int value) const { WriteField<int>("createdTick", value); }
         int deadlineTick() const { return ReadField<int>("deadlineTick"); }
-        void SetDeadlineTick(int value) const { WriteField<int>("deadlineTick", value); }
+        void deadlineTick(int value) const { WriteField<int>("deadlineTick", value); }
     };
 }

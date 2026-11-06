@@ -12,32 +12,32 @@ namespace CivitasPoly::Scenario
             : ManagedType(api, object, "CivitasPoly.Scenario", "SerAffFigure") {}
     public:
         int id() const { return ReadField<int>("id"); }
-        void SetId(int value) const { WriteField<int>("id", value); }
+        void id(int value) const { WriteField<int>("id", value); }
         int nationId() const { return ReadField<int>("nationId"); }
-        void SetNationId(int value) const { WriteField<int>("nationId", value); }
+        void nationId(int value) const { WriteField<int>("nationId", value); }
         int bornTick() const { return ReadField<int>("bornTick"); }
-        void SetBornTick(int value) const { WriteField<int>("bornTick", value); }
+        void bornTick(int value) const { WriteField<int>("bornTick", value); }
         int status() const { return ReadField<int>("status"); }
-        void SetStatus(int value) const { WriteField<int>("status", value); }
+        void status(int value) const { WriteField<int>("status", value); }
         int statusTick() const { return ReadField<int>("statusTick"); }
-        void SetStatusTick(int value) const { WriteField<int>("statusTick", value); }
+        void statusTick(int value) const { WriteField<int>("statusTick", value); }
         int renown() const { return ReadField<int>("renown"); }
-        void SetRenown(int value) const { WriteField<int>("renown", value); }
+        void renown(int value) const { WriteField<int>("renown", value); }
         int lastThread() const { return ReadField<int>("lastThread"); }
-        void SetLastThread(int value) const { WriteField<int>("lastThread", value); }
+        void lastThread(int value) const { WriteField<int>("lastThread", value); }
         int threadCount() const { return ReadField<int>("threadCount"); }
-        void SetThreadCount(int value) const { WriteField<int>("threadCount", value); }
+        void threadCount(int value) const { WriteField<int>("threadCount", value); }
         int stateId() const { return ReadField<int>("stateId"); }
-        void SetStateId(int value) const { WriteField<int>("stateId", value); }
+        void stateId(int value) const { WriteField<int>("stateId", value); }
         bool female() const { return ReadField<bool>("female"); }
-        void SetFemale(bool value) const { WriteField<bool>("female", value); }
+        void female(bool value) const { WriteField<bool>("female", value); }
         void* role() const { return ReadField<void*>("role"); }
-        void SetRole(void* value) const { WriteField<void*>("role", value); }
+        void role(void* value) const { WriteField<void*>("role", value); }
         void* given() const { return ReadField<void*>("given"); }
-        void SetGiven(void* value) const { WriteField<void*>("given", value); }
+        void given(void* value) const { WriteField<void*>("given", value); }
         void* house() const { return ReadField<void*>("house"); }
-        void SetHouse(void* value) const { WriteField<void*>("house", value); }
+        void house(void* value) const { WriteField<void*>("house", value); }
         void* traits() const { return ReadField<void*>("traits"); }
-        void SetTraits(void* value) const { WriteField<void*>("traits", value); }
+        void traits(void* value) const { WriteField<void*>("traits", value); }
     };
 }

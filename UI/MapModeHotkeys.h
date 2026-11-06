@@ -11,6 +11,6 @@ namespace CivitasPoly::UI
         explicit MapModeHotkeys(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "MapModeHotkeys") {}
     public:
-        void Caption(const char* eyebrow, const char* title, const char* hint) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(eyebrow ? eyebrow : "") : nullptr; void* managed_1 = Api() && Api()->NewString ? Api()->NewString(title ? title : "") : nullptr; void* managed_2 = Api() && Api()->NewString ? Api()->NewString(hint ? hint : "") : nullptr; void* args[] = { managed_0, managed_1, managed_2 }; CallStatic("Caption", args, 3); }
+        void Caption(const char* eyebrow, const char* title, const char* hint) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(eyebrow ? eyebrow : "") : nullptr; void* managed_1 = Api() && Api()->NewString ? Api()->NewString(title ? title : "") : nullptr; void* managed_2 = Api() && Api()->NewString ? Api()->NewString(hint ? hint : "") : nullptr; void* __callArgs[] = { managed_0, managed_1, managed_2 }; CallStatic("Caption", __callArgs, 3); }
     };
 }

@@ -12,8 +12,8 @@ namespace CivitasPoly::UI::Youtuber
             : ManagedType(api, object, "CivitasPoly.UI.Youtuber", "YoutuberSettingsLive") {}
     public:
         void* mode() const { return ReadField<void*>("mode"); }
-        void SetMode(void* value) const { WriteField<void*>("mode", value); }
+        void mode(void* value) const { WriteField<void*>("mode", value); }
         void* ring() const { return ReadField<void*>("ring"); }
-        void SetRing(void* value) const { WriteField<void*>("ring", value); }
+        void ring(void* value) const { WriteField<void*>("ring", value); }
     };
 }

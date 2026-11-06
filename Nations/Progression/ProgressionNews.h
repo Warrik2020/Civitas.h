@@ -11,6 +11,6 @@ namespace CivitasPoly::Nations::Progression
         explicit ProgressionNews(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Progression", "ProgressionNews") {}
     public:
-        void Raise(int nationId, int kind, const char* title, void* terms, int tile, bool good) const { void* managed_2 = Api() && Api()->NewString ? Api()->NewString(title ? title : "") : nullptr; void* args[] = { &nationId, &kind, managed_2, terms, &tile, &good }; CallStatic("Raise", args, 6); }
+        void Raise(int nationId, int kind, const char* title, void* terms, int tile, bool good) const { void* managed_2 = Api() && Api()->NewString ? Api()->NewString(title ? title : "") : nullptr; void* __callArgs[] = { &nationId, &kind, managed_2, terms, &tile, &good }; CallStatic("Raise", __callArgs, 6); }
     };
 }

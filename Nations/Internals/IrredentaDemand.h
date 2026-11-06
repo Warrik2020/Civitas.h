@@ -12,14 +12,14 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "IrredentaDemand") {}
     public:
         int claimantId() const { return ReadField<int>("claimantId"); }
-        void SetClaimantId(int value) const { WriteField<int>("claimantId", value); }
+        void claimantId(int value) const { WriteField<int>("claimantId", value); }
         int targetId() const { return ReadField<int>("targetId"); }
-        void SetTargetId(int value) const { WriteField<int>("targetId", value); }
+        void targetId(int value) const { WriteField<int>("targetId", value); }
         int stateId() const { return ReadField<int>("stateId"); }
-        void SetStateId(int value) const { WriteField<int>("stateId", value); }
+        void stateId(int value) const { WriteField<int>("stateId", value); }
         int createdTick() const { return ReadField<int>("createdTick"); }
-        void SetCreatedTick(int value) const { WriteField<int>("createdTick", value); }
+        void createdTick(int value) const { WriteField<int>("createdTick", value); }
         int deadlineTick() const { return ReadField<int>("deadlineTick"); }
-        void SetDeadlineTick(int value) const { WriteField<int>("deadlineTick", value); }
+        void deadlineTick(int value) const { WriteField<int>("deadlineTick", value); }
     };
 }

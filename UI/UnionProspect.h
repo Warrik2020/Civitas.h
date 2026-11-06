@@ -12,10 +12,10 @@ namespace CivitasPoly::UI
             : ManagedType(api, object, "CivitasPoly.UI", "UnionProspect") {}
     public:
         int nationId() const { return ReadField<int>("nationId"); }
-        void SetNationId(int value) const { WriteField<int>("nationId", value); }
+        void nationId(int value) const { WriteField<int>("nationId", value); }
         void* deal() const { return ReadField<void*>("deal"); }
-        void SetDeal(void* value) const { WriteField<void*>("deal", value); }
+        void deal(void* value) const { WriteField<void*>("deal", value); }
         float odds() const { return ReadField<float>("odds"); }
-        void SetOdds(float value) const { WriteField<float>("odds", value); }
+        void odds(float value) const { WriteField<float>("odds", value); }
     };
 }

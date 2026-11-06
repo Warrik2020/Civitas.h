@@ -11,6 +11,6 @@ namespace CivitasPoly::Platform
         explicit DesignPreview(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Platform", "DesignPreview") {}
     public:
-        void* Png(void* d, int size) const { void* args[] = { d, &size }; return CallStatic("Png", args, 2); }
+        void* Png(void* d, int size) const { void* __callArgs[] = { d, &size }; return CallStatic("Png", __callArgs, 2); }
     };
 }

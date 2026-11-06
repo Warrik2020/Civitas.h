@@ -12,14 +12,14 @@ namespace CivitasPoly::Scenario
             : ManagedType(api, object, "CivitasPoly.Scenario", "SerAmbitions") {}
     public:
         int format() const { return ReadField<int>("format"); }
-        void SetFormat(int value) const { WriteField<int>("format", value); }
+        void format(int value) const { WriteField<int>("format", value); }
         int nation() const { return ReadField<int>("nation"); }
-        void SetNation(int value) const { WriteField<int>("nation", value); }
+        void nation(int value) const { WriteField<int>("nation", value); }
         int band() const { return ReadField<int>("band"); }
-        void SetBand(int value) const { WriteField<int>("band", value); }
+        void band(int value) const { WriteField<int>("band", value); }
         void* baselines() const { return ReadField<void*>("baselines"); }
-        void SetBaselines(void* value) const { WriteField<void*>("baselines", value); }
+        void baselines(void* value) const { WriteField<void*>("baselines", value); }
         void* done() const { return ReadField<void*>("done"); }
-        void SetDone(void* value) const { WriteField<void*>("done", value); }
+        void done(void* value) const { WriteField<void*>("done", value); }
     };
 }

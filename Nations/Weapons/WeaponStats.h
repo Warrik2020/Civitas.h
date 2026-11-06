@@ -12,112 +12,112 @@ namespace CivitasPoly::Nations::Weapons
             : ManagedType(api, object, "CivitasPoly.Nations.Weapons", "WeaponStats") {}
     public:
         int domain() const { return ReadField<int>("domain"); }
-        void SetDomain(int value) const { WriteField<int>("domain", value); }
+        void domain(int value) const { WriteField<int>("domain", value); }
         float muzzleVelocity() const { return ReadField<float>("muzzleVelocity"); }
-        void SetMuzzleVelocity(float value) const { WriteField<float>("muzzleVelocity", value); }
+        void muzzleVelocity(float value) const { WriteField<float>("muzzleVelocity", value); }
         float projectileGrams() const { return ReadField<float>("projectileGrams"); }
-        void SetProjectileGrams(float value) const { WriteField<float>("projectileGrams", value); }
+        void projectileGrams(float value) const { WriteField<float>("projectileGrams", value); }
         float energyJ() const { return ReadField<float>("energyJ"); }
-        void SetEnergyJ(float value) const { WriteField<float>("energyJ", value); }
+        void energyJ(float value) const { WriteField<float>("energyJ", value); }
         float capacity() const { return ReadField<float>("capacity"); }
-        void SetCapacity(float value) const { WriteField<float>("capacity", value); }
+        void capacity(float value) const { WriteField<float>("capacity", value); }
         float rateOfFire() const { return ReadField<float>("rateOfFire"); }
-        void SetRateOfFire(float value) const { WriteField<float>("rateOfFire", value); }
+        void rateOfFire(float value) const { WriteField<float>("rateOfFire", value); }
         float rangeM() const { return ReadField<float>("rangeM"); }
-        void SetRangeM(float value) const { WriteField<float>("rangeM", value); }
+        void rangeM(float value) const { WriteField<float>("rangeM", value); }
         float accuracy() const { return ReadField<float>("accuracy"); }
-        void SetAccuracy(float value) const { WriteField<float>("accuracy", value); }
+        void accuracy(float value) const { WriteField<float>("accuracy", value); }
         float handling() const { return ReadField<float>("handling"); }
-        void SetHandling(float value) const { WriteField<float>("handling", value); }
+        void handling(float value) const { WriteField<float>("handling", value); }
         float wallMm() const { return ReadField<float>("wallMm"); }
-        void SetWallMm(float value) const { WriteField<float>("wallMm", value); }
+        void wallMm(float value) const { WriteField<float>("wallMm", value); }
         float wallRequiredMm() const { return ReadField<float>("wallRequiredMm"); }
-        void SetWallRequiredMm(float value) const { WriteField<float>("wallRequiredMm", value); }
+        void wallRequiredMm(float value) const { WriteField<float>("wallRequiredMm", value); }
         float wallServiceMm() const { return ReadField<float>("wallServiceMm"); }
-        void SetWallServiceMm(float value) const { WriteField<float>("wallServiceMm", value); }
+        void wallServiceMm(float value) const { WriteField<float>("wallServiceMm", value); }
         float fullVelocity() const { return ReadField<float>("fullVelocity"); }
-        void SetFullVelocity(float value) const { WriteField<float>("fullVelocity", value); }
+        void fullVelocity(float value) const { WriteField<float>("fullVelocity", value); }
         float firepower() const { return ReadField<float>("firepower"); }
-        void SetFirepower(float value) const { WriteField<float>("firepower", value); }
+        void firepower(float value) const { WriteField<float>("firepower", value); }
         float impactJ() const { return ReadField<float>("impactJ"); }
-        void SetImpactJ(float value) const { WriteField<float>("impactJ", value); }
+        void impactJ(float value) const { WriteField<float>("impactJ", value); }
         float balanceMm() const { return ReadField<float>("balanceMm"); }
-        void SetBalanceMm(float value) const { WriteField<float>("balanceMm", value); }
+        void balanceMm(float value) const { WriteField<float>("balanceMm", value); }
         float reach() const { return ReadField<float>("reach"); }
-        void SetReach(float value) const { WriteField<float>("reach", value); }
+        void reach(float value) const { WriteField<float>("reach", value); }
         float cut() const { return ReadField<float>("cut"); }
-        void SetCut(float value) const { WriteField<float>("cut", value); }
+        void cut(float value) const { WriteField<float>("cut", value); }
         float thrust() const { return ReadField<float>("thrust"); }
-        void SetThrust(float value) const { WriteField<float>("thrust", value); }
+        void thrust(float value) const { WriteField<float>("thrust", value); }
         float blunt() const { return ReadField<float>("blunt"); }
-        void SetBlunt(float value) const { WriteField<float>("blunt", value); }
+        void blunt(float value) const { WriteField<float>("blunt", value); }
         float piercing() const { return ReadField<float>("piercing"); }
-        void SetPiercing(float value) const { WriteField<float>("piercing", value); }
+        void piercing(float value) const { WriteField<float>("piercing", value); }
         float agility() const { return ReadField<float>("agility"); }
-        void SetAgility(float value) const { WriteField<float>("agility", value); }
+        void agility(float value) const { WriteField<float>("agility", value); }
         float durability() const { return ReadField<float>("durability"); }
-        void SetDurability(float value) const { WriteField<float>("durability", value); }
+        void durability(float value) const { WriteField<float>("durability", value); }
         void* protection() const { return ReadField<void*>("protection"); }
-        void SetProtection(void* value) const { WriteField<void*>("protection", value); }
+        void protection(void* value) const { WriteField<void*>("protection", value); }
         float coverage() const { return ReadField<float>("coverage"); }
-        void SetCoverage(float value) const { WriteField<float>("coverage", value); }
+        void coverage(float value) const { WriteField<float>("coverage", value); }
         float carriedKg() const { return ReadField<float>("carriedKg"); }
-        void SetCarriedKg(float value) const { WriteField<float>("carriedKg", value); }
+        void carriedKg(float value) const { WriteField<float>("carriedKg", value); }
         float mobility() const { return ReadField<float>("mobility"); }
-        void SetMobility(float value) const { WriteField<float>("mobility", value); }
+        void mobility(float value) const { WriteField<float>("mobility", value); }
         float vision() const { return ReadField<float>("vision"); }
-        void SetVision(float value) const { WriteField<float>("vision", value); }
+        void vision(float value) const { WriteField<float>("vision", value); }
         float strengthBonus() const { return ReadField<float>("strengthBonus"); }
-        void SetStrengthBonus(float value) const { WriteField<float>("strengthBonus", value); }
+        void strengthBonus(float value) const { WriteField<float>("strengthBonus", value); }
         void* organProt() const { return ReadField<void*>("organProt"); }
-        void SetOrganProt(void* value) const { WriteField<void*>("organProt", value); }
+        void organProt(void* value) const { WriteField<void*>("organProt", value); }
         float ergonomics() const { return ReadField<float>("ergonomics"); }
-        void SetErgonomics(float value) const { WriteField<float>("ergonomics", value); }
+        void ergonomics(float value) const { WriteField<float>("ergonomics", value); }
         int ergoWorst() const { return ReadField<int>("ergoWorst"); }
-        void SetErgoWorst(int value) const { WriteField<int>("ergoWorst", value); }
+        void ergoWorst(int value) const { WriteField<int>("ergoWorst", value); }
         float loadLitres() const { return ReadField<float>("loadLitres"); }
-        void SetLoadLitres(float value) const { WriteField<float>("loadLitres", value); }
+        void loadLitres(float value) const { WriteField<float>("loadLitres", value); }
         float loadKg() const { return ReadField<float>("loadKg"); }
-        void SetLoadKg(float value) const { WriteField<float>("loadKg", value); }
+        void loadKg(float value) const { WriteField<float>("loadKg", value); }
         float loadBonus() const { return ReadField<float>("loadBonus"); }
-        void SetLoadBonus(float value) const { WriteField<float>("loadBonus", value); }
+        void loadBonus(float value) const { WriteField<float>("loadBonus", value); }
         float vehicleAttack() const { return ReadField<float>("vehicleAttack"); }
-        void SetVehicleAttack(float value) const { WriteField<float>("vehicleAttack", value); }
+        void vehicleAttack(float value) const { WriteField<float>("vehicleAttack", value); }
         float vehicleDefence() const { return ReadField<float>("vehicleDefence"); }
-        void SetVehicleDefence(float value) const { WriteField<float>("vehicleDefence", value); }
+        void vehicleDefence(float value) const { WriteField<float>("vehicleDefence", value); }
         float speedKph() const { return ReadField<float>("speedKph"); }
-        void SetSpeedKph(float value) const { WriteField<float>("speedKph", value); }
+        void speedKph(float value) const { WriteField<float>("speedKph", value); }
         float penetrationMm() const { return ReadField<float>("penetrationMm"); }
-        void SetPenetrationMm(float value) const { WriteField<float>("penetrationMm", value); }
+        void penetrationMm(float value) const { WriteField<float>("penetrationMm", value); }
         float frontalMm() const { return ReadField<float>("frontalMm"); }
-        void SetFrontalMm(float value) const { WriteField<float>("frontalMm", value); }
+        void frontalMm(float value) const { WriteField<float>("frontalMm", value); }
         float weightT() const { return ReadField<float>("weightT"); }
-        void SetWeightT(float value) const { WriteField<float>("weightT", value); }
+        void weightT(float value) const { WriteField<float>("weightT", value); }
         float powerKw() const { return ReadField<float>("powerKw"); }
-        void SetPowerKw(float value) const { WriteField<float>("powerKw", value); }
+        void powerKw(float value) const { WriteField<float>("powerKw", value); }
         float groundKpa() const { return ReadField<float>("groundKpa"); }
-        void SetGroundKpa(float value) const { WriteField<float>("groundKpa", value); }
+        void groundKpa(float value) const { WriteField<float>("groundKpa", value); }
         float carryT() const { return ReadField<float>("carryT"); }
-        void SetCarryT(float value) const { WriteField<float>("carryT", value); }
+        void carryT(float value) const { WriteField<float>("carryT", value); }
         float shellKg() const { return ReadField<float>("shellKg"); }
-        void SetShellKg(float value) const { WriteField<float>("shellKg", value); }
+        void shellKg(float value) const { WriteField<float>("shellKg", value); }
         float blastRadiusM() const { return ReadField<float>("blastRadiusM"); }
-        void SetBlastRadiusM(float value) const { WriteField<float>("blastRadiusM", value); }
+        void blastRadiusM(float value) const { WriteField<float>("blastRadiusM", value); }
         float towKph() const { return ReadField<float>("towKph"); }
-        void SetTowKph(float value) const { WriteField<float>("towKph", value); }
+        void towKph(float value) const { WriteField<float>("towKph", value); }
         float reliability() const { return ReadField<float>("reliability"); }
-        void SetReliability(float value) const { WriteField<float>("reliability", value); }
+        void reliability(float value) const { WriteField<float>("reliability", value); }
         float weightKg() const { return ReadField<float>("weightKg"); }
-        void SetWeightKg(float value) const { WriteField<float>("weightKg", value); }
+        void weightKg(float value) const { WriteField<float>("weightKg", value); }
         float lengthMm() const { return ReadField<float>("lengthMm"); }
-        void SetLengthMm(float value) const { WriteField<float>("lengthMm", value); }
+        void lengthMm(float value) const { WriteField<float>("lengthMm", value); }
         int crew() const { return ReadField<int>("crew"); }
-        void SetCrew(int value) const { WriteField<int>("crew", value); }
+        void crew(int value) const { WriteField<int>("crew", value); }
         float complexity() const { return ReadField<float>("complexity"); }
-        void SetComplexity(float value) const { WriteField<float>("complexity", value); }
+        void complexity(float value) const { WriteField<float>("complexity", value); }
         float raw() const { return ReadField<float>("raw"); }
-        void SetRaw(float value) const { WriteField<float>("raw", value); }
+        void raw(float value) const { WriteField<float>("raw", value); }
         float score() const { return ReadField<float>("score"); }
-        void SetScore(float value) const { WriteField<float>("score", value); }
+        void score(float value) const { WriteField<float>("score", value); }
     };
 }

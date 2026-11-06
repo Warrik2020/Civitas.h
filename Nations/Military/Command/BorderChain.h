@@ -14,6 +14,6 @@ namespace CivitasPoly::Nations::Military::Command
         void* edges() const { return ReadField<void*>("edges"); }
         void* foes() const { return ReadField<void*>("foes"); }
         bool closed() const { return ReadField<bool>("closed"); }
-        void SetClosed(bool value) const { WriteField<bool>("closed", value); }
+        void closed(bool value) const { WriteField<bool>("closed", value); }
     };
 }

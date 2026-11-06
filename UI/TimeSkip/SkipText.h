@@ -11,14 +11,14 @@ namespace CivitasPoly::UI::TimeSkip
         explicit SkipText(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.TimeSkip", "SkipText") {}
     public:
-        void* Name(void* w, int id, bool startOfSentence) const { void* args[] = { w, &id, &startOfSentence }; return CallStatic("Name", args, 3); }
-        void* Name(void* n, bool startOfSentence) const { void* args[] = { n, &startOfSentence }; return CallStatic("Name", args, 2); }
-        void* Short_(void* n) const { void* args[] = { n }; return CallStatic("Short", args, 1); }
-        void* Cap(const char* s) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(s ? s : "") : nullptr; void* args[] = { managed_0 }; return CallStatic("Cap", args, 1); }
-        void* Money(float value) const { void* args[] = { &value }; return CallStatic("Money", args, 1); }
-        void* Signed_(float value) const { void* args[] = { &value }; return CallStatic("Signed", args, 1); }
-        void* SignedInt(int value) const { void* args[] = { &value }; return CallStatic("SignedInt", args, 1); }
-        void* Months(int months) const { void* args[] = { &months }; return CallStatic("Months", args, 1); }
-        int MonthsBetween(int from, int to, void* cfg) const { void* args[] = { &from, &to, cfg }; return CallStaticValue<int>("MonthsBetween", args, 3); }
+        void* Name(void* w, int id, bool startOfSentence) const { void* __callArgs[] = { w, &id, &startOfSentence }; return CallStatic("Name", __callArgs, 3); }
+        void* Name(void* n, bool startOfSentence) const { void* __callArgs[] = { n, &startOfSentence }; return CallStatic("Name", __callArgs, 2); }
+        void* Short_(void* n) const { void* __callArgs[] = { n }; return CallStatic("Short", __callArgs, 1); }
+        void* Cap(const char* s) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(s ? s : "") : nullptr; void* __callArgs[] = { managed_0 }; return CallStatic("Cap", __callArgs, 1); }
+        void* Money(float value) const { void* __callArgs[] = { &value }; return CallStatic("Money", __callArgs, 1); }
+        void* Signed_(float value) const { void* __callArgs[] = { &value }; return CallStatic("Signed", __callArgs, 1); }
+        void* SignedInt(int value) const { void* __callArgs[] = { &value }; return CallStatic("SignedInt", __callArgs, 1); }
+        void* Months(int months) const { void* __callArgs[] = { &months }; return CallStatic("Months", __callArgs, 1); }
+        int MonthsBetween(int from, int to, void* cfg) const { void* __callArgs[] = { &from, &to, cfg }; return CallStaticValue<int>("MonthsBetween", __callArgs, 3); }
     };
 }

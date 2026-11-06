@@ -12,15 +12,15 @@ namespace CivitasPoly::Nations::Military::Command
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Command", "NationCommand") {}
     public:
         int nationId() const { return ReadField<int>("nationId"); }
-        void SetNationId(int value) const { WriteField<int>("nationId", value); }
+        void nationId(int value) const { WriteField<int>("nationId", value); }
         void* armies() const { return ReadField<void*>("armies"); }
         void* groups() const { return ReadField<void*>("groups"); }
         void* generals() const { return ReadField<void*>("generals"); }
         int nextArmyOrdinal() const { return ReadField<int>("nextArmyOrdinal"); }
-        void SetNextArmyOrdinal(int value) const { WriteField<int>("nextArmyOrdinal", value); }
+        void nextArmyOrdinal(int value) const { WriteField<int>("nextArmyOrdinal", value); }
         int nextGroupOrdinal() const { return ReadField<int>("nextGroupOrdinal"); }
-        void SetNextGroupOrdinal(int value) const { WriteField<int>("nextGroupOrdinal", value); }
+        void nextGroupOrdinal(int value) const { WriteField<int>("nextGroupOrdinal", value); }
         int version() const { return ReadField<int>("version"); }
-        void SetVersion(int value) const { WriteField<int>("version", value); }
+        void version(int value) const { WriteField<int>("version", value); }
     };
 }

@@ -12,22 +12,22 @@ namespace CivitasPoly::Nations::Industry
             : ManagedType(api, object, "CivitasPoly.Nations.Industry", "StateBuilding") {}
     public:
         int stateId() const { return ReadField<int>("stateId"); }
-        void SetStateId(int value) const { WriteField<int>("stateId", value); }
+        void stateId(int value) const { WriteField<int>("stateId", value); }
         int type() const { return ReadField<int>("type"); }
-        void SetType(int value) const { WriteField<int>("type", value); }
+        void type(int value) const { WriteField<int>("type", value); }
         int nationId() const { return ReadField<int>("nationId"); }
-        void SetNationId(int value) const { WriteField<int>("nationId", value); }
+        void nationId(int value) const { WriteField<int>("nationId", value); }
         float progress() const { return ReadField<float>("progress"); }
-        void SetProgress(float value) const { WriteField<float>("progress", value); }
+        void progress(float value) const { WriteField<float>("progress", value); }
         float integrity() const { return ReadField<float>("integrity"); }
-        void SetIntegrity(float value) const { WriteField<float>("integrity", value); }
+        void integrity(float value) const { WriteField<float>("integrity", value); }
         int8_t tier() const { return ReadField<int8_t>("tier"); }
-        void SetTier(int8_t value) const { WriteField<int8_t>("tier", value); }
+        void tier(int8_t value) const { WriteField<int8_t>("tier", value); }
         int upgradeType() const { return ReadField<int>("upgradeType"); }
-        void SetUpgradeType(int value) const { WriteField<int>("upgradeType", value); }
+        void upgradeType(int value) const { WriteField<int>("upgradeType", value); }
         int8_t upgradeTier() const { return ReadField<int8_t>("upgradeTier"); }
-        void SetUpgradeTier(int8_t value) const { WriteField<int8_t>("upgradeTier", value); }
+        void upgradeTier(int8_t value) const { WriteField<int8_t>("upgradeTier", value); }
         float upgradeProgress() const { return ReadField<float>("upgradeProgress"); }
-        void SetUpgradeProgress(float value) const { WriteField<float>("upgradeProgress", value); }
+        void upgradeProgress(float value) const { WriteField<float>("upgradeProgress", value); }
     };
 }

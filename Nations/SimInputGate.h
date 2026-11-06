@@ -11,7 +11,7 @@ namespace CivitasPoly::Nations
         explicit SimInputGate(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations", "SimInputGate") {}
     public:
-        void* Ensure(void* host) const { void* args[] = { host }; return CallStatic("Ensure", args, 1); }
-        void DeferWrites(void* slider) const { void* args[] = { slider }; CallStatic("DeferWrites", args, 1); }
+        void* Ensure(void* host) const { void* __callArgs[] = { host }; return CallStatic("Ensure", __callArgs, 1); }
+        void DeferWrites(void* slider) const { void* __callArgs[] = { slider }; CallStatic("DeferWrites", __callArgs, 1); }
     };
 }

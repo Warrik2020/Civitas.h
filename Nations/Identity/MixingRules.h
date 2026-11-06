@@ -11,11 +11,11 @@ namespace CivitasPoly::Nations::Identity
         explicit MixingRules(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Identity", "MixingRules") {}
     public:
-        int HoldCap(uint8_t open) const { void* args[] = { &open }; return CallStaticValue<int>("HoldCap", args, 1); }
-        float PushWeight(int kind) const { void* args[] = { &kind }; return CallStaticValue<float>("PushWeight", args, 1); }
-        bool AxisMixes(int axis) const { void* args[] = { &axis }; return CallStaticValue<bool>("AxisMixes", args, 1); }
+        int HoldCap(uint8_t open) const { void* __callArgs[] = { &open }; return CallStaticValue<int>("HoldCap", __callArgs, 1); }
+        float PushWeight(int kind) const { void* __callArgs[] = { &kind }; return CallStaticValue<float>("PushWeight", __callArgs, 1); }
+        bool AxisMixes(int axis) const { void* __callArgs[] = { &axis }; return CallStaticValue<bool>("AxisMixes", __callArgs, 1); }
         bool Enabled() const { return ReadStaticField<bool>("Enabled"); }
-        void SetEnabled(bool value) const { WriteStaticField<bool>("Enabled", value); }
+        void Enabled(bool value) const { WriteStaticField<bool>("Enabled", value); }
         uint8_t OpenNormal() const { return ReadStaticField<uint8_t>("OpenNormal"); }
         uint8_t OpenFree() const { return ReadStaticField<uint8_t>("OpenFree"); }
         uint8_t OpenApart() const { return ReadStaticField<uint8_t>("OpenApart"); }
@@ -63,7 +63,7 @@ namespace CivitasPoly::Nations::Identity
         int BirthMaxTilesSmall() const { return ReadStaticField<int>("BirthMaxTilesSmall"); }
         int BirthMaxTilesLarge() const { return ReadStaticField<int>("BirthMaxTilesLarge"); }
         bool CradlesEnabled() const { return ReadStaticField<bool>("CradlesEnabled"); }
-        void SetCradlesEnabled(bool value) const { WriteStaticField<bool>("CradlesEnabled", value); }
+        void CradlesEnabled(bool value) const { WriteStaticField<bool>("CradlesEnabled", value); }
         float CradleRadius() const { return ReadStaticField<float>("CradleRadius"); }
         float CradleWobble() const { return ReadStaticField<float>("CradleWobble"); }
         int CradleMaxTilesSmall() const { return ReadStaticField<int>("CradleMaxTilesSmall"); }

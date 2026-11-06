@@ -11,11 +11,11 @@ namespace CivitasPoly::Nations
         explicit SimRandom(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations", "SimRandom") {}
     public:
-        void Seed(int seed) const { void* args[] = { &seed }; CallStatic("Seed", args, 1); }
-        bool TryGetSimState(void* s) const { void* args[] = { &s }; return CallStaticValue<bool>("TryGetSimState", args, 1); }
+        void Seed(int seed) const { void* __callArgs[] = { &seed }; CallStatic("Seed", __callArgs, 1); }
+        bool TryGetSimState(void* s) const { void* __callArgs[] = { &s }; return CallStaticValue<bool>("TryGetSimState", __callArgs, 1); }
         void Enter() const { CallStatic("Enter", nullptr, 0); }
         void Leave() const { CallStatic("Leave", nullptr, 0); }
         bool Isolate() const { return ReadStaticField<bool>("Isolate"); }
-        void SetIsolate(bool value) const { WriteStaticField<bool>("Isolate", value); }
+        void Isolate(bool value) const { WriteStaticField<bool>("Isolate", value); }
     };
 }

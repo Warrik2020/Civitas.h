@@ -12,10 +12,10 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "PeopleRef") {}
     public:
         int axis() const { return ReadField<int>("axis"); }
-        void SetAxis(int value) const { WriteField<int>("axis", value); }
+        void axis(int value) const { WriteField<int>("axis", value); }
         int groupId() const { return ReadField<int>("groupId"); }
-        void SetGroupId(int value) const { WriteField<int>("groupId", value); }
+        void groupId(int value) const { WriteField<int>("groupId", value); }
         float share() const { return ReadField<float>("share"); }
-        void SetShare(float value) const { WriteField<float>("share", value); }
+        void share(float value) const { WriteField<float>("share", value); }
     };
 }

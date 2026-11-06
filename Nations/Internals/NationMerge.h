@@ -11,6 +11,6 @@ namespace CivitasPoly::Nations::Internals
         explicit NationMerge(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "NationMerge") {}
     public:
-        void Absorb(int survivorId, int absorbedId, void* mgr, void* ctx, bool blendIdentity = true, bool keepSurvivorName = false) const { void* args[] = { &survivorId, &absorbedId, mgr, &ctx, &blendIdentity, &keepSurvivorName }; CallStatic("Absorb", args, 6); }
+        void Absorb(int survivorId, int absorbedId, void* mgr, void* ctx, bool blendIdentity = true, bool keepSurvivorName = false) const { void* __callArgs[] = { &survivorId, &absorbedId, mgr, &ctx, &blendIdentity, &keepSurvivorName }; CallStatic("Absorb", __callArgs, 6); }
     };
 }

@@ -11,7 +11,7 @@ namespace CivitasPoly::UI::MainMenu
         explicit MapStyleSettingsLive(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.MainMenu", "MapStyleSettingsLive") {}
     public:
-        void Bind(void* name, void* desc, void* down, void* up) const { void* args[] = { name, desc, down, up }; Call("Bind", args, 4); }
-        void Step(int dir) const { void* args[] = { &dir }; Call("Step", args, 1); }
+        void Bind(void* name, void* desc, void* down, void* up) const { void* __callArgs[] = { name, desc, down, up }; Call("Bind", __callArgs, 4); }
+        void Step(int dir) const { void* __callArgs[] = { &dir }; Call("Step", __callArgs, 1); }
     };
 }

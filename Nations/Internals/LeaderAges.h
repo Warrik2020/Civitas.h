@@ -11,16 +11,16 @@ namespace CivitasPoly::Nations::Internals
         explicit LeaderAges(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "LeaderAges") {}
     public:
-        void* DisplayName(int b) const { void* args[] = { &b }; return CallStatic("DisplayName", args, 1); }
-        void* Blurb(int b) const { void* args[] = { &b }; return CallStatic("Blurb", args, 1); }
-        float ResearchMulOf(int b) const { void* args[] = { &b }; return CallStaticValue<float>("ResearchMulOf", args, 1); }
-        float OpinionAddOf(int b) const { void* args[] = { &b }; return CallStaticValue<float>("OpinionAddOf", args, 1); }
-        void* ModifiersOf(int b) const { void* args[] = { &b }; return CallStatic("ModifiersOf", args, 1); }
-        int BandOf(int ageYears, void* cfg) const { void* args[] = { &ageYears, cfg }; return CallStaticValue<int>("BandOf", args, 2); }
-        int AgeAt(void* l, int tick, float ticksPerYear) const { void* args[] = { l, &tick, &ticksPerYear }; return CallStaticValue<int>("AgeAt", args, 3); }
-        int BornTickFor(int tick, int ageYears, float ticksPerYear) const { void* args[] = { &tick, &ageYears, &ticksPerYear }; return CallStaticValue<int>("BornTickFor", args, 3); }
-        void* BornDate(void* l, void* cfg, int toWorld = 0) const { void* args[] = { l, cfg, &toWorld }; return CallStatic("BornDate", args, 3); }
-        void* AccessionDate(void* l, void* cfg, int toWorld = 0) const { void* args[] = { l, cfg, &toWorld }; return CallStatic("AccessionDate", args, 3); }
+        void* DisplayName(int b) const { void* __callArgs[] = { &b }; return CallStatic("DisplayName", __callArgs, 1); }
+        void* Blurb(int b) const { void* __callArgs[] = { &b }; return CallStatic("Blurb", __callArgs, 1); }
+        float ResearchMulOf(int b) const { void* __callArgs[] = { &b }; return CallStaticValue<float>("ResearchMulOf", __callArgs, 1); }
+        float OpinionAddOf(int b) const { void* __callArgs[] = { &b }; return CallStaticValue<float>("OpinionAddOf", __callArgs, 1); }
+        void* ModifiersOf(int b) const { void* __callArgs[] = { &b }; return CallStatic("ModifiersOf", __callArgs, 1); }
+        int BandOf(int ageYears, void* cfg) const { void* __callArgs[] = { &ageYears, cfg }; return CallStaticValue<int>("BandOf", __callArgs, 2); }
+        int AgeAt(void* l, int tick, float ticksPerYear) const { void* __callArgs[] = { l, &tick, &ticksPerYear }; return CallStaticValue<int>("AgeAt", __callArgs, 3); }
+        int BornTickFor(int tick, int ageYears, float ticksPerYear) const { void* __callArgs[] = { &tick, &ageYears, &ticksPerYear }; return CallStaticValue<int>("BornTickFor", __callArgs, 3); }
+        void* BornDate(void* l, void* cfg, int toWorld = 0) const { void* __callArgs[] = { l, cfg, &toWorld }; return CallStatic("BornDate", __callArgs, 3); }
+        void* AccessionDate(void* l, void* cfg, int toWorld = 0) const { void* __callArgs[] = { l, cfg, &toWorld }; return CallStatic("AccessionDate", __callArgs, 3); }
         int Count() const { return ReadStaticField<int>("Count"); }
     };
 }

@@ -11,7 +11,7 @@ namespace CivitasPoly::Nations
         explicit NationSelection(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations", "NationSelection") {}
     public:
-        void Select(int nationId) const { void* args[] = { &nationId }; CallStatic("Select", args, 1); }
+        void Select(int nationId) const { void* __callArgs[] = { &nationId }; CallStatic("Select", __callArgs, 1); }
         void Clear() const { CallStatic("Clear", nullptr, 0); }
         void Reset() const { CallStatic("Reset", nullptr, 0); }
         int None() const { return ReadStaticField<int>("None"); }

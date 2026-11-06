@@ -11,11 +11,11 @@ namespace CivitasPoly::Cities
         explicit CityIconMarker(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Cities", "CityIconMarker") {}
     public:
-        void SetForcedPickable(void* cityIds) const { void* args[] = { cityIds }; CallStatic("SetForcedPickable", args, 1); }
+        void SetForcedPickable(void* cityIds) const { void* __callArgs[] = { cityIds }; CallStatic("SetForcedPickable", __callArgs, 1); }
         void Reset() const { CallStatic("Reset", nullptr, 0); }
-        bool IsPickable(void* c) const { void* args[] = { c }; return CallStaticValue<bool>("IsPickable", args, 1); }
-        float HalfHeightWorld(void* c, void* space, void* cam) const { void* args[] = { c, space, cam }; return CallStaticValue<float>("HalfHeightWorld", args, 3); }
-        void* Shape(void* view, void* at, float halfH) const { void* args[] = { &view, at, &halfH }; return CallStatic("Shape", args, 3); }
+        bool IsPickable(void* c) const { void* __callArgs[] = { c }; return CallStaticValue<bool>("IsPickable", __callArgs, 1); }
+        float HalfHeightWorld(void* c, void* space, void* cam) const { void* __callArgs[] = { c, space, cam }; return CallStaticValue<float>("HalfHeightWorld", __callArgs, 3); }
+        void* Shape(void* view, void* at, float halfH) const { void* __callArgs[] = { &view, at, &halfH }; return CallStatic("Shape", __callArgs, 3); }
         void* IconPath() const { return ReadStaticField<void*>("IconPath"); }
         float MinScreenPx() const { return ReadStaticField<float>("MinScreenPx"); }
         float RadiusFactor() const { return ReadStaticField<float>("RadiusFactor"); }

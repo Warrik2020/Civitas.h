@@ -11,13 +11,13 @@ namespace CivitasPoly::Nations::Population
         explicit PeopleCatchment(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Population", "PeopleCatchment") {}
     public:
-        void MarkDirty(int nation) const { void* args[] = { &nation }; Call("MarkDirty", args, 1); }
-        float ShareOf(int cityId) const { void* args[] = { &cityId }; return CallValue<float>("ShareOf", args, 1); }
-        void WriteCities(void* it, void* cities) const { void* args[] = { it, cities }; Call("WriteCities", args, 2); }
-        bool StepRealm(int nation, void* cities, void* field, int tick) const { void* args[] = { &nation, cities, field, &tick }; return CallValue<bool>("StepRealm", args, 4); }
-        int Walk(int nation, void* cities, void* field, void* assign) const { void* args[] = { &nation, cities, field, assign }; return CallValue<int>("Walk", args, 4); }
-        void Forget(int cityId) const { void* args[] = { &cityId }; Call("Forget", args, 1); }
+        void MarkDirty(int nation) const { void* __callArgs[] = { &nation }; Call("MarkDirty", __callArgs, 1); }
+        float ShareOf(int cityId) const { void* __callArgs[] = { &cityId }; return CallValue<float>("ShareOf", __callArgs, 1); }
+        void WriteCities(void* it, void* cities) const { void* __callArgs[] = { it, cities }; Call("WriteCities", __callArgs, 2); }
+        bool StepRealm(int nation, void* cities, void* field, int tick) const { void* __callArgs[] = { &nation, cities, field, &tick }; return CallValue<bool>("StepRealm", __callArgs, 4); }
+        int Walk(int nation, void* cities, void* field, void* assign) const { void* __callArgs[] = { &nation, cities, field, assign }; return CallValue<int>("Walk", __callArgs, 4); }
+        void Forget(int cityId) const { void* __callArgs[] = { &cityId }; Call("Forget", __callArgs, 1); }
         int IntervalTicks() const { return ReadField<int>("IntervalTicks"); }
-        void SetIntervalTicks(int value) const { WriteField<int>("IntervalTicks", value); }
+        void IntervalTicks(int value) const { WriteField<int>("IntervalTicks", value); }
     };
 }

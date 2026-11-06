@@ -12,14 +12,14 @@ namespace CivitasPoly::Scenario
             : ManagedType(api, object, "CivitasPoly.Scenario", "ScenarioThumbnailJob") {}
     public:
         bool Done() const { return ReadField<bool>("Done"); }
-        void SetDone(bool value) const { WriteField<bool>("Done", value); }
+        void Done(bool value) const { WriteField<bool>("Done", value); }
         void* Pixels() const { return ReadField<void*>("Pixels"); }
-        void SetPixels(void* value) const { WriteField<void*>("Pixels", value); }
+        void Pixels(void* value) const { WriteField<void*>("Pixels", value); }
         int Width() const { return ReadField<int>("Width"); }
-        void SetWidth(int value) const { WriteField<int>("Width", value); }
+        void Width(int value) const { WriteField<int>("Width", value); }
         int Height() const { return ReadField<int>("Height"); }
-        void SetHeight(int value) const { WriteField<int>("Height", value); }
+        void Height(int value) const { WriteField<int>("Height", value); }
         void* Failure() const { return ReadField<void*>("Failure"); }
-        void SetFailure(void* value) const { WriteField<void*>("Failure", value); }
+        void Failure(void* value) const { WriteField<void*>("Failure", value); }
     };
 }

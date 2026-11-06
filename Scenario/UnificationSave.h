@@ -11,9 +11,9 @@ namespace CivitasPoly::Scenario
         explicit UnificationSave(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Scenario", "UnificationSave") {}
     public:
-        void* Capture(void* internals, void* identityFileIds) const { void* args[] = { internals, identityFileIds }; return CallStatic("Capture", args, 2); }
-        void* Capture(void* core, void* identityFileIds) const { void* args[] = { core, identityFileIds }; return CallStatic("Capture", args, 2); }
-        void Apply(void* ser, void* internals, void* peopleKey) const { void* args[] = { ser, internals, peopleKey }; CallStatic("Apply", args, 3); }
-        void Apply(void* ser, void* core, void* peopleKey) const { void* args[] = { ser, core, peopleKey }; CallStatic("Apply", args, 3); }
+        void* Capture(void* internals, void* identityFileIds) const { void* __callArgs[] = { internals, identityFileIds }; return CallStatic("Capture", __callArgs, 2); }
+        void* CaptureOverload1(void* core, void* identityFileIds) const { void* __callArgs[] = { core, identityFileIds }; return CallStatic("Capture", __callArgs, 2); }
+        void Apply(void* ser, void* internals, void* peopleKey) const { void* __callArgs[] = { ser, internals, peopleKey }; CallStatic("Apply", __callArgs, 3); }
+        void ApplyOverload3(void* ser, void* core, void* peopleKey) const { void* __callArgs[] = { ser, core, peopleKey }; CallStatic("Apply", __callArgs, 3); }
     };
 }

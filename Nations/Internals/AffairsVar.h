@@ -12,8 +12,8 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "AffairsVar") {}
     public:
         void* name() const { return ReadField<void*>("name"); }
-        void SetName(void* value) const { WriteField<void*>("name", value); }
+        void name(void* value) const { WriteField<void*>("name", value); }
         float value() const { return ReadField<float>("value"); }
-        void SetValue(float value) const { WriteField<float>("value", value); }
+        void value(float value) const { WriteField<float>("value", value); }
     };
 }

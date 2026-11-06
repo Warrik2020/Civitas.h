@@ -11,9 +11,9 @@ namespace CivitasPoly::Nations::Internals
         explicit TechSystem(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "TechSystem") {}
     public:
-        void Tick(void* it, void* cfg) const { void* args[] = { it, cfg }; CallStatic("Tick", args, 2); }
-        void* EraName(int era, void* cfg) const { void* args[] = { &era, cfg }; return CallStatic("EraName", args, 2); }
-        float NextThreshold(int era, void* cfg) const { void* args[] = { &era, cfg }; return CallStaticValue<float>("NextThreshold", args, 2); }
-        int NextEraGate(int era, void* cfg) const { void* args[] = { &era, cfg }; return CallStaticValue<int>("NextEraGate", args, 2); }
+        void Tick(void* it, void* cfg) const { void* __callArgs[] = { it, cfg }; CallStatic("Tick", __callArgs, 2); }
+        void* EraName(int era, void* cfg) const { void* __callArgs[] = { &era, cfg }; return CallStatic("EraName", __callArgs, 2); }
+        float NextThreshold(int era, void* cfg) const { void* __callArgs[] = { &era, cfg }; return CallStaticValue<float>("NextThreshold", __callArgs, 2); }
+        int NextEraGate(int era, void* cfg) const { void* __callArgs[] = { &era, cfg }; return CallStaticValue<int>("NextEraGate", __callArgs, 2); }
     };
 }

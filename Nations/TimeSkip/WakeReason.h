@@ -12,16 +12,16 @@ namespace CivitasPoly::Nations::TimeSkip
             : ManagedType(api, object, "CivitasPoly.Nations.TimeSkip", "WakeReason") {}
     public:
         void* key() const { return ReadField<void*>("key"); }
-        void SetKey(void* value) const { WriteField<void*>("key", value); }
+        void key(void* value) const { WriteField<void*>("key", value); }
         int group() const { return ReadField<int>("group"); }
-        void SetGroup(int value) const { WriteField<int>("group", value); }
+        void group(int value) const { WriteField<int>("group", value); }
         bool level() const { return ReadField<bool>("level"); }
-        void SetLevel(bool value) const { WriteField<bool>("level", value); }
+        void level(bool value) const { WriteField<bool>("level", value); }
         void* text() const { return ReadField<void*>("text"); }
-        void SetText(void* value) const { WriteField<void*>("text", value); }
+        void text(void* value) const { WriteField<void*>("text", value); }
         int route() const { return ReadField<int>("route"); }
-        void SetRoute(int value) const { WriteField<int>("route", value); }
+        void route(int value) const { WriteField<int>("route", value); }
         int arg() const { return ReadField<int>("arg"); }
-        void SetArg(int value) const { WriteField<int>("arg", value); }
+        void arg(int value) const { WriteField<int>("arg", value); }
     };
 }

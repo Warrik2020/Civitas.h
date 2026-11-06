@@ -12,24 +12,24 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "LocalPoliticsNotice") {}
     public:
         int arcId() const { return ReadField<int>("arcId"); }
-        void SetArcId(int value) const { WriteField<int>("arcId", value); }
+        void arcId(int value) const { WriteField<int>("arcId", value); }
         int arcKind() const { return ReadField<int>("arcKind"); }
-        void SetArcKind(int value) const { WriteField<int>("arcKind", value); }
+        void arcKind(int value) const { WriteField<int>("arcKind", value); }
         int kind() const { return ReadField<int>("kind"); }
-        void SetKind(int value) const { WriteField<int>("kind", value); }
+        void kind(int value) const { WriteField<int>("kind", value); }
         int cause() const { return ReadField<int>("cause"); }
-        void SetCause(int value) const { WriteField<int>("cause", value); }
+        void cause(int value) const { WriteField<int>("cause", value); }
         int flags() const { return ReadField<int>("flags"); }
-        void SetFlags(int value) const { WriteField<int>("flags", value); }
+        void flags(int value) const { WriteField<int>("flags", value); }
         int actor() const { return ReadField<int>("actor"); }
-        void SetActor(int value) const { WriteField<int>("actor", value); }
+        void actor(int value) const { WriteField<int>("actor", value); }
         int target() const { return ReadField<int>("target"); }
-        void SetTarget(int value) const { WriteField<int>("target", value); }
+        void target(int value) const { WriteField<int>("target", value); }
         int third() const { return ReadField<int>("third"); }
-        void SetThird(int value) const { WriteField<int>("third", value); }
+        void third(int value) const { WriteField<int>("third", value); }
         float value() const { return ReadField<float>("value"); }
-        void SetValue(float value) const { WriteField<float>("value", value); }
+        void value(float value) const { WriteField<float>("value", value); }
         int worldTick() const { return ReadField<int>("worldTick"); }
-        void SetWorldTick(int value) const { WriteField<int>("worldTick", value); }
+        void worldTick(int value) const { WriteField<int>("worldTick", value); }
     };
 }

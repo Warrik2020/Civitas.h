@@ -11,6 +11,6 @@ namespace CivitasPoly::Cities::Traits
         explicit CityEffects(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Cities.Traits", "CityEffects") {}
     public:
-        void Append(void* sb, void* m, const char* separator = ", ", const char* emptyText = "no special effects") const { void* managed_2 = Api() && Api()->NewString ? Api()->NewString(separator ? separator : "") : nullptr; void* managed_3 = Api() && Api()->NewString ? Api()->NewString(emptyText ? emptyText : "") : nullptr; void* args[] = { sb, &m, managed_2, managed_3 }; CallStatic("Append", args, 4); }
+        void Append(void* sb, void* m, const char* separator = ", ", const char* emptyText = "no special effects") const { void* managed_2 = Api() && Api()->NewString ? Api()->NewString(separator ? separator : "") : nullptr; void* managed_3 = Api() && Api()->NewString ? Api()->NewString(emptyText ? emptyText : "") : nullptr; void* __callArgs[] = { sb, &m, managed_2, managed_3 }; CallStatic("Append", __callArgs, 4); }
     };
 }

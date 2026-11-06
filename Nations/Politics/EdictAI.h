@@ -11,6 +11,6 @@ namespace CivitasPoly::Nations::Politics
         explicit EdictAI(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Politics", "EdictAI") {}
     public:
-        void EvaluateEdicts(void* n, void* it, void* mgr) const { void* args[] = { n, it, mgr }; CallStatic("EvaluateEdicts", args, 3); }
+        void EvaluateEdicts(void* n, void* it, void* mgr) const { void* __callArgs[] = { n, it, mgr }; CallStatic("EvaluateEdicts", __callArgs, 3); }
     };
 }

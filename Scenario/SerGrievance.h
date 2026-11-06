@@ -12,10 +12,10 @@ namespace CivitasPoly::Scenario
             : ManagedType(api, object, "CivitasPoly.Scenario", "SerGrievance") {}
     public:
         int owner() const { return ReadField<int>("owner"); }
-        void SetOwner(int value) const { WriteField<int>("owner", value); }
+        void owner(int value) const { WriteField<int>("owner", value); }
         int origin() const { return ReadField<int>("origin"); }
-        void SetOrigin(int value) const { WriteField<int>("origin", value); }
+        void origin(int value) const { WriteField<int>("origin", value); }
         float value() const { return ReadField<float>("value"); }
-        void SetValue(float value) const { WriteField<float>("value", value); }
+        void value(float value) const { WriteField<float>("value", value); }
     };
 }

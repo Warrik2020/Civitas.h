@@ -11,6 +11,6 @@ namespace CivitasPoly::UI::MainMenu
         explicit SocialLinks(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.MainMenu", "SocialLinks") {}
     public:
-        void* Attach(void* canvas) const { void* args[] = { canvas }; return CallStatic("Attach", args, 1); }
+        void* Attach(void* canvas) const { void* __callArgs[] = { canvas }; return CallStatic("Attach", __callArgs, 1); }
     };
 }

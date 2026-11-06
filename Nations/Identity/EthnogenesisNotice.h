@@ -12,20 +12,20 @@ namespace CivitasPoly::Nations::Identity
             : ManagedType(api, object, "CivitasPoly.Nations.Identity", "EthnogenesisNotice") {}
     public:
         int kind() const { return ReadField<int>("kind"); }
-        void SetKind(int value) const { WriteField<int>("kind", value); }
+        void kind(int value) const { WriteField<int>("kind", value); }
         int axis() const { return ReadField<int>("axis"); }
-        void SetAxis(int value) const { WriteField<int>("axis", value); }
+        void axis(int value) const { WriteField<int>("axis", value); }
         int groupId() const { return ReadField<int>("groupId"); }
-        void SetGroupId(int value) const { WriteField<int>("groupId", value); }
+        void groupId(int value) const { WriteField<int>("groupId", value); }
         int nationId() const { return ReadField<int>("nationId"); }
-        void SetNationId(int value) const { WriteField<int>("nationId", value); }
+        void nationId(int value) const { WriteField<int>("nationId", value); }
         void* name() const { return ReadField<void*>("name"); }
-        void SetName(void* value) const { WriteField<void*>("name", value); }
+        void name(void* value) const { WriteField<void*>("name", value); }
         void* parents() const { return ReadField<void*>("parents"); }
-        void SetParents(void* value) const { WriteField<void*>("parents", value); }
+        void parents(void* value) const { WriteField<void*>("parents", value); }
         void* land() const { return ReadField<void*>("land"); }
-        void SetLand(void* value) const { WriteField<void*>("land", value); }
+        void land(void* value) const { WriteField<void*>("land", value); }
         int tile() const { return ReadField<int>("tile"); }
-        void SetTile(int value) const { WriteField<int>("tile", value); }
+        void tile(int value) const { WriteField<int>("tile", value); }
     };
 }

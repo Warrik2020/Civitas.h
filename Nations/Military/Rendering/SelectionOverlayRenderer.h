@@ -12,7 +12,7 @@ namespace CivitasPoly::Nations::Military::Rendering
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Rendering", "SelectionOverlayRenderer") {}
     public:
         void Dispose() const { Call("Dispose", nullptr, 0); }
-        void SetVisible(bool visible) const { void* args[] = { &visible }; Call("SetVisible", args, 1); }
-        void Sync(void* selected, void* screenBox, void* cam, void* refused, float time, float counterDrawScale, void* grid = nullptr) const { void* args[] = { selected, screenBox, cam, refused, &time, &counterDrawScale, grid }; Call("Sync", args, 7); }
+        void SetVisible(bool visible) const { void* __callArgs[] = { &visible }; Call("SetVisible", __callArgs, 1); }
+        void Sync(void* selected, void* screenBox, void* cam, void* refused, float time, float counterDrawScale, void* grid = nullptr) const { void* __callArgs[] = { selected, screenBox, cam, refused, &time, &counterDrawScale, grid }; Call("Sync", __callArgs, 7); }
     };
 }

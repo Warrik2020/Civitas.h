@@ -12,10 +12,10 @@ namespace CivitasPoly::Nations::Progression
             : ManagedType(api, object, "CivitasPoly.Nations.Progression", "GoalCondition") {}
     public:
         void* text() const { return ReadField<void*>("text"); }
-        void SetText(void* value) const { WriteField<void*>("text", value); }
+        void text(void* value) const { WriteField<void*>("text", value); }
         void* value() const { return ReadField<void*>("value"); }
-        void SetValue(void* value) const { WriteField<void*>("value", value); }
+        void value(void* value) const { WriteField<void*>("value", value); }
         bool met() const { return ReadField<bool>("met"); }
-        void SetMet(bool value) const { WriteField<bool>("met", value); }
+        void met(bool value) const { WriteField<bool>("met", value); }
     };
 }

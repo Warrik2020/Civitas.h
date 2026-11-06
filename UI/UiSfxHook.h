@@ -11,7 +11,7 @@ namespace CivitasPoly::UI
         explicit UiSfxHook(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "UiSfxHook") {}
     public:
-        void OnPointerEnter(void* e) const { void* args[] = { e }; Call("OnPointerEnter", args, 1); }
-        void OnPointerDown(void* e) const { void* args[] = { e }; Call("OnPointerDown", args, 1); }
+        void OnPointerEnter(void* e) const { void* __callArgs[] = { e }; Call("OnPointerEnter", __callArgs, 1); }
+        void OnPointerDown(void* e) const { void* __callArgs[] = { e }; Call("OnPointerDown", __callArgs, 1); }
     };
 }

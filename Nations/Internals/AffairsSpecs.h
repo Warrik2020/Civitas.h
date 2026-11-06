@@ -11,9 +11,9 @@ namespace CivitasPoly::Nations::Internals
         explicit AffairsSpecs(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "AffairsSpecs") {}
     public:
-        int StatusIndex(const char* word) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(word ? word : "") : nullptr; void* args[] = { managed_0 }; return CallStaticValue<int>("StatusIndex", args, 1); }
-        int IncidentIndex(const char* word) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(word ? word : "") : nullptr; void* args[] = { managed_0 }; return CallStaticValue<int>("IncidentIndex", args, 1); }
-        void* RoleWord(const char* role) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(role ? role : "") : nullptr; void* args[] = { managed_0 }; return CallStatic("RoleWord", args, 1); }
+        int StatusIndex(const char* word) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(word ? word : "") : nullptr; void* __callArgs[] = { managed_0 }; return CallStaticValue<int>("StatusIndex", __callArgs, 1); }
+        int IncidentIndex(const char* word) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(word ? word : "") : nullptr; void* __callArgs[] = { managed_0 }; return CallStaticValue<int>("IncidentIndex", __callArgs, 1); }
+        void* RoleWord(const char* role) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(role ? role : "") : nullptr; void* __callArgs[] = { managed_0 }; return CallStatic("RoleWord", __callArgs, 1); }
         void* Traits() const { return ReadStaticField<void*>("Traits"); }
         void* StatusWords() const { return ReadStaticField<void*>("StatusWords"); }
         void* IncidentWords() const { return ReadStaticField<void*>("IncidentWords"); }

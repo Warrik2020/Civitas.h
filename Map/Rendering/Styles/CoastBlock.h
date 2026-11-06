@@ -12,12 +12,12 @@ namespace CivitasPoly::Map::Rendering::Styles
             : ManagedType(api, object, "CivitasPoly.Map.Rendering.Styles", "CoastBlock") {}
     public:
         float shadow() const { return ReadField<float>("shadow"); }
-        void SetShadow(float value) const { WriteField<float>("shadow", value); }
+        void shadow(float value) const { WriteField<float>("shadow", value); }
         void* shadowColor() const { return ReadField<void*>("shadowColor"); }
-        void SetShadowColor(void* value) const { WriteField<void*>("shadowColor", value); }
+        void shadowColor(void* value) const { WriteField<void*>("shadowColor", value); }
         float shadowTiles() const { return ReadField<float>("shadowTiles"); }
-        void SetShadowTiles(float value) const { WriteField<float>("shadowTiles", value); }
+        void shadowTiles(float value) const { WriteField<float>("shadowTiles", value); }
         float shadowMaxPx() const { return ReadField<float>("shadowMaxPx"); }
-        void SetShadowMaxPx(float value) const { WriteField<float>("shadowMaxPx", value); }
+        void shadowMaxPx(float value) const { WriteField<float>("shadowMaxPx", value); }
     };
 }

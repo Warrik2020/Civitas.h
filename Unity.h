@@ -815,7 +815,7 @@ namespace UnityEngine::SceneManagement
 
         explicit operator bool() const { return api_ && object_; }
 
-        static Scene GetActive(ModAPI* api)
+        static Scene GetActiveScene(ModAPI* api)
         {
             return Scene(api, CivitasML::Detail::Invoke(
                 api, "UnityEngine.SceneManagement", "SceneManager", "GetActiveScene",
@@ -841,6 +841,14 @@ namespace UnityEngine::SceneManagement
             void* value = api_->UnboxObject(boxed);
             return value && *static_cast<bool*>(value);
         }
+
+		const char* GetName() const
+		{
+			void* nameObject = CivitasML::Detail::Invoke(
+				api_, "UnityEngine.SceneManagement", "Scene", "get_name",
+				object_, nullptr, 0);
+			return CivitasML::Detail::ManagedStringToUtf8(nameObject).c_str();
+		}
 
     private:
         ModAPI* api_ = nullptr;

@@ -14,7 +14,7 @@ namespace CivitasPoly::Nations::Military::Tactical
         void* Spear() const { return CallStatic("Spear", nullptr, 0); }
         void* Archer() const { return CallStatic("Archer", nullptr, 0); }
         void* Musket() const { return CallStatic("Musket", nullptr, 0); }
-        void* Rifle(int age) const { void* args[] = { &age }; return CallStatic("Rifle", args, 1); }
-        void* Horse(int age) const { void* args[] = { &age }; return CallStatic("Horse", args, 1); }
+        void* Rifle(int age) const { void* __callArgs[] = { &age }; return CallStatic("Rifle", __callArgs, 1); }
+        void* Horse(int age) const { void* __callArgs[] = { &age }; return CallStatic("Horse", __callArgs, 1); }
     };
 }

@@ -11,7 +11,7 @@ namespace CivitasPoly::UI::MainMenu
         explicit LanguageSelector(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.MainMenu", "LanguageSelector") {}
     public:
-        void* Attach(void* canvas) const { void* args[] = { canvas }; return CallStatic("Attach", args, 1); }
+        void* Attach(void* canvas) const { void* __callArgs[] = { canvas }; return CallStatic("Attach", __callArgs, 1); }
         float Width() const { return ReadStaticField<float>("Width"); }
     };
 }

@@ -19,16 +19,16 @@ namespace CivitasPoly::Map::Generation
         int MinDimension() const { return ReadStaticField<int>("MinDimension"); }
         int MaxDimension() const { return ReadStaticField<int>("MaxDimension"); }
         int seed() const { return ReadField<int>("seed"); }
-        void SetSeed(int value) const { WriteField<int>("seed", value); }
+        void seed(int value) const { WriteField<int>("seed", value); }
         int width() const { return ReadField<int>("width"); }
-        void SetWidth(int value) const { WriteField<int>("width", value); }
+        void width(int value) const { WriteField<int>("width", value); }
         int height() const { return ReadField<int>("height"); }
-        void SetHeight(int value) const { WriteField<int>("height", value); }
+        void height(int value) const { WriteField<int>("height", value); }
         float land() const { return ReadField<float>("land"); }
-        void SetLand(float value) const { WriteField<float>("land", value); }
+        void land(float value) const { WriteField<float>("land", value); }
         float islands() const { return ReadField<float>("islands"); }
-        void SetIslands(float value) const { WriteField<float>("islands", value); }
+        void islands(float value) const { WriteField<float>("islands", value); }
         float coast() const { return ReadField<float>("coast"); }
-        void SetCoast(float value) const { WriteField<float>("coast", value); }
+        void coast(float value) const { WriteField<float>("coast", value); }
     };
 }

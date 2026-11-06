@@ -13,15 +13,15 @@ namespace CivitasPoly::Nations::Internals
     public:
         void Clear() const { Call("Clear", nullptr, 0); }
         int reason() const { return ReadField<int>("reason"); }
-        void SetReason(int value) const { WriteField<int>("reason", value); }
+        void reason(int value) const { WriteField<int>("reason", value); }
         float gold() const { return ReadField<float>("gold"); }
-        void SetGold(float value) const { WriteField<float>("gold", value); }
+        void gold(float value) const { WriteField<float>("gold", value); }
         void* equipment() const { return ReadField<void*>("equipment"); }
         int divisionCount() const { return ReadField<int>("divisionCount"); }
-        void SetDivisionCount(int value) const { WriteField<int>("divisionCount", value); }
+        void divisionCount(int value) const { WriteField<int>("divisionCount", value); }
         bool anyDivisionType() const { return ReadField<bool>("anyDivisionType"); }
-        void SetAnyDivisionType(bool value) const { WriteField<bool>("anyDivisionType", value); }
+        void anyDivisionType(bool value) const { WriteField<bool>("anyDivisionType", value); }
         int divisionType() const { return ReadField<int>("divisionType"); }
-        void SetDivisionType(int value) const { WriteField<int>("divisionType", value); }
+        void divisionType(int value) const { WriteField<int>("divisionType", value); }
     };
 }

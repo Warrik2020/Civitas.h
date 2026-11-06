@@ -12,16 +12,16 @@ namespace CivitasPoly::Nations::Weapons
             : ManagedType(api, object, "CivitasPoly.Nations.Weapons", "BodyJoint") {}
     public:
         void* name() const { return ReadField<void*>("name"); }
-        void SetName(void* value) const { WriteField<void*>("name", value); }
+        void name(void* value) const { WriteField<void*>("name", value); }
         void* poly() const { return ReadField<void*>("poly"); }
-        void SetPoly(void* value) const { WriteField<void*>("poly", value); }
+        void poly(void* value) const { WriteField<void*>("poly", value); }
         float weight() const { return ReadField<float>("weight"); }
-        void SetWeight(float value) const { WriteField<float>("weight", value); }
+        void weight(float value) const { WriteField<float>("weight", value); }
         float area() const { return ReadField<float>("area"); }
-        void SetArea(float value) const { WriteField<float>("area", value); }
-        void* min() const { return ReadField<void*>("min"); }
-        void SetMin(void* value) const { WriteField<void*>("min", value); }
-        void* max() const { return ReadField<void*>("max"); }
-        void SetMax(void* value) const { WriteField<void*>("max", value); }
+        void area(float value) const { WriteField<float>("area", value); }
+        void* min_() const { return ReadField<void*>("min"); }
+        void min_(void* value) const { WriteField<void*>("min", value); }
+        void* max_() const { return ReadField<void*>("max"); }
+        void max_(void* value) const { WriteField<void*>("max", value); }
     };
 }

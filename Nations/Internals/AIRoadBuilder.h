@@ -12,8 +12,8 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "AIRoadBuilder") {}
     public:
         void Reset() const { CallStatic("Reset", nullptr, 0); }
-        void Evaluate(void* n, void* it, void* myRelations, void* ctx, float budget = -1f) const { void* args[] = { n, it, myRelations, &ctx, &budget }; CallStatic("Evaluate", args, 5); }
+        void Evaluate(void* n, void* it, void* myRelations, void* ctx, float budget = -1.0f) const { void* __callArgs[] = { n, it, myRelations, &ctx, &budget }; CallStatic("Evaluate", __callArgs, 5); }
         int SearchCapOverride() const { return ReadStaticField<int>("SearchCapOverride"); }
-        void SetSearchCapOverride(int value) const { WriteStaticField<int>("SearchCapOverride", value); }
+        void SearchCapOverride(int value) const { WriteStaticField<int>("SearchCapOverride", value); }
     };
 }

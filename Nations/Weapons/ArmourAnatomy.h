@@ -11,13 +11,13 @@ namespace CivitasPoly::Nations::Weapons
         explicit ArmourAnatomy(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Weapons", "ArmourAnatomy") {}
     public:
-        void* Ellipse(float cx, float cy, float rx, float ry, int sides = 16) const { void* args[] = { &cx, &cy, &rx, &ry, &sides }; return CallStatic("Ellipse", args, 5); }
-        void* Capsule(void* a, void* b, float r0, float r1, int capSides = 6) const { void* args[] = { a, b, &r0, &r1, &capSides }; return CallStatic("Capsule", args, 5); }
-        void* Cap(float cx, float cy, float rx, float ry, int sides, float fromY) const { void* args[] = { &cx, &cy, &rx, &ry, &sides, &fromY }; return CallStatic("Cap", args, 6); }
+        void* Ellipse(float cx, float cy, float rx, float ry, int sides = 16) const { void* __callArgs[] = { &cx, &cy, &rx, &ry, &sides }; return CallStatic("Ellipse", __callArgs, 5); }
+        void* Capsule(void* a, void* b, float r0, float r1, int capSides = 6) const { void* __callArgs[] = { a, b, &r0, &r1, &capSides }; return CallStatic("Capsule", __callArgs, 5); }
+        void* Cap(float cx, float cy, float rx, float ry, int sides, float fromY) const { void* __callArgs[] = { &cx, &cy, &rx, &ry, &sides, &fromY }; return CallStatic("Cap", __callArgs, 6); }
         void* TorsoSilhouette() const { return CallStatic("TorsoSilhouette", nullptr, 0); }
-        void* Side(void* rightAnchor, float side) const { void* args[] = { rightAnchor, &side }; return CallStatic("Side", args, 2); }
+        void* Side(void* rightAnchor, float side) const { void* __callArgs[] = { rightAnchor, &side }; return CallStatic("Side", __callArgs, 2); }
         void Check() const { CallStatic("Check", nullptr, 0); }
-        bool Apart(void* amin, void* amax, void* bmin, void* bmax) const { void* args[] = { amin, amax, bmin, bmax }; return CallStaticValue<bool>("Apart", args, 4); }
+        bool Apart(void* amin, void* amax, void* bmin, void* bmax) const { void* __callArgs[] = { amin, amax, bmin, bmax }; return CallStaticValue<bool>("Apart", __callArgs, 4); }
         int Version() const { return ReadStaticField<int>("Version"); }
         float Height() const { return ReadStaticField<float>("Height"); }
         float Crown() const { return ReadStaticField<float>("Crown"); }

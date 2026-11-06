@@ -11,7 +11,7 @@ namespace CivitasPoly::Nations
         explicit FillNoise(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations", "FillNoise") {}
     public:
-        void* Tint(void* fill, int nationId, int x, int y, float strength, float scaleTiles) const { void* args[] = { fill, &nationId, &x, &y, &strength, &scaleTiles }; return CallStatic("Tint", args, 6); }
-        void* Lighten(void* c, float t) const { void* args[] = { c, &t }; return CallStatic("Lighten", args, 2); }
+        void* Tint(void* fill, int nationId, int x, int y, float strength, float scaleTiles) const { void* __callArgs[] = { fill, &nationId, &x, &y, &strength, &scaleTiles }; return CallStatic("Tint", __callArgs, 6); }
+        void* Lighten(void* c, float t) const { void* __callArgs[] = { c, &t }; return CallStatic("Lighten", __callArgs, 2); }
     };
 }

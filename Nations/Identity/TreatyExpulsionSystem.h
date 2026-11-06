@@ -11,8 +11,8 @@ namespace CivitasPoly::Nations::Identity
         explicit TreatyExpulsionSystem(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Identity", "TreatyExpulsionSystem") {}
     public:
-        void Start(void* demander, void* e, int fromNationId, void* cfg, float ticksPerYear) const { void* args[] = { demander, e, &fromNationId, cfg, &ticksPerYear }; CallStatic("Start", args, 5); }
-        float PeopleWorth(void* identity, void* e, void* grid, int ownerId) const { void* args[] = { identity, e, grid, &ownerId }; return CallStaticValue<float>("PeopleWorth", args, 4); }
-        void Tick(void* nations, void* getInternals, void* ctx) const { void* args[] = { nations, getInternals, &ctx }; CallStatic("Tick", args, 3); }
+        void Start(void* demander, void* e, int fromNationId, void* cfg, float ticksPerYear) const { void* __callArgs[] = { demander, e, &fromNationId, cfg, &ticksPerYear }; CallStatic("Start", __callArgs, 5); }
+        float PeopleWorth(void* identity, void* e, void* grid, int ownerId) const { void* __callArgs[] = { identity, e, grid, &ownerId }; return CallStaticValue<float>("PeopleWorth", __callArgs, 4); }
+        void Tick(void* nations, void* getInternals, void* ctx) const { void* __callArgs[] = { nations, getInternals, &ctx }; CallStatic("Tick", __callArgs, 3); }
     };
 }

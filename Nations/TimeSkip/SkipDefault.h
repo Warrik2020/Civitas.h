@@ -12,8 +12,8 @@ namespace CivitasPoly::Nations::TimeSkip
             : ManagedType(api, object, "CivitasPoly.Nations.TimeSkip", "SkipDefault") {}
     public:
         int tick() const { return ReadField<int>("tick"); }
-        void SetTick(int value) const { WriteField<int>("tick", value); }
+        void tick(int value) const { WriteField<int>("tick", value); }
         void* text() const { return ReadField<void*>("text"); }
-        void SetText(void* value) const { WriteField<void*>("text", value); }
+        void text(void* value) const { WriteField<void*>("text", value); }
     };
 }

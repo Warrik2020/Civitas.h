@@ -11,6 +11,6 @@ namespace CivitasPoly::UI::Alerts
         explicit PeoplesAlerts(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Alerts", "PeoplesAlerts") {}
     public:
-        void Collect(void* into, void* it) const { void* args[] = { into, it }; CallStatic("Collect", args, 2); }
+        void Collect(void* into, void* it) const { void* __callArgs[] = { into, it }; CallStatic("Collect", __callArgs, 2); }
     };
 }

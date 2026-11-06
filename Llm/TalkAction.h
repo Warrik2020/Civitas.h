@@ -11,6 +11,6 @@ namespace CivitasPoly::Llm
         explicit TalkAction(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Llm", "TalkAction") {}
     public:
-        void Build(void* row) const { void* args[] = { row }; CallStatic("Build", args, 1); }
+        void Build(void* row) const { void* __callArgs[] = { row }; CallStatic("Build", __callArgs, 1); }
     };
 }

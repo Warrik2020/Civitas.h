@@ -11,16 +11,16 @@ namespace CivitasPoly::Nations::Internals
         explicit WarWeariness(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "WarWeariness") {}
     public:
-        float PropagandaCost(void* it, float gross) const { void* args[] = { it, &gross }; return CallStaticValue<float>("PropagandaCost", args, 2); }
-        float RiseRate(void* it) const { void* args[] = { it }; return CallStaticValue<float>("RiseRate", args, 1); }
-        float PropagandaRate(void* it) const { void* args[] = { it }; return CallStaticValue<float>("PropagandaRate", args, 1); }
-        bool Stalled(void* it) const { void* args[] = { it }; return CallStaticValue<bool>("Stalled", args, 1); }
-        float StabilityCost(void* it) const { void* args[] = { it }; return CallStaticValue<float>("StabilityCost", args, 1); }
-        void Tick(void* it, float ticksPerYear, int span = 1) const { void* args[] = { it, &ticksPerYear, &span }; CallStatic("Tick", args, 3); }
+        float PropagandaCost(void* it, float gross) const { void* __callArgs[] = { it, &gross }; return CallStaticValue<float>("PropagandaCost", __callArgs, 2); }
+        float RiseRate(void* it) const { void* __callArgs[] = { it }; return CallStaticValue<float>("RiseRate", __callArgs, 1); }
+        float PropagandaRate(void* it) const { void* __callArgs[] = { it }; return CallStaticValue<float>("PropagandaRate", __callArgs, 1); }
+        bool Stalled(void* it) const { void* __callArgs[] = { it }; return CallStaticValue<bool>("Stalled", __callArgs, 1); }
+        float StabilityCost(void* it) const { void* __callArgs[] = { it }; return CallStaticValue<float>("StabilityCost", __callArgs, 1); }
+        void Tick(void* it, float ticksPerYear, int span = 1) const { void* __callArgs[] = { it, &ticksPerYear, &span }; CallStatic("Tick", __callArgs, 3); }
         float RisePerMonth() const { return ReadStaticField<float>("RisePerMonth"); }
         float ExtraWarShare() const { return ReadStaticField<float>("ExtraWarShare"); }
         int ExtraWarsCounted() const { return ReadStaticField<int>("ExtraWarsCounted"); }
-        float Max() const { return ReadStaticField<float>("Max"); }
+        float Max_() const { return ReadStaticField<float>("Max"); }
         float LoyaltyWeight() const { return ReadStaticField<float>("LoyaltyWeight"); }
         float PeaceFadeMonths() const { return ReadStaticField<float>("PeaceFadeMonths"); }
         float PropagandaMaxShare() const { return ReadStaticField<float>("PropagandaMaxShare"); }

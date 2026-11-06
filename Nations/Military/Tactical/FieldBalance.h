@@ -11,8 +11,8 @@ namespace CivitasPoly::Nations::Military::Tactical
         explicit FieldBalance(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Tactical", "FieldBalance") {}
     public:
-        float StandoffMetres(int age) const { void* args[] = { &age }; return CallStaticValue<float>("StandoffMetres", args, 1); }
-        float FrontMetresPerThousand(int age) const { void* args[] = { &age }; return CallStaticValue<float>("FrontMetresPerThousand", args, 1); }
+        float StandoffMetres(int age) const { void* __callArgs[] = { &age }; return CallStaticValue<float>("StandoffMetres", __callArgs, 1); }
+        float FrontMetresPerThousand(int age) const { void* __callArgs[] = { &age }; return CallStaticValue<float>("FrontMetresPerThousand", __callArgs, 1); }
         float EnterKm() const { return ReadStaticField<float>("EnterKm"); }
         float ExitKm() const { return ReadStaticField<float>("ExitKm"); }
         float LeaveRearmKm() const { return ReadStaticField<float>("LeaveRearmKm"); }

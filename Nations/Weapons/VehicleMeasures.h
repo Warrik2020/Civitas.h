@@ -12,78 +12,78 @@ namespace CivitasPoly::Nations::Weapons
             : ManagedType(api, object, "CivitasPoly.Nations.Weapons", "VehicleMeasures") {}
     public:
         int partCount() const { return ReadField<int>("partCount"); }
-        void SetPartCount(int value) const { WriteField<int>("partCount", value); }
+        void partCount(int value) const { WriteField<int>("partCount", value); }
         int reactiveBlocks() const { return ReadField<int>("reactiveBlocks"); }
-        void SetReactiveBlocks(int value) const { WriteField<int>("reactiveBlocks", value); }
+        void reactiveBlocks(int value) const { WriteField<int>("reactiveBlocks", value); }
         int roadWheels() const { return ReadField<int>("roadWheels"); }
-        void SetRoadWheels(int value) const { WriteField<int>("roadWheels", value); }
+        void roadWheels(int value) const { WriteField<int>("roadWheels", value); }
         bool hasHull() const { return ReadField<bool>("hasHull"); }
-        void SetHasHull(bool value) const { WriteField<bool>("hasHull", value); }
+        void hasHull(bool value) const { WriteField<bool>("hasHull", value); }
         bool hasTurret() const { return ReadField<bool>("hasTurret"); }
-        void SetHasTurret(bool value) const { WriteField<bool>("hasTurret", value); }
+        void hasTurret(bool value) const { WriteField<bool>("hasTurret", value); }
         bool hasCupola() const { return ReadField<bool>("hasCupola"); }
-        void SetHasCupola(bool value) const { WriteField<bool>("hasCupola", value); }
+        void hasCupola(bool value) const { WriteField<bool>("hasCupola", value); }
         bool hasBarrel() const { return ReadField<bool>("hasBarrel"); }
-        void SetHasBarrel(bool value) const { WriteField<bool>("hasBarrel", value); }
+        void hasBarrel(bool value) const { WriteField<bool>("hasBarrel", value); }
         bool hasMantlet() const { return ReadField<bool>("hasMantlet"); }
-        void SetHasMantlet(bool value) const { WriteField<bool>("hasMantlet", value); }
+        void hasMantlet(bool value) const { WriteField<bool>("hasMantlet", value); }
         bool hasTrack() const { return ReadField<bool>("hasTrack"); }
-        void SetHasTrack(bool value) const { WriteField<bool>("hasTrack", value); }
+        void hasTrack(bool value) const { WriteField<bool>("hasTrack", value); }
         bool hasEngine() const { return ReadField<bool>("hasEngine"); }
-        void SetHasEngine(bool value) const { WriteField<bool>("hasEngine", value); }
+        void hasEngine(bool value) const { WriteField<bool>("hasEngine", value); }
         bool hasSkirt() const { return ReadField<bool>("hasSkirt"); }
-        void SetHasSkirt(bool value) const { WriteField<bool>("hasSkirt", value); }
+        void hasSkirt(bool value) const { WriteField<bool>("hasSkirt", value); }
         float hullArea() const { return ReadField<float>("hullArea"); }
-        void SetHullArea(float value) const { WriteField<float>("hullArea", value); }
+        void hullArea(float value) const { WriteField<float>("hullArea", value); }
         float turretArea() const { return ReadField<float>("turretArea"); }
-        void SetTurretArea(float value) const { WriteField<float>("turretArea", value); }
+        void turretArea(float value) const { WriteField<float>("turretArea", value); }
         float deckArea() const { return ReadField<float>("deckArea"); }
-        void SetDeckArea(float value) const { WriteField<float>("deckArea", value); }
+        void deckArea(float value) const { WriteField<float>("deckArea", value); }
         float trackLen() const { return ReadField<float>("trackLen"); }
-        void SetTrackLen(float value) const { WriteField<float>("trackLen", value); }
+        void trackLen(float value) const { WriteField<float>("trackLen", value); }
         float trackHeight() const { return ReadField<float>("trackHeight"); }
-        void SetTrackHeight(float value) const { WriteField<float>("trackHeight", value); }
+        void trackHeight(float value) const { WriteField<float>("trackHeight", value); }
         float barrelLen() const { return ReadField<float>("barrelLen"); }
-        void SetBarrelLen(float value) const { WriteField<float>("barrelLen", value); }
+        void barrelLen(float value) const { WriteField<float>("barrelLen", value); }
         float barrelOuterDia() const { return ReadField<float>("barrelOuterDia"); }
-        void SetBarrelOuterDia(float value) const { WriteField<float>("barrelOuterDia", value); }
+        void barrelOuterDia(float value) const { WriteField<float>("barrelOuterDia", value); }
         float frontalMm() const { return ReadField<float>("frontalMm"); }
-        void SetFrontalMm(float value) const { WriteField<float>("frontalMm", value); }
+        void frontalMm(float value) const { WriteField<float>("frontalMm", value); }
         float armourKg() const { return ReadField<float>("armourKg"); }
-        void SetArmourKg(float value) const { WriteField<float>("armourKg", value); }
+        void armourKg(float value) const { WriteField<float>("armourKg", value); }
         float barrelKg() const { return ReadField<float>("barrelKg"); }
-        void SetBarrelKg(float value) const { WriteField<float>("barrelKg", value); }
+        void barrelKg(float value) const { WriteField<float>("barrelKg", value); }
         float turretRingMm() const { return ReadField<float>("turretRingMm"); }
-        void SetTurretRingMm(float value) const { WriteField<float>("turretRingMm", value); }
+        void turretRingMm(float value) const { WriteField<float>("turretRingMm", value); }
         void* hullMin() const { return ReadField<void*>("hullMin"); }
-        void SetHullMin(void* value) const { WriteField<void*>("hullMin", value); }
+        void hullMin(void* value) const { WriteField<void*>("hullMin", value); }
         void* hullMax() const { return ReadField<void*>("hullMax"); }
-        void SetHullMax(void* value) const { WriteField<void*>("hullMax", value); }
+        void hullMax(void* value) const { WriteField<void*>("hullMax", value); }
         void* turretMin() const { return ReadField<void*>("turretMin"); }
-        void SetTurretMin(void* value) const { WriteField<void*>("turretMin", value); }
+        void turretMin(void* value) const { WriteField<void*>("turretMin", value); }
         void* turretMax() const { return ReadField<void*>("turretMax"); }
-        void SetTurretMax(void* value) const { WriteField<void*>("turretMax", value); }
+        void turretMax(void* value) const { WriteField<void*>("turretMax", value); }
         void* deckMin() const { return ReadField<void*>("deckMin"); }
-        void SetDeckMin(void* value) const { WriteField<void*>("deckMin", value); }
+        void deckMin(void* value) const { WriteField<void*>("deckMin", value); }
         void* deckMax() const { return ReadField<void*>("deckMax"); }
-        void SetDeckMax(void* value) const { WriteField<void*>("deckMax", value); }
+        void deckMax(void* value) const { WriteField<void*>("deckMax", value); }
         bool barrelAttached() const { return ReadField<bool>("barrelAttached"); }
-        void SetBarrelAttached(bool value) const { WriteField<bool>("barrelAttached", value); }
+        void barrelAttached(bool value) const { WriteField<bool>("barrelAttached", value); }
         bool engineInsideHull() const { return ReadField<bool>("engineInsideHull"); }
-        void SetEngineInsideHull(bool value) const { WriteField<bool>("engineInsideHull", value); }
+        void engineInsideHull(bool value) const { WriteField<bool>("engineInsideHull", value); }
         int wheels() const { return ReadField<int>("wheels"); }
-        void SetWheels(int value) const { WriteField<int>("wheels", value); }
+        void wheels(int value) const { WriteField<int>("wheels", value); }
         bool hasWheel() const { return ReadField<bool>("hasWheel"); }
-        void SetHasWheel(bool value) const { WriteField<bool>("hasWheel", value); }
+        void hasWheel(bool value) const { WriteField<bool>("hasWheel", value); }
         bool hasBed() const { return ReadField<bool>("hasBed"); }
-        void SetHasBed(bool value) const { WriteField<bool>("hasBed", value); }
+        void hasBed(bool value) const { WriteField<bool>("hasBed", value); }
         float wheelFootprint() const { return ReadField<float>("wheelFootprint"); }
-        void SetWheelFootprint(float value) const { WriteField<float>("wheelFootprint", value); }
+        void wheelFootprint(float value) const { WriteField<float>("wheelFootprint", value); }
         float wheelKg() const { return ReadField<float>("wheelKg"); }
-        void SetWheelKg(float value) const { WriteField<float>("wheelKg", value); }
+        void wheelKg(float value) const { WriteField<float>("wheelKg", value); }
         float wheelDia() const { return ReadField<float>("wheelDia"); }
-        void SetWheelDia(float value) const { WriteField<float>("wheelDia", value); }
+        void wheelDia(float value) const { WriteField<float>("wheelDia", value); }
         float bedArea() const { return ReadField<float>("bedArea"); }
-        void SetBedArea(float value) const { WriteField<float>("bedArea", value); }
+        void bedArea(float value) const { WriteField<float>("bedArea", value); }
     };
 }

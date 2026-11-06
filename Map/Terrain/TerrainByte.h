@@ -11,14 +11,14 @@ namespace CivitasPoly::Map::Terrain
         explicit TerrainByte(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Map.Terrain", "TerrainByte") {}
     public:
-        int CoverOf(uint8_t b) const { void* args[] = { &b }; return CallStaticValue<int>("CoverOf", args, 1); }
-        int ReliefOf(uint8_t b) const { void* args[] = { &b }; return CallStaticValue<int>("ReliefOf", args, 1); }
-        uint8_t Pack(int c, int r) const { void* args[] = { &c, &r }; return CallStaticValue<uint8_t>("Pack", args, 2); }
-        bool IsWater(uint8_t b) const { void* args[] = { &b }; return CallStaticValue<bool>("IsWater", args, 1); }
-        int TypeOf(uint8_t b) const { void* args[] = { &b }; return CallStaticValue<int>("TypeOf", args, 1); }
-        void* CoverName(int c) const { void* args[] = { &c }; return CallStatic("CoverName", args, 1); }
-        void* ReliefName(int r) const { void* args[] = { &r }; return CallStatic("ReliefName", args, 1); }
-        void* Name(uint8_t b) const { void* args[] = { &b }; return CallStatic("Name", args, 1); }
+        int CoverOf(uint8_t b) const { void* __callArgs[] = { &b }; return CallStaticValue<int>("CoverOf", __callArgs, 1); }
+        int ReliefOf(uint8_t b) const { void* __callArgs[] = { &b }; return CallStaticValue<int>("ReliefOf", __callArgs, 1); }
+        uint8_t Pack(int c, int r) const { void* __callArgs[] = { &c, &r }; return CallStaticValue<uint8_t>("Pack", __callArgs, 2); }
+        bool IsWater(uint8_t b) const { void* __callArgs[] = { &b }; return CallStaticValue<bool>("IsWater", __callArgs, 1); }
+        int TypeOf(uint8_t b) const { void* __callArgs[] = { &b }; return CallStaticValue<int>("TypeOf", __callArgs, 1); }
+        void* CoverName(int c) const { void* __callArgs[] = { &c }; return CallStatic("CoverName", __callArgs, 1); }
+        void* ReliefName(int r) const { void* __callArgs[] = { &r }; return CallStatic("ReliefName", __callArgs, 1); }
+        void* Name(uint8_t b) const { void* __callArgs[] = { &b }; return CallStatic("Name", __callArgs, 1); }
         int CoverMask() const { return ReadStaticField<int>("CoverMask"); }
         int ReliefShift() const { return ReadStaticField<int>("ReliefShift"); }
         int CoverCount() const { return ReadStaticField<int>("CoverCount"); }

@@ -12,26 +12,26 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "UnionLoyaltyReadout") {}
     public:
         int memberId() const { return ReadField<int>("memberId"); }
-        void SetMemberId(int value) const { WriteField<int>("memberId", value); }
+        void memberId(int value) const { WriteField<int>("memberId", value); }
         int rulerId() const { return ReadField<int>("rulerId"); }
-        void SetRulerId(int value) const { WriteField<int>("rulerId", value); }
+        void rulerId(int value) const { WriteField<int>("rulerId", value); }
         int mood() const { return ReadField<int>("mood"); }
-        void SetMood(int value) const { WriteField<int>("mood", value); }
+        void mood(int value) const { WriteField<int>("mood", value); }
         float contentment() const { return ReadField<float>("contentment"); }
-        void SetContentment(float value) const { WriteField<float>("contentment", value); }
+        void contentment(float value) const { WriteField<float>("contentment", value); }
         float contentmentLine() const { return ReadField<float>("contentmentLine"); }
-        void SetContentmentLine(float value) const { WriteField<float>("contentmentLine", value); }
+        void contentmentLine(float value) const { WriteField<float>("contentmentLine", value); }
         float regard() const { return ReadField<float>("regard"); }
-        void SetRegard(float value) const { WriteField<float>("regard", value); }
+        void regard(float value) const { WriteField<float>("regard", value); }
         float opinion() const { return ReadField<float>("opinion"); }
-        void SetOpinion(float value) const { WriteField<float>("opinion", value); }
+        void opinion(float value) const { WriteField<float>("opinion", value); }
         float regardLine() const { return ReadField<float>("regardLine"); }
-        void SetRegardLine(float value) const { WriteField<float>("regardLine", value); }
+        void regardLine(float value) const { WriteField<float>("regardLine", value); }
         int graceLeft() const { return ReadField<int>("graceLeft"); }
-        void SetGraceLeft(int value) const { WriteField<int>("graceLeft", value); }
+        void graceLeft(int value) const { WriteField<int>("graceLeft", value); }
         int shieldLeft() const { return ReadField<int>("shieldLeft"); }
-        void SetShieldLeft(int value) const { WriteField<int>("shieldLeft", value); }
+        void shieldLeft(int value) const { WriteField<int>("shieldLeft", value); }
         int nextReviewIn() const { return ReadField<int>("nextReviewIn"); }
-        void SetNextReviewIn(int value) const { WriteField<int>("nextReviewIn", value); }
+        void nextReviewIn(int value) const { WriteField<int>("nextReviewIn", value); }
     };
 }

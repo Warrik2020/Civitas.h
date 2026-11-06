@@ -11,8 +11,8 @@ namespace CivitasPoly::Nations::Military
         explicit FrontPosture(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military", "FrontPosture") {}
     public:
-        int Kind(void* d, void* enemy, int age, void* held, bool closing) const { void* args[] = { d, enemy, &age, held, &closing }; return CallStaticValue<int>("Kind", args, 5); }
-        bool Closing(void* d, void* enemy) const { void* args[] = { d, enemy }; return CallStaticValue<bool>("Closing", args, 2); }
-        void Extents(void* d, void* centre, void* fwd, void* sameSide, float& shift, float& halfWidth) const { void* args[] = { d, centre, fwd, sameSide, &shift, &halfWidth }; CallStatic("Extents", args, 6); }
+        int Kind(void* d, void* enemy, int age, void* held, bool closing) const { void* __callArgs[] = { d, enemy, &age, held, &closing }; return CallStaticValue<int>("Kind", __callArgs, 5); }
+        bool Closing(void* d, void* enemy) const { void* __callArgs[] = { d, enemy }; return CallStaticValue<bool>("Closing", __callArgs, 2); }
+        void Extents(void* d, void* centre, void* fwd, void* sameSide, float& shift, float& halfWidth) const { void* __callArgs[] = { d, centre, fwd, sameSide, &shift, &halfWidth }; CallStatic("Extents", __callArgs, 6); }
     };
 }

@@ -17,16 +17,6 @@ namespace CivitasPoly::UI::Military
         void ToggleSpearhead() const { CallStatic("ToggleSpearhead", nullptr, 0); }
         void ToggleDelete() const { CallStatic("ToggleDelete", nullptr, 0); }
         void CancelTool() const { CallStatic("CancelTool", nullptr, 0); }
-        void* ArmyAtScreen(void* screen) const { void* args[] = { screen }; return CallStatic("ArmyAtScreen", args, 1); }
-        bool SameOrder(void* o) const { void* args[] = { o }; return CallValue<bool>("SameOrder", args, 1); }
-        void* kind() const { return ReadField<void*>("kind"); }
-        void SetKind(void* value) const { WriteField<void*>("kind", value); }
-        int armyId() const { return ReadField<int>("armyId"); }
-        void SetArmyId(int value) const { WriteField<int>("armyId", value); }
-        int spearheadId() const { return ReadField<int>("spearheadId"); }
-        void SetSpearheadId(int value) const { WriteField<int>("spearheadId", value); }
-        int point() const { return ReadField<int>("point"); }
-        void SetPoint(int value) const { WriteField<int>("point", value); }
-        void* None() const { return ReadStaticField<void*>("None"); }
+        void* ArmyAtScreen(void* screen) const { void* __callArgs[] = { screen }; return CallStatic("ArmyAtScreen", __callArgs, 1); }
     };
 }

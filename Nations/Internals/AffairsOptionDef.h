@@ -12,20 +12,20 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "AffairsOptionDef") {}
     public:
         void* label() const { return ReadField<void*>("label"); }
-        void SetLabel(void* value) const { WriteField<void*>("label", value); }
+        void label(void* value) const { WriteField<void*>("label", value); }
         void* hint() const { return ReadField<void*>("hint"); }
-        void SetHint(void* value) const { WriteField<void*>("hint", value); }
+        void hint(void* value) const { WriteField<void*>("hint", value); }
         bool isDefault() const { return ReadField<bool>("isDefault"); }
-        void SetIsDefault(bool value) const { WriteField<bool>("isDefault", value); }
+        void isDefault(bool value) const { WriteField<bool>("isDefault", value); }
         void* show() const { return ReadField<void*>("show"); }
-        void SetShow(void* value) const { WriteField<void*>("show", value); }
+        void show(void* value) const { WriteField<void*>("show", value); }
         void* endOutcome() const { return ReadField<void*>("endOutcome"); }
-        void SetEndOutcome(void* value) const { WriteField<void*>("endOutcome", value); }
+        void endOutcome(void* value) const { WriteField<void*>("endOutcome", value); }
         void* costs() const { return ReadField<void*>("costs"); }
         void* effects() const { return ReadField<void*>("effects"); }
         void* next() const { return ReadField<void*>("next"); }
         void* ai() const { return ReadField<void*>("ai"); }
         int line() const { return ReadField<int>("line"); }
-        void SetLine(int value) const { WriteField<int>("line", value); }
+        void line(int value) const { WriteField<int>("line", value); }
     };
 }

@@ -11,11 +11,11 @@ namespace CivitasPoly::UI
         explicit UiToolStrip(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "UiToolStrip") {}
     public:
-        void* Make(void* parent, const char* name) const { void* managed_1 = Api() && Api()->NewString ? Api()->NewString(name ? name : "") : nullptr; void* args[] = { parent, managed_1 }; return CallStatic("Make", args, 2); }
-        void* Divider(float height = 40f) const { void* args[] = { &height }; return Call("Divider", args, 1); }
+        void* Make(void* parent, const char* name) const { void* managed_1 = Api() && Api()->NewString ? Api()->NewString(name ? name : "") : nullptr; void* __callArgs[] = { parent, managed_1 }; return CallStatic("Make", __callArgs, 2); }
+        void* Divider(float height = 40.0f) const { void* __callArgs[] = { &height }; return Call("Divider", __callArgs, 1); }
         void* root() const { return ReadField<void*>("root"); }
-        void SetRoot(void* value) const { WriteField<void*>("root", value); }
+        void root(void* value) const { WriteField<void*>("root", value); }
         void* row() const { return ReadField<void*>("row"); }
-        void SetRow(void* value) const { WriteField<void*>("row", value); }
+        void row(void* value) const { WriteField<void*>("row", value); }
     };
 }

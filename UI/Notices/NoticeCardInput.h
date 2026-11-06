@@ -11,12 +11,12 @@ namespace CivitasPoly::UI::Notices
         explicit NoticeCardInput(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Notices", "NoticeCardInput") {}
     public:
-        void OnPointerClick(void* e) const { void* args[] = { e }; Call("OnPointerClick", args, 1); }
-        void OnPointerEnter(void* e) const { void* args[] = { e }; Call("OnPointerEnter", args, 1); }
-        void OnPointerExit(void* e) const { void* args[] = { e }; Call("OnPointerExit", args, 1); }
+        void OnPointerClick(void* e) const { void* __callArgs[] = { e }; Call("OnPointerClick", __callArgs, 1); }
+        void OnPointerEnter(void* e) const { void* __callArgs[] = { e }; Call("OnPointerEnter", __callArgs, 1); }
+        void OnPointerExit(void* e) const { void* __callArgs[] = { e }; Call("OnPointerExit", __callArgs, 1); }
         void* click() const { return ReadField<void*>("click"); }
-        void SetClick(void* value) const { WriteField<void*>("click", value); }
+        void click(void* value) const { WriteField<void*>("click", value); }
         void* hover() const { return ReadField<void*>("hover"); }
-        void SetHover(void* value) const { WriteField<void*>("hover", value); }
+        void hover(void* value) const { WriteField<void*>("hover", value); }
     };
 }

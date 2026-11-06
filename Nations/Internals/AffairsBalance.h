@@ -40,6 +40,6 @@ namespace CivitasPoly::Nations::Internals
         float FigureForgetYears() const { return ReadStaticField<float>("FigureForgetYears"); }
         float MarkPresentStrength() const { return ReadStaticField<float>("MarkPresentStrength"); }
         bool LogYearly() const { return ReadStaticField<bool>("LogYearly"); }
-        void SetLogYearly(bool value) const { WriteStaticField<bool>("LogYearly", value); }
+        void LogYearly(bool value) const { WriteStaticField<bool>("LogYearly", value); }
     };
 }

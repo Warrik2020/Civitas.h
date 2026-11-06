@@ -11,10 +11,10 @@ namespace CivitasPoly
         explicit DemoBuild(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly", "DemoBuild") {}
     public:
-        bool Lists(const char* name) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(name ? name : "") : nullptr; void* args[] = { managed_0 }; return CallStaticValue<bool>("Lists", args, 1); }
-        void* Refusal(const char* name, int kind, void* dto) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(name ? name : "") : nullptr; void* args[] = { managed_0, &kind, dto }; return CallStatic("Refusal", args, 3); }
-        void Seal(const char* path, void* bytes) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(path ? path : "") : nullptr; void* args[] = { managed_0, bytes }; CallStatic("Seal", args, 2); }
-        void DeleteSeal(const char* path) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(path ? path : "") : nullptr; void* args[] = { managed_0 }; CallStatic("DeleteSeal", args, 1); }
+        bool Lists(const char* name) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(name ? name : "") : nullptr; void* __callArgs[] = { managed_0 }; return CallStaticValue<bool>("Lists", __callArgs, 1); }
+        void* Refusal(const char* name, int kind, void* dto) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(name ? name : "") : nullptr; void* __callArgs[] = { managed_0, &kind, dto }; return CallStatic("Refusal", __callArgs, 3); }
+        void Seal(const char* path, void* bytes) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(path ? path : "") : nullptr; void* __callArgs[] = { managed_0, bytes }; CallStatic("Seal", __callArgs, 2); }
+        void DeleteSeal(const char* path) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(path ? path : "") : nullptr; void* __callArgs[] = { managed_0 }; CallStatic("DeleteSeal", __callArgs, 1); }
         void* ScenarioStem() const { return ReadStaticField<void*>("ScenarioStem"); }
         void* ScenarioTitle() const { return ReadStaticField<void*>("ScenarioTitle"); }
         int StartYear() const { return ReadStaticField<int>("StartYear"); }

@@ -11,8 +11,8 @@ namespace CivitasPoly::UI::Youtuber
         explicit YoutuberMode(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Youtuber", "YoutuberMode") {}
     public:
-        float MapContrast(float own) const { void* args[] = { &own }; return CallStaticValue<float>("MapContrast", args, 1); }
-        void Set(bool on) const { void* args[] = { &on }; CallStatic("Set", args, 1); }
-        void SetCursorRing(bool on) const { void* args[] = { &on }; CallStatic("SetCursorRing", args, 1); }
+        float MapContrast(float own) const { void* __callArgs[] = { &own }; return CallStaticValue<float>("MapContrast", __callArgs, 1); }
+        void Set(bool on) const { void* __callArgs[] = { &on }; CallStatic("Set", __callArgs, 1); }
+        void SetCursorRing(bool on) const { void* __callArgs[] = { &on }; CallStatic("SetCursorRing", __callArgs, 1); }
     };
 }

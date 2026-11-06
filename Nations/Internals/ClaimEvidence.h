@@ -11,22 +11,22 @@ namespace CivitasPoly::Nations::Internals
         explicit ClaimEvidence(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "ClaimEvidence") {}
     public:
-        bool Has(int r, void* cfg) const { void* args[] = { &r, cfg }; return CallValue<bool>("Has", args, 2); }
+        bool Has(int r, void* cfg) const { void* __callArgs[] = { &r, cfg }; return CallValue<bool>("Has", __callArgs, 2); }
         float peopleShare() const { return ReadField<float>("peopleShare"); }
-        void SetPeopleShare(float value) const { WriteField<float>("peopleShare", value); }
+        void peopleShare(float value) const { WriteField<float>("peopleShare", value); }
         float faithShare() const { return ReadField<float>("faithShare"); }
-        void SetFaithShare(float value) const { WriteField<float>("faithShare", value); }
+        void faithShare(float value) const { WriteField<float>("faithShare", value); }
         float tongueShare() const { return ReadField<float>("tongueShare"); }
-        void SetTongueShare(float value) const { WriteField<float>("tongueShare", value); }
+        void tongueShare(float value) const { WriteField<float>("tongueShare", value); }
         float homelandShare() const { return ReadField<float>("homelandShare"); }
-        void SetHomelandShare(float value) const { WriteField<float>("homelandShare", value); }
+        void homelandShare(float value) const { WriteField<float>("homelandShare", value); }
         bool borders() const { return ReadField<bool>("borders"); }
-        void SetBorders(bool value) const { WriteField<bool>("borders", value); }
+        void borders(bool value) const { WriteField<bool>("borders", value); }
         bool identityLive() const { return ReadField<bool>("identityLive"); }
-        void SetIdentityLive(bool value) const { WriteField<bool>("identityLive", value); }
+        void identityLive(bool value) const { WriteField<bool>("identityLive", value); }
         bool lacksResource() const { return ReadField<bool>("lacksResource"); }
-        void SetLacksResource(bool value) const { WriteField<bool>("lacksResource", value); }
+        void lacksResource(bool value) const { WriteField<bool>("lacksResource", value); }
         int resourceKind() const { return ReadField<int>("resourceKind"); }
-        void SetResourceKind(int value) const { WriteField<int>("resourceKind", value); }
+        void resourceKind(int value) const { WriteField<int>("resourceKind", value); }
     };
 }

@@ -12,22 +12,22 @@ namespace CivitasPoly::Nations::States::Labels
             : ManagedType(api, object, "CivitasPoly.Nations.States.Labels", "StateLabelConfig") {}
     public:
         float hidePx() const { return ReadField<float>("hidePx"); }
-        void SetHidePx(float value) const { WriteField<float>("hidePx", value); }
+        void hidePx(float value) const { WriteField<float>("hidePx", value); }
         float fadePx() const { return ReadField<float>("fadePx"); }
-        void SetFadePx(float value) const { WriteField<float>("fadePx", value); }
+        void fadePx(float value) const { WriteField<float>("fadePx", value); }
         float showExitFactor() const { return ReadField<float>("showExitFactor"); }
-        void SetShowExitFactor(float value) const { WriteField<float>("showExitFactor", value); }
+        void showExitFactor(float value) const { WriteField<float>("showExitFactor", value); }
         float densityCellPx() const { return ReadField<float>("densityCellPx"); }
-        void SetDensityCellPx(float value) const { WriteField<float>("densityCellPx", value); }
+        void densityCellPx(float value) const { WriteField<float>("densityCellPx", value); }
         int densityMax() const { return ReadField<int>("densityMax"); }
-        void SetDensityMax(int value) const { WriteField<int>("densityMax", value); }
+        void densityMax(int value) const { WriteField<int>("densityMax", value); }
         float cullMarginTiles() const { return ReadField<float>("cullMarginTiles"); }
-        void SetCullMarginTiles(float value) const { WriteField<float>("cullMarginTiles", value); }
+        void cullMarginTiles(float value) const { WriteField<float>("cullMarginTiles", value); }
         int maxLabels() const { return ReadField<int>("maxLabels"); }
-        void SetMaxLabels(int value) const { WriteField<int>("maxLabels", value); }
+        void maxLabels(int value) const { WriteField<int>("maxLabels", value); }
         float refitSeconds() const { return ReadField<float>("refitSeconds"); }
-        void SetRefitSeconds(float value) const { WriteField<float>("refitSeconds", value); }
+        void refitSeconds(float value) const { WriteField<float>("refitSeconds", value); }
         int fitsPerFrame() const { return ReadField<int>("fitsPerFrame"); }
-        void SetFitsPerFrame(int value) const { WriteField<int>("fitsPerFrame", value); }
+        void fitsPerFrame(int value) const { WriteField<int>("fitsPerFrame", value); }
     };
 }

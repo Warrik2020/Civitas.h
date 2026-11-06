@@ -11,9 +11,9 @@ namespace CivitasPoly::Nations::Weapons
         explicit WeaponSerialization(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Weapons", "WeaponSerialization") {}
     public:
-        void Capture(void* s, void* w, int now = -2147483648) const { void* args[] = { s, w, &now }; CallStatic("Capture", args, 3); }
-        void Restore(void* w, void* s, int now = -2147483648) const { void* args[] = { w, s, &now }; CallStatic("Restore", args, 3); }
-        void* ToSer(void* d) const { void* args[] = { d }; return CallStatic("ToSer", args, 1); }
-        void* FromSer(void* s) const { void* args[] = { s }; return CallStatic("FromSer", args, 1); }
+        void Capture(void* s, void* w, int now = -2147483648) const { void* __callArgs[] = { s, w, &now }; CallStatic("Capture", __callArgs, 3); }
+        void Restore(void* w, void* s, int now = -2147483648) const { void* __callArgs[] = { w, s, &now }; CallStatic("Restore", __callArgs, 3); }
+        void* ToSer(void* d) const { void* __callArgs[] = { d }; return CallStatic("ToSer", __callArgs, 1); }
+        void* FromSer(void* s) const { void* __callArgs[] = { s }; return CallStatic("FromSer", __callArgs, 1); }
     };
 }

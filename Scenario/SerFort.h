@@ -12,12 +12,12 @@ namespace CivitasPoly::Scenario
             : ManagedType(api, object, "CivitasPoly.Scenario", "SerFort") {}
     public:
         int tile() const { return ReadField<int>("tile"); }
-        void SetTile(int value) const { WriteField<int>("tile", value); }
+        void tile(int value) const { WriteField<int>("tile", value); }
         int type() const { return ReadField<int>("type"); }
-        void SetType(int value) const { WriteField<int>("type", value); }
+        void type(int value) const { WriteField<int>("type", value); }
         int builderNationId() const { return ReadField<int>("builderNationId"); }
-        void SetBuilderNationId(int value) const { WriteField<int>("builderNationId", value); }
+        void builderNationId(int value) const { WriteField<int>("builderNationId", value); }
         float progress() const { return ReadField<float>("progress"); }
-        void SetProgress(float value) const { WriteField<float>("progress", value); }
+        void progress(float value) const { WriteField<float>("progress", value); }
     };
 }

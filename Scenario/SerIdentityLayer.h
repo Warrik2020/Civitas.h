@@ -12,12 +12,12 @@ namespace CivitasPoly::Scenario
             : ManagedType(api, object, "CivitasPoly.Scenario", "SerIdentityLayer") {}
     public:
         int axis() const { return ReadField<int>("axis"); }
-        void SetAxis(int value) const { WriteField<int>("axis", value); }
+        void axis(int value) const { WriteField<int>("axis", value); }
         void* domRuns() const { return ReadField<void*>("domRuns"); }
-        void SetDomRuns(void* value) const { WriteField<void*>("domRuns", value); }
+        void domRuns(void* value) const { WriteField<void*>("domRuns", value); }
         void* homeRuns() const { return ReadField<void*>("homeRuns"); }
-        void SetHomeRuns(void* value) const { WriteField<void*>("homeRuns", value); }
+        void homeRuns(void* value) const { WriteField<void*>("homeRuns", value); }
         void* mixBlob() const { return ReadField<void*>("mixBlob"); }
-        void SetMixBlob(void* value) const { WriteField<void*>("mixBlob", value); }
+        void mixBlob(void* value) const { WriteField<void*>("mixBlob", value); }
     };
 }

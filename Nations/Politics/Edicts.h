@@ -11,12 +11,12 @@ namespace CivitasPoly::Nations::Politics
         explicit Edicts(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Politics", "Edicts") {}
     public:
-        bool Retired(int e) const { void* args[] = { &e }; return CallStaticValue<bool>("Retired", args, 1); }
-        void* Name(int e) const { void* args[] = { &e }; return CallStatic("Name", args, 1); }
-        float GoldCost(int e, void* it, void* cfg, float taxPerDay) const { void* args[] = { &e, it, cfg, &taxPerDay }; return CallStaticValue<float>("GoldCost", args, 4); }
-        float CooldownYears(int e, void* cfg) const { void* args[] = { &e, cfg }; return CallStaticValue<float>("CooldownYears", args, 2); }
-        int ReadyTick(void* it, int e) const { void* args[] = { it, &e }; return CallStaticValue<int>("ReadyTick", args, 2); }
-        void SetReadyTick(void* it, int e, int tick) const { void* args[] = { it, &e, &tick }; CallStatic("SetReadyTick", args, 3); }
+        bool Retired(int e) const { void* __callArgs[] = { &e }; return CallStaticValue<bool>("Retired", __callArgs, 1); }
+        void* Name(int e) const { void* __callArgs[] = { &e }; return CallStatic("Name", __callArgs, 1); }
+        float GoldCost(int e, void* it, void* cfg, float taxPerDay) const { void* __callArgs[] = { &e, it, cfg, &taxPerDay }; return CallStaticValue<float>("GoldCost", __callArgs, 4); }
+        float CooldownYears(int e, void* cfg) const { void* __callArgs[] = { &e, cfg }; return CallStaticValue<float>("CooldownYears", __callArgs, 2); }
+        int ReadyTick(void* it, int e) const { void* __callArgs[] = { it, &e }; return CallStaticValue<int>("ReadyTick", __callArgs, 2); }
+        void SetReadyTick(void* it, int e, int tick) const { void* __callArgs[] = { it, &e, &tick }; CallStatic("SetReadyTick", __callArgs, 3); }
         int Count() const { return ReadStaticField<int>("Count"); }
     };
 }

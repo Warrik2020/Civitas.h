@@ -11,7 +11,7 @@ namespace CivitasPoly::Nations::Military::Command
         explicit CommandGeometry(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Command", "CommandGeometry") {}
     public:
-        float Spacing(void* cfg) const { void* args[] = { cfg }; return CallStaticValue<float>("Spacing", args, 1); }
+        float Spacing(void* cfg) const { void* __callArgs[] = { cfg }; return CallStaticValue<float>("Spacing", __callArgs, 1); }
         int SmoothPasses() const { return ReadStaticField<int>("SmoothPasses"); }
         float SampleStep() const { return ReadStaticField<float>("SampleStep"); }
         float TangentWindow() const { return ReadStaticField<float>("TangentWindow"); }

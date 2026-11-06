@@ -12,10 +12,10 @@ namespace CivitasPoly::Map::Generation
             : ManagedType(api, object, "CivitasPoly.Map.Generation", "WorldSaveJob") {}
     public:
         bool Done() const { return ReadField<bool>("Done"); }
-        void SetDone(bool value) const { WriteField<bool>("Done", value); }
+        void Done(bool value) const { WriteField<bool>("Done", value); }
         void* Path() const { return ReadField<void*>("Path"); }
-        void SetPath(void* value) const { WriteField<void*>("Path", value); }
+        void Path(void* value) const { WriteField<void*>("Path", value); }
         void* Failure() const { return ReadField<void*>("Failure"); }
-        void SetFailure(void* value) const { WriteField<void*>("Failure", value); }
+        void Failure(void* value) const { WriteField<void*>("Failure", value); }
     };
 }

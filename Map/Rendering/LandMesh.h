@@ -12,28 +12,28 @@ namespace CivitasPoly::Map::Rendering
             : ManagedType(api, object, "CivitasPoly.Map.Rendering", "LandMesh") {}
     public:
         void* mesh() const { return ReadField<void*>("mesh"); }
-        void SetMesh(void* value) const { WriteField<void*>("mesh", value); }
+        void mesh(void* value) const { WriteField<void*>("mesh", value); }
         void* seaMesh() const { return ReadField<void*>("seaMesh"); }
-        void SetSeaMesh(void* value) const { WriteField<void*>("seaMesh", value); }
+        void seaMesh(void* value) const { WriteField<void*>("seaMesh", value); }
         void* bounds() const { return ReadField<void*>("bounds"); }
-        void SetBounds(void* value) const { WriteField<void*>("bounds", value); }
+        void bounds(void* value) const { WriteField<void*>("bounds", value); }
         int triangleCount() const { return ReadField<int>("triangleCount"); }
-        void SetTriangleCount(int value) const { WriteField<int>("triangleCount", value); }
+        void triangleCount(int value) const { WriteField<int>("triangleCount", value); }
         int islandCount() const { return ReadField<int>("islandCount"); }
-        void SetIslandCount(int value) const { WriteField<int>("islandCount", value); }
+        void islandCount(int value) const { WriteField<int>("islandCount", value); }
         int seaCount() const { return ReadField<int>("seaCount"); }
-        void SetSeaCount(int value) const { WriteField<int>("seaCount", value); }
+        void seaCount(int value) const { WriteField<int>("seaCount", value); }
         void* space() const { return ReadField<void*>("space"); }
-        void SetSpace(void* value) const { WriteField<void*>("space", value); }
+        void space(void* value) const { WriteField<void*>("space", value); }
         void* landGrid() const { return ReadField<void*>("landGrid"); }
-        void SetLandGrid(void* value) const { WriteField<void*>("landGrid", value); }
+        void landGrid(void* value) const { WriteField<void*>("landGrid", value); }
         int gridWidth() const { return ReadField<int>("gridWidth"); }
-        void SetGridWidth(int value) const { WriteField<int>("gridWidth", value); }
+        void gridWidth(int value) const { WriteField<int>("gridWidth", value); }
         int gridHeight() const { return ReadField<int>("gridHeight"); }
-        void SetGridHeight(int value) const { WriteField<int>("gridHeight", value); }
+        void gridHeight(int value) const { WriteField<int>("gridHeight", value); }
         int dropped() const { return ReadField<int>("dropped"); }
-        void SetDropped(int value) const { WriteField<int>("dropped", value); }
+        void dropped(int value) const { WriteField<int>("dropped", value); }
         int welded() const { return ReadField<int>("welded"); }
-        void SetWelded(int value) const { WriteField<int>("welded", value); }
+        void welded(int value) const { WriteField<int>("welded", value); }
     };
 }

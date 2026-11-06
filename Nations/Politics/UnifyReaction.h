@@ -12,14 +12,14 @@ namespace CivitasPoly::Nations::Politics
             : ManagedType(api, object, "CivitasPoly.Nations.Politics", "UnifyReaction") {}
     public:
         void* key() const { return ReadField<void*>("key"); }
-        void SetKey(void* value) const { WriteField<void*>("key", value); }
+        void key(void* value) const { WriteField<void*>("key", value); }
         void* name() const { return ReadField<void*>("name"); }
-        void SetName(void* value) const { WriteField<void*>("name", value); }
+        void name(void* value) const { WriteField<void*>("name", value); }
         int untilTick() const { return ReadField<int>("untilTick"); }
-        void SetUntilTick(int value) const { WriteField<int>("untilTick", value); }
+        void untilTick(int value) const { WriteField<int>("untilTick", value); }
         void* effects() const { return ReadField<void*>("effects"); }
-        void SetEffects(void* value) const { WriteField<void*>("effects", value); }
+        void effects(void* value) const { WriteField<void*>("effects", value); }
         bool demand() const { return ReadField<bool>("demand"); }
-        void SetDemand(bool value) const { WriteField<bool>("demand", value); }
+        void demand(bool value) const { WriteField<bool>("demand", value); }
     };
 }

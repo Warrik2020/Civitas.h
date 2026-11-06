@@ -11,11 +11,11 @@ namespace CivitasPoly::Nations::Military
         explicit LogisticsSources(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military", "LogisticsSources") {}
     public:
-        void NoteState(int stateId, float power) const { void* args[] = { &stateId, &power }; CallStatic("NoteState", args, 2); }
+        void NoteState(int stateId, float power) const { void* __callArgs[] = { &stateId, &power }; CallStatic("NoteState", __callArgs, 2); }
         void ClearDepots() const { CallStatic("ClearDepots", nullptr, 0); }
-        float DepotPowerIn(int stateId) const { void* args[] = { &stateId }; return CallStaticValue<float>("DepotPowerIn", args, 1); }
-        float DepotOutput(float power, float techMul) const { void* args[] = { &power, &techMul }; return CallStaticValue<float>("DepotOutput", args, 2); }
-        void AddDepots(int nationId, float techMul, void* grid, void* cells, void* cities, void* into) const { void* args[] = { &nationId, &techMul, grid, cells, cities, into }; CallStatic("AddDepots", args, 6); }
-        int AnchorTile(int stateId, void* grid) const { void* args[] = { &stateId, grid }; return CallStaticValue<int>("AnchorTile", args, 2); }
+        float DepotPowerIn(int stateId) const { void* __callArgs[] = { &stateId }; return CallStaticValue<float>("DepotPowerIn", __callArgs, 1); }
+        float DepotOutput(float power, float techMul) const { void* __callArgs[] = { &power, &techMul }; return CallStaticValue<float>("DepotOutput", __callArgs, 2); }
+        void AddDepots(int nationId, float techMul, void* grid, void* cells, void* cities, void* into) const { void* __callArgs[] = { &nationId, &techMul, grid, cells, cities, into }; CallStatic("AddDepots", __callArgs, 6); }
+        int AnchorTile(int stateId, void* grid) const { void* __callArgs[] = { &stateId, grid }; return CallStaticValue<int>("AnchorTile", __callArgs, 2); }
     };
 }

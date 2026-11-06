@@ -12,12 +12,12 @@ namespace CivitasPoly::Scenario
             : ManagedType(api, object, "CivitasPoly.Scenario", "SerNaval") {}
     public:
         void* beachheads() const { return ReadField<void*>("beachheads"); }
-        void SetBeachheads(void* value) const { WriteField<void*>("beachheads", value); }
+        void beachheads(void* value) const { WriteField<void*>("beachheads", value); }
         void* fleets() const { return ReadField<void*>("fleets"); }
-        void SetFleets(void* value) const { WriteField<void*>("fleets", value); }
+        void fleets(void* value) const { WriteField<void*>("fleets", value); }
         void* fleetBuilds() const { return ReadField<void*>("fleetBuilds"); }
-        void SetFleetBuilds(void* value) const { WriteField<void*>("fleetBuilds", value); }
+        void fleetBuilds(void* value) const { WriteField<void*>("fleetBuilds", value); }
         void* taskForces() const { return ReadField<void*>("taskForces"); }
-        void SetTaskForces(void* value) const { WriteField<void*>("taskForces", value); }
+        void taskForces(void* value) const { WriteField<void*>("taskForces", value); }
     };
 }

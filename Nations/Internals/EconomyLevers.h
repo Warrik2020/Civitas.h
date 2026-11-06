@@ -11,14 +11,14 @@ namespace CivitasPoly::Nations::Internals
         explicit EconomyLevers(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "EconomyLevers") {}
     public:
-        float InvestCost(void* it, float gross) const { void* args[] = { it, &gross }; return CallStaticValue<float>("InvestCost", args, 2); }
-        float ManpowerCost(void* it, float gross) const { void* args[] = { it, &gross }; return CallStaticValue<float>("ManpowerCost", args, 2); }
-        float DevelopmentTarget(float level) const { void* args[] = { &level }; return CallStaticValue<float>("DevelopmentTarget", args, 1); }
-        float TaxMul(void* it) const { void* args[] = { it }; return CallStaticValue<float>("TaxMul", args, 1); }
-        float ManpowerIntakeMul(void* it) const { void* args[] = { it }; return CallStaticValue<float>("ManpowerIntakeMul", args, 1); }
-        float ManpowerCapMul(void* it) const { void* args[] = { it }; return CallStaticValue<float>("ManpowerCapMul", args, 1); }
-        bool Stalled(void* it) const { void* args[] = { it }; return CallStaticValue<bool>("Stalled", args, 1); }
-        void Tick(void* it, float ticksPerYear, int span = 1) const { void* args[] = { it, &ticksPerYear, &span }; CallStatic("Tick", args, 3); }
+        float InvestCost(void* it, float gross) const { void* __callArgs[] = { it, &gross }; return CallStaticValue<float>("InvestCost", __callArgs, 2); }
+        float ManpowerCost(void* it, float gross) const { void* __callArgs[] = { it, &gross }; return CallStaticValue<float>("ManpowerCost", __callArgs, 2); }
+        float DevelopmentTarget(float level) const { void* __callArgs[] = { &level }; return CallStaticValue<float>("DevelopmentTarget", __callArgs, 1); }
+        float TaxMul(void* it) const { void* __callArgs[] = { it }; return CallStaticValue<float>("TaxMul", __callArgs, 1); }
+        float ManpowerIntakeMul(void* it) const { void* __callArgs[] = { it }; return CallStaticValue<float>("ManpowerIntakeMul", __callArgs, 1); }
+        float ManpowerCapMul(void* it) const { void* __callArgs[] = { it }; return CallStaticValue<float>("ManpowerCapMul", __callArgs, 1); }
+        bool Stalled(void* it) const { void* __callArgs[] = { it }; return CallStaticValue<bool>("Stalled", __callArgs, 1); }
+        void Tick(void* it, float ticksPerYear, int span = 1) const { void* __callArgs[] = { it, &ticksPerYear, &span }; CallStatic("Tick", __callArgs, 3); }
         float InvestMaxShare() const { return ReadStaticField<float>("InvestMaxShare"); }
         float DevelopmentMax() const { return ReadStaticField<float>("DevelopmentMax"); }
         float RiseYears() const { return ReadStaticField<float>("RiseYears"); }

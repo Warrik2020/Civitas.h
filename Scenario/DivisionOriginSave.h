@@ -11,7 +11,7 @@ namespace CivitasPoly::Scenario
         explicit DivisionOriginSave(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Scenario", "DivisionOriginSave") {}
     public:
-        void* Capture(void* nations, void* divisions) const { void* args[] = { nations, divisions }; return CallStatic("Capture", args, 2); }
-        void Apply(void* former, void* nations, void* military) const { void* args[] = { former, nations, military }; CallStatic("Apply", args, 3); }
+        void* Capture(void* nations, void* divisions) const { void* __callArgs[] = { nations, divisions }; return CallStatic("Capture", __callArgs, 2); }
+        void Apply(void* former, void* nations, void* military) const { void* __callArgs[] = { former, nations, military }; CallStatic("Apply", __callArgs, 3); }
     };
 }

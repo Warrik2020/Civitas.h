@@ -11,7 +11,7 @@ namespace CivitasPoly::Nations::Politics
         explicit UnifyValidate(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Politics", "UnifyValidate") {}
     public:
-        void Run(void* lib) const { void* args[] = { lib }; CallStatic("Run", args, 1); }
+        void Run(void* lib) const { void* __callArgs[] = { lib }; CallStatic("Run", __callArgs, 1); }
         void* Tokens() const { return ReadStaticField<void*>("Tokens"); }
     };
 }

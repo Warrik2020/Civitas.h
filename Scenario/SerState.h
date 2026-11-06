@@ -12,74 +12,74 @@ namespace CivitasPoly::Scenario
             : ManagedType(api, object, "CivitasPoly.Scenario", "SerState") {}
     public:
         int id() const { return ReadField<int>("id"); }
-        void SetId(int value) const { WriteField<int>("id", value); }
+        void id(int value) const { WriteField<int>("id", value); }
         void* name() const { return ReadField<void*>("name"); }
-        void SetName(void* value) const { WriteField<void*>("name", value); }
+        void name(void* value) const { WriteField<void*>("name", value); }
         bool pinned() const { return ReadField<bool>("pinned"); }
-        void SetPinned(bool value) const { WriteField<bool>("pinned", value); }
+        void pinned(bool value) const { WriteField<bool>("pinned", value); }
         int ownerId() const { return ReadField<int>("ownerId"); }
-        void SetOwnerId(int value) const { WriteField<int>("ownerId", value); }
+        void ownerId(int value) const { WriteField<int>("ownerId", value); }
         int tier() const { return ReadField<int>("tier"); }
-        void SetTier(int value) const { WriteField<int>("tier", value); }
+        void tier(int value) const { WriteField<int>("tier", value); }
         bool unified() const { return ReadField<bool>("unified"); }
-        void SetUnified(bool value) const { WriteField<bool>("unified", value); }
+        void unified(bool value) const { WriteField<bool>("unified", value); }
         float loyalty() const { return ReadField<float>("loyalty"); }
-        void SetLoyalty(float value) const { WriteField<float>("loyalty", value); }
+        void loyalty(float value) const { WriteField<float>("loyalty", value); }
         bool unifying() const { return ReadField<bool>("unifying"); }
-        void SetUnifying(bool value) const { WriteField<bool>("unifying", value); }
+        void unifying(bool value) const { WriteField<bool>("unifying", value); }
         float unifyProgress() const { return ReadField<float>("unifyProgress"); }
-        void SetUnifyProgress(float value) const { WriteField<float>("unifyProgress", value); }
+        void unifyProgress(float value) const { WriteField<float>("unifyProgress", value); }
         int heldSinceTick() const { return ReadField<int>("heldSinceTick"); }
-        void SetHeldSinceTick(int value) const { WriteField<int>("heldSinceTick", value); }
+        void heldSinceTick(int value) const { WriteField<int>("heldSinceTick", value); }
         void* lordGiven() const { return ReadField<void*>("lordGiven"); }
-        void SetLordGiven(void* value) const { WriteField<void*>("lordGiven", value); }
+        void lordGiven(void* value) const { WriteField<void*>("lordGiven", value); }
         void* lordHouse() const { return ReadField<void*>("lordHouse"); }
-        void SetLordHouse(void* value) const { WriteField<void*>("lordHouse", value); }
+        void lordHouse(void* value) const { WriteField<void*>("lordHouse", value); }
         bool lordFemale() const { return ReadField<bool>("lordFemale"); }
-        void SetLordFemale(bool value) const { WriteField<bool>("lordFemale", value); }
+        void lordFemale(bool value) const { WriteField<bool>("lordFemale", value); }
         float lordAmbition() const { return ReadField<float>("lordAmbition"); }
-        void SetLordAmbition(float value) const { WriteField<float>("lordAmbition", value); }
+        void lordAmbition(float value) const { WriteField<float>("lordAmbition", value); }
         int lordSeatedTick() const { return ReadField<int>("lordSeatedTick"); }
-        void SetLordSeatedTick(int value) const { WriteField<int>("lordSeatedTick", value); }
+        void lordSeatedTick(int value) const { WriteField<int>("lordSeatedTick", value); }
         int claimantId() const { return ReadField<int>("claimantId"); }
-        void SetClaimantId(int value) const { WriteField<int>("claimantId", value); }
+        void claimantId(int value) const { WriteField<int>("claimantId", value); }
         int claimStage() const { return ReadField<int>("claimStage"); }
-        void SetClaimStage(int value) const { WriteField<int>("claimStage", value); }
+        void claimStage(int value) const { WriteField<int>("claimStage", value); }
         int claimStageTick() const { return ReadField<int>("claimStageTick"); }
-        void SetClaimStageTick(int value) const { WriteField<int>("claimStageTick", value); }
+        void claimStageTick(int value) const { WriteField<int>("claimStageTick", value); }
         int claimStageAgeTicks() const { return ReadField<int>("claimStageAgeTicks"); }
-        void SetClaimStageAgeTicks(int value) const { WriteField<int>("claimStageAgeTicks", value); }
+        void claimStageAgeTicks(int value) const { WriteField<int>("claimStageAgeTicks", value); }
         int claimOffers() const { return ReadField<int>("claimOffers"); }
-        void SetClaimOffers(int value) const { WriteField<int>("claimOffers", value); }
+        void claimOffers(int value) const { WriteField<int>("claimOffers", value); }
         int standing() const { return ReadField<int>("standing"); }
-        void SetStanding(int value) const { WriteField<int>("standing", value); }
+        void standing(int value) const { WriteField<int>("standing", value); }
         float settled() const { return ReadField<float>("settled"); }
-        void SetSettled(float value) const { WriteField<float>("settled", value); }
+        void settled(float value) const { WriteField<float>("settled", value); }
         bool integrating() const { return ReadField<bool>("integrating"); }
-        void SetIntegrating(bool value) const { WriteField<bool>("integrating", value); }
+        void integrating(bool value) const { WriteField<bool>("integrating", value); }
         float autonomy() const { return ReadField<float>("autonomy"); }
-        void SetAutonomy(float value) const { WriteField<float>("autonomy", value); }
+        void autonomy(float value) const { WriteField<float>("autonomy", value); }
         bool charter() const { return ReadField<bool>("charter"); }
-        void SetCharter(bool value) const { WriteField<bool>("charter", value); }
+        void charter(bool value) const { WriteField<bool>("charter", value); }
         bool curtailing() const { return ReadField<bool>("curtailing"); }
-        void SetCurtailing(bool value) const { WriteField<bool>("curtailing", value); }
+        void curtailing(bool value) const { WriteField<bool>("curtailing", value); }
         bool homeRule() const { return ReadField<bool>("homeRule"); }
-        void SetHomeRule(bool value) const { WriteField<bool>("homeRule", value); }
+        void homeRule(bool value) const { WriteField<bool>("homeRule", value); }
         int lordIndulgedUntilTick() const { return ReadField<int>("lordIndulgedUntilTick"); }
-        void SetLordIndulgedUntilTick(int value) const { WriteField<int>("lordIndulgedUntilTick", value); }
+        void lordIndulgedUntilTick(int value) const { WriteField<int>("lordIndulgedUntilTick", value); }
         int charterSoldUntilTick() const { return ReadField<int>("charterSoldUntilTick"); }
-        void SetCharterSoldUntilTick(int value) const { WriteField<int>("charterSoldUntilTick", value); }
+        void charterSoldUntilTick(int value) const { WriteField<int>("charterSoldUntilTick", value); }
         int nextDirectRuleTick() const { return ReadField<int>("nextDirectRuleTick"); }
-        void SetNextDirectRuleTick(int value) const { WriteField<int>("nextDirectRuleTick", value); }
+        void nextDirectRuleTick(int value) const { WriteField<int>("nextDirectRuleTick", value); }
         int homeRulePeople() const { return ReadField<int>("homeRulePeople"); }
-        void SetHomeRulePeople(int value) const { WriteField<int>("homeRulePeople", value); }
+        void homeRulePeople(int value) const { WriteField<int>("homeRulePeople", value); }
         int homeRuleSinceTick() const { return ReadField<int>("homeRuleSinceTick"); }
-        void SetHomeRuleSinceTick(int value) const { WriteField<int>("homeRuleSinceTick", value); }
+        void homeRuleSinceTick(int value) const { WriteField<int>("homeRuleSinceTick", value); }
         float levyStrain() const { return ReadField<float>("levyStrain"); }
-        void SetLevyStrain(float value) const { WriteField<float>("levyStrain", value); }
+        void levyStrain(float value) const { WriteField<float>("levyStrain", value); }
         int orderUntilTick() const { return ReadField<int>("orderUntilTick"); }
-        void SetOrderUntilTick(int value) const { WriteField<int>("orderUntilTick", value); }
+        void orderUntilTick(int value) const { WriteField<int>("orderUntilTick", value); }
         int orderNationId() const { return ReadField<int>("orderNationId"); }
-        void SetOrderNationId(int value) const { WriteField<int>("orderNationId", value); }
+        void orderNationId(int value) const { WriteField<int>("orderNationId", value); }
     };
 }

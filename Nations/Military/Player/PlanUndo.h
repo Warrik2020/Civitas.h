@@ -11,9 +11,9 @@ namespace CivitasPoly::Nations::Military::Player
         explicit PlanUndo(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Player", "PlanUndo") {}
     public:
-        void Push(void* a) const { void* args[] = { a }; CallStatic("Push", args, 1); }
-        void* Pop(int armyId) const { void* args[] = { &armyId }; return CallStatic("Pop", args, 1); }
-        bool Has(int armyId) const { void* args[] = { &armyId }; return CallStaticValue<bool>("Has", args, 1); }
+        void Push(void* a) const { void* __callArgs[] = { a }; CallStatic("Push", __callArgs, 1); }
+        void* Pop(int armyId) const { void* __callArgs[] = { &armyId }; return CallStatic("Pop", __callArgs, 1); }
+        bool Has(int armyId) const { void* __callArgs[] = { &armyId }; return CallStaticValue<bool>("Has", __callArgs, 1); }
         void Clear() const { CallStatic("Clear", nullptr, 0); }
         int Depth() const { return ReadStaticField<int>("Depth"); }
     };

@@ -11,6 +11,6 @@ namespace CivitasPoly::Nations::Politics
         explicit EmigrationSystem(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Politics", "EmigrationSystem") {}
     public:
-        void Tick(void* nations, void* getInternals, void* getRelations, void* cfg, int span = 1) const { void* args[] = { nations, getInternals, getRelations, cfg, &span }; CallStatic("Tick", args, 5); }
+        void Tick(void* nations, void* getInternals, void* getRelations, void* cfg, int span = 1) const { void* __callArgs[] = { nations, getInternals, getRelations, cfg, &span }; CallStatic("Tick", __callArgs, 5); }
     };
 }

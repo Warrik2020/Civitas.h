@@ -11,7 +11,7 @@ namespace CivitasPoly::Nations::Internals
         explicit AggressionBalance(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "AggressionBalance") {}
     public:
-        float Max() const { return ReadStaticField<float>("Max"); }
+        float Max_() const { return ReadStaticField<float>("Max"); }
         int LogSize() const { return ReadStaticField<int>("LogSize"); }
         float HalfLifeYears() const { return ReadStaticField<float>("HalfLifeYears"); }
         float WarDeclared() const { return ReadStaticField<float>("WarDeclared"); }

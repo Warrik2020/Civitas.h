@@ -12,12 +12,12 @@ namespace CivitasPoly::Map::Rendering::Styles
             : ManagedType(api, object, "CivitasPoly.Map.Rendering.Styles", "LabelBlock") {}
     public:
         void* textColor() const { return ReadField<void*>("textColor"); }
-        void SetTextColor(void* value) const { WriteField<void*>("textColor", value); }
+        void textColor(void* value) const { WriteField<void*>("textColor", value); }
         void* shadowColor() const { return ReadField<void*>("shadowColor"); }
-        void SetShadowColor(void* value) const { WriteField<void*>("shadowColor", value); }
+        void shadowColor(void* value) const { WriteField<void*>("shadowColor", value); }
         int uppercase() const { return ReadField<int>("uppercase"); }
-        void SetUppercase(int value) const { WriteField<int>("uppercase", value); }
+        void uppercase(int value) const { WriteField<int>("uppercase", value); }
         float trackingEm() const { return ReadField<float>("trackingEm"); }
-        void SetTrackingEm(float value) const { WriteField<float>("trackingEm", value); }
+        void trackingEm(float value) const { WriteField<float>("trackingEm", value); }
     };
 }

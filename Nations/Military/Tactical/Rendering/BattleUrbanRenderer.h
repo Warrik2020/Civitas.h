@@ -11,8 +11,8 @@ namespace CivitasPoly::Nations::Military::Tactical::Rendering
         explicit BattleUrbanRenderer(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Tactical.Rendering", "BattleUrbanRenderer") {}
     public:
-        void SetVisible(bool on) const { void* args[] = { &on }; Call("SetVisible", args, 1); }
-        void PlaceLocal(void* localToRender, float z) const { void* args[] = { localToRender, &z }; Call("PlaceLocal", args, 2); }
+        void SetVisible(bool on) const { void* __callArgs[] = { &on }; Call("SetVisible", __callArgs, 1); }
+        void PlaceLocal(void* localToRender, float z) const { void* __callArgs[] = { localToRender, &z }; Call("PlaceLocal", __callArgs, 2); }
         void Dispose() const { Call("Dispose", nullptr, 0); }
     };
 }

@@ -24,12 +24,12 @@ namespace CivitasPoly::UI::Alerts
         void Peoples() const { CallStatic("Peoples", nullptr, 0); }
         void Research() const { CallStatic("Research", nullptr, 0); }
         void QuickActions() const { CallStatic("QuickActions", nullptr, 0); }
-        void PeaceTable(int enemyId) const { void* args[] = { &enemyId }; CallStatic("PeaceTable", args, 1); }
+        void PeaceTable(int enemyId) const { void* __callArgs[] = { &enemyId }; CallStatic("PeaceTable", __callArgs, 1); }
         void OverdueLevies() const { CallStatic("OverdueLevies", nullptr, 0); }
         void TroopsAbroad() const { CallStatic("TroopsAbroad", nullptr, 0); }
         void ForeignTroops() const { CallStatic("ForeignTroops", nullptr, 0); }
         void LockedDown() const { CallStatic("LockedDown", nullptr, 0); }
-        void FlyToTile(int tile, int nationId) const { void* args[] = { &tile, &nationId }; CallStatic("FlyToTile", args, 2); }
+        void FlyToTile(int tile, int nationId) const { void* __callArgs[] = { &tile, &nationId }; CallStatic("FlyToTile", __callArgs, 2); }
         void Overstretched() const { CallStatic("Overstretched", nullptr, 0); }
         void Encircled() const { CallStatic("Encircled", nullptr, 0); }
     };

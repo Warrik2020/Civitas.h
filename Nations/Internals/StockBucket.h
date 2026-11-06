@@ -12,10 +12,10 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "StockBucket") {}
     public:
         int designId() const { return ReadField<int>("designId"); }
-        void SetDesignId(int value) const { WriteField<int>("designId", value); }
+        void designId(int value) const { WriteField<int>("designId", value); }
         int pool() const { return ReadField<int>("pool"); }
-        void SetPool(int value) const { WriteField<int>("pool", value); }
+        void pool(int value) const { WriteField<int>("pool", value); }
         float count() const { return ReadField<float>("count"); }
-        void SetCount(float value) const { WriteField<float>("count", value); }
+        void count(float value) const { WriteField<float>("count", value); }
     };
 }

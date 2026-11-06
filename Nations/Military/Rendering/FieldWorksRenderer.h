@@ -12,8 +12,8 @@ namespace CivitasPoly::Nations::Military::Rendering
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Rendering", "FieldWorksRenderer") {}
     public:
         void Dispose() const { Call("Dispose", nullptr, 0); }
-        void SetVisible(bool visible) const { void* args[] = { &visible }; Call("SetVisible", args, 1); }
-        void Sync(void* works, void* cam) const { void* args[] = { works, cam }; Call("Sync", args, 2); }
+        void SetVisible(bool visible) const { void* __callArgs[] = { &visible }; Call("SetVisible", __callArgs, 1); }
+        void Sync(void* works, void* cam) const { void* __callArgs[] = { works, cam }; Call("Sync", __callArgs, 2); }
         float HideTilePx() const { return ReadStaticField<float>("HideTilePx"); }
         float FullTilePx() const { return ReadStaticField<float>("FullTilePx"); }
         float CraterTilePx() const { return ReadStaticField<float>("CraterTilePx"); }

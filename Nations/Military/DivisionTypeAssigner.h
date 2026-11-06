@@ -11,6 +11,6 @@ namespace CivitasPoly::Nations::Military
         explicit DivisionTypeAssigner(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military", "DivisionTypeAssigner") {}
     public:
-        int Assign(int ordinal, void* internals, void* cfg) const { void* args[] = { &ordinal, internals, cfg }; return CallStaticValue<int>("Assign", args, 3); }
+        int Assign(int ordinal, void* internals, void* cfg) const { void* __callArgs[] = { &ordinal, internals, cfg }; return CallStaticValue<int>("Assign", __callArgs, 3); }
     };
 }

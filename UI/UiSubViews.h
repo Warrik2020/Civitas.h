@@ -11,9 +11,9 @@ namespace CivitasPoly::UI
         explicit UiSubViews(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "UiSubViews") {}
     public:
-        void Show(int i) const { void* args[] = { &i }; Call("Show", args, 1); }
-        void Offer(int i, bool on) const { void* args[] = { &i, &on }; Call("Offer", args, 2); }
-        void SetLabel(int i, const char* text) const { void* managed_1 = Api() && Api()->NewString ? Api()->NewString(text ? text : "") : nullptr; void* args[] = { &i, managed_1 }; Call("SetLabel", args, 2); }
+        void Show(int i) const { void* __callArgs[] = { &i }; Call("Show", __callArgs, 1); }
+        void Offer(int i, bool on) const { void* __callArgs[] = { &i, &on }; Call("Offer", __callArgs, 2); }
+        void SetLabel(int i, const char* text) const { void* managed_1 = Api() && Api()->NewString ? Api()->NewString(text ? text : "") : nullptr; void* __callArgs[] = { &i, managed_1 }; Call("SetLabel", __callArgs, 2); }
         void* Bar() const { return ReadField<void*>("Bar"); }
     };
 }

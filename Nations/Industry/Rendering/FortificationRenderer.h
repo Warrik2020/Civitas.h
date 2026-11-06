@@ -11,8 +11,8 @@ namespace CivitasPoly::Nations::Industry::Rendering
         explicit FortificationRenderer(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Industry.Rendering", "FortificationRenderer") {}
     public:
-        void Sync(void* sites, int version, bool animating, void* cfg, int gridWidth) const { void* args[] = { sites, &version, &animating, cfg, &gridWidth }; Call("Sync", args, 5); }
-        void SetVisible(bool visible) const { void* args[] = { &visible }; Call("SetVisible", args, 1); }
+        void Sync(void* sites, int version, bool animating, void* cfg, int gridWidth) const { void* __callArgs[] = { sites, &version, &animating, cfg, &gridWidth }; Call("Sync", __callArgs, 5); }
+        void SetVisible(bool visible) const { void* __callArgs[] = { &visible }; Call("SetVisible", __callArgs, 1); }
         void Destroy() const { Call("Destroy", nullptr, 0); }
     };
 }

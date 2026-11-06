@@ -11,12 +11,12 @@ namespace CivitasPoly::Map
         explicit WorldOrigin(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Map", "WorldOrigin") {}
     public:
-        void Adopt(void* t) const { void* args[] = { t }; CallStatic("Adopt", args, 1); }
-        void Place(void* t, float z) const { void* args[] = { t, &z }; CallStatic("Place", args, 2); }
-        void PlaceInRenderSpace(void* t, float z) const { void* args[] = { t, &z }; CallStatic("PlaceInRenderSpace", args, 2); }
-        void* ToRender(void* logical) const { void* args[] = { logical }; return CallStatic("ToRender", args, 1); }
-        void* ToLogical(void* render) const { void* args[] = { render }; return CallStatic("ToLogical", args, 1); }
-        bool Set(void* r) const { void* args[] = { r }; return CallStaticValue<bool>("Set", args, 1); }
+        void Adopt(void* t) const { void* __callArgs[] = { t }; CallStatic("Adopt", __callArgs, 1); }
+        void Place(void* t, float z) const { void* __callArgs[] = { t, &z }; CallStatic("Place", __callArgs, 2); }
+        void PlaceInRenderSpace(void* t, float z) const { void* __callArgs[] = { t, &z }; CallStatic("PlaceInRenderSpace", __callArgs, 2); }
+        void* ToRender(void* logical) const { void* __callArgs[] = { logical }; return CallStatic("ToRender", __callArgs, 1); }
+        void* ToLogical(void* render) const { void* __callArgs[] = { render }; return CallStatic("ToLogical", __callArgs, 1); }
+        bool Set(void* r) const { void* __callArgs[] = { r }; return CallStaticValue<bool>("Set", __callArgs, 1); }
         float SnapWorld() const { return ReadStaticField<float>("SnapWorld"); }
     };
 }

@@ -12,18 +12,18 @@ namespace CivitasPoly::Scenario
             : ManagedType(api, object, "CivitasPoly.Scenario", "SerNobility") {}
     public:
         int format() const { return ReadField<int>("format"); }
-        void SetFormat(int value) const { WriteField<int>("format", value); }
+        void format(int value) const { WriteField<int>("format", value); }
         int mosaicSeed() const { return ReadField<int>("mosaicSeed"); }
-        void SetMosaicSeed(int value) const { WriteField<int>("mosaicSeed", value); }
+        void mosaicSeed(int value) const { WriteField<int>("mosaicSeed", value); }
         int baronyTarget() const { return ReadField<int>("baronyTarget"); }
-        void SetBaronyTarget(int value) const { WriteField<int>("baronyTarget", value); }
+        void baronyTarget(int value) const { WriteField<int>("baronyTarget", value); }
         int nextHouseId() const { return ReadField<int>("nextHouseId"); }
-        void SetNextHouseId(int value) const { WriteField<int>("nextHouseId", value); }
+        void nextHouseId(int value) const { WriteField<int>("nextHouseId", value); }
         void* houses() const { return ReadField<void*>("houses"); }
-        void SetHouses(void* value) const { WriteField<void*>("houses", value); }
+        void houses(void* value) const { WriteField<void*>("houses", value); }
         void* holdings() const { return ReadField<void*>("holdings"); }
-        void SetHoldings(void* value) const { WriteField<void*>("holdings", value); }
+        void holdings(void* value) const { WriteField<void*>("holdings", value); }
         void* realms() const { return ReadField<void*>("realms"); }
-        void SetRealms(void* value) const { WriteField<void*>("realms", value); }
+        void realms(void* value) const { WriteField<void*>("realms", value); }
     };
 }

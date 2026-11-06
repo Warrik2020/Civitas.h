@@ -11,7 +11,7 @@ namespace CivitasPoly::UI
         explicit CityPanel(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "CityPanel") {}
     public:
-        bool ScreenPointHitsCity(void* screen) const { void* args[] = { screen }; return CallStaticValue<bool>("ScreenPointHitsCity", args, 1); }
+        bool ScreenPointHitsCity(void* screen) const { void* __callArgs[] = { screen }; return CallStaticValue<bool>("ScreenPointHitsCity", __callArgs, 1); }
         void Dismiss() const { CallStatic("Dismiss", nullptr, 0); }
     };
 }

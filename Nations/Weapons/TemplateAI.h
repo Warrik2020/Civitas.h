@@ -11,8 +11,8 @@ namespace CivitasPoly::Nations::Weapons
         explicit TemplateAI(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Weapons", "TemplateAI") {}
     public:
-        void Evaluate(void* it) const { void* args[] = { it }; CallStatic("Evaluate", args, 1); }
-        void Evaluate(void* it, bool ai) const { void* args[] = { it, &ai }; CallStatic("Evaluate", args, 2); }
-        void Prime(void* it, bool ai) const { void* args[] = { it, &ai }; CallStatic("Prime", args, 2); }
+        void Evaluate(void* it) const { void* __callArgs[] = { it }; CallStatic("Evaluate", __callArgs, 1); }
+        void Evaluate(void* it, bool ai) const { void* __callArgs[] = { it, &ai }; CallStatic("Evaluate", __callArgs, 2); }
+        void Prime(void* it, bool ai) const { void* __callArgs[] = { it, &ai }; CallStatic("Prime", __callArgs, 2); }
     };
 }

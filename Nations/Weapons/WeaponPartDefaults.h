@@ -11,6 +11,6 @@ namespace CivitasPoly::Nations::Weapons
         explicit WeaponPartDefaults(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Weapons", "WeaponPartDefaults") {}
     public:
-        void* Default_(int kind, void* d, int material) const { void* args[] = { &kind, d, &material }; return CallStatic("Default", args, 3); }
+        void* Default_(int kind, void* d, int material) const { void* __callArgs[] = { &kind, d, &material }; return CallStatic("Default", __callArgs, 3); }
     };
 }

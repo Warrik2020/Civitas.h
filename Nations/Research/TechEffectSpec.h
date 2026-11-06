@@ -12,8 +12,8 @@ namespace CivitasPoly::Nations::Research
             : ManagedType(api, object, "CivitasPoly.Nations.Research", "TechEffectSpec") {}
     public:
         int type() const { return ReadField<int>("type"); }
-        void SetType(int value) const { WriteField<int>("type", value); }
+        void type(int value) const { WriteField<int>("type", value); }
         float value() const { return ReadField<float>("value"); }
-        void SetValue(float value) const { WriteField<float>("value", value); }
+        void value(float value) const { WriteField<float>("value", value); }
     };
 }

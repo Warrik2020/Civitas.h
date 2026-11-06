@@ -12,14 +12,14 @@ namespace CivitasPoly::Nations::Internals
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "NationalismNotice") {}
     public:
         int kind() const { return ReadField<int>("kind"); }
-        void SetKind(int value) const { WriteField<int>("kind", value); }
+        void kind(int value) const { WriteField<int>("kind", value); }
         int nationId() const { return ReadField<int>("nationId"); }
-        void SetNationId(int value) const { WriteField<int>("nationId", value); }
+        void nationId(int value) const { WriteField<int>("nationId", value); }
         int otherNationId() const { return ReadField<int>("otherNationId"); }
-        void SetOtherNationId(int value) const { WriteField<int>("otherNationId", value); }
+        void otherNationId(int value) const { WriteField<int>("otherNationId", value); }
         int peopleKey() const { return ReadField<int>("peopleKey"); }
-        void SetPeopleKey(int value) const { WriteField<int>("peopleKey", value); }
+        void peopleKey(int value) const { WriteField<int>("peopleKey", value); }
         void* formerName() const { return ReadField<void*>("formerName"); }
-        void SetFormerName(void* value) const { WriteField<void*>("formerName", value); }
+        void formerName(void* value) const { WriteField<void*>("formerName", value); }
     };
 }

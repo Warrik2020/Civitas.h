@@ -11,13 +11,13 @@ namespace CivitasPoly::Nations::Military::Tactical
         explicit BattleTempo(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Tactical", "BattleTempo") {}
     public:
-        float Speed(float metresPerSecond) const { void* args[] = { &metresPerSecond }; return CallStaticValue<float>("Speed", args, 1); }
-        float Dur(float realSeconds) const { void* args[] = { &realSeconds }; return CallStaticValue<float>("Dur", args, 1); }
-        float Rate(float perRealSecond) const { void* args[] = { &perRealSecond }; return CallStaticValue<float>("Rate", args, 1); }
-        float Accel(float metresPerSecond2) const { void* args[] = { &metresPerSecond2 }; return CallStaticValue<float>("Accel", args, 1); }
-        float Tiles(float metres) const { void* args[] = { &metres }; return CallStaticValue<float>("Tiles", args, 1); }
-        int Steps(float realSeconds) const { void* args[] = { &realSeconds }; return CallStaticValue<int>("Steps", args, 1); }
-        int StepsBattle(float battleSeconds) const { void* args[] = { &battleSeconds }; return CallStaticValue<int>("StepsBattle", args, 1); }
+        float Speed(float metresPerSecond) const { void* __callArgs[] = { &metresPerSecond }; return CallStaticValue<float>("Speed", __callArgs, 1); }
+        float Dur(float realSeconds) const { void* __callArgs[] = { &realSeconds }; return CallStaticValue<float>("Dur", __callArgs, 1); }
+        float Rate(float perRealSecond) const { void* __callArgs[] = { &perRealSecond }; return CallStaticValue<float>("Rate", __callArgs, 1); }
+        float Accel(float metresPerSecond2) const { void* __callArgs[] = { &metresPerSecond2 }; return CallStaticValue<float>("Accel", __callArgs, 1); }
+        float Tiles(float metres) const { void* __callArgs[] = { &metres }; return CallStaticValue<float>("Tiles", __callArgs, 1); }
+        int Steps(float realSeconds) const { void* __callArgs[] = { &realSeconds }; return CallStaticValue<int>("Steps", __callArgs, 1); }
+        int StepsBattle(float battleSeconds) const { void* __callArgs[] = { &battleSeconds }; return CallStaticValue<int>("StepsBattle", __callArgs, 1); }
         float K() const { return ReadStaticField<float>("K"); }
         float MetresPerTile() const { return ReadStaticField<float>("MetresPerTile"); }
     };

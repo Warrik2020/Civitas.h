@@ -12,20 +12,20 @@ namespace CivitasPoly::UI::Alerts
             : ManagedType(api, object, "CivitasPoly.UI.Alerts", "AlertItem") {}
     public:
         void* id() const { return ReadField<void*>("id"); }
-        void SetId(void* value) const { WriteField<void*>("id", value); }
+        void id(void* value) const { WriteField<void*>("id", value); }
         void* title() const { return ReadField<void*>("title"); }
-        void SetTitle(void* value) const { WriteField<void*>("title", value); }
+        void title(void* value) const { WriteField<void*>("title", value); }
         void* hint() const { return ReadField<void*>("hint"); }
-        void SetHint(void* value) const { WriteField<void*>("hint", value); }
+        void hint(void* value) const { WriteField<void*>("hint", value); }
         int level() const { return ReadField<int>("level"); }
-        void SetLevel(int value) const { WriteField<int>("level", value); }
+        void level(int value) const { WriteField<int>("level", value); }
         void* icon() const { return ReadField<void*>("icon"); }
-        void SetIcon(void* value) const { WriteField<void*>("icon", value); }
+        void icon(void* value) const { WriteField<void*>("icon", value); }
         void* glyph() const { return ReadField<void*>("glyph"); }
-        void SetGlyph(void* value) const { WriteField<void*>("glyph", value); }
+        void glyph(void* value) const { WriteField<void*>("glyph", value); }
         int count() const { return ReadField<int>("count"); }
-        void SetCount(int value) const { WriteField<int>("count", value); }
+        void count(int value) const { WriteField<int>("count", value); }
         void* open() const { return ReadField<void*>("open"); }
-        void SetOpen(void* value) const { WriteField<void*>("open", value); }
+        void open(void* value) const { WriteField<void*>("open", value); }
     };
 }

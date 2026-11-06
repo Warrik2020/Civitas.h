@@ -11,11 +11,11 @@ namespace CivitasPoly::UI
         explicit UnionResult(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "UnionResult") {}
     public:
-        void* Ok(const char* m) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(m ? m : "") : nullptr; void* args[] = { managed_0 }; return CallStatic("Ok", args, 1); }
-        void* No(const char* m) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(m ? m : "") : nullptr; void* args[] = { managed_0 }; return CallStatic("No", args, 1); }
+        void* Ok(const char* m) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(m ? m : "") : nullptr; void* __callArgs[] = { managed_0 }; return CallStatic("Ok", __callArgs, 1); }
+        void* No(const char* m) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(m ? m : "") : nullptr; void* __callArgs[] = { managed_0 }; return CallStatic("No", __callArgs, 1); }
         bool ok() const { return ReadField<bool>("ok"); }
-        void SetOk(bool value) const { WriteField<bool>("ok", value); }
+        void ok(bool value) const { WriteField<bool>("ok", value); }
         void* message() const { return ReadField<void*>("message"); }
-        void SetMessage(void* value) const { WriteField<void*>("message", value); }
+        void message(void* value) const { WriteField<void*>("message", value); }
     };
 }

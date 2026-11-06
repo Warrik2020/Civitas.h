@@ -11,55 +11,55 @@ namespace CivitasPoly::Nations::Military
         explicit LogisticsTerms(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military", "LogisticsTerms") {}
     public:
-        void* FromLevel(float level, void* d, void* cfg, int status) const { void* args[] = { &level, d, cfg, &status }; return CallStatic("FromLevel", args, 4); }
-        void ApplyLevel(void* d, void* cfg) const { void* args[] = { d, cfg }; Call("ApplyLevel", args, 2); }
-        int StatusOfLevel(float level) const { void* args[] = { &level }; return CallStaticValue<int>("StatusOfLevel", args, 1); }
+        void* FromLevel(float level, void* d, void* cfg, int status) const { void* __callArgs[] = { &level, d, cfg, &status }; return CallStatic("FromLevel", __callArgs, 4); }
+        void ApplyLevel(void* d, void* cfg) const { void* __callArgs[] = { d, cfg }; Call("ApplyLevel", __callArgs, 2); }
+        int StatusOfLevel(float level) const { void* __callArgs[] = { &level }; return CallStaticValue<int>("StatusOfLevel", __callArgs, 1); }
         int status() const { return ReadField<int>("status"); }
-        void SetStatus(int value) const { WriteField<int>("status", value); }
+        void status(int value) const { WriteField<int>("status", value); }
         float demand() const { return ReadField<float>("demand"); }
-        void SetDemand(float value) const { WriteField<float>("demand", value); }
+        void demand(float value) const { WriteField<float>("demand", value); }
         float load() const { return ReadField<float>("load"); }
-        void SetLoad(float value) const { WriteField<float>("load", value); }
+        void load(float value) const { WriteField<float>("load", value); }
         int loadCount() const { return ReadField<int>("loadCount"); }
-        void SetLoadCount(int value) const { WriteField<int>("loadCount", value); }
+        void loadCount(int value) const { WriteField<int>("loadCount", value); }
         float radius() const { return ReadField<float>("radius"); }
-        void SetRadius(float value) const { WriteField<float>("radius", value); }
+        void radius(float value) const { WriteField<float>("radius", value); }
         float capacity() const { return ReadField<float>("capacity"); }
-        void SetCapacity(float value) const { WriteField<float>("capacity", value); }
+        void capacity(float value) const { WriteField<float>("capacity", value); }
         float network() const { return ReadField<float>("network"); }
-        void SetNetwork(float value) const { WriteField<float>("network", value); }
+        void network(float value) const { WriteField<float>("network", value); }
         float forage() const { return ReadField<float>("forage"); }
-        void SetForage(float value) const { WriteField<float>("forage", value); }
+        void forage(float value) const { WriteField<float>("forage", value); }
         float roadGain() const { return ReadField<float>("roadGain"); }
-        void SetRoadGain(float value) const { WriteField<float>("roadGain", value); }
+        void roadGain(float value) const { WriteField<float>("roadGain", value); }
         int sourceKind() const { return ReadField<int>("sourceKind"); }
-        void SetSourceKind(int value) const { WriteField<int>("sourceKind", value); }
+        void sourceKind(int value) const { WriteField<int>("sourceKind", value); }
         int sourceId() const { return ReadField<int>("sourceId"); }
-        void SetSourceId(int value) const { WriteField<int>("sourceId", value); }
+        void sourceId(int value) const { WriteField<int>("sourceId", value); }
         int sourceTile() const { return ReadField<int>("sourceTile"); }
-        void SetSourceTile(int value) const { WriteField<int>("sourceTile", value); }
+        void sourceTile(int value) const { WriteField<int>("sourceTile", value); }
         float sourceOutput() const { return ReadField<float>("sourceOutput"); }
-        void SetSourceOutput(float value) const { WriteField<float>("sourceOutput", value); }
+        void sourceOutput(float value) const { WriteField<float>("sourceOutput", value); }
         float ratio() const { return ReadField<float>("ratio"); }
-        void SetRatio(float value) const { WriteField<float>("ratio", value); }
+        void ratio(float value) const { WriteField<float>("ratio", value); }
         float strain() const { return ReadField<float>("strain"); }
-        void SetStrain(float value) const { WriteField<float>("strain", value); }
+        void strain(float value) const { WriteField<float>("strain", value); }
         float target() const { return ReadField<float>("target"); }
-        void SetTarget(float value) const { WriteField<float>("target", value); }
+        void target(float value) const { WriteField<float>("target", value); }
         float level() const { return ReadField<float>("level"); }
-        void SetLevel(float value) const { WriteField<float>("level", value); }
+        void level(float value) const { WriteField<float>("level", value); }
         float powerMul() const { return ReadField<float>("powerMul"); }
-        void SetPowerMul(float value) const { WriteField<float>("powerMul", value); }
+        void powerMul(float value) const { WriteField<float>("powerMul", value); }
         float orgCapMul() const { return ReadField<float>("orgCapMul"); }
-        void SetOrgCapMul(float value) const { WriteField<float>("orgCapMul", value); }
+        void orgCapMul(float value) const { WriteField<float>("orgCapMul", value); }
         float reinforceMul() const { return ReadField<float>("reinforceMul"); }
-        void SetReinforceMul(float value) const { WriteField<float>("reinforceMul", value); }
+        void reinforceMul(float value) const { WriteField<float>("reinforceMul", value); }
         float attritionPerTick() const { return ReadField<float>("attritionPerTick"); }
-        void SetAttritionPerTick(float value) const { WriteField<float>("attritionPerTick", value); }
+        void attritionPerTick(float value) const { WriteField<float>("attritionPerTick", value); }
         float speedMul() const { return ReadField<float>("speedMul"); }
-        void SetSpeedMul(float value) const { WriteField<float>("speedMul", value); }
+        void speedMul(float value) const { WriteField<float>("speedMul", value); }
         float orgRegenMul() const { return ReadField<float>("orgRegenMul"); }
-        void SetOrgRegenMul(float value) const { WriteField<float>("orgRegenMul", value); }
+        void orgRegenMul(float value) const { WriteField<float>("orgRegenMul", value); }
         void* Identity() const { return ReadStaticField<void*>("Identity"); }
     };
 }

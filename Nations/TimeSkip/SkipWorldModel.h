@@ -11,8 +11,8 @@ namespace CivitasPoly::Nations::TimeSkip
         explicit SkipWorldModel(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.TimeSkip", "SkipWorldModel") {}
     public:
-        void Begin(void* w) const { void* args[] = { w }; Call("Begin", args, 1); }
-        void Step(void* w, int span) const { void* args[] = { w, &span }; Call("Step", args, 2); }
-        void Finish(void* w, int elapsed) const { void* args[] = { w, &elapsed }; Call("Finish", args, 2); }
+        void Begin(void* w) const { void* __callArgs[] = { w }; Call("Begin", __callArgs, 1); }
+        void Step(void* w, int span) const { void* __callArgs[] = { w, &span }; Call("Step", __callArgs, 2); }
+        void Finish(void* w, int elapsed) const { void* __callArgs[] = { w, &elapsed }; Call("Finish", __callArgs, 2); }
     };
 }

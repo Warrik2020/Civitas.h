@@ -11,16 +11,16 @@ namespace CivitasPoly::Nations::Military::Command
         explicit PocketRegistry(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Command", "PocketRegistry") {}
     public:
-        void* Find(int id) const { void* args[] = { &id }; return CallStatic("Find", args, 1); }
-        bool AnyOf(int nationId) const { void* args[] = { &nationId }; return CallStaticValue<bool>("AnyOf", args, 1); }
-        void* ForOrdinal(int nationId, int version, int ord) const { void* args[] = { &nationId, &version, &ord }; return CallStatic("ForOrdinal", args, 3); }
-        float StockOf(void* p) const { void* args[] = { p }; return CallStaticValue<float>("StockOf", args, 1); }
-        bool CedeWaitOver(void* p, int tick) const { void* args[] = { p, &tick }; return CallStaticValue<bool>("CedeWaitOver", args, 2); }
-        void Sync(void* grid) const { void* args[] = { grid }; CallStatic("Sync", args, 1); }
+        void* Find(int id) const { void* __callArgs[] = { &id }; return CallStatic("Find", __callArgs, 1); }
+        bool AnyOf(int nationId) const { void* __callArgs[] = { &nationId }; return CallStaticValue<bool>("AnyOf", __callArgs, 1); }
+        void* ForOrdinal(int nationId, int version, int ord) const { void* __callArgs[] = { &nationId, &version, &ord }; return CallStatic("ForOrdinal", __callArgs, 3); }
+        float StockOf(void* p) const { void* __callArgs[] = { p }; return CallStaticValue<float>("StockOf", __callArgs, 1); }
+        bool CedeWaitOver(void* p, int tick) const { void* __callArgs[] = { p, &tick }; return CallStaticValue<bool>("CedeWaitOver", __callArgs, 2); }
+        void Sync(void* grid) const { void* __callArgs[] = { grid }; CallStatic("Sync", __callArgs, 1); }
         void Clear() const { CallStatic("Clear", nullptr, 0); }
-        void DropNation(int nationId) const { void* args[] = { &nationId }; CallStatic("DropNation", args, 1); }
-        void NoteFlood(void* mil, void* n, void* grid, void* conn, int version, int tick) const { void* args[] = { mil, n, grid, conn, &version, &tick }; CallStatic("NoteFlood", args, 6); }
-        void Prune(void* getNation) const { void* args[] = { getNation }; CallStatic("Prune", args, 1); }
+        void DropNation(int nationId) const { void* __callArgs[] = { &nationId }; CallStatic("DropNation", __callArgs, 1); }
+        void NoteFlood(void* mil, void* n, void* grid, void* conn, int version, int tick) const { void* __callArgs[] = { mil, n, grid, conn, &version, &tick }; CallStatic("NoteFlood", __callArgs, 6); }
+        void Prune(void* getNation) const { void* __callArgs[] = { getNation }; CallStatic("Prune", __callArgs, 1); }
         int MaxProbes() const { return ReadStaticField<int>("MaxProbes"); }
         int CedeWaitTicks() const { return ReadStaticField<int>("CedeWaitTicks"); }
     };

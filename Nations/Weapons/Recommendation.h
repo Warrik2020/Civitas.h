@@ -12,8 +12,8 @@ namespace CivitasPoly::Nations::Weapons
             : ManagedType(api, object, "CivitasPoly.Nations.Weapons", "Recommendation") {}
     public:
         void* edit() const { return ReadField<void*>("edit"); }
-        void SetEdit(void* value) const { WriteField<void*>("edit", value); }
+        void edit(void* value) const { WriteField<void*>("edit", value); }
         void* text() const { return ReadField<void*>("text"); }
-        void SetText(void* value) const { WriteField<void*>("text", value); }
+        void text(void* value) const { WriteField<void*>("text", value); }
     };
 }

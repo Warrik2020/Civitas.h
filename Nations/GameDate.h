@@ -11,8 +11,8 @@ namespace CivitasPoly::Nations
         explicit GameDate(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations", "GameDate") {}
     public:
-        bool Equals(void* o) const { void* args[] = { o }; return CallValue<bool>("Equals", args, 1); }
-        bool Equals(void* o) const { void* args[] = { o }; return CallValue<bool>("Equals", args, 1); }
+        bool Equals(void* o) const { void* __callArgs[] = { o }; return CallValue<bool>("Equals", __callArgs, 1); }
+        bool EqualsOverload1(void* o) const { void* __callArgs[] = { o }; return CallValue<bool>("Equals", __callArgs, 1); }
         int GetHashCode() const { return CallValue<int>("GetHashCode", nullptr, 0); }
         void* ToString() const { return Call("ToString", nullptr, 0); }
         int year() const { return ReadField<int>("year"); }

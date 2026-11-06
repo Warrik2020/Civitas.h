@@ -11,6 +11,6 @@ namespace CivitasPoly::UI
         explicit UiEraSkin(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "UiEraSkin") {}
     public:
-        void Bind(void* img, int slot) const { void* args[] = { img, &slot }; CallStatic("Bind", args, 2); }
+        void Bind(void* img, int slot) const { void* __callArgs[] = { img, &slot }; CallStatic("Bind", __callArgs, 2); }
     };
 }

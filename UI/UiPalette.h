@@ -11,8 +11,8 @@ namespace CivitasPoly::UI
         explicit UiPalette(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "UiPalette") {}
     public:
-        void* Hex(int rgb, float a = 1f) const { void* args[] = { &rgb, &a }; return CallStatic("Hex", args, 2); }
-        void* At(void* c, float alpha) const { void* args[] = { c, &alpha }; return CallStatic("At", args, 2); }
+        void* Hex(int rgb, float a = 1.0f) const { void* __callArgs[] = { &rgb, &a }; return CallStatic("Hex", __callArgs, 2); }
+        void* At(void* c, float alpha) const { void* __callArgs[] = { c, &alpha }; return CallStatic("At", __callArgs, 2); }
         void* SurfaceDeep() const { return ReadStaticField<void*>("SurfaceDeep"); }
         void* Surface() const { return ReadStaticField<void*>("Surface"); }
         void* SurfaceRaised() const { return ReadStaticField<void*>("SurfaceRaised"); }

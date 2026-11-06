@@ -11,25 +11,25 @@ namespace CivitasPoly::Nations::Politics
         explicit DecoloniseRules(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Politics", "DecoloniseRules") {}
     public:
-        bool SameRace(void* r, void* o) const { void* args[] = { r, o }; return CallValue<bool>("SameRace", args, 2); }
-        bool Eligible(void* w, int nation, int& group) const { void* args[] = { w, &nation, &group }; return CallValue<bool>("Eligible", args, 3); }
-        bool Keep(void* w, void* r) const { void* args[] = { w, r }; return CallValue<bool>("Keep", args, 2); }
-        float Relevance(void* w, void* r, int target) const { void* args[] = { w, r, &target }; return CallValue<float>("Relevance", args, 3); }
-        void Targets(void* w, void* r, void* dst) const { void* args[] = { w, r, dst }; Call("Targets", args, 3); }
-        bool StillTarget(void* w, void* r, int target) const { void* args[] = { w, r, &target }; return CallValue<bool>("StillTarget", args, 3); }
-        void Facts(void* w, void* r, int target, void* f) const { void* args[] = { w, r, &target, &f }; Call("Facts", args, 4); }
-        void Names(void* w, void* r, int target, void* f, void* n) const { void* args[] = { w, r, &target, &f, &n }; Call("Names", args, 5); }
-        float TiesFloor(void* f) const { void* args[] = { &f }; return CallValue<float>("TiesFloor", args, 1); }
-        void InitBranch(void* w, void* r, void* b, void* old, void* f) const { void* args[] = { w, r, b, old, &f }; Call("InitBranch", args, 5); }
-        void ReviewBranch(void* w, void* r, void* b, void* f, float months) const { void* args[] = { w, r, b, &f, &months }; Call("ReviewBranch", args, 5); }
-        float Willing(void* w, void* r, void* b) const { void* args[] = { w, r, b }; return CallValue<float>("Willing", args, 3); }
-        bool HasCause(void* r, void* b, int now) const { void* args[] = { r, b, &now }; return CallValue<bool>("HasCause", args, 3); }
-        void OnStepDone(void* w, void* r, void* b, void* s) const { void* args[] = { w, r, b, s }; Call("OnStepDone", args, 4); }
-        bool OwnRising(void* w, void* r, void* b) const { void* args[] = { w, r, b }; return CallValue<bool>("OwnRising", args, 3); }
-        void AiConsider(void* w, int nation, float months) const { void* args[] = { w, &nation, &months }; Call("AiConsider", args, 3); }
-        bool AiEnding(void* w, void* r, void* b, float months) const { void* args[] = { w, r, b, &months }; return CallValue<bool>("AiEnding", args, 4); }
-        float BranchScore(void* w, void* r, void* b) const { void* args[] = { w, r, b }; return CallValue<float>("BranchScore", args, 3); }
-        void* Intro(void* w, void* r) const { void* args[] = { w, r }; return Call("Intro", args, 2); }
-        void* Empty(void* w, int nation) const { void* args[] = { w, &nation }; return Call("Empty", args, 2); }
+        bool SameRace(void* r, void* o) const { void* __callArgs[] = { r, o }; return CallValue<bool>("SameRace", __callArgs, 2); }
+        bool Eligible(void* w, int nation, int& group) const { void* __callArgs[] = { w, &nation, &group }; return CallValue<bool>("Eligible", __callArgs, 3); }
+        bool Keep(void* w, void* r) const { void* __callArgs[] = { w, r }; return CallValue<bool>("Keep", __callArgs, 2); }
+        float Relevance(void* w, void* r, int target) const { void* __callArgs[] = { w, r, &target }; return CallValue<float>("Relevance", __callArgs, 3); }
+        void Targets(void* w, void* r, void* dst) const { void* __callArgs[] = { w, r, dst }; Call("Targets", __callArgs, 3); }
+        bool StillTarget(void* w, void* r, int target) const { void* __callArgs[] = { w, r, &target }; return CallValue<bool>("StillTarget", __callArgs, 3); }
+        void Facts(void* w, void* r, int target, void* f) const { void* __callArgs[] = { w, r, &target, &f }; Call("Facts", __callArgs, 4); }
+        void Names(void* w, void* r, int target, void* f, void* n) const { void* __callArgs[] = { w, r, &target, &f, &n }; Call("Names", __callArgs, 5); }
+        float TiesFloor(void* f) const { void* __callArgs[] = { &f }; return CallValue<float>("TiesFloor", __callArgs, 1); }
+        void InitBranch(void* w, void* r, void* b, void* old, void* f) const { void* __callArgs[] = { w, r, b, old, &f }; Call("InitBranch", __callArgs, 5); }
+        void ReviewBranch(void* w, void* r, void* b, void* f, float months) const { void* __callArgs[] = { w, r, b, &f, &months }; Call("ReviewBranch", __callArgs, 5); }
+        float Willing(void* w, void* r, void* b) const { void* __callArgs[] = { w, r, b }; return CallValue<float>("Willing", __callArgs, 3); }
+        bool HasCause(void* r, void* b, int now) const { void* __callArgs[] = { r, b, &now }; return CallValue<bool>("HasCause", __callArgs, 3); }
+        void OnStepDone(void* w, void* r, void* b, void* s) const { void* __callArgs[] = { w, r, b, s }; Call("OnStepDone", __callArgs, 4); }
+        bool OwnRising(void* w, void* r, void* b) const { void* __callArgs[] = { w, r, b }; return CallValue<bool>("OwnRising", __callArgs, 3); }
+        void AiConsider(void* w, int nation, float months) const { void* __callArgs[] = { w, &nation, &months }; Call("AiConsider", __callArgs, 3); }
+        bool AiEnding(void* w, void* r, void* b, float months) const { void* __callArgs[] = { w, r, b, &months }; return CallValue<bool>("AiEnding", __callArgs, 4); }
+        float BranchScore(void* w, void* r, void* b) const { void* __callArgs[] = { w, r, b }; return CallValue<float>("BranchScore", __callArgs, 3); }
+        void* Intro(void* w, void* r) const { void* __callArgs[] = { w, r }; return Call("Intro", __callArgs, 2); }
+        void* Empty(void* w, int nation) const { void* __callArgs[] = { w, &nation }; return Call("Empty", __callArgs, 2); }
     };
 }

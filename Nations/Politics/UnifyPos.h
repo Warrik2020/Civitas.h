@@ -12,8 +12,8 @@ namespace CivitasPoly::Nations::Politics
             : ManagedType(api, object, "CivitasPoly.Nations.Politics", "UnifyPos") {}
     public:
         void* options() const { return ReadField<void*>("options"); }
-        void SetOptions(void* value) const { WriteField<void*>("options", value); }
+        void options(void* value) const { WriteField<void*>("options", value); }
         bool pair() const { return ReadField<bool>("pair"); }
-        void SetPair(bool value) const { WriteField<bool>("pair", value); }
+        void pair(bool value) const { WriteField<bool>("pair", value); }
     };
 }

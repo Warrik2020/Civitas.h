@@ -11,7 +11,7 @@ namespace CivitasPoly::Nations::Internals
         explicit AffairsFacts(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "AffairsFacts") {}
     public:
-        float CorruptionShare(void* w, int nation) const { void* args[] = { w, &nation }; return CallStaticValue<float>("CorruptionShare", args, 2); }
-        void* IncidentCause(void* c, int kind, int other, int tick, void* v) const { void* args[] = { c, &kind, &other, &tick, v }; return CallStatic("IncidentCause", args, 5); }
+        float CorruptionShare(void* w, int nation) const { void* __callArgs[] = { w, &nation }; return CallStaticValue<float>("CorruptionShare", __callArgs, 2); }
+        void* IncidentCause(void* c, int kind, int other, int tick, void* v) const { void* __callArgs[] = { c, &kind, &other, &tick, v }; return CallStatic("IncidentCause", __callArgs, 5); }
     };
 }

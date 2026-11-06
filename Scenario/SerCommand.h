@@ -12,12 +12,12 @@ namespace CivitasPoly::Scenario
             : ManagedType(api, object, "CivitasPoly.Scenario", "SerCommand") {}
     public:
         void* armies() const { return ReadField<void*>("armies"); }
-        void SetArmies(void* value) const { WriteField<void*>("armies", value); }
+        void armies(void* value) const { WriteField<void*>("armies", value); }
         void* fronts() const { return ReadField<void*>("fronts"); }
-        void SetFronts(void* value) const { WriteField<void*>("fronts", value); }
+        void fronts(void* value) const { WriteField<void*>("fronts", value); }
         int nextArmyId() const { return ReadField<int>("nextArmyId"); }
-        void SetNextArmyId(int value) const { WriteField<int>("nextArmyId", value); }
+        void nextArmyId(int value) const { WriteField<int>("nextArmyId", value); }
         int nextFrontId() const { return ReadField<int>("nextFrontId"); }
-        void SetNextFrontId(int value) const { WriteField<int>("nextFrontId", value); }
+        void nextFrontId(int value) const { WriteField<int>("nextFrontId", value); }
     };
 }

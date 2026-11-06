@@ -11,9 +11,9 @@ namespace CivitasPoly::Nations::Identity
         explicit AssimilationScopes(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Identity", "AssimilationScopes") {}
     public:
-        void* NameOf(int s) const { void* args[] = { &s }; return CallStatic("NameOf", args, 1); }
-        int Of(int pushMask, int zoneMask, int axis) const { void* args[] = { &pushMask, &zoneMask, &axis }; return CallStaticValue<int>("Of", args, 3); }
-        void Write(int& pushMask, int& zoneMask, int axis, int s) const { void* args[] = { &pushMask, &zoneMask, &axis, &s }; CallStatic("Write", args, 4); }
+        void* NameOf(int s) const { void* __callArgs[] = { &s }; return CallStatic("NameOf", __callArgs, 1); }
+        int Of(int pushMask, int zoneMask, int axis) const { void* __callArgs[] = { &pushMask, &zoneMask, &axis }; return CallStaticValue<int>("Of", __callArgs, 3); }
+        void Write(int& pushMask, int& zoneMask, int axis, int s) const { void* __callArgs[] = { &pushMask, &zoneMask, &axis, &s }; CallStatic("Write", __callArgs, 4); }
         void* Names() const { return ReadStaticField<void*>("Names"); }
     };
 }

@@ -12,64 +12,64 @@ namespace CivitasPoly::Scenario
             : ManagedType(api, object, "CivitasPoly.Scenario", "SerUnifyBranch") {}
     public:
         int target() const { return ReadField<int>("target"); }
-        void SetTarget(int value) const { WriteField<int>("target", value); }
+        void target(int value) const { WriteField<int>("target", value); }
         void* targetName() const { return ReadField<void*>("targetName"); }
-        void SetTargetName(void* value) const { WriteField<void*>("targetName", value); }
+        void targetName(void* value) const { WriteField<void*>("targetName", value); }
         float ties() const { return ReadField<float>("ties"); }
-        void SetTies(float value) const { WriteField<float>("ties", value); }
+        void ties(float value) const { WriteField<float>("ties", value); }
         float peakTies() const { return ReadField<float>("peakTies"); }
-        void SetPeakTies(float value) const { WriteField<float>("peakTies", value); }
+        void peakTies(float value) const { WriteField<float>("peakTies", value); }
         int openedTick() const { return ReadField<int>("openedTick"); }
-        void SetOpenedTick(int value) const { WriteField<int>("openedTick", value); }
+        void openedTick(int value) const { WriteField<int>("openedTick", value); }
         int lastWorkTick() const { return ReadField<int>("lastWorkTick"); }
-        void SetLastWorkTick(int value) const { WriteField<int>("lastWorkTick", value); }
+        void lastWorkTick(int value) const { WriteField<int>("lastWorkTick", value); }
         int lastGainTick() const { return ReadField<int>("lastGainTick"); }
-        void SetLastGainTick(int value) const { WriteField<int>("lastGainTick", value); }
+        void lastGainTick(int value) const { WriteField<int>("lastGainTick", value); }
         int status() const { return ReadField<int>("status"); }
-        void SetStatus(int value) const { WriteField<int>("status", value); }
+        void status(int value) const { WriteField<int>("status", value); }
         int refusals() const { return ReadField<int>("refusals"); }
-        void SetRefusals(int value) const { WriteField<int>("refusals", value); }
+        void refusals(int value) const { WriteField<int>("refusals", value); }
         int askAfterTick() const { return ReadField<int>("askAfterTick"); }
-        void SetAskAfterTick(int value) const { WriteField<int>("askAfterTick", value); }
+        void askAfterTick(int value) const { WriteField<int>("askAfterTick", value); }
         int offer() const { return ReadField<int>("offer"); }
-        void SetOffer(int value) const { WriteField<int>("offer", value); }
+        void offer(int value) const { WriteField<int>("offer", value); }
         int offerUntilTick() const { return ReadField<int>("offerUntilTick"); }
-        void SetOfferUntilTick(int value) const { WriteField<int>("offerUntilTick", value); }
+        void offerUntilTick(int value) const { WriteField<int>("offerUntilTick", value); }
         void* offerEnding() const { return ReadField<void*>("offerEnding"); }
-        void SetOfferEnding(void* value) const { WriteField<void*>("offerEnding", value); }
+        void offerEnding(void* value) const { WriteField<void*>("offerEnding", value); }
         void* endedWith() const { return ReadField<void*>("endedWith"); }
-        void SetEndedWith(void* value) const { WriteField<void*>("endedWith", value); }
+        void endedWith(void* value) const { WriteField<void*>("endedWith", value); }
         int causeUntilTick() const { return ReadField<int>("causeUntilTick"); }
-        void SetCauseUntilTick(int value) const { WriteField<int>("causeUntilTick", value); }
+        void causeUntilTick(int value) const { WriteField<int>("causeUntilTick", value); }
         int risingState() const { return ReadField<int>("risingState"); }
-        void SetRisingState(int value) const { WriteField<int>("risingState", value); }
+        void risingState(int value) const { WriteField<int>("risingState", value); }
         int risingUntilTick() const { return ReadField<int>("risingUntilTick"); }
-        void SetRisingUntilTick(int value) const { WriteField<int>("risingUntilTick", value); }
+        void risingUntilTick(int value) const { WriteField<int>("risingUntilTick", value); }
         float risingProgress() const { return ReadField<float>("risingProgress"); }
-        void SetRisingProgress(float value) const { WriteField<float>("risingProgress", value); }
+        void risingProgress(float value) const { WriteField<float>("risingProgress", value); }
         int risingMonths() const { return ReadField<int>("risingMonths"); }
-        void SetRisingMonths(int value) const { WriteField<int>("risingMonths", value); }
+        void risingMonths(int value) const { WriteField<int>("risingMonths", value); }
         int warTick() const { return ReadField<int>("warTick"); }
-        void SetWarTick(int value) const { WriteField<int>("warTick", value); }
+        void warTick(int value) const { WriteField<int>("warTick", value); }
         int gov() const { return ReadField<int>("gov"); }
-        void SetGov(int value) const { WriteField<int>("gov", value); }
+        void gov(int value) const { WriteField<int>("gov", value); }
         int epoch() const { return ReadField<int>("epoch"); }
-        void SetEpoch(int value) const { WriteField<int>("epoch", value); }
+        void epoch(int value) const { WriteField<int>("epoch", value); }
         int nextDemandTick() const { return ReadField<int>("nextDemandTick"); }
-        void SetNextDemandTick(int value) const { WriteField<int>("nextDemandTick", value); }
+        void nextDemandTick(int value) const { WriteField<int>("nextDemandTick", value); }
         int graceUntilTick() const { return ReadField<int>("graceUntilTick"); }
-        void SetGraceUntilTick(int value) const { WriteField<int>("graceUntilTick", value); }
+        void graceUntilTick(int value) const { WriteField<int>("graceUntilTick", value); }
         void* refusalTicks() const { return ReadField<void*>("refusalTicks"); }
-        void SetRefusalTicks(void* value) const { WriteField<void*>("refusalTicks", value); }
+        void refusalTicks(void* value) const { WriteField<void*>("refusalTicks", value); }
         int band() const { return ReadField<int>("band"); }
-        void SetBand(int value) const { WriteField<int>("band", value); }
+        void band(int value) const { WriteField<int>("band", value); }
         int focus() const { return ReadField<int>("focus"); }
-        void SetFocus(int value) const { WriteField<int>("focus", value); }
+        void focus(int value) const { WriteField<int>("focus", value); }
         bool abroad() const { return ReadField<bool>("abroad"); }
-        void SetAbroad(bool value) const { WriteField<bool>("abroad", value); }
+        void abroad(bool value) const { WriteField<bool>("abroad", value); }
         void* steps() const { return ReadField<void*>("steps"); }
-        void SetSteps(void* value) const { WriteField<void*>("steps", value); }
+        void steps(void* value) const { WriteField<void*>("steps", value); }
         void* reactions() const { return ReadField<void*>("reactions"); }
-        void SetReactions(void* value) const { WriteField<void*>("reactions", value); }
+        void reactions(void* value) const { WriteField<void*>("reactions", value); }
     };
 }

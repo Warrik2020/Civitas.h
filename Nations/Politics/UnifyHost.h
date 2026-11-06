@@ -12,16 +12,16 @@ namespace CivitasPoly::Nations::Politics
             : ManagedType(api, object, "CivitasPoly.Nations.Politics", "UnifyHost") {}
     public:
         int host() const { return ReadField<int>("host"); }
-        void SetHost(int value) const { WriteField<int>("host", value); }
+        void host(int value) const { WriteField<int>("host", value); }
         int people() const { return ReadField<int>("people"); }
-        void SetPeople(int value) const { WriteField<int>("people", value); }
+        void people(int value) const { WriteField<int>("people", value); }
         float share() const { return ReadField<float>("share"); }
-        void SetShare(float value) const { WriteField<float>("share", value); }
+        void share(float value) const { WriteField<float>("share", value); }
         int standing() const { return ReadField<int>("standing"); }
-        void SetStanding(int value) const { WriteField<int>("standing", value); }
+        void standing(int value) const { WriteField<int>("standing", value); }
         bool accepted() const { return ReadField<bool>("accepted"); }
-        void SetAccepted(bool value) const { WriteField<bool>("accepted", value); }
+        void accepted(bool value) const { WriteField<bool>("accepted", value); }
         bool homeRule() const { return ReadField<bool>("homeRule"); }
-        void SetHomeRule(bool value) const { WriteField<bool>("homeRule", value); }
+        void homeRule(bool value) const { WriteField<bool>("homeRule", value); }
     };
 }
