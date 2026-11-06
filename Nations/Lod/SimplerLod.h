@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Lod
     public:
         explicit SimplerLod(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Lod", "SimplerLod") {}
+    public:
     };
 }

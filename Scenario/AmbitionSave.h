@@ -10,5 +10,8 @@ namespace CivitasPoly::Scenario
     public:
         explicit AmbitionSave(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Scenario", "AmbitionSave") {}
+    public:
+        void* Capture() const { return CallStatic("Capture", nullptr, 0); }
+        void Apply(void* s) const { void* args[] = { s }; CallStatic("Apply", args, 1); }
     };
 }

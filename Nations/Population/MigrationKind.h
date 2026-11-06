@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Population
     public:
         explicit MigrationKind(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Population", "MigrationKind") {}
+    public:
     };
 }

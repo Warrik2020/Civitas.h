@@ -10,5 +10,6 @@ namespace CivitasPoly::UI::Naval
     public:
         explicit CrossingPreview(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Naval", "CrossingPreview") {}
+    public:
     };
 }

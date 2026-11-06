@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Weapons
     public:
         explicit BowLadder(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Weapons", "BowLadder") {}
+    public:
     };
 }

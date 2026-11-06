@@ -10,5 +10,7 @@ namespace CivitasPoly
     public:
         explicit ManagerBootstrap(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly", "ManagerBootstrap") {}
+    public:
+        void EnsureAll() const { CallStatic("EnsureAll", nullptr, 0); }
     };
 }

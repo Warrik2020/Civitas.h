@@ -10,5 +10,7 @@ namespace CivitasPoly::UI::Alerts
     public:
         explicit LocalPoliticsAlerts(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Alerts", "LocalPoliticsAlerts") {}
+    public:
+        void Collect(void* into, void* it) const { void* args[] = { into, it }; CallStatic("Collect", args, 2); }
     };
 }

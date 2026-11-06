@@ -10,5 +10,10 @@ namespace CivitasPoly
     public:
         explicit GameBootIntent(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly", "GameBootIntent") {}
+    public:
+        int Mode() const { return ReadStaticField<int>("Mode"); }
+        void SetMode(int value) const { WriteStaticField<int>("Mode", value); }
+        bool EditorRequested() const { return ReadStaticField<bool>("EditorRequested"); }
+        void SetEditorRequested(bool value) const { WriteStaticField<bool>("EditorRequested", value); }
     };
 }

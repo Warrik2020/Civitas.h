@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Military::Rendering::Audio
     public:
         explicit CombatSound(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Rendering.Audio", "CombatSound") {}
+    public:
     };
 }

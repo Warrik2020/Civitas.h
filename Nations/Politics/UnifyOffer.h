@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Politics
     public:
         explicit UnifyOffer(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Politics", "UnifyOffer") {}
+    public:
     };
 }

@@ -10,5 +10,8 @@ namespace CivitasPoly::Nations
     public:
         explicit TickSlot(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations", "TickSlot") {}
+    public:
+        void* Name() const { return ReadField<void*>("Name"); }
+        void* Root() const { return ReadField<void*>("Root"); }
     };
 }

@@ -10,5 +10,6 @@ namespace CivitasPoly::UI
     public:
         explicit UiHideController(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "UiHideController") {}
+    public:
     };
 }

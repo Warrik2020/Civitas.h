@@ -10,5 +10,9 @@ namespace CivitasPoly::Map::Rendering
     public:
         explicit IndexBuffer(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Map.Rendering", "IndexBuffer") {}
+    public:
+        void Clear() const { Call("Clear", nullptr, 0); }
+        void AppendOffset(void* src, int offset) const { void* args[] = { src, &offset }; Call("AppendOffset", args, 2); }
+        void SetTriangles(void* mesh, bool calculateBounds) const { void* args[] = { mesh, &calculateBounds }; Call("SetTriangles", args, 2); }
     };
 }

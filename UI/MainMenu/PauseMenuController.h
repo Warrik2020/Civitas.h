@@ -10,5 +10,7 @@ namespace CivitasPoly::UI::MainMenu
     public:
         explicit PauseMenuController(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.MainMenu", "PauseMenuController") {}
+    public:
+        void QuitToMenuNow() const { CallStatic("QuitToMenuNow", nullptr, 0); }
     };
 }

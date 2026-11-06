@@ -10,5 +10,6 @@ namespace CivitasPoly::UI::Military
     public:
         explicit SupplyHubRings(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Military", "SupplyHubRings") {}
+    public:
     };
 }

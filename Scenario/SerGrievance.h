@@ -10,5 +10,12 @@ namespace CivitasPoly::Scenario
     public:
         explicit SerGrievance(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Scenario", "SerGrievance") {}
+    public:
+        int owner() const { return ReadField<int>("owner"); }
+        void SetOwner(int value) const { WriteField<int>("owner", value); }
+        int origin() const { return ReadField<int>("origin"); }
+        void SetOrigin(int value) const { WriteField<int>("origin", value); }
+        float value() const { return ReadField<float>("value"); }
+        void SetValue(float value) const { WriteField<float>("value", value); }
     };
 }

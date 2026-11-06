@@ -10,5 +10,6 @@ namespace CivitasPoly::UI::Military
     public:
         explicit SurrenderChip(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Military", "SurrenderChip") {}
+    public:
     };
 }

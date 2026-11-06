@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Naval::AI
     public:
         explicit TaskKind(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Naval.AI", "TaskKind") {}
+    public:
     };
 }

@@ -10,5 +10,10 @@ namespace CivitasPoly::Nations::Naval
     public:
         explicit Blockades(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Naval", "Blockades") {}
+    public:
+        bool IsBlockaded(int cityTile) const { void* args[] = { &cityTile }; return CallStaticValue<bool>("IsBlockaded", args, 1); }
+        int BlockaderOf(int cityTile) const { void* args[] = { &cityTile }; return CallStaticValue<int>("BlockaderOf", args, 1); }
+        void Clear() const { CallStatic("Clear", nullptr, 0); }
+        void CopyTo(void* cityTiles) const { void* args[] = { cityTiles }; CallStatic("CopyTo", args, 1); }
     };
 }

@@ -10,5 +10,10 @@ namespace CivitasPoly::Nations::Research
     public:
         explicit TechEffectSpec(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Research", "TechEffectSpec") {}
+    public:
+        int type() const { return ReadField<int>("type"); }
+        void SetType(int value) const { WriteField<int>("type", value); }
+        float value() const { return ReadField<float>("value"); }
+        void SetValue(float value) const { WriteField<float>("value", value); }
     };
 }

@@ -10,5 +10,6 @@ namespace CivitasPoly::Visuals
     public:
         explicit SkinSlot(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Visuals", "SkinSlot") {}
+    public:
     };
 }

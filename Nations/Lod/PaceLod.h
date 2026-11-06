@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Lod
     public:
         explicit PaceLod(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Lod", "PaceLod") {}
+    public:
     };
 }

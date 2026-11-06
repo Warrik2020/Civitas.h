@@ -10,5 +10,6 @@ namespace CivitasPoly::UI
     public:
         explicit Language(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "Language") {}
+    public:
     };
 }

@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Military::Command
     public:
         explicit WalkClass(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Command", "WalkClass") {}
+    public:
     };
 }

@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Internals
     public:
         explicit LocalCause(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "LocalCause") {}
+    public:
     };
 }

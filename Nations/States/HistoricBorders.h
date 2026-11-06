@@ -10,5 +10,8 @@ namespace CivitasPoly::Nations::States
     public:
         explicit HistoricBorders(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.States", "HistoricBorders") {}
+    public:
+        void* Load(void* map, int gridW, int gridH, int& pocketTiles) const { void* args[] = { map, &gridW, &gridH, &pocketTiles }; return CallStatic("Load", args, 4); }
+        void Clear() const { CallStatic("Clear", nullptr, 0); }
     };
 }

@@ -10,5 +10,7 @@ namespace CivitasPoly::UI
     public:
         explicit UiFonts(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "UiFonts") {}
+    public:
+        void Prewarm() const { CallStatic("Prewarm", nullptr, 0); }
     };
 }

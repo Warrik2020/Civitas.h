@@ -10,5 +10,6 @@ namespace CivitasPoly::UI::Tutorial
     public:
         explicit LoopTopics(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Tutorial", "LoopTopics") {}
+    public:
     };
 }

@@ -10,5 +10,16 @@ namespace CivitasPoly::Scenario
     public:
         explicit SerRealmNobles(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Scenario", "SerRealmNobles") {}
+    public:
+        int nationId() const { return ReadField<int>("nationId"); }
+        void SetNationId(int value) const { WriteField<int>("nationId", value); }
+        int nextHonourTick() const { return ReadField<int>("nextHonourTick"); }
+        void SetNextHonourTick(int value) const { WriteField<int>("nextHonourTick", value); }
+        int nextDemandTick() const { return ReadField<int>("nextDemandTick"); }
+        void SetNextDemandTick(int value) const { WriteField<int>("nextDemandTick", value); }
+        float alarm() const { return ReadField<float>("alarm"); }
+        void SetAlarm(float value) const { WriteField<float>("alarm", value); }
+        bool seeded() const { return ReadField<bool>("seeded"); }
+        void SetSeeded(bool value) const { WriteField<bool>("seeded", value); }
     };
 }

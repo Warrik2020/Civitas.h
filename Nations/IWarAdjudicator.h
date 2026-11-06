@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations
     public:
         explicit IWarAdjudicator(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations", "IWarAdjudicator") {}
+    public:
     };
 }

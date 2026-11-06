@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Identity
     public:
         explicit AssimilationScope(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Identity", "AssimilationScope") {}
+    public:
     };
 }

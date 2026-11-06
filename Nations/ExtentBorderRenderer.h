@@ -10,5 +10,9 @@ namespace CivitasPoly::Nations
     public:
         explicit ExtentBorderRenderer(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations", "ExtentBorderRenderer") {}
+    public:
+        void Sync(void* n, void* style) const { void* args[] = { n, style }; Call("Sync", args, 2); }
+        void SetVisible(bool visible) const { void* args[] = { &visible }; Call("SetVisible", args, 1); }
+        void Destroy() const { Call("Destroy", nullptr, 0); }
     };
 }

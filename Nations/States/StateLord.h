@@ -10,5 +10,16 @@ namespace CivitasPoly::Nations::States
     public:
         explicit StateLord(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.States", "StateLord") {}
+    public:
+        void* givenName() const { return ReadField<void*>("givenName"); }
+        void SetGivenName(void* value) const { WriteField<void*>("givenName", value); }
+        void* house() const { return ReadField<void*>("house"); }
+        void SetHouse(void* value) const { WriteField<void*>("house", value); }
+        bool female() const { return ReadField<bool>("female"); }
+        void SetFemale(bool value) const { WriteField<bool>("female", value); }
+        float ambition() const { return ReadField<float>("ambition"); }
+        void SetAmbition(float value) const { WriteField<float>("ambition", value); }
+        int seatedTick() const { return ReadField<int>("seatedTick"); }
+        void SetSeatedTick(int value) const { WriteField<int>("seatedTick", value); }
     };
 }

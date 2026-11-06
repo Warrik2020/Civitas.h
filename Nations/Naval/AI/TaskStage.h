@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Naval::AI
     public:
         explicit TaskStage(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Naval.AI", "TaskStage") {}
+    public:
     };
 }

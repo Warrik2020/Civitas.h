@@ -10,5 +10,6 @@ namespace CivitasPoly::UI::Military
     public:
         explicit MovePreview(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Military", "MovePreview") {}
+    public:
     };
 }

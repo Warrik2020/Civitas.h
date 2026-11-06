@@ -10,5 +10,9 @@ namespace CivitasPoly::Llm
     public:
         explicit LlmSettings(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Llm", "LlmSettings") {}
+    public:
+        void ForgetNgl() const { CallStatic("ForgetNgl", nullptr, 0); }
+        void* EnabledKey() const { return ReadStaticField<void*>("EnabledKey"); }
+        void* NglKey() const { return ReadStaticField<void*>("NglKey"); }
     };
 }

@@ -10,5 +10,8 @@ namespace CivitasPoly::Map::Rendering::Styles
     public:
         explicit StateBlock(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Map.Rendering.Styles", "StateBlock") {}
+    public:
+        float opacity() const { return ReadField<float>("opacity"); }
+        void SetOpacity(float value) const { WriteField<float>("opacity", value); }
     };
 }

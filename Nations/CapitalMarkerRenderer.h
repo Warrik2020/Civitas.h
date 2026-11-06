@@ -10,5 +10,9 @@ namespace CivitasPoly::Nations
     public:
         explicit CapitalMarkerRenderer(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations", "CapitalMarkerRenderer") {}
+    public:
+        void MarkDirty() const { Call("MarkDirty", nullptr, 0); }
+        void Sync(void* nations) const { void* args[] = { nations }; Call("Sync", args, 1); }
+        void Destroy() const { Call("Destroy", nullptr, 0); }
     };
 }

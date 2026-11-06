@@ -10,5 +10,7 @@ namespace CivitasPoly::Map::Generation
     public:
         explicit WorldGenerator(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Map.Generation", "WorldGenerator") {}
+    public:
+        void* Build(void* s, int& landCount) const { void* args[] = { s, &landCount }; return CallStatic("Build", args, 2); }
     };
 }

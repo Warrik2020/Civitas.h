@@ -10,5 +10,9 @@ namespace CivitasPoly::Nations
     public:
         explicit JobAwait(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations", "JobAwait") {}
+    public:
+        void Force() const { Call("Force", nullptr, 0); }
+        void* Handle() const { return ReadField<void*>("Handle"); }
+        void SetHandle(void* value) const { WriteField<void*>("Handle", value); }
     };
 }

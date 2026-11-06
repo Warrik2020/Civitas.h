@@ -10,5 +10,7 @@ namespace CivitasPoly::Nations::Military::Tactical::Rendering
     public:
         explicit BattleGroundRenderer(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Tactical.Rendering", "BattleGroundRenderer") {}
+    public:
+        void Dispose() const { Call("Dispose", nullptr, 0); }
     };
 }

@@ -10,5 +10,6 @@ namespace CivitasPoly::UI
     public:
         explicit ScrollPinTop(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "ScrollPinTop") {}
+    public:
     };
 }

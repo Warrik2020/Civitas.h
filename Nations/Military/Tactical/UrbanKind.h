@@ -10,5 +10,8 @@ namespace CivitasPoly::Nations::Military::Tactical
     public:
         explicit UrbanKind(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Tactical", "UrbanKind") {}
+    public:
+        uint8_t House() const { return ReadStaticField<uint8_t>("House"); }
+        uint8_t Hall() const { return ReadStaticField<uint8_t>("Hall"); }
     };
 }

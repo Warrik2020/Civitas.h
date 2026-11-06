@@ -10,5 +10,6 @@ namespace CivitasPoly::Map::Terrain
     public:
         explicit Relief(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Map.Terrain", "Relief") {}
+    public:
     };
 }

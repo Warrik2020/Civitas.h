@@ -10,5 +10,18 @@ namespace CivitasPoly::Nations::Internals
     public:
         explicit PendingPeoplePetition(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "PendingPeoplePetition") {}
+    public:
+        int ownerId() const { return ReadField<int>("ownerId"); }
+        void SetOwnerId(int value) const { WriteField<int>("ownerId", value); }
+        int originId() const { return ReadField<int>("originId"); }
+        void SetOriginId(int value) const { WriteField<int>("originId", value); }
+        int kind() const { return ReadField<int>("kind"); }
+        void SetKind(int value) const { WriteField<int>("kind", value); }
+        int createdTick() const { return ReadField<int>("createdTick"); }
+        void SetCreatedTick(int value) const { WriteField<int>("createdTick", value); }
+        int deadlineTick() const { return ReadField<int>("deadlineTick"); }
+        void SetDeadlineTick(int value) const { WriteField<int>("deadlineTick", value); }
+        bool demand() const { return ReadField<bool>("demand"); }
+        void SetDemand(bool value) const { WriteField<bool>("demand", value); }
     };
 }

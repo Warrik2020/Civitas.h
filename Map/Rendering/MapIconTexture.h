@@ -10,5 +10,7 @@ namespace CivitasPoly::Map::Rendering
     public:
         explicit MapIconTexture(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Map.Rendering", "MapIconTexture") {}
+    public:
+        void* Get(const char* resourcePath, bool outline = true) const { void* managed_0 = Api() && Api()->NewString ? Api()->NewString(resourcePath ? resourcePath : "") : nullptr; void* args[] = { managed_0, &outline }; return CallStatic("Get", args, 2); }
     };
 }

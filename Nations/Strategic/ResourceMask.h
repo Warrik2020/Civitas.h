@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Strategic
     public:
         explicit ResourceMask(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Strategic", "ResourceMask") {}
+    public:
     };
 }

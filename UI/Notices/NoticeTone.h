@@ -10,5 +10,6 @@ namespace CivitasPoly::UI::Notices
     public:
         explicit NoticeTone(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Notices", "NoticeTone") {}
+    public:
     };
 }

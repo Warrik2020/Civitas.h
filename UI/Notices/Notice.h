@@ -10,5 +10,42 @@ namespace CivitasPoly::UI::Notices
     public:
         explicit Notice(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Notices", "Notice") {}
+    public:
+        int id() const { return ReadField<int>("id"); }
+        void SetId(int value) const { WriteField<int>("id", value); }
+        int tick() const { return ReadField<int>("tick"); }
+        void SetTick(int value) const { WriteField<int>("tick", value); }
+        void* date() const { return ReadField<void*>("date"); }
+        void SetDate(void* value) const { WriteField<void*>("date", value); }
+        int topic() const { return ReadField<int>("topic"); }
+        void SetTopic(int value) const { WriteField<int>("topic", value); }
+        int tone() const { return ReadField<int>("tone"); }
+        void SetTone(int value) const { WriteField<int>("tone", value); }
+        void* glyph() const { return ReadField<void*>("glyph"); }
+        void SetGlyph(void* value) const { WriteField<void*>("glyph", value); }
+        void* text() const { return ReadField<void*>("text"); }
+        void SetText(void* value) const { WriteField<void*>("text", value); }
+        void* key() const { return ReadField<void*>("key"); }
+        void SetKey(void* value) const { WriteField<void*>("key", value); }
+        int count() const { return ReadField<int>("count"); }
+        void SetCount(int value) const { WriteField<int>("count", value); }
+        int tile() const { return ReadField<int>("tile"); }
+        void SetTile(int value) const { WriteField<int>("tile", value); }
+        int nation() const { return ReadField<int>("nation"); }
+        void SetNation(int value) const { WriteField<int>("nation", value); }
+        void* open() const { return ReadField<void*>("open"); }
+        void SetOpen(void* value) const { WriteField<void*>("open", value); }
+        void* act() const { return ReadField<void*>("act"); }
+        void SetAct(void* value) const { WriteField<void*>("act", value); }
+        void* actLabel() const { return ReadField<void*>("actLabel"); }
+        void SetActLabel(void* value) const { WriteField<void*>("actLabel", value); }
+        bool read() const { return ReadField<bool>("read"); }
+        void SetRead(bool value) const { WriteField<bool>("read", value); }
+        float postedAt() const { return ReadField<float>("postedAt"); }
+        void SetPostedAt(float value) const { WriteField<float>("postedAt", value); }
+        int version() const { return ReadField<int>("version"); }
+        void SetVersion(int value) const { WriteField<int>("version", value); }
+        bool quiet() const { return ReadField<bool>("quiet"); }
+        void SetQuiet(bool value) const { WriteField<bool>("quiet", value); }
     };
 }

@@ -10,5 +10,7 @@ namespace CivitasPoly::Nations::Military::Tactical
     public:
         explicit BattleSections(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Tactical", "BattleSections") {}
+    public:
+        void Tick(void* sim, float dt) const { void* args[] = { sim, &dt }; CallStatic("Tick", args, 2); }
     };
 }

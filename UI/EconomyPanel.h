@@ -10,5 +10,11 @@ namespace CivitasPoly::UI
     public:
         explicit EconomyPanel(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "EconomyPanel") {}
+    public:
+        void Toggle() const { Call("Toggle", nullptr, 0); }
+        void SetVisible(bool visible) const { void* args[] = { &visible }; Call("SetVisible", args, 1); }
+        void ShowScreenPage(void* page) const { void* args[] = { page }; Call("ShowScreenPage", args, 1); }
+        void* Of(void* it) const { void* args[] = { it }; return CallStatic("Of", args, 1); }
+        void Restore(void* it) const { void* args[] = { it }; Call("Restore", args, 1); }
     };
 }

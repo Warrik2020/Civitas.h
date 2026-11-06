@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Politics
     public:
         explicit PolTreeKind(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Politics", "PolTreeKind") {}
+    public:
     };
 }

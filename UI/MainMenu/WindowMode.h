@@ -10,5 +10,6 @@ namespace CivitasPoly::UI::MainMenu
     public:
         explicit WindowMode(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.MainMenu", "WindowMode") {}
+    public:
     };
 }

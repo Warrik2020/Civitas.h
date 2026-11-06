@@ -10,5 +10,6 @@ namespace CivitasPoly::UI::Shell
     public:
         explicit GameScreen(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Shell", "GameScreen") {}
+    public:
     };
 }

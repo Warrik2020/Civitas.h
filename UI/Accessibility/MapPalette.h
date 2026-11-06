@@ -10,5 +10,9 @@ namespace CivitasPoly::UI::Accessibility
     public:
         explicit MapPalette(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Accessibility", "MapPalette") {}
+    public:
+        void* Grade(void* c) const { void* args[] = { c }; return CallStatic("Grade", args, 1); }
+        void* Adapt(void* c) const { void* args[] = { c }; return CallStatic("Adapt", args, 1); }
+        float NeutralContrast() const { return ReadStaticField<float>("NeutralContrast"); }
     };
 }

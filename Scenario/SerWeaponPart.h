@@ -10,5 +10,16 @@ namespace CivitasPoly::Scenario
     public:
         explicit SerWeaponPart(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Scenario", "SerWeaponPart") {}
+    public:
+        int kind() const { return ReadField<int>("kind"); }
+        void SetKind(int value) const { WriteField<int>("kind", value); }
+        int material() const { return ReadField<int>("material"); }
+        void SetMaterial(int value) const { WriteField<int>("material", value); }
+        void* pts() const { return ReadField<void*>("pts"); }
+        void SetPts(void* value) const { WriteField<void*>("pts", value); }
+        float thickness() const { return ReadField<float>("thickness"); }
+        void SetThickness(float value) const { WriteField<float>("thickness", value); }
+        float lateral() const { return ReadField<float>("lateral"); }
+        void SetLateral(float value) const { WriteField<float>("lateral", value); }
     };
 }

@@ -10,5 +10,8 @@ namespace CivitasPoly::Map::Terrain
     public:
         explicit TerrainSurfaceSource(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Map.Terrain", "TerrainSurfaceSource") {}
+    public:
+        void* Get(void* map) const { void* args[] = { map }; return CallStatic("Get", args, 1); }
+        void* Shares(void* d) const { void* args[] = { d }; return CallStatic("Shares", args, 1); }
     };
 }

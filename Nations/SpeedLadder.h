@@ -10,5 +10,8 @@ namespace CivitasPoly::Nations
     public:
         explicit SpeedLadder(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations", "SpeedLadder") {}
+    public:
+        float PaceAt(int index) const { void* args[] = { &index }; return CallStaticValue<float>("PaceAt", args, 1); }
+        int FastFrom() const { return ReadStaticField<int>("FastFrom"); }
     };
 }

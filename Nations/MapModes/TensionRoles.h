@@ -10,5 +10,7 @@ namespace CivitasPoly::Nations::MapModes
     public:
         explicit TensionRoles(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.MapModes", "TensionRoles") {}
+    public:
+        int Resolve(bool isFocus, bool menace, bool victim, bool vulture, bool rival, bool rivalHot, bool inLeague, int backing) const { void* args[] = { &isFocus, &menace, &victim, &vulture, &rival, &rivalHot, &inLeague, &backing }; return CallStaticValue<int>("Resolve", args, 8); }
     };
 }

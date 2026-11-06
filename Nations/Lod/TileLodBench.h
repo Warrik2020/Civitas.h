@@ -10,5 +10,7 @@ namespace CivitasPoly::Nations::Lod
     public:
         explicit TileLodBench(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Lod", "TileLodBench") {}
+    public:
+        void Begin() const { CallStatic("Begin", nullptr, 0); }
     };
 }

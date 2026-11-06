@@ -10,5 +10,6 @@ namespace CivitasPoly::UI
     public:
         explicit TradeOfferSettings(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "TradeOfferSettings") {}
+    public:
     };
 }

@@ -10,5 +10,8 @@ namespace CivitasPoly::UI::Tutorial
     public:
         explicit NavalTutorial(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Tutorial", "NavalTutorial") {}
+    public:
+        void Offer() const { CallStatic("Offer", nullptr, 0); }
+        void* Key() const { return ReadStaticField<void*>("Key"); }
     };
 }

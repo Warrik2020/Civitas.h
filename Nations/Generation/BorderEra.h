@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Generation
     public:
         explicit BorderEra(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Generation", "BorderEra") {}
+    public:
     };
 }

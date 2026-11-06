@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Military
     public:
         explicit FightRole(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military", "FightRole") {}
+    public:
     };
 }

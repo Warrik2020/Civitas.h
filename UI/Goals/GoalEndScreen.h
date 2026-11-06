@@ -10,5 +10,6 @@ namespace CivitasPoly::UI::Goals
     public:
         explicit GoalEndScreen(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Goals", "GoalEndScreen") {}
+    public:
     };
 }

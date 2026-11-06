@@ -10,5 +10,9 @@ namespace CivitasPoly::Nations::Military::Tactical::Rendering
     public:
         explicit BattleDotRenderer(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Tactical.Rendering", "BattleDotRenderer") {}
+    public:
+        void Draw(void* sim, void* cam, void* arenaToWorld, void* bounds, float pxPerTile, float z) const { void* args[] = { sim, cam, arenaToWorld, bounds, &pxPerTile, &z }; Call("Draw", args, 6); }
+        void Hide() const { Call("Hide", nullptr, 0); }
+        void Dispose() const { Call("Dispose", nullptr, 0); }
     };
 }

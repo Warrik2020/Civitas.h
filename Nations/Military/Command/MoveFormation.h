@@ -10,5 +10,9 @@ namespace CivitasPoly::Nations::Military::Command
     public:
         explicit MoveFormation(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Command", "MoveFormation") {}
+    public:
+        void Slots(void* units, void* tile, void* grid, void* mil, void* into) const { void* args[] = { units, tile, grid, mil, into }; CallStatic("Slots", args, 5); }
+        int RowMax() const { return ReadStaticField<int>("RowMax"); }
+        float SpacingBodies() const { return ReadStaticField<float>("SpacingBodies"); }
     };
 }

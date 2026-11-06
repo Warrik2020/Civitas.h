@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Military::Command
     public:
         explicit OpKind(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Command", "OpKind") {}
+    public:
     };
 }

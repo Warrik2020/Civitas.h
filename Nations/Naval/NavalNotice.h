@@ -10,5 +10,16 @@ namespace CivitasPoly::Nations::Naval
     public:
         explicit NavalNotice(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Naval", "NavalNotice") {}
+    public:
+        int kind() const { return ReadField<int>("kind"); }
+        void SetKind(int value) const { WriteField<int>("kind", value); }
+        int nationId() const { return ReadField<int>("nationId"); }
+        void SetNationId(int value) const { WriteField<int>("nationId", value); }
+        int otherNationId() const { return ReadField<int>("otherNationId"); }
+        void SetOtherNationId(int value) const { WriteField<int>("otherNationId", value); }
+        int tile() const { return ReadField<int>("tile"); }
+        void SetTile(int value) const { WriteField<int>("tile", value); }
+        int unitId() const { return ReadField<int>("unitId"); }
+        void SetUnitId(int value) const { WriteField<int>("unitId", value); }
     };
 }

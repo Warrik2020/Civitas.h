@@ -10,5 +10,7 @@ namespace CivitasPoly::Nations::Lod
     public:
         explicit FullTileKey(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Lod", "FullTileKey") {}
+    public:
+        bool Same(int a, int b) const { void* args[] = { &a, &b }; return CallValue<bool>("Same", args, 2); }
     };
 }

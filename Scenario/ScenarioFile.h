@@ -10,5 +10,9 @@ namespace CivitasPoly::Scenario
     public:
         explicit ScenarioFile(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Scenario", "ScenarioFile") {}
+    public:
+        int Version() const { return ReadStaticField<int>("Version"); }
+        int MinReadableVersion() const { return ReadStaticField<int>("MinReadableVersion"); }
+        void* Extension() const { return ReadStaticField<void*>("Extension"); }
     };
 }

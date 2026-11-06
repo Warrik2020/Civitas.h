@@ -10,5 +10,6 @@ namespace CivitasPoly::Scenario
     public:
         explicit ScenarioRole(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Scenario", "ScenarioRole") {}
+    public:
     };
 }

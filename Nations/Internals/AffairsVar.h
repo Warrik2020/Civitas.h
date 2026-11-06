@@ -10,5 +10,10 @@ namespace CivitasPoly::Nations::Internals
     public:
         explicit AffairsVar(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "AffairsVar") {}
+    public:
+        void* name() const { return ReadField<void*>("name"); }
+        void SetName(void* value) const { WriteField<void*>("name", value); }
+        float value() const { return ReadField<float>("value"); }
+        void SetValue(float value) const { WriteField<float>("value", value); }
     };
 }

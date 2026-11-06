@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Progression
     public:
         explicit ProgressionNoticeKind(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Progression", "ProgressionNoticeKind") {}
+    public:
     };
 }

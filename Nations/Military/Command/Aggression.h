@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Military::Command
     public:
         explicit Aggression(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Command", "Aggression") {}
+    public:
     };
 }

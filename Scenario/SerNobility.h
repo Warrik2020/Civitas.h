@@ -10,5 +10,20 @@ namespace CivitasPoly::Scenario
     public:
         explicit SerNobility(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Scenario", "SerNobility") {}
+    public:
+        int format() const { return ReadField<int>("format"); }
+        void SetFormat(int value) const { WriteField<int>("format", value); }
+        int mosaicSeed() const { return ReadField<int>("mosaicSeed"); }
+        void SetMosaicSeed(int value) const { WriteField<int>("mosaicSeed", value); }
+        int baronyTarget() const { return ReadField<int>("baronyTarget"); }
+        void SetBaronyTarget(int value) const { WriteField<int>("baronyTarget", value); }
+        int nextHouseId() const { return ReadField<int>("nextHouseId"); }
+        void SetNextHouseId(int value) const { WriteField<int>("nextHouseId", value); }
+        void* houses() const { return ReadField<void*>("houses"); }
+        void SetHouses(void* value) const { WriteField<void*>("houses", value); }
+        void* holdings() const { return ReadField<void*>("holdings"); }
+        void SetHoldings(void* value) const { WriteField<void*>("holdings", value); }
+        void* realms() const { return ReadField<void*>("realms"); }
+        void SetRealms(void* value) const { WriteField<void*>("realms", value); }
     };
 }

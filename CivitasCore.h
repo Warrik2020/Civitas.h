@@ -109,6 +109,38 @@ namespace CivitasPoly::Internal
             return value ? *static_cast<T*>(value) : fallback;
         }
 
+        template <typename T>
+        T ReadField(const char* fieldName, T fallback = {}) const
+        {
+            if (!api_ || !api_->GetFieldValue) return fallback;
+            T value{};
+            api_->GetFieldValue(namespace_, className_, object_, fieldName, &value);
+            return value;
+        }
+
+        template <typename T>
+        void WriteField(const char* fieldName, const T& value) const
+        {
+            if (api_ && api_->SetFieldValue)
+                api_->SetFieldValue(namespace_, className_, object_, fieldName, &value);
+        }
+
+        template <typename T>
+        T ReadStaticField(const char* fieldName, T fallback = {}) const
+        {
+            if (!api_ || !api_->GetStaticFieldValue) return fallback;
+            T value{};
+            api_->GetStaticFieldValue(namespace_, className_, fieldName, &value);
+            return value;
+        }
+
+        template <typename T>
+        void WriteStaticField(const char* fieldName, const T& value) const
+        {
+            if (api_ && api_->SetStaticFieldValue)
+                api_->SetStaticFieldValue(namespace_, className_, fieldName, &value);
+        }
+
     private:
         ModAPI* api_ = nullptr;
         void* object_ = nullptr;

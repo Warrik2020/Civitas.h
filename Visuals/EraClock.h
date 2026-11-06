@@ -10,5 +10,7 @@ namespace CivitasPoly::Visuals
     public:
         explicit EraClock(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Visuals", "EraClock") {}
+    public:
+        void Poll() const { CallStatic("Poll", nullptr, 0); }
     };
 }

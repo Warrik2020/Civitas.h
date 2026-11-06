@@ -10,5 +10,14 @@ namespace CivitasPoly::Map::Rendering::Styles
     public:
         explicit LabelBlock(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Map.Rendering.Styles", "LabelBlock") {}
+    public:
+        void* textColor() const { return ReadField<void*>("textColor"); }
+        void SetTextColor(void* value) const { WriteField<void*>("textColor", value); }
+        void* shadowColor() const { return ReadField<void*>("shadowColor"); }
+        void SetShadowColor(void* value) const { WriteField<void*>("shadowColor", value); }
+        int uppercase() const { return ReadField<int>("uppercase"); }
+        void SetUppercase(int value) const { WriteField<int>("uppercase", value); }
+        float trackingEm() const { return ReadField<float>("trackingEm"); }
+        void SetTrackingEm(float value) const { WriteField<float>("trackingEm", value); }
     };
 }

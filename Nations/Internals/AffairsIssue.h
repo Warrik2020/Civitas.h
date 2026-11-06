@@ -10,5 +10,15 @@ namespace CivitasPoly::Nations::Internals
     public:
         explicit AffairsIssue(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "AffairsIssue") {}
+    public:
+        void* ToString() const { return Call("ToString", nullptr, 0); }
+        bool error() const { return ReadField<bool>("error"); }
+        void SetError(bool value) const { WriteField<bool>("error", value); }
+        void* file() const { return ReadField<void*>("file"); }
+        void SetFile(void* value) const { WriteField<void*>("file", value); }
+        int line() const { return ReadField<int>("line"); }
+        void SetLine(int value) const { WriteField<int>("line", value); }
+        void* message() const { return ReadField<void*>("message"); }
+        void SetMessage(void* value) const { WriteField<void*>("message", value); }
     };
 }

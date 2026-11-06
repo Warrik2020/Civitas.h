@@ -10,5 +10,7 @@ namespace CivitasPoly::Nations::Military
     public:
         explicit Ticks(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military", "Ticks") {}
+    public:
+        int Never() const { return ReadStaticField<int>("Never"); }
     };
 }

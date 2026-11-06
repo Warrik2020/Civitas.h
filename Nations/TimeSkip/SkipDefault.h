@@ -10,5 +10,10 @@ namespace CivitasPoly::Nations::TimeSkip
     public:
         explicit SkipDefault(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.TimeSkip", "SkipDefault") {}
+    public:
+        int tick() const { return ReadField<int>("tick"); }
+        void SetTick(int value) const { WriteField<int>("tick", value); }
+        void* text() const { return ReadField<void*>("text"); }
+        void SetText(void* value) const { WriteField<void*>("text", value); }
     };
 }

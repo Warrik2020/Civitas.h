@@ -10,5 +10,10 @@ namespace CivitasPoly::UI::Tutorial
     public:
         explicit TutorialLesson(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Tutorial", "TutorialLesson") {}
+    public:
+        void* title() const { return ReadField<void*>("title"); }
+        void* body() const { return ReadField<void*>("body"); }
+        void* objective() const { return ReadField<void*>("objective"); }
+        void* target() const { return ReadField<void*>("target"); }
     };
 }

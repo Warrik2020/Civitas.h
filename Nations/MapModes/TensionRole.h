@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::MapModes
     public:
         explicit TensionRole(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.MapModes", "TensionRole") {}
+    public:
     };
 }

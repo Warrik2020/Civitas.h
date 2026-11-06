@@ -10,5 +10,8 @@ namespace CivitasPoly::Scenario
     public:
         explicit ConversionSave(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Scenario", "ConversionSave") {}
+    public:
+        void* Capture(void* fileIds) const { void* args[] = { fileIds }; return CallStatic("Capture", args, 1); }
+        void Apply(void* ser, void* runtimeOf) const { void* args[] = { ser, runtimeOf }; CallStatic("Apply", args, 2); }
     };
 }

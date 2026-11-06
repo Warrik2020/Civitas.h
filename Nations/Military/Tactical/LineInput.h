@@ -10,5 +10,15 @@ namespace CivitasPoly::Nations::Military::Tactical
     public:
         explicit LineInput(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Tactical", "LineInput") {}
+    public:
+        bool IsSelected(int bat) const { void* args[] = { &bat }; return CallValue<bool>("IsSelected", args, 1); }
+        bool AnyControllableSelected() const { return CallValue<bool>("AnyControllableSelected", nullptr, 0); }
+        void* TakeNote() const { return Call("TakeNote", nullptr, 0); }
+        void Clear() const { Call("Clear", nullptr, 0); }
+        void Select(int bat, bool add) const { void* args[] = { &bat, &add }; Call("Select", args, 2); }
+        void SelectMember(int member, bool add) const { void* args[] = { &member, &add }; Call("SelectMember", args, 2); }
+        void Order(int order) const { void* args[] = { &order }; Call("Order", args, 1); }
+        void Update() const { Call("Update", nullptr, 0); }
+        void* Selected() const { return ReadField<void*>("Selected"); }
     };
 }

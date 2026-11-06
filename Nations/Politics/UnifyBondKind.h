@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Politics
     public:
         explicit UnifyBondKind(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Politics", "UnifyBondKind") {}
+    public:
     };
 }

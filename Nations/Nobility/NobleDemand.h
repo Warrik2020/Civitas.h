@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Nobility
     public:
         explicit NobleDemand(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Nobility", "NobleDemand") {}
+    public:
     };
 }

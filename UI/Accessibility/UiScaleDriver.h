@@ -10,5 +10,12 @@ namespace CivitasPoly::UI::Accessibility
     public:
         explicit UiScaleDriver(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Accessibility", "UiScaleDriver") {}
+    public:
+        void Apply(void* scaler) const { void* args[] = { scaler }; CallStatic("Apply", args, 1); }
+        void ApplyNow() const { CallStatic("ApplyNow", nullptr, 0); }
+        void Ensure() const { CallStatic("Ensure", nullptr, 0); }
+        void* BaseReference() const { return ReadStaticField<void*>("BaseReference"); }
+        bool FullScanEachPoll() const { return ReadStaticField<bool>("FullScanEachPoll"); }
+        void SetFullScanEachPoll(bool value) const { WriteStaticField<bool>("FullScanEachPoll", value); }
     };
 }

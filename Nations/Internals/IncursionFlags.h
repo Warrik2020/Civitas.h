@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Internals
     public:
         explicit IncursionFlags(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "IncursionFlags") {}
+    public:
     };
 }

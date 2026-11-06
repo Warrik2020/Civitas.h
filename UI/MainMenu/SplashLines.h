@@ -10,5 +10,7 @@ namespace CivitasPoly::UI::MainMenu
     public:
         explicit SplashLines(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.MainMenu", "SplashLines") {}
+    public:
+        void* Next() const { return CallStatic("Next", nullptr, 0); }
     };
 }

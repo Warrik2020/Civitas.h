@@ -10,5 +10,8 @@ namespace CivitasPoly::Nations::Military::Command
     public:
         explicit FallbackPlan(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Command", "FallbackPlan") {}
+    public:
+        bool Manned(void* a, bool frontAlive) const { void* args[] = { a, &frontAlive }; return CallStaticValue<bool>("Manned", args, 2); }
+        int Side(void* a, void* front, void* mil, void* grid, void* capital) const { void* args[] = { a, front, mil, grid, capital }; return CallStaticValue<int>("Side", args, 5); }
     };
 }

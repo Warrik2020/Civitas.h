@@ -10,5 +10,7 @@ namespace CivitasPoly::Nations::Internals
     public:
         explicit RoadFriction(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "RoadFriction") {}
+    public:
+        void Apply(int builderId, void* pathTiles, void* grid, void* mgr, void* cfg) const { void* args[] = { &builderId, pathTiles, grid, mgr, cfg }; CallStatic("Apply", args, 5); }
     };
 }

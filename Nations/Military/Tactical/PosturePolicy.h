@@ -10,5 +10,10 @@ namespace CivitasPoly::Nations::Military::Tactical
     public:
         explicit PosturePolicy(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Tactical", "PosturePolicy") {}
+    public:
+        uint8_t Stand() const { return ReadStaticField<uint8_t>("Stand"); }
+        uint8_t Kneel() const { return ReadStaticField<uint8_t>("Kneel"); }
+        uint8_t Prone() const { return ReadStaticField<uint8_t>("Prone"); }
+        uint8_t Shields() const { return ReadStaticField<uint8_t>("Shields"); }
     };
 }

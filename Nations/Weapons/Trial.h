@@ -10,5 +10,18 @@ namespace CivitasPoly::Nations::Weapons
     public:
         explicit Trial(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Weapons", "Trial") {}
+    public:
+        bool made() const { return ReadField<bool>("made"); }
+        void SetMade(bool value) const { WriteField<bool>("made", value); }
+        int blocking() const { return ReadField<int>("blocking"); }
+        void SetBlocking(int value) const { WriteField<int>("blocking", value); }
+        void* newProblem() const { return ReadField<void*>("newProblem"); }
+        void SetNewProblem(void* value) const { WriteField<void*>("newProblem", value); }
+        void* stats() const { return ReadField<void*>("stats"); }
+        void SetStats(void* value) const { WriteField<void*>("stats", value); }
+        float score() const { return ReadField<float>("score"); }
+        void SetScore(float value) const { WriteField<float>("score", value); }
+        float fee() const { return ReadField<float>("fee"); }
+        void SetFee(float value) const { WriteField<float>("fee", value); }
     };
 }

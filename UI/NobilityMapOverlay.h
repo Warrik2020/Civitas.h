@@ -10,5 +10,7 @@ namespace CivitasPoly::UI
     public:
         explicit NobilityMapOverlay(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "NobilityMapOverlay") {}
+    public:
+        void ShowBarony(int deed) const { void* args[] = { &deed }; CallStatic("ShowBarony", args, 1); }
     };
 }

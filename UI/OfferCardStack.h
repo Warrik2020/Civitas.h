@@ -10,5 +10,8 @@ namespace CivitasPoly::UI
     public:
         explicit OfferCardStack(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "OfferCardStack") {}
+    public:
+        void Present(void* item) const { void* args[] = { item }; Call("Present", args, 1); }
+        float BaseOffset() const { return ReadStaticField<float>("BaseOffset"); }
     };
 }

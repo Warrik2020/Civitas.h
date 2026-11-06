@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Naval
     public:
         explicit VesselKind(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Naval", "VesselKind") {}
+    public:
     };
 }

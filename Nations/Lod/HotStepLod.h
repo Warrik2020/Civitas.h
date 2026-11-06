@@ -10,5 +10,8 @@ namespace CivitasPoly::Nations::Lod
     public:
         explicit HotStepLod(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Lod", "HotStepLod") {}
+    public:
+        bool Enabled() const { return ReadStaticField<bool>("Enabled"); }
+        void SetEnabled(bool value) const { WriteStaticField<bool>("Enabled", value); }
     };
 }

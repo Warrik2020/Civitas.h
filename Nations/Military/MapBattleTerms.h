@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Military
     public:
         explicit MapBattleTerms(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military", "MapBattleTerms") {}
+    public:
     };
 }

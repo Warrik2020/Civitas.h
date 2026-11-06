@@ -10,5 +10,6 @@ namespace CivitasPoly::UI::Youtuber
     public:
         explicit CursorHighlight(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Youtuber", "CursorHighlight") {}
+    public:
     };
 }

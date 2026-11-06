@@ -10,5 +10,16 @@ namespace CivitasPoly::Cities
     public:
         explicit Building(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Cities", "Building") {}
+    public:
+        void* center() const { return ReadField<void*>("center"); }
+        void SetCenter(void* value) const { WriteField<void*>("center", value); }
+        float halfW() const { return ReadField<float>("halfW"); }
+        void SetHalfW(float value) const { WriteField<float>("halfW", value); }
+        float halfH() const { return ReadField<float>("halfH"); }
+        void SetHalfH(float value) const { WriteField<float>("halfH", value); }
+        float angle() const { return ReadField<float>("angle"); }
+        void SetAngle(float value) const { WriteField<float>("angle", value); }
+        float spawnTime() const { return ReadField<float>("spawnTime"); }
+        void SetSpawnTime(float value) const { WriteField<float>("spawnTime", value); }
     };
 }

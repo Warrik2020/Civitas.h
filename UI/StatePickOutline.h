@@ -10,5 +10,9 @@ namespace CivitasPoly::UI
     public:
         explicit StatePickOutline(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "StatePickOutline") {}
+    public:
+        void Show(bool on) const { void* args[] = { &on }; Call("Show", args, 1); }
+        void Draw(int picked, int hovered) const { void* args[] = { &picked, &hovered }; Call("Draw", args, 2); }
+        void Dispose() const { Call("Dispose", nullptr, 0); }
     };
 }

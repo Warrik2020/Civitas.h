@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Naval
     public:
         explicit VesselPhase(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Naval", "VesselPhase") {}
+    public:
     };
 }

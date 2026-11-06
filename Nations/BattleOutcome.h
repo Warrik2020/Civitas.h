@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations
     public:
         explicit BattleOutcome(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations", "BattleOutcome") {}
+    public:
     };
 }

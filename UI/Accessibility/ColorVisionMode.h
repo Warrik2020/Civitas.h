@@ -10,5 +10,6 @@ namespace CivitasPoly::UI::Accessibility
     public:
         explicit ColorVisionMode(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Accessibility", "ColorVisionMode") {}
+    public:
     };
 }

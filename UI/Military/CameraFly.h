@@ -10,5 +10,8 @@ namespace CivitasPoly::UI::Military
     public:
         explicit CameraFly(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Military", "CameraFly") {}
+    public:
+        void ToTile(void* tile) const { void* args[] = { tile }; CallStatic("ToTile", args, 1); }
+        bool ToDivisions(void* divisionIds) const { void* args[] = { divisionIds }; return CallStaticValue<bool>("ToDivisions", args, 1); }
     };
 }

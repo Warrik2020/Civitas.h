@@ -10,5 +10,6 @@ namespace CivitasPoly::UI
     public:
         explicit FlagTool(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "FlagTool") {}
+    public:
     };
 }

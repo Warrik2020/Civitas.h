@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Identity
     public:
         explicit PeopleRelation(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Identity", "PeopleRelation") {}
+    public:
     };
 }

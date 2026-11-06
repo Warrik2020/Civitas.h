@@ -10,5 +10,7 @@ namespace CivitasPoly::Nations::TimeSkip
     public:
         explicit SkipCitySupply(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.TimeSkip", "SkipCitySupply") {}
+    public:
+        bool Step(void* grid, void* cities, int tick, int span, float ticksPerDay) const { void* args[] = { grid, cities, &tick, &span, &ticksPerDay }; return CallStaticValue<bool>("Step", args, 5); }
     };
 }

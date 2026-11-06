@@ -10,5 +10,7 @@ namespace CivitasPoly::Map::Pipeline
     public:
         explicit Chaikin(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Map.Pipeline", "Chaikin") {}
+    public:
+        void* Smooth(void* pts, int iterations) const { void* args[] = { pts, &iterations }; return CallStatic("Smooth", args, 2); }
     };
 }

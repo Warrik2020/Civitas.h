@@ -10,5 +10,10 @@ namespace CivitasPoly::UI
     public:
         explicit PeoplesZoneBrush(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "PeoplesZoneBrush") {}
+    public:
+        void Build(void* canvas) const { void* args[] = { canvas }; Call("Build", args, 1); }
+        bool Begin(int axis, bool erase) const { void* args[] = { &axis, &erase }; return CallValue<bool>("Begin", args, 2); }
+        void End(bool restoreWindow) const { void* args[] = { &restoreWindow }; Call("End", args, 1); }
+        void Tick() const { Call("Tick", nullptr, 0); }
     };
 }

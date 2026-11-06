@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Research
     public:
         explicit TechEra(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Research", "TechEra") {}
+    public:
     };
 }

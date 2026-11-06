@@ -10,5 +10,6 @@ namespace CivitasPoly
     public:
         explicit BootMode(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly", "BootMode") {}
+    public:
     };
 }

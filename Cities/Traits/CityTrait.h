@@ -10,5 +10,6 @@ namespace CivitasPoly::Cities::Traits
     public:
         explicit CityTrait(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Cities.Traits", "CityTrait") {}
+    public:
     };
 }

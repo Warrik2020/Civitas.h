@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Military::Tactical
     public:
         explicit ManState(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Tactical", "ManState") {}
+    public:
     };
 }

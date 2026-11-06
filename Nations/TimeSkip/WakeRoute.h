@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::TimeSkip
     public:
         explicit WakeRoute(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.TimeSkip", "WakeRoute") {}
+    public:
     };
 }

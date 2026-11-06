@@ -10,5 +10,6 @@ namespace CivitasPoly::UI
     public:
         explicit UiEdgeDock(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "UiEdgeDock") {}
+    public:
     };
 }

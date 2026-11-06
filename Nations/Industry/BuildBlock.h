@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Industry
     public:
         explicit BuildBlock(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Industry", "BuildBlock") {}
+    public:
     };
 }

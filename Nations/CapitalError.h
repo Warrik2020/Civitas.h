@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations
     public:
         explicit CapitalError(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations", "CapitalError") {}
+    public:
     };
 }

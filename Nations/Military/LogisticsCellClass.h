@@ -10,5 +10,11 @@ namespace CivitasPoly::Nations::Military
     public:
         explicit LogisticsCellClass(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military", "LogisticsCellClass") {}
+    public:
+        uint8_t Blocked() const { return ReadStaticField<uint8_t>("Blocked"); }
+        uint8_t Open() const { return ReadStaticField<uint8_t>("Open"); }
+        uint8_t Wild() const { return ReadStaticField<uint8_t>("Wild"); }
+        uint8_t Transit() const { return ReadStaticField<uint8_t>("Transit"); }
+        uint8_t Enemy() const { return ReadStaticField<uint8_t>("Enemy"); }
     };
 }

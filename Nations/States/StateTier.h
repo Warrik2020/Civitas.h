@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::States
     public:
         explicit StateTier(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.States", "StateTier") {}
+    public:
     };
 }

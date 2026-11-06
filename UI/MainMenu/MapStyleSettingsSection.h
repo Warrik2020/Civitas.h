@@ -10,5 +10,6 @@ namespace CivitasPoly::UI::MainMenu
     public:
         explicit MapStyleSettingsSection(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.MainMenu", "MapStyleSettingsSection") {}
+    public:
     };
 }

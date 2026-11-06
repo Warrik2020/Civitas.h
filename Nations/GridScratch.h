@@ -10,5 +10,10 @@ namespace CivitasPoly::Nations
     public:
         explicit GridScratch(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations", "GridScratch") {}
+    public:
+        void* Rent(int length) const { void* args[] = { &length }; return CallStatic("Rent", args, 1); }
+        void* RentCleared(int length) const { void* args[] = { &length }; return CallStatic("RentCleared", args, 1); }
+        void Return_(void* array) const { void* args[] = { array }; CallStatic("Return", args, 1); }
+        void Release() const { CallStatic("Release", nullptr, 0); }
     };
 }

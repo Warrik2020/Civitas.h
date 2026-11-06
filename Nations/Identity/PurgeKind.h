@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Identity
     public:
         explicit PurgeKind(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Identity", "PurgeKind") {}
+    public:
     };
 }

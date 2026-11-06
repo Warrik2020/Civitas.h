@@ -10,5 +10,9 @@ namespace CivitasPoly::Nations::Military::Tactical::Rendering
     public:
         explicit BattleWorksRenderer(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Tactical.Rendering", "BattleWorksRenderer") {}
+    public:
+        void Dispose() const { Call("Dispose", nullptr, 0); }
+        void Hide() const { Call("Hide", nullptr, 0); }
+        void Draw(void* arenaToWorld, float pxPerTile, float z) const { void* args[] = { arenaToWorld, &pxPerTile, &z }; Call("Draw", args, 3); }
     };
 }

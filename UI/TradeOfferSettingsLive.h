@@ -10,5 +10,9 @@ namespace CivitasPoly::UI
     public:
         explicit TradeOfferSettingsLive(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "TradeOfferSettingsLive") {}
+    public:
+        void* muted() const { return ReadField<void*>("muted"); }
+        void SetMuted(void* value) const { WriteField<void*>("muted", value); }
+        void* locks() const { return ReadField<void*>("locks"); }
     };
 }

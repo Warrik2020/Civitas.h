@@ -10,5 +10,25 @@ namespace CivitasPoly::Nations::Internals
     public:
         explicit LocalSideEpisode(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "LocalSideEpisode") {}
+    public:
+        int LeanIndex(int bystander) const { void* args[] = { &bystander }; return CallValue<int>("LeanIndex", args, 1); }
+        void Clear() const { Call("Clear", nullptr, 0); }
+        int id() const { return ReadField<int>("id"); }
+        void SetId(int value) const { WriteField<int>("id", value); }
+        int arcId() const { return ReadField<int>("arcId"); }
+        void SetArcId(int value) const { WriteField<int>("arcId", value); }
+        int attackerId() const { return ReadField<int>("attackerId"); }
+        void SetAttackerId(int value) const { WriteField<int>("attackerId", value); }
+        int defenderId() const { return ReadField<int>("defenderId"); }
+        void SetDefenderId(int value) const { WriteField<int>("defenderId", value); }
+        int startedTick() const { return ReadField<int>("startedTick"); }
+        void SetStartedTick(int value) const { WriteField<int>("startedTick", value); }
+        int beats() const { return ReadField<int>("beats"); }
+        void SetBeats(int value) const { WriteField<int>("beats", value); }
+        bool independence() const { return ReadField<bool>("independence"); }
+        void SetIndependence(bool value) const { WriteField<bool>("independence", value); }
+        int pleaTick() const { return ReadField<int>("pleaTick"); }
+        void SetPleaTick(int value) const { WriteField<int>("pleaTick", value); }
+        void* leans() const { return ReadField<void*>("leans"); }
     };
 }

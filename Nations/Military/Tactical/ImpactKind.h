@@ -10,5 +10,10 @@ namespace CivitasPoly::Nations::Military::Tactical
     public:
         explicit ImpactKind(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Tactical", "ImpactKind") {}
+    public:
+        uint8_t Round() const { return ReadStaticField<uint8_t>("Round"); }
+        uint8_t Blow() const { return ReadStaticField<uint8_t>("Blow"); }
+        uint8_t Blast() const { return ReadStaticField<uint8_t>("Blast"); }
+        uint8_t Roundshot() const { return ReadStaticField<uint8_t>("Roundshot"); }
     };
 }

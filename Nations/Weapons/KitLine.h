@@ -10,5 +10,12 @@ namespace CivitasPoly::Nations::Weapons
     public:
         explicit KitLine(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Weapons", "KitLine") {}
+    public:
+        int slot() const { return ReadField<int>("slot"); }
+        void SetSlot(int value) const { WriteField<int>("slot", value); }
+        int designId() const { return ReadField<int>("designId"); }
+        void SetDesignId(int value) const { WriteField<int>("designId", value); }
+        int count() const { return ReadField<int>("count"); }
+        void SetCount(int value) const { WriteField<int>("count", value); }
     };
 }

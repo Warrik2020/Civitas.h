@@ -10,5 +10,7 @@ namespace CivitasPoly::Nations::Progression
     public:
         explicit RecruitOutcomes(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Progression", "RecruitOutcomes") {}
+    public:
+        void OfRaise(void* o, void* it, void* t, void* cfg, void* icfg, float gold, float ticksPerMonth) const { void* args[] = { o, it, t, cfg, icfg, &gold, &ticksPerMonth }; CallStatic("OfRaise", args, 7); }
     };
 }

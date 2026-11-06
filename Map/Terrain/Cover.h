@@ -10,5 +10,6 @@ namespace CivitasPoly::Map::Terrain
     public:
         explicit Cover(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Map.Terrain", "Cover") {}
+    public:
     };
 }

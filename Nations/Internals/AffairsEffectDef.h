@@ -10,5 +10,16 @@ namespace CivitasPoly::Nations::Internals
     public:
         explicit AffairsEffectDef(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "AffairsEffectDef") {}
+    public:
+        void* verb() const { return ReadField<void*>("verb"); }
+        void SetVerb(void* value) const { WriteField<void*>("verb", value); }
+        void* args() const { return ReadField<void*>("args"); }
+        void SetArgs(void* value) const { WriteField<void*>("args", value); }
+        void* nums() const { return ReadField<void*>("nums"); }
+        void SetNums(void* value) const { WriteField<void*>("nums", value); }
+        void* spec() const { return ReadField<void*>("spec"); }
+        void SetSpec(void* value) const { WriteField<void*>("spec", value); }
+        int line() const { return ReadField<int>("line"); }
+        void SetLine(int value) const { WriteField<int>("line", value); }
     };
 }

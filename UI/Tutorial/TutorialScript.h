@@ -10,5 +10,7 @@ namespace CivitasPoly::UI::Tutorial
     public:
         explicit TutorialScript(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Tutorial", "TutorialScript") {}
+    public:
+        void* Build() const { return CallStatic("Build", nullptr, 0); }
     };
 }

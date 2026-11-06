@@ -10,5 +10,6 @@ namespace CivitasPoly::Visuals
     public:
         explicit VisualEra(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Visuals", "VisualEra") {}
+    public:
     };
 }

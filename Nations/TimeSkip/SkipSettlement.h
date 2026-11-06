@@ -10,5 +10,8 @@ namespace CivitasPoly::Nations::TimeSkip
     public:
         explicit SkipSettlement(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.TimeSkip", "SkipSettlement") {}
+    public:
+        void Begin(void* nm) const { void* args[] = { nm }; Call("Begin", args, 1); }
+        int Step(void* nm, int span) const { void* args[] = { nm, &span }; return CallValue<int>("Step", args, 2); }
     };
 }

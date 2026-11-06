@@ -10,5 +10,12 @@ namespace CivitasPoly::Scenario
     public:
         explicit SerRoad(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Scenario", "SerRoad") {}
+    public:
+        int builderNationId() const { return ReadField<int>("builderNationId"); }
+        void SetBuilderNationId(int value) const { WriteField<int>("builderNationId", value); }
+        void* pts() const { return ReadField<void*>("pts"); }
+        void SetPts(void* value) const { WriteField<void*>("pts", value); }
+        int level() const { return ReadField<int>("level"); }
+        void SetLevel(int value) const { WriteField<int>("level", value); }
     };
 }

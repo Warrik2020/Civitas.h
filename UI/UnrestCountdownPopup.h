@@ -10,5 +10,7 @@ namespace CivitasPoly::UI
     public:
         explicit UnrestCountdownPopup(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "UnrestCountdownPopup") {}
+    public:
+        void Reopen(int originId, void* trigger) const { void* args[] = { &originId, trigger }; CallStatic("Reopen", args, 2); }
     };
 }

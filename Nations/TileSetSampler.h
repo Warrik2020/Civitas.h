@@ -10,5 +10,10 @@ namespace CivitasPoly::Nations
     public:
         explicit TileSetSampler(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations", "TileSetSampler") {}
+    public:
+        float Sample(int x, int y) const { void* args[] = { &x, &y }; return CallValue<float>("Sample", args, 2); }
+        bool ChunkHasData(int cx, int cy) const { void* args[] = { &cx, &cy }; return CallValue<bool>("ChunkHasData", args, 2); }
+        void* Page(int cx, int cy) const { void* args[] = { &cx, &cy }; return Call("Page", args, 2); }
+        bool ChunkFull(int cx, int cy) const { void* args[] = { &cx, &cy }; return CallValue<bool>("ChunkFull", args, 2); }
     };
 }

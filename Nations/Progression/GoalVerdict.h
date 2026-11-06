@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Progression
     public:
         explicit GoalVerdict(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Progression", "GoalVerdict") {}
+    public:
     };
 }

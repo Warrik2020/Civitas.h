@@ -10,5 +10,6 @@ namespace CivitasPoly::Map
     public:
         explicit MapError(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Map", "MapError") {}
+    public:
     };
 }

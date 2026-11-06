@@ -10,5 +10,10 @@ namespace CivitasPoly::Nations::Population
     public:
         explicit PeopleSweep(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Population", "PeopleSweep") {}
+    public:
+        void Step(void* f, void* w, void* s, int span = 1) const { void* args[] = { f, w, s, &span }; Call("Step", args, 4); }
+        int CycleMonths() const { return ReadStaticField<int>("CycleMonths"); }
+        int64_t Flows() const { return ReadStaticField<int64_t>("Flows"); }
+        void SetFlows(int64_t value) const { WriteStaticField<int64_t>("Flows", value); }
     };
 }

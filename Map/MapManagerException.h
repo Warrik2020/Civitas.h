@@ -10,5 +10,7 @@ namespace CivitasPoly::Map
     public:
         explicit MapManagerException(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Map", "MapManagerException") {}
+    public:
+        int Error() const { return ReadField<int>("Error"); }
     };
 }

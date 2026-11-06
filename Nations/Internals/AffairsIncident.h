@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Internals
     public:
         explicit AffairsIncident(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "AffairsIncident") {}
+    public:
     };
 }

@@ -10,5 +10,8 @@ namespace CivitasPoly::Nations::Internals
     public:
         explicit EconomySystem(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "EconomySystem") {}
+    public:
+        void Tick(void* it, void* cfg) const { void* args[] = { it, cfg }; CallStatic("Tick", args, 2); }
+        void* BuildingName(int era, void* cfg) const { void* args[] = { &era, cfg }; return CallStatic("BuildingName", args, 2); }
     };
 }

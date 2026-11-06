@@ -10,5 +10,6 @@ namespace CivitasPoly::Llm
     public:
         explicit LlmKind(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Llm", "LlmKind") {}
+    public:
     };
 }

@@ -10,5 +10,6 @@ namespace CivitasPoly::Platform
     public:
         explicit AchievementWatcher(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Platform", "AchievementWatcher") {}
+    public:
     };
 }

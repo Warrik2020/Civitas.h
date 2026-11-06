@@ -10,5 +10,12 @@ namespace CivitasPoly::Nations::Internals
     public:
         explicit UnionTerm(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "UnionTerm") {}
+    public:
+        void* label() const { return ReadField<void*>("label"); }
+        void SetLabel(void* value) const { WriteField<void*>("label", value); }
+        float value() const { return ReadField<float>("value"); }
+        void SetValue(float value) const { WriteField<float>("value", value); }
+        void* tip() const { return ReadField<void*>("tip"); }
+        void SetTip(void* value) const { WriteField<void*>("tip", value); }
     };
 }

@@ -10,5 +10,8 @@ namespace CivitasPoly::UI
     public:
         explicit PeoplesIconTint(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "PeoplesIconTint") {}
+    public:
+        void Tick() const { CallStatic("Tick", nullptr, 0); }
+        void* ArtPath() const { return ReadStaticField<void*>("ArtPath"); }
     };
 }

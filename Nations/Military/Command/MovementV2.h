@@ -10,5 +10,11 @@ namespace CivitasPoly::Nations::Military::Command
     public:
         explicit MovementV2(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Command", "MovementV2") {}
+    public:
+        void Tick(void* d, void* n, void* grid, void* cfg, int tick, void* mil, void* occupancy) const { void* args[] = { d, n, grid, cfg, &tick, mil, occupancy }; CallStatic("Tick", args, 7); }
+        void AcceptOrder(void* d, void* target) const { void* args[] = { d, target }; CallStatic("AcceptOrder", args, 2); }
+        void RetargetNow(void* d, void* grid, int tick, void* mil) const { void* args[] = { d, grid, &tick, mil }; CallStatic("RetargetNow", args, 4); }
+        bool PressGoal(void* d, void* mil, void* grid) const { void* args[] = { d, mil, grid }; return CallStaticValue<bool>("PressGoal", args, 3); }
+        bool PressAt(void* d, void* mil, void* grid, void* p) const { void* args[] = { d, mil, grid, p }; return CallStaticValue<bool>("PressAt", args, 4); }
     };
 }

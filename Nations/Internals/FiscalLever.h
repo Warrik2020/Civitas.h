@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Internals
     public:
         explicit FiscalLever(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "FiscalLever") {}
+    public:
     };
 }

@@ -10,5 +10,7 @@ namespace CivitasPoly::UI::TimeSkip
     public:
         explicit TimeSkipController(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.TimeSkip", "TimeSkipController") {}
+    public:
+        void Open() const { CallStatic("Open", nullptr, 0); }
     };
 }

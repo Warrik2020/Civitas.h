@@ -10,5 +10,12 @@ namespace CivitasPoly::Map::Generation
     public:
         explicit WorldSaveJob(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Map.Generation", "WorldSaveJob") {}
+    public:
+        bool Done() const { return ReadField<bool>("Done"); }
+        void SetDone(bool value) const { WriteField<bool>("Done", value); }
+        void* Path() const { return ReadField<void*>("Path"); }
+        void SetPath(void* value) const { WriteField<void*>("Path", value); }
+        void* Failure() const { return ReadField<void*>("Failure"); }
+        void SetFailure(void* value) const { WriteField<void*>("Failure", value); }
     };
 }

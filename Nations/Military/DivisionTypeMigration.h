@@ -10,5 +10,8 @@ namespace CivitasPoly::Nations::Military
     public:
         explicit DivisionTypeMigration(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military", "DivisionTypeMigration") {}
+    public:
+        int Migrate(int rawOrdinal) const { void* args[] = { &rawOrdinal }; return CallStaticValue<int>("Migrate", args, 1); }
+        int Clamp(int rawOrdinal) const { void* args[] = { &rawOrdinal }; return CallStaticValue<int>("Clamp", args, 1); }
     };
 }

@@ -10,5 +10,16 @@ namespace CivitasPoly::Nations::Military
     public:
         explicit WorksLine(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military", "WorksLine") {}
+    public:
+        int start() const { return ReadField<int>("start"); }
+        void SetStart(int value) const { WriteField<int>("start", value); }
+        int count() const { return ReadField<int>("count"); }
+        void SetCount(int value) const { WriteField<int>("count", value); }
+        int kind() const { return ReadField<int>("kind"); }
+        void SetKind(int value) const { WriteField<int>("kind", value); }
+        float halfWidthMetres() const { return ReadField<float>("halfWidthMetres"); }
+        void SetHalfWidthMetres(float value) const { WriteField<float>("halfWidthMetres", value); }
+        float dug() const { return ReadField<float>("dug"); }
+        void SetDug(float value) const { WriteField<float>("dug", value); }
     };
 }

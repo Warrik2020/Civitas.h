@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Lod
     public:
         explicit ITileKey(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Lod", "ITileKey") {}
+    public:
     };
 }

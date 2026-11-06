@@ -10,5 +10,8 @@ namespace CivitasPoly::Map::Pipeline
     public:
         explicit Normalise(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Map.Pipeline", "Normalise") {}
+    public:
+        float ScaleFactor(int width, int height) const { void* args[] = { &width, &height }; return CallStaticValue<float>("ScaleFactor", args, 2); }
+        void* Apply(void* pts, float invScale) const { void* args[] = { pts, &invScale }; return CallStatic("Apply", args, 2); }
     };
 }

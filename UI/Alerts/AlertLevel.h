@@ -10,5 +10,6 @@ namespace CivitasPoly::UI::Alerts
     public:
         explicit AlertLevel(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Alerts", "AlertLevel") {}
+    public:
     };
 }

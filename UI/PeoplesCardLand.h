@@ -10,5 +10,8 @@ namespace CivitasPoly::UI
     public:
         explicit PeoplesCardLand(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "PeoplesCardLand") {}
+    public:
+        bool Refresh(void* internals, void* card, int senderId, int targetId, void* terms) const { void* args[] = { internals, card, &senderId, &targetId, terms }; return CallValue<bool>("Refresh", args, 5); }
+        void* tiles() const { return ReadField<void*>("tiles"); }
     };
 }

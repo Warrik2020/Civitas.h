@@ -10,5 +10,7 @@ namespace CivitasPoly::UI
     public:
         explicit UnionOfferPopup(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "UnionOfferPopup") {}
+    public:
+        void ViewFront() const { CallStatic("ViewFront", nullptr, 0); }
     };
 }

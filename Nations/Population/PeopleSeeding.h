@@ -10,5 +10,8 @@ namespace CivitasPoly::Nations::Population
     public:
         explicit PeopleSeeding(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Population", "PeopleSeeding") {}
+    public:
+        void Seed(void* field, void* weights, void* catchment, void* nations, void* getInternals, void* cities, void* identity, void* s) const { void* args[] = { field, weights, catchment, nations, getInternals, cities, identity, s }; CallStatic("Seed", args, 8); }
+        float StatelessSeedFill() const { return ReadStaticField<float>("StatelessSeedFill"); }
     };
 }

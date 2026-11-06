@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Military
     public:
         explicit LandingKind(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military", "LandingKind") {}
+    public:
     };
 }

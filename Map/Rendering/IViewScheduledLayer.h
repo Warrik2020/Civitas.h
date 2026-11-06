@@ -10,5 +10,6 @@ namespace CivitasPoly::Map::Rendering
     public:
         explicit IViewScheduledLayer(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Map.Rendering", "IViewScheduledLayer") {}
+    public:
     };
 }

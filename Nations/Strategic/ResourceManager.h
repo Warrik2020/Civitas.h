@@ -10,5 +10,8 @@ namespace CivitasPoly::Nations::Strategic
     public:
         explicit ResourceManager(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Strategic", "ResourceManager") {}
+    public:
+        void RefreshNow() const { Call("RefreshNow", nullptr, 0); }
+        int RefreshIntervalTicks() const { return ReadStaticField<int>("RefreshIntervalTicks"); }
     };
 }

@@ -10,5 +10,7 @@ namespace CivitasPoly::UI::Alerts
     public:
         explicit ProgressionAlerts(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.Alerts", "ProgressionAlerts") {}
+    public:
+        void Collect(void* into, void* it) const { void* args[] = { into, it }; CallStatic("Collect", args, 2); }
     };
 }

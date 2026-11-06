@@ -10,5 +10,12 @@ namespace CivitasPoly::Llm
     public:
         explicit LlmBridge(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Llm", "LlmBridge") {}
+    public:
+        void Start() const { Call("Start", nullptr, 0); }
+        void Stop() const { Call("Stop", nullptr, 0); }
+        void Dispose() const { Call("Dispose", nullptr, 0); }
+        int Submit(void* req) const { void* args[] = { req }; return CallValue<int>("Submit", args, 1); }
+        bool TryDequeue(void* result) const { void* args[] = { &result }; return CallValue<bool>("TryDequeue", args, 1); }
+        int MaxPending() const { return ReadStaticField<int>("MaxPending"); }
     };
 }

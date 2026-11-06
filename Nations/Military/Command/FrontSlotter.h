@@ -10,5 +10,23 @@ namespace CivitasPoly::Nations::Military::Command
     public:
         explicit FrontSlotter(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Military.Command", "FrontSlotter") {}
+    public:
+        void* SupportOffset(int row, void* back, float body) const { void* args[] = { &row, back, &body }; return CallStatic("SupportOffset", args, 3); }
+        float ReserveShare(int a) const { void* args[] = { &a }; return CallStaticValue<float>("ReserveShare", args, 1); }
+        void WeighPosts(void* line, void* mil, void* buckets, void* cfg, int tick, void* cities) const { void* args[] = { line, mil, buckets, cfg, &tick, cities }; Call("WeighPosts", args, 6); }
+        void Assign(void* army, void* line, void* divs, void* mil, void* grid, void* allowed = nullptr) const { void* args[] = { army, line, divs, mil, grid, allowed }; Call("Assign", args, 6); }
+        void AssignByLand(void* army, void* line, void* divs, void* mil, void* grid, void* allowed, void* divComp, void* postComp, void* lands) const { void* args[] = { army, line, divs, mil, grid, allowed, divComp, postComp, lands }; Call("AssignByLand", args, 9); }
+        float MaxBody(void* divs) const { void* args[] = { divs }; return CallStaticValue<float>("MaxBody", args, 1); }
+        int DepthMax() const { return ReadStaticField<int>("DepthMax"); }
+        float DepthStepTiles() const { return ReadStaticField<float>("DepthStepTiles"); }
+        float ReserveBackTiles() const { return ReadStaticField<float>("ReserveBackTiles"); }
+        float ThreatWeight() const { return ReadStaticField<float>("ThreatWeight"); }
+        float ValueWeight() const { return ReadStaticField<float>("ValueWeight"); }
+        float CityRadiusTiles() const { return ReadStaticField<float>("CityRadiusTiles"); }
+        float CityValueCap() const { return ReadStaticField<float>("CityValueCap"); }
+        void* slots() const { return ReadField<void*>("slots"); }
+        void* slotOf() const { return ReadField<void*>("slotOf"); }
+        float SupportGap() const { return ReadStaticField<float>("SupportGap"); }
+        float RowBodies() const { return ReadStaticField<float>("RowBodies"); }
     };
 }

@@ -10,5 +10,8 @@ namespace CivitasPoly::Nations::States
     public:
         explicit SurveyChunkProofs(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.States", "SurveyChunkProofs") {}
+    public:
+        bool NoneWaiting(void* grid, void* cell, int chunk) const { void* args[] = { grid, cell, &chunk }; return CallStaticValue<bool>("NoneWaiting", args, 3); }
+        void Clear() const { CallStatic("Clear", nullptr, 0); }
     };
 }

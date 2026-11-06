@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::TimeSkip
     public:
         explicit SkipPhase(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.TimeSkip", "SkipPhase") {}
+    public:
     };
 }

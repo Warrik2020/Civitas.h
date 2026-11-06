@@ -10,5 +10,9 @@ namespace CivitasPoly::Nations
     public:
         explicit LobeManager(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations", "LobeManager") {}
+    public:
+        void Spawn(void* n, float heading, void* cfg) const { void* args[] = { n, &heading, cfg }; CallStatic("Spawn", args, 3); }
+        void AgeAndRespawn(void* n, void* cfg) const { void* args[] = { n, cfg }; CallStatic("AgeAndRespawn", args, 2); }
+        void Drift(void* n, void* grid, void* cfg) const { void* args[] = { n, grid, cfg }; CallStatic("Drift", args, 3); }
     };
 }

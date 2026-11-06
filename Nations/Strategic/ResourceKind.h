@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Strategic
     public:
         explicit ResourceKind(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Strategic", "ResourceKind") {}
+    public:
     };
 }

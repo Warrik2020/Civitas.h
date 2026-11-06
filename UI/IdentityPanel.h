@@ -10,5 +10,7 @@ namespace CivitasPoly::UI
     public:
         explicit IdentityPanel(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "IdentityPanel") {}
+    public:
+        void Dismiss() const { CallStatic("Dismiss", nullptr, 0); }
     };
 }

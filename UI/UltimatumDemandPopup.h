@@ -10,5 +10,6 @@ namespace CivitasPoly::UI
     public:
         explicit UltimatumDemandPopup(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI", "UltimatumDemandPopup") {}
+    public:
     };
 }

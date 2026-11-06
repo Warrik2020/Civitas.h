@@ -10,5 +10,6 @@ namespace CivitasPoly::Llm
     public:
         explicit OfferVerb(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Llm", "OfferVerb") {}
+    public:
     };
 }

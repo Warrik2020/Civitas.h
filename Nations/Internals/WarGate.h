@@ -10,5 +10,6 @@ namespace CivitasPoly::Nations::Internals
     public:
         explicit WarGate(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "WarGate") {}
+    public:
     };
 }

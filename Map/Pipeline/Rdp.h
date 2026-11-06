@@ -10,5 +10,7 @@ namespace CivitasPoly::Map::Pipeline
     public:
         explicit Rdp(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Map.Pipeline", "Rdp") {}
+    public:
+        void* Simplify(void* pts, float epsilon) const { void* args[] = { pts, &epsilon }; return CallStatic("Simplify", args, 2); }
     };
 }

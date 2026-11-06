@@ -10,5 +10,28 @@ namespace CivitasPoly::Nations::Internals
     public:
         explicit IncursionPreview(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Nations.Internals", "IncursionPreview") {}
+    public:
+        bool valid() const { return ReadField<bool>("valid"); }
+        void SetValid(bool value) const { WriteField<bool>("valid", value); }
+        int expected() const { return ReadField<int>("expected"); }
+        void SetExpected(int value) const { WriteField<int>("expected", value); }
+        int passesToViolation() const { return ReadField<int>("passesToViolation"); }
+        void SetPassesToViolation(int value) const { WriteField<int>("passesToViolation", value); }
+        float opinionMin() const { return ReadField<float>("opinionMin"); }
+        void SetOpinionMin(float value) const { WriteField<float>("opinionMin", value); }
+        float opinionMax() const { return ReadField<float>("opinionMax"); }
+        void SetOpinionMax(float value) const { WriteField<float>("opinionMax", value); }
+        bool truce() const { return ReadField<bool>("truce"); }
+        void SetTruce(bool value) const { WriteField<bool>("truce", value); }
+        bool pledge() const { return ReadField<bool>("pledge"); }
+        void SetPledge(bool value) const { WriteField<bool>("pledge", value); }
+        bool passage() const { return ReadField<bool>("passage"); }
+        void SetPassage(bool value) const { WriteField<bool>("passage", value); }
+        bool allied() const { return ReadField<bool>("allied"); }
+        void SetAllied(bool value) const { WriteField<bool>("allied", value); }
+        bool gainsJustification() const { return ReadField<bool>("gainsJustification"); }
+        void SetGainsJustification(bool value) const { WriteField<bool>("gainsJustification", value); }
+        void* friends() const { return ReadField<void*>("friends"); }
+        void SetFriends(void* value) const { WriteField<void*>("friends", value); }
     };
 }

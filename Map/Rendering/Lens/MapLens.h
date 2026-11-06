@@ -10,5 +10,8 @@ namespace CivitasPoly::Map::Rendering::Lens
     public:
         explicit MapLens(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.Map.Rendering.Lens", "MapLens") {}
+    public:
+        bool FlipMask() const { return ReadStaticField<bool>("FlipMask"); }
+        void SetFlipMask(bool value) const { WriteStaticField<bool>("FlipMask", value); }
     };
 }

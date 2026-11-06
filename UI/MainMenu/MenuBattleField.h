@@ -10,5 +10,9 @@ namespace CivitasPoly::UI::MainMenu
     public:
         explicit MenuBattleField(void* object = nullptr, ModAPI* api = g_api)
             : ManagedType(api, object, "CivitasPoly.UI.MainMenu", "MenuBattleField") {}
+    public:
+        int Width() const { return ReadStaticField<int>("Width"); }
+        int Height() const { return ReadStaticField<int>("Height"); }
+        void* Pixels() const { return ReadField<void*>("Pixels"); }
     };
 }
